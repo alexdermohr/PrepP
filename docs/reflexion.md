@@ -1,6 +1,6 @@
 # Reflexion
 
-- **Grenzsetzung und Konsequenz:** Die konsequente Streichung von "Extrawürsten" bei Fehlverhalten ist wichtig, birgt aber das Risiko, dass X sich zeitweise komplett zurückzieht (wie an Tag 3). Dennoch ist diese Struktur für ihn (und andere) zwingend notwendig.
-- **Beobachtung von Stimmungsschwankungen:** Die extrem raschen Stimmungswechsel (von engagiert zu verbal/physisch aggressiv) machen eine engmaschige Begleitung und sofortige Deeskalationsstrategien erforderlich.
-- **Rollenklärung:** Es war positiv, Y in das Projekt einzubinden, auch wenn seine Verhaltensauffälligkeiten an anderer Stelle bestehen. Seine Teilnahme kann als entlastend wirken.
-- **Projektanpassung:** Die Anpassung des Projektziels (interner Standort statt externe Tonne) war ein notwendiger Schritt, um Reibungsverluste zu minimieren und eine kontrollierbare Umgebung zu schaffen.
+- **Wirkung der Grenzsetzung:** Das Streichen von Sonderaktionen führte bei X kurzfristig zu Rückzug und Abwehr. Es stellt sich die offene Frage, wie diese Struktur langfristig wirkt: Führt sie zu mehr Verbindlichkeit oder verfestigt sie die Distanz zur Projektleitung?
+- **Beobachtungsbedarf bei Eskalationen:** Die raschen Wechsel von kooperativem Verhalten zu physischen Handlungen (z. B. Essen umstoßen) nach kleinen Interventionen zeigen ein Risiko. Prüfbedarf: Müssen Interventionen kleinschrittiger angebahnt werden, um Eskalationen vorzubeugen?
+- **Rolle von Mitschüler Y:** Die Einbindung von Y scheint stabilisierend auf das Projekt und X zu wirken. Nebenfolge: Es muss beobachtet werden, ob dies für Y dauerhaft eine Entlastung darstellt oder zu neuen Spannungen im Gruppengefüge führt.
+- **Standortentscheidung:** Die Verlagerung der Sammelstation nach innen scheint aktuell hilfreich, um Komplexität zu reduzieren. Es bleibt zu prüfen, ob diese Anpassung den Lerneffekt bezüglich externer Organisationen einschränkt.

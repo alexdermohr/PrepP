@@ -1,4 +1,4 @@
 # Vorlauf
 
 - Ausarbeitung der Frageliste.
-- Vorstelligwerden bei Hausmeister und weiteren relevanten Akteuren.
+- Vorstelligwerden bei Mitarbeitenden der Einrichtung (u. a. Haustechnik).

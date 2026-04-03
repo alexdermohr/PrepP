@@ -1,6 +1,6 @@
 # Hypothesen
 
-- **Handlungssicherheit:** X hat ein starkes Bedürfnis nach praktischem Tun, weil er sich dort selbstwirksam und sicher fühlt.
-- **Überforderung in formellen Kontexten:** Komplexe soziale und formelle Anforderungen überfordern X, was sich durch Rückzug, Ablehnung oder Aggression äußert.
-- **Komfortzonenpräferenz:** Wenn sich eine weniger anstrengende Alternative bietet, wählt X diese, um Frustration und Anstrengung (z.B. im Rahmen des Projekts) zu entgehen.
-- **Aggression als Überlastungssignal:** Die plötzlichen verbalen und physischen Ausfälle sind wahrscheinlich Ausdruck von sozialer oder emotionaler Überlastung bzw. mangelnder Impulskontrolle bei Grenzsetzungen.
+- **Arbeitshypothese zu Handlungssicherheit:** Es ist plausibel, dass praktische Tätigkeiten (wie Rechnen, Sammeln, Planen) X leichter fallen und ihm Sicherheit vermitteln, da er dort Eigeninitiative und Struktur zeigen kann.
+- **Arbeitshypothese zu formellen Kontexten:** Die bisherigen Beobachtungen sprechen dafür, dass X in formellen oder hierarchischen Gesprächssituationen Unsicherheit empfindet, worauf er vorrangig mit Rückzug (Abwenden, Schweigen) reagiert.
+- **Arbeitshypothese zur Angebotswahl:** Möglicherweise wählt X bekannte, niederschwellige Handlungsangebote Dritter bevorzugt, um neuen, potenziell anstrengenden Projektherausforderungen auszuweichen.
+- **Arbeitshypothese zu aggressiven Reaktionen:** Es könnte sein, dass plötzliche verbale und physische Ausfälle nach direkter Grenzsetzung ein Signal für situative Überforderung sind, wenn X keine anderen Handlungsstrategien zur Verfügung stehen.

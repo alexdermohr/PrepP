@@ -6,6 +6,12 @@ const markdownFiles = import.meta.glob('../../../{docs,meta,models}/**/*.md', {
   eager: true
 });
 
+const htmlFiles = import.meta.glob('../../../docs/icf-reports/**/*.html', {
+  query: '?raw',
+  import: 'default',
+  eager: true
+});
+
 function byFolder(folder) {
   return Object.entries(markdownFiles)
     .filter(([path]) => path.includes(`/docs/${folder}/`))
@@ -46,6 +52,14 @@ export function loadData() {
     .sort(([a], [b]) => a.localeCompare(b))
     .map(([path, content]) => parseFile(path, content));
 
+  const icfHtmlReports = Object.entries(htmlFiles)
+    .sort(([a], [b]) => a.localeCompare(b))
+    .map(([path, content]) => ({
+      path: normalizePath(path),
+      title: path.split('/').pop().replace('.html', ''),
+      htmlContent: content
+    }));
+
   const meta = Object.entries(markdownFiles)
     .filter(([path]) => path.includes('/meta/') && path.endsWith('.md'))
     .sort(([a], [b]) => a.localeCompare(b))
@@ -64,6 +78,7 @@ export function loadData() {
     reflexion,
     projektplan,
     icfReports,
+    icfHtmlReports,
     meta,
     models
   };

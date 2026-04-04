@@ -98,3 +98,27 @@ body {
     flex-wrap: wrap;
   }
 }
+
+/* ICF Reports (HTML) */
+.icf-report-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.icf-report-meta {
+  margin-bottom: 1rem;
+}
+
+.icf-report-frame {
+  width: 100%;
+  min-height: 600px;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.4rem;
+  background: #ffffff;
+}
+
+@media (max-width: 900px) {
+  .icf-report-frame {
+    min-height: 400px;
+  }
+}

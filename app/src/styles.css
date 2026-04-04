@@ -146,3 +146,93 @@ body {
 .icf-report-group .card:last-child {
   margin-bottom: 0;
 }
+
+/* Sidebar Group Headers */
+.sidebar-group-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #9ca3af;
+  margin-top: 1.2rem;
+  margin-bottom: 0.3rem;
+  padding-left: 0.75rem;
+  font-weight: 600;
+}
+.sidebar-group-label:first-child {
+  margin-top: 0.5rem;
+}
+
+/* Start Page & Status Cards */
+.start-page {
+  padding: 1.5rem;
+}
+.start-page p {
+  font-size: 1.05rem;
+  color: #4b5563;
+  margin-bottom: 2rem;
+  max-width: 800px;
+}
+.status-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+.status-card {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+}
+.status-label {
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-bottom: 0.4rem;
+}
+.status-value {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* Aktueller Stand */
+.stand-section {
+  padding: 1.5rem;
+}
+.stand-section > p {
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+}
+
+/* Entscheidungen Details Grid */
+.decision-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 0.8rem;
+}
+.detail-box {
+  background: #ffffff;
+  border: 1px solid #f3f4f6;
+  border-radius: 0.4rem;
+  padding: 0.8rem;
+}
+.detail-box h5 {
+  margin-top: 0;
+  color: #374151;
+}
+.detail-box ul {
+  padding-left: 1.2rem;
+  margin-bottom: 0;
+}
+.detail-box li {
+  color: #4b5563;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .decision-details-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -84,27 +84,43 @@ function createHtmlFileCard(report) {
 }
 
 export function renderOverview(root, data) {
+  const article = document.createElement('article');
+  article.className = 'start-page card';
+
+  const intro = document.createElement('p');
+  intro.textContent = 'Willkommen zur Projekt-Dokumentation. Diese Oberfläche dient der strukturierten Einsicht in den Entwicklungsprozess, um Beobachtungen, Hypothesen und Entscheidungen nachvollziehbar zu machen.';
+  article.appendChild(intro);
+
+  const cardsContainer = document.createElement('div');
+  cardsContainer.className = 'status-cards';
+
   const areas = [
-    { label: 'Tagebuch', count: data.tagebuch.length },
-    { label: 'Beobachtungen', count: data.beobachtungen.length },
-    { label: 'Entscheidungen', count: data.entscheidungen.length },
-    { label: 'Hypothesen', count: data.hypothesen ? 1 : 0, single: true },
-    { label: 'Reflexion', count: data.reflexion ? 1 : 0, single: true },
-    { label: 'Projektplan', count: data.projektplan ? 1 : 0, single: true },
-    { label: 'ICF-Reports', count: data.icfReports.length },
-    { label: 'Meta', count: data.meta.length },
-    { label: 'Modelle', count: data.models.length }
+    { label: 'Projektplan', status: data.projektplan ? 'Vorhanden' : 'Fehlt' },
+    { label: 'Tagebuch-Einträge', status: data.tagebuch.length },
+    { label: 'Beobachtungen', status: data.beobachtungen.length },
+    { label: 'Entscheidungen', status: data.entscheidungen.length },
+    { label: 'ICF-Reports', status: data.icfReports.length > 0 ? 'Vorhanden' : 'Fehlt' }
   ];
-  const ul = document.createElement('ul');
-  ul.className = 'overview-list';
 
   areas.forEach((area) => {
-    const li = document.createElement('li');
-    li.textContent = area.single ? `${area.label}: Dokument ${area.count > 0 ? 'vorhanden' : 'fehlt'}` : `${area.label}: ${area.count}`;
-    ul.appendChild(li);
+    const card = document.createElement('div');
+    card.className = 'status-card';
+
+    const label = document.createElement('div');
+    label.className = 'status-label';
+    label.textContent = area.label;
+
+    const value = document.createElement('div');
+    value.className = 'status-value';
+    value.textContent = area.status;
+
+    card.appendChild(label);
+    card.appendChild(value);
+    cardsContainer.appendChild(card);
   });
 
-  root.appendChild(ul);
+  article.appendChild(cardsContainer);
+  root.appendChild(article);
 }
 
 export function renderTagebuch(root, data) {
@@ -118,7 +134,7 @@ export function renderBeobachtungen(root, data) {
 export function renderEntscheidungen(root, data) {
   data.entscheidungen.forEach((entry) => {
     const card = document.createElement('article');
-    card.className = 'card';
+    card.className = 'card decision-card';
 
     const title = document.createElement('h3');
     title.textContent = entry.title;
@@ -138,6 +154,9 @@ export function renderEntscheidungen(root, data) {
         blockCard.appendChild(subtitle);
       }
 
+      const detailsContainer = document.createElement('div');
+      detailsContainer.className = 'decision-details-grid';
+
       const details = {
         Maßnahme: decisionBlock.massnahme,
         Begründung: decisionBlock.begruendung,
@@ -147,7 +166,7 @@ export function renderEntscheidungen(root, data) {
 
       Object.entries(details).forEach(([label, values]) => {
         const detailSection = document.createElement('section');
-        detailSection.className = 'section-block';
+        detailSection.className = 'section-block detail-box';
 
         const h5 = document.createElement('h5');
         h5.textContent = label;
@@ -162,9 +181,10 @@ export function renderEntscheidungen(root, data) {
         });
 
         detailSection.appendChild(ul);
-        blockCard.appendChild(detailSection);
+        detailsContainer.appendChild(detailSection);
       });
 
+      blockCard.appendChild(detailsContainer);
       card.appendChild(blockCard);
     });
 
@@ -236,4 +256,63 @@ export function renderModels(root, data) {
     return;
   }
   data.models.forEach(entry => root.appendChild(createFileCard(entry)));
+}
+
+export function renderAktuellerStand(root, data) {
+  const article = document.createElement('article');
+  article.className = 'stand-section card';
+
+  const intro = document.createElement('p');
+  intro.textContent = 'Kompakter Überblick über den letzten Stand des Projekts.';
+  article.appendChild(intro);
+
+  if (data.tagebuch && data.tagebuch.length > 0) {
+    const latestTagebuch = data.tagebuch[0]; // Assuming data is now sorted newest first
+    const section = document.createElement('section');
+    section.className = 'section-block';
+    const heading = document.createElement('h4');
+    heading.textContent = 'Zuletzt im Tagebuch';
+    section.appendChild(heading);
+    const p = document.createElement('p');
+    p.textContent = latestTagebuch.title;
+    section.appendChild(p);
+    article.appendChild(section);
+  }
+
+  if (data.entscheidungen && data.entscheidungen.length > 0) {
+    const latestDecision = data.entscheidungen[0]; // Getting the last one (assuming older sort or just picking one)
+    const section = document.createElement('section');
+    section.className = 'section-block';
+    const heading = document.createElement('h4');
+    heading.textContent = 'Letzte Entscheidung';
+    section.appendChild(heading);
+    const p = document.createElement('p');
+    p.textContent = latestDecision.title;
+    section.appendChild(p);
+    article.appendChild(section);
+  }
+
+  if (data.beobachtungen && data.beobachtungen.length > 0) {
+    const section = document.createElement('section');
+    section.className = 'section-block';
+    const heading = document.createElement('h4');
+    heading.textContent = 'Beobachtungen';
+    section.appendChild(heading);
+    const p = document.createElement('p');
+    p.textContent = `${data.beobachtungen.length} dokumentierte Muster.`;
+    section.appendChild(p);
+    article.appendChild(section);
+  }
+
+  const icfSection = document.createElement('section');
+  icfSection.className = 'section-block';
+  const icfHeading = document.createElement('h4');
+  icfHeading.textContent = 'Evidenz';
+  icfSection.appendChild(icfHeading);
+  const icfP = document.createElement('p');
+  icfP.textContent = data.icfReports.length > 0 ? 'ICF-Verlauf liegt vor.' : 'Noch keine ICF-Reports verknüpft.';
+  icfSection.appendChild(icfP);
+  article.appendChild(icfSection);
+
+  root.appendChild(article);
 }

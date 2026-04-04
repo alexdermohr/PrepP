@@ -9,21 +9,55 @@ import {
   renderProjektplan,
   renderICFReports,
   renderMeta,
-  renderModels
+  renderModels,
+  renderAktuellerStand
 } from './components/views';
 
-const views = [
-  { id: 'overview', label: 'Übersicht', render: renderOverview },
-  { id: 'tagebuch', label: 'Tagebuch', render: renderTagebuch },
-  { id: 'beobachtungen', label: 'Beobachtungen', render: renderBeobachtungen },
-  { id: 'entscheidungen', label: 'Entscheidungen', render: renderEntscheidungen },
-  { id: 'hypothesen', label: 'Hypothesen', render: (el, data) => renderSimpleDoc(el, data.hypothesen) },
-  { id: 'reflexion', label: 'Reflexion', render: (el, data) => renderSimpleDoc(el, data.reflexion) },
-  { id: 'projektplan', label: 'Projektplan', render: renderProjektplan },
-  { id: 'icf-reports', label: 'ICF-Reports', render: renderICFReports },
-  { id: 'meta', label: 'Meta', render: renderMeta },
-  { id: 'modelle', label: 'Modelle', render: renderModels }
+const viewGroups = [
+  {
+    heading: 'Start',
+    views: [
+      { id: 'overview', label: 'Übersicht', render: renderOverview }
+    ]
+  },
+  {
+    heading: 'Projekt',
+    views: [
+      { id: 'projektplan', label: 'Projektplan', render: renderProjektplan },
+      { id: 'aktueller_stand', label: 'Aktueller Stand', render: renderAktuellerStand }
+    ]
+  },
+  {
+    heading: 'Verlauf',
+    views: [
+      { id: 'tagebuch', label: 'Tagebuch', render: renderTagebuch }
+    ]
+  },
+  {
+    heading: 'Analyse',
+    views: [
+      { id: 'beobachtungen', label: 'Beobachtungen', render: renderBeobachtungen },
+      { id: 'hypothesen', label: 'Hypothesen', render: (el, data) => renderSimpleDoc(el, data.hypothesen) },
+      { id: 'reflexion', label: 'Reflexion', render: (el, data) => renderSimpleDoc(el, data.reflexion) }
+    ]
+  },
+  {
+    heading: 'Steuerung',
+    views: [
+      { id: 'entscheidungen', label: 'Entscheidungen', render: renderEntscheidungen }
+    ]
+  },
+  {
+    heading: 'Evidenz & Rahmen',
+    views: [
+      { id: 'icf-reports', label: 'ICF-Verlauf', render: renderICFReports },
+      { id: 'modelle', label: 'Modelle', render: renderModels },
+      { id: 'meta', label: 'Meta', render: renderMeta }
+    ]
+  }
 ];
+
+const views = viewGroups.flatMap(group => group.views);
 
 const data = loadData();
 const app = document.querySelector('#app');
@@ -37,12 +71,19 @@ function render(activeId) {
   const nav = document.createElement('nav');
   nav.className = 'sidebar';
 
-  views.forEach((view) => {
-    const button = document.createElement('button');
-    button.textContent = view.label;
-    button.className = view.id === activeId ? 'active' : '';
-    button.addEventListener('click', () => render(view.id));
-    nav.appendChild(button);
+    viewGroups.forEach((group) => {
+    const header = document.createElement('div');
+    header.className = 'sidebar-group-label';
+    header.textContent = group.heading;
+    nav.appendChild(header);
+
+    group.views.forEach((view) => {
+      const button = document.createElement('button');
+      button.textContent = view.label;
+      button.className = view.id === activeId ? 'active' : '';
+      button.addEventListener('click', () => render(view.id));
+      nav.appendChild(button);
+    });
   });
 
   const content = document.createElement('main');

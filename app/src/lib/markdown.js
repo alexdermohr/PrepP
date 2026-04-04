@@ -23,7 +23,15 @@ export function parseMarkdownSections(markdown) {
 
     if (/^-\s+/.test(line)) {
       current.bullets.push(line.replace(/^-\s+/, '').trim());
+      continue;
     }
+
+    if (/^\d+\.\s+/.test(line)) {
+      current.bullets.push(line.replace(/^\d+\.\s+/, '').trim());
+      continue;
+    }
+
+    current.bullets.push(line.trim());
   }
 
   if (current.heading || current.bullets.length) {

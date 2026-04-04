@@ -43,14 +43,17 @@ export function loadData() {
 
   const icfReports = Object.entries(markdownFiles)
     .filter(([path]) => path.includes('/docs/icf-reports/') && path.endsWith('.md'))
+    .sort(([a], [b]) => a.localeCompare(b))
     .map(([path, content]) => parseFile(path, content));
 
   const meta = Object.entries(markdownFiles)
     .filter(([path]) => path.includes('/meta/') && path.endsWith('.md'))
+    .sort(([a], [b]) => a.localeCompare(b))
     .map(([path, content]) => parseFile(path, content));
 
   const models = Object.entries(markdownFiles)
     .filter(([path]) => path.includes('/models/') && path.endsWith('.md'))
+    .sort(([a], [b]) => a.localeCompare(b))
     .map(([path, content]) => parseFile(path, content));
 
   return {

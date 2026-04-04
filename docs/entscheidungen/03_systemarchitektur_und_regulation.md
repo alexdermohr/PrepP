@@ -1,4 +1,4 @@
-# Entscheidungen: Systemarchitektur und Regulation
+# Entscheidung: Systemarchitektur und Regulation
 
 ## Exklusivität von Angeboten
 - **Maßnahme:** Es wird testweise Systemkonkurrenz reduziert, indem das Projekt so gestaltet wird, dass keine konkurrierenden, parallelen niedrigschwelligen Alternativangebote verfügbar sind.
@@ -11,7 +11,7 @@
 - **Prüfhinweis / Beobachtungskriterium:** Wie häufig eskalieren Situationen, nachdem Frühsignale (z. B. Beleidigungen) aufgetreten sind und unmittelbar eine Umlenkung stattgefunden hat?
 
 ## Scaffolding in formellen Situationen
-- **Maßnahme:** In Situationen mit hoher sozialer Exposition oder formellen Anforderungen (z. B. Gespräche mit dem Hausmeister) wird experimentell Unterstützung angeboten ("Wir sagen das zusammen" oder stellvertretende Übernahme unter X's Beteiligung).
+- **Maßnahme:** In Situationen mit hoher sozialer Exposition oder formellen Anforderungen (z. B. Gespräche mit dem Hausmeister) wird experimentell Unterstützung angeboten ("Wir sagen das zusammen" oder stellvertretende Übernahme unter Beteiligung von X).
 - **Begründung:** Soziale Reibung und formelle Anforderungen scheinen X aktuell zu überfordern und zu Rückzug zu führen. Das Scaffolding soll diese Situationen entlasten.
 - **Prüfhinweis / Beobachtungskriterium:** Bleibt X in begleiteten formellen Interaktionen physisch präsent, ohne sich abzuwenden oder zurückzuziehen?
 

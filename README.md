@@ -24,7 +24,7 @@ Beobachtung, Interpretation und Entscheidung werden getrennt dokumentiert.
 
 ## Visualisierung
 
-Eine minimale Web-App unter `app/` visualisiert die Markdown-Dateien aus `docs/` strukturiert.
+Eine minimale Web-App unter `app/` visualisiert ausgewählte Markdown-Dateien aus `docs/`, `meta/` und `models/` strukturiert.
 Die App ist **read-only**: Es gibt keine Bearbeitung, kein Rückschreiben und keine Repo-Mutationen.
 
 ### Lokale Visualisierung starten

@@ -7,7 +7,7 @@ const here = dirname(fileURLToPath(import.meta.url));
 export default defineConfig({
   server: {
     fs: {
-      allow: [resolve(here, '../docs')]
+      allow: [resolve(here, '../docs'), resolve(here, '../meta'), resolve(here, '../models')]
     }
   }
 });

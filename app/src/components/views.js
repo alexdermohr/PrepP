@@ -1,5 +1,3 @@
-import { marked } from 'marked';
-
 function createSectionBlock(section) {
   const sectionEl = document.createElement('section');
   sectionEl.className = 'section-block';
@@ -63,7 +61,11 @@ export function renderOverview(root, data) {
     { label: 'Beobachtungen', count: data.beobachtungen.length },
     { label: 'Entscheidungen', count: data.entscheidungen.length },
     { label: 'Hypothesen', count: data.hypothesen ? 1 : 0, single: true },
-    { label: 'Reflexion', count: data.reflexion ? 1 : 0, single: true }
+    { label: 'Reflexion', count: data.reflexion ? 1 : 0, single: true },
+    { label: 'Projektplan', count: data.projektplan ? 1 : 0, single: true },
+    { label: 'ICF-Reports', count: data.icfReports.length },
+    { label: 'Meta', count: data.meta.length },
+    { label: 'Modelle', count: data.models.length }
   ];
   const ul = document.createElement('ul');
   ul.className = 'overview-list';
@@ -154,51 +156,35 @@ export function renderSimpleDoc(root, doc) {
 }
 
 export function renderProjektplan(root, data) {
-  if (!data.projektplan) {
-    root.innerHTML += '<p>Kein Projektplan vorhanden.</p>';
-    return;
-  }
-  root.innerHTML += `<div class="card">${marked.parse(data.projektplan)}</div>`;
+  renderSimpleDoc(root, data.projektplan);
 }
 
 export function renderICFReports(root, data) {
   if (!data.icfReports.length) {
-    root.innerHTML += '<p>Keine ICF-Reports vorhanden.</p>';
+    const p = document.createElement('p');
+    p.textContent = 'Keine ICF-Reports vorhanden.';
+    root.appendChild(p);
     return;
   }
-
-  root.innerHTML += data.icfReports.map(r => `
-    <div class="card">
-      <h3>${r.path.split('/').pop()}</h3>
-      ${marked.parse(r.content)}
-    </div>
-  `).join('');
+  data.icfReports.forEach(entry => root.appendChild(createFileCard(entry)));
 }
 
 export function renderMeta(root, data) {
   if (!data.meta.length) {
-    root.innerHTML += '<p>Keine Meta-Daten vorhanden.</p>';
+    const p = document.createElement('p');
+    p.textContent = 'Keine Meta-Daten vorhanden.';
+    root.appendChild(p);
     return;
   }
-
-  root.innerHTML += data.meta.map(m => `
-    <div class="card">
-      <h3>${m.path.split('/').pop()}</h3>
-      ${marked.parse(m.content)}
-    </div>
-  `).join('');
+  data.meta.forEach(entry => root.appendChild(createFileCard(entry)));
 }
 
 export function renderModels(root, data) {
   if (!data.models.length) {
-    root.innerHTML += '<p>Keine Modelle vorhanden.</p>';
+    const p = document.createElement('p');
+    p.textContent = 'Keine Modelle vorhanden.';
+    root.appendChild(p);
     return;
   }
-
-  root.innerHTML += data.models.map(m => `
-    <div class="card">
-      <h3>${m.path.split('/').pop()}</h3>
-      ${marked.parse(m.content)}
-    </div>
-  `).join('');
+  data.models.forEach(entry => root.appendChild(createFileCard(entry)));
 }

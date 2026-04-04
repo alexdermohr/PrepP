@@ -74,7 +74,7 @@ function createHtmlFileCard(report) {
 
   // Use srcdoc with raw content
   iframe.srcdoc = entry.content;
-  iframe.setAttribute('sandbox', 'allow-same-origin');
+  iframe.setAttribute('sandbox', '');
 
   iframe.loading = 'lazy';
   iframe.title = `ICF Report: ${report.title}`;
@@ -196,12 +196,25 @@ export function renderICFReports(root, data) {
   }
 
   data.icfReports.forEach(report => {
+    const group = document.createElement('section');
+    group.className = 'icf-report-group';
+
     if (report.md) {
-      root.appendChild(createFileCard(report.md));
+      const label = document.createElement('h4');
+      label.className = 'icf-format-label';
+      label.textContent = 'Markdown';
+      group.appendChild(label);
+      group.appendChild(createFileCard(report.md));
     }
     if (report.html) {
-      root.appendChild(createHtmlFileCard(report));
+      const label = document.createElement('h4');
+      label.className = 'icf-format-label';
+      label.textContent = 'HTML';
+      group.appendChild(label);
+      group.appendChild(createHtmlFileCard(report));
     }
+
+    root.appendChild(group);
   });
 }
 

@@ -122,3 +122,27 @@ body {
     min-height: 400px;
   }
 }
+
+/* ICF Report Groups */
+.icf-report-group {
+  background: #fdfdfd;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.8rem;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.icf-format-label {
+  margin: 0 0 0.5rem 0;
+  color: #4b5563;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.icf-report-group .card {
+  margin-bottom: 1.5rem;
+}
+.icf-report-group .card:last-child {
+  margin-bottom: 0;
+}

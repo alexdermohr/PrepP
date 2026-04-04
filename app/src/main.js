@@ -113,12 +113,14 @@ async function maybeApplyUpdate() {
 }
 
 function applyPendingUpdateIfSafe() {
-  if (!pendingUpdateVersion) return;
+  const versionToApply = pendingUpdateVersion;
+  if (!versionToApply) return;
 
-  // Reload nur im hidden state, um sichtbare Interaktion nicht zu stören
+  // Versionen werden auch im sichtbaren Tab erkannt; Reload wird nur im hidden state ausgeführt, um sichtbare Interaktion nicht zu stören.
   if (document.visibilityState === 'visible') return;
 
-  markReloadedVersion(pendingUpdateVersion);
+  pendingUpdateVersion = null;
+  markReloadedVersion(versionToApply);
   location.reload();
 }
 

@@ -244,6 +244,7 @@ pre {
   padding: 1rem;
   border-radius: 0.4rem;
   overflow-x: auto;
+  white-space: pre;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: 0.85rem;
   line-height: 1.4;

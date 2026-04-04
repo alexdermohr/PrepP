@@ -1,5 +1,5 @@
 function lines(markdown) {
-  return markdown.split(/\r?\n/).map((line) => line.trim());
+  return markdown.split(/\r?\n/);
 }
 
 export function parseMarkdownSections(markdown) {
@@ -10,7 +10,8 @@ export function parseMarkdownSections(markdown) {
   let inCodeBlock = false;
   let codeContent = [];
 
-  for (const line of rawLines) {
+  for (const rawLine of rawLines) {
+    const line = rawLine.trim();
     if (line.startsWith('```')) {
       if (inCodeBlock) {
         current.blocks.push({ type: 'code', text: codeContent.join('\n') });
@@ -23,7 +24,7 @@ export function parseMarkdownSections(markdown) {
     }
 
     if (inCodeBlock) {
-      codeContent.push(line);
+      codeContent.push(rawLine);
       continue;
     }
 
@@ -123,7 +124,8 @@ export function parseDecisionBlocks(markdown) {
   const blocks = [];
   let current = createDecisionBlock();
 
-  rawLines.forEach((line) => {
+  rawLines.forEach((rawLine) => {
+    const line = rawLine.trim();
     if (/^##\s+/.test(line)) {
       if (current.massnahme.length || current.begruendung.length || current.ziel.length || current.pruefhinweis.length) {
         blocks.push(current);

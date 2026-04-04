@@ -252,3 +252,19 @@ pre {
 code {
   font-family: inherit;
 }
+
+/* Project Context Block */
+.project-context-block {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: #fdfdfd;
+  border-left: 4px solid #3b82f6;
+}
+
+.project-context-block h4 {
+  margin-top: 0;
+}
+
+.project-context-block p:last-child {
+  margin-bottom: 0;
+}

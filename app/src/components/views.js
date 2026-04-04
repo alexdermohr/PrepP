@@ -120,15 +120,10 @@ export function renderStart(root, data) {
 
   if (data.projektplan) {
     const focusSection = document.createElement('section');
-    focusSection.className = 'section-block';
-    focusSection.style.marginBottom = '1.5rem';
-    focusSection.style.padding = '1rem';
-    focusSection.style.backgroundColor = '#fdfdfd';
-    focusSection.style.borderLeft = '4px solid #3b82f6';
+    focusSection.className = 'section-block project-context-block';
 
     const h4 = document.createElement('h4');
     h4.textContent = 'Worum geht es in diesem Projekt?';
-    h4.style.marginTop = '0';
     focusSection.appendChild(h4);
 
     // Find the first non-empty text block in Projektplan
@@ -143,7 +138,7 @@ export function renderStart(root, data) {
 
     const p = document.createElement('p');
     p.textContent = firstText;
-    p.style.marginBottom = '0';
+
     focusSection.appendChild(p);
     article.appendChild(focusSection);
   }
@@ -353,7 +348,9 @@ export function renderAktuellerStand(root, data) {
     section.appendChild(heading);
 
     const titleP = document.createElement('p');
-    titleP.innerHTML = `<strong>${latestTagebuch.title}</strong>`;
+    const strongTitle = document.createElement('strong');
+    strongTitle.textContent = latestTagebuch.title;
+    titleP.appendChild(strongTitle);
     section.appendChild(titleP);
 
     let contentSnippet = '';
@@ -382,7 +379,9 @@ export function renderAktuellerStand(root, data) {
     section.appendChild(heading);
 
     const titleP = document.createElement('p');
-    titleP.innerHTML = `<strong>${latestDecision.title}</strong>`;
+    const strongTitle = document.createElement('strong');
+    strongTitle.textContent = latestDecision.title;
+    titleP.appendChild(strongTitle);
     section.appendChild(titleP);
 
     if (latestDecision.decisionBlocks && latestDecision.decisionBlocks.length > 0) {
@@ -401,7 +400,7 @@ export function renderAktuellerStand(root, data) {
   }
 
   if (data.beobachtungen && data.beobachtungen.length > 0) {
-    const latestObs = data.beobachtungen[data.beobachtungen.length - 1]; // Assume oldest to newest, pick last or first depending on sorting. data is likely oldest first for beobachtungen, let's grab the last one.
+    const latestObs = data.beobachtungen[0];
     const section = document.createElement('section');
     section.className = 'section-block';
     const heading = document.createElement('h4');

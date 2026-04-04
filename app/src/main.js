@@ -95,8 +95,7 @@ function markReloadedVersion(version) {
 async function maybeApplyUpdate() {
   if (getCurrentVersion() === 'dev') return;
 
-  // Wir unterbrechen den Nutzer nicht aktiv. Updates werden nur eingespielt,
-  // wenn der Tab nicht sichtbar ist.
+  // Reload nur im hidden state, um sichtbare Interaktion nicht zu stören und Reloads kontrolliert zu aktivieren.
   if (document.visibilityState === 'visible') return;
 
   const remoteVersion = await fetchRemoteVersion();
@@ -108,7 +107,7 @@ async function maybeApplyUpdate() {
 }
 
 document.addEventListener('visibilitychange', () => {
-  // Wenn der Tab versteckt wird, checken wir, ob wir updaten koennen
+  // Tab-Wechsel-Event als Trigger für verzögertes Update
   if (document.visibilityState === 'hidden') {
     maybeApplyUpdate();
   }

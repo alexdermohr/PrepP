@@ -12,6 +12,9 @@ function versionPlugin() {
       server.middlewares.use((req, res, next) => {
         if (req.url === '/version.json') {
           res.setHeader('Content-Type', 'application/json');
+          res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
+          res.setHeader('Pragma', 'no-cache');
+          res.setHeader('Expires', '0');
           res.end(JSON.stringify({ version: commitSha }));
         } else {
           next();

@@ -55,12 +55,13 @@ function createFileCard(entry) {
   return card;
 }
 
-function createHtmlFileCard(entry) {
+function createHtmlFileCard(report) {
+  const entry = report.html;
   const card = document.createElement('article');
   card.className = 'card icf-report-card';
 
   const title = document.createElement('h3');
-  title.textContent = entry.title;
+  title.textContent = report.title;
   card.appendChild(title);
 
   const meta = document.createElement('p');
@@ -70,21 +71,19 @@ function createHtmlFileCard(entry) {
 
   const iframe = document.createElement('iframe');
   iframe.className = 'icf-report-frame';
-  iframe.srcdoc = entry.htmlContent;
+
+  // Use Blob URL instead of srcdoc for better isolation
+  const blob = new Blob([entry.content], { type: 'text/html' });
+  iframe.src = URL.createObjectURL(blob);
+
   iframe.loading = 'lazy';
-  iframe.title = `ICF Report: ${entry.title}`;
+  iframe.title = `ICF Report: ${report.title}`;
   card.appendChild(iframe);
 
   return card;
 }
 
 export function renderOverview(root, data) {
-  // Combine unique reports for count
-  const allIcfReportNames = new Set([
-    ...data.icfReports.map(r => r.title),
-    ...((data.icfHtmlReports || []).map(r => r.title))
-  ]);
-
   const areas = [
     { label: 'Tagebuch', count: data.tagebuch.length },
     { label: 'Beobachtungen', count: data.beobachtungen.length },
@@ -92,7 +91,7 @@ export function renderOverview(root, data) {
     { label: 'Hypothesen', count: data.hypothesen ? 1 : 0, single: true },
     { label: 'Reflexion', count: data.reflexion ? 1 : 0, single: true },
     { label: 'Projektplan', count: data.projektplan ? 1 : 0, single: true },
-    { label: 'ICF-Reports', count: allIcfReportNames.size },
+    { label: 'ICF-Reports', count: data.icfReports.length },
     { label: 'Meta', count: data.meta.length },
     { label: 'Modelle', count: data.models.length }
   ];
@@ -189,23 +188,18 @@ export function renderProjektplan(root, data) {
 }
 
 export function renderICFReports(root, data) {
-  const htmlReports = data.icfHtmlReports || [];
-  const mdReports = data.icfReports || [];
-
-  if (!htmlReports.length && !mdReports.length) {
+  if (!data.icfReports.length) {
     const p = document.createElement('p');
     p.textContent = 'Keine ICF-Reports vorhanden.';
     root.appendChild(p);
     return;
   }
 
-  const htmlReportNames = new Set(htmlReports.map(r => r.title));
-
-  htmlReports.forEach(entry => root.appendChild(createHtmlFileCard(entry)));
-
-  mdReports.forEach(entry => {
-    if (!htmlReportNames.has(entry.title)) {
-      root.appendChild(createFileCard(entry));
+  data.icfReports.forEach(report => {
+    if (report.preferred === 'html') {
+      root.appendChild(createHtmlFileCard(report));
+    } else {
+      root.appendChild(createFileCard(report.md));
     }
   });
 }

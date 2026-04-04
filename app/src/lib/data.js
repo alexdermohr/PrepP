@@ -33,6 +33,53 @@ function parseDecisionFile(path, content) {
   };
 }
 
+function buildICFReports() {
+  const reportsMap = new Map();
+
+  // Process Markdown Reports
+  Object.entries(markdownFiles)
+    .filter(([path]) => path.includes('/docs/icf-reports/') && path.endsWith('.md'))
+    .forEach(([path, content]) => {
+      const filename = path.split('/').pop();
+      const id = filename.replace(/\.md$/, '');
+      const parsed = parseFile(path, content);
+
+      reportsMap.set(id, {
+        id,
+        title: parsed.title, // Initial title from markdown
+        md: parsed
+      });
+    });
+
+  // Process HTML Reports
+  Object.entries(htmlFiles)
+    .forEach(([path, content]) => {
+      const filename = path.split('/').pop();
+      const id = filename.replace(/\.html$/, '');
+
+      if (reportsMap.has(id)) {
+        // Merge with existing markdown
+        const report = reportsMap.get(id);
+        report.html = { path: normalizePath(path), content };
+      } else {
+        // Create new entry for HTML-only reports
+        reportsMap.set(id, {
+          id,
+          title: id, // Fallback title
+          html: { path: normalizePath(path), content }
+        });
+      }
+    });
+
+  // Convert map to sorted array and add preference
+  return Array.from(reportsMap.values())
+    .sort((a, b) => a.id.localeCompare(b.id))
+    .map(report => ({
+      ...report,
+      preferred: report.html ? 'html' : 'md'
+    }));
+}
+
 export function loadData() {
   const tagebuch = byFolder('tagebuch').map(([path, content]) => parseFile(path, content));
   const beobachtungen = byFolder('beobachtungen').map(([path, content]) => parseFile(path, content));
@@ -47,18 +94,7 @@ export function loadData() {
   const projektplanEntry = Object.entries(markdownFiles).find(([path]) => path.endsWith('/docs/projektplan.md'));
   const projektplan = projektplanEntry ? parseFile(projektplanEntry[0], projektplanEntry[1]) : null;
 
-  const icfReports = Object.entries(markdownFiles)
-    .filter(([path]) => path.includes('/docs/icf-reports/') && path.endsWith('.md'))
-    .sort(([a], [b]) => a.localeCompare(b))
-    .map(([path, content]) => parseFile(path, content));
-
-  const icfHtmlReports = Object.entries(htmlFiles)
-    .sort(([a], [b]) => a.localeCompare(b))
-    .map(([path, content]) => ({
-      path: normalizePath(path),
-      title: path.split('/').pop().replace('.html', ''),
-      htmlContent: content
-    }));
+  const icfReports = buildICFReports();
 
   const meta = Object.entries(markdownFiles)
     .filter(([path]) => path.includes('/meta/') && path.endsWith('.md'))
@@ -78,7 +114,6 @@ export function loadData() {
     reflexion,
     projektplan,
     icfReports,
-    icfHtmlReports,
     meta,
     models
   };

@@ -62,22 +62,57 @@ function render(activeId) {
 render('overview');
 
 
+
 const currentVersion = __APP_VERSION__;
 
-async function checkVersion() {
-  if (currentVersion === 'dev') return;
+function getCurrentVersion() {
+  return currentVersion;
+}
 
+async function fetchRemoteVersion() {
   try {
     const res = await fetch('/version.json', { cache: 'no-store' });
-    const { version } = await res.json();
-
-    if (version && version !== currentVersion) {
-      location.reload();
-    }
+    if (!res.ok) return null;
+    const data = await res.json();
+    return data.version;
   } catch (error) {
-    // Ignore fetch errors to not spam the console if offline
+    // Ignore fetch errors (e.g. offline) to not spam the console
+    return null;
   }
 }
 
-setInterval(checkVersion, 30000);
-checkVersion();
+function shouldReloadForVersion(version) {
+  if (!version) return false;
+  if (version === getCurrentVersion()) return false;
+  if (sessionStorage.getItem('lastReloadedVersion') === version) return false;
+  return true;
+}
+
+function markReloadedVersion(version) {
+  sessionStorage.setItem('lastReloadedVersion', version);
+}
+
+async function maybeApplyUpdate() {
+  if (getCurrentVersion() === 'dev') return;
+
+  // Wir unterbrechen den Nutzer nicht aktiv. Updates werden nur eingespielt,
+  // wenn der Tab nicht sichtbar ist.
+  if (document.visibilityState === 'visible') return;
+
+  const remoteVersion = await fetchRemoteVersion();
+
+  if (shouldReloadForVersion(remoteVersion)) {
+    markReloadedVersion(remoteVersion);
+    location.reload();
+  }
+}
+
+document.addEventListener('visibilitychange', () => {
+  // Wenn der Tab versteckt wird, checken wir, ob wir updaten koennen
+  if (document.visibilityState === 'hidden') {
+    maybeApplyUpdate();
+  }
+});
+
+setInterval(maybeApplyUpdate, 30000);
+maybeApplyUpdate();

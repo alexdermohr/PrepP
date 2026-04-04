@@ -54,7 +54,7 @@ Anschließend haben wir beim Hausmeister und in der Werkstatt nach Erlaubnis und
 
 *Arbeitshypothese:* Möglicherweise wäre es auch eine Idee, solche Aufgaben komplett von ihm alleine erledigen zu lassen. Es ist plausibel, dass er dann freier auftritt.
 
-*Beobachtung / Herausforderung:* Da X sehr störrisch ist, wenn er etwas nicht will, ist es umso wichtiger (und dadurch einfacher), auf seine intrinsische Motivation zu setzen (und darauf zu achten).
+*Beobachtung / Herausforderung:* Wenn X eine Aufgabe nicht übernehmen möchte, lehnt er Vorschläge wiederholt ab oder beteiligt sich nur widerwillig. Deshalb ist es umso wichtiger (und dadurch einfacher), auf seine intrinsische Motivation zu setzen (und darauf zu achten).
 
 **Lernchancen:** Angemessener sozialer Auftritt, sprachlicher Ausdruck, Organisation sowie Einblicke in institutionelle Beschaffenheiten sind vorrangige Lernchancen in dieser Projektphase.
 

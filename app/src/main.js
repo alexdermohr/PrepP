@@ -61,8 +61,6 @@ function render(activeId) {
 
 render('overview');
 
-
-
 const currentVersion = __APP_VERSION__;
 
 function getCurrentVersion() {

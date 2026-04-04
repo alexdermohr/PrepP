@@ -1,7 +1,7 @@
 # Entscheidung: Systemarchitektur und Regulation
 
 ## Exklusivität von Angeboten
-- **Maßnahme:** Es wird testweise Systemkonkurrenz reduziert, indem das Projekt so gestaltet wird, dass keine konkurrierenden, parallelen "leichteren" Angebote verfügbar sind.
+- **Maßnahme:** Es wird testweise Systemkonkurrenz reduziert, indem das Projekt so gestaltet wird, dass keine konkurrierenden, parallelen niedrigschwelligen Alternativangebote verfügbar sind.
 - **Begründung:** X wählt häufig das Angebot des geringsten Widerstands. Um zu prüfen, ob dies die Verbindlichkeit erhöht, wird Systemkonkurrenz temporär eingeschränkt.
 - **Prüfhinweis / Beobachtungskriterium:** Tritt X dem Projekt bei und bleibt er dort, wenn keine alternativen Betreuungsangebote parallel verfügbar sind?
 

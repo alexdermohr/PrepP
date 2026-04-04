@@ -10,7 +10,8 @@ function versionPlugin() {
     name: 'version-plugin',
     configureServer(server) {
       server.middlewares.use((req, res, next) => {
-        if (req.url === '/version.json') {
+        const url = new URL(req.url, 'http://localhost');
+        if (url.pathname === '/version.json') {
           res.setHeader('Content-Type', 'application/json');
           res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate');
           res.setHeader('Pragma', 'no-cache');

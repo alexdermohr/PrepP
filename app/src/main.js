@@ -60,3 +60,74 @@ function render(activeId) {
 }
 
 render('overview');
+
+const currentVersion = __APP_VERSION__;
+
+function getCurrentVersion() {
+  return currentVersion;
+}
+
+async function fetchRemoteVersion() {
+  try {
+    const res = await fetch('/version.json', { cache: 'no-store' });
+    if (!res.ok) return null;
+    const data = await res.json();
+    return data.version;
+  } catch (error) {
+    // Ignore fetch errors (e.g. offline) to not spam the console
+    return null;
+  }
+}
+
+function shouldReloadForVersion(version) {
+  if (!version) return false;
+  if (version === getCurrentVersion()) return false;
+  if (sessionStorage.getItem('lastReloadedVersion') === version) return false;
+  return true;
+}
+
+function markReloadedVersion(version) {
+  sessionStorage.setItem('lastReloadedVersion', version);
+}
+
+let isCheckingForUpdate = false;
+let pendingUpdateVersion = null;
+
+async function maybeApplyUpdate() {
+  if (getCurrentVersion() === 'dev') return;
+  if (isCheckingForUpdate) return;
+
+  isCheckingForUpdate = true;
+  try {
+    const remoteVersion = await fetchRemoteVersion();
+
+    if (shouldReloadForVersion(remoteVersion)) {
+      pendingUpdateVersion = remoteVersion;
+      applyPendingUpdateIfSafe();
+    }
+  } finally {
+    isCheckingForUpdate = false;
+  }
+}
+
+function applyPendingUpdateIfSafe() {
+  const versionToApply = pendingUpdateVersion;
+  if (!versionToApply) return;
+
+  // Versionen werden auch im sichtbaren Tab erkannt; Reload wird nur im hidden state ausgeführt, um sichtbare Interaktion nicht zu stören.
+  if (document.visibilityState === 'visible') return;
+
+  pendingUpdateVersion = null;
+  markReloadedVersion(versionToApply);
+  location.reload();
+}
+
+document.addEventListener('visibilitychange', () => {
+  // Tab-Wechsel-Event als Trigger für verzögertes Update
+  if (document.visibilityState === 'hidden') {
+    applyPendingUpdateIfSafe();
+  }
+});
+
+setInterval(maybeApplyUpdate, 30000);
+maybeApplyUpdate();

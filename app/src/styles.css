@@ -93,9 +93,22 @@ body {
   .sidebar {
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 10;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 0.25rem;
+    padding: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .sidebar button {
+    padding: 0.4rem 0.6rem;
+    font-size: 0.85rem;
+  }
+
+  .sidebar-group-label {
+    width: 100%;
+    margin-top: 0.5rem;
   }
 }
 
@@ -298,4 +311,45 @@ code {
   .hypothesis-details-grid {
     grid-template-columns: 1fr;
   }
+}
+
+
+/* Accessibility Improvements */
+:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+button:focus-visible, a:focus-visible, summary:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+
+/* Hypothesis Layout Tweaks */
+.hypothesis-details-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Kern bekommt mehr Platz als Meta */
+  gap: 1rem;
+  margin-top: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .hypothesis-details-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ICF Details Toggle */
+.icf-html-details summary {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  background: #f3f4f6;
+  border-radius: 0.4rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  user-select: none;
+}
+.icf-html-details summary:hover {
+  background: #e5e7eb;
 }

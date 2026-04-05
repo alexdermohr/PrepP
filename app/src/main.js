@@ -84,7 +84,8 @@ function render(activeId) {
       const button = document.createElement('button');
       button.textContent = view.label;
       button.className = view.id === activeId ? 'active' : '';
-      button.addEventListener('click', () => render(view.id));
+      button.addEventListener('click', () => { location.hash = view.id; });
+      if (view.id === activeId) button.setAttribute('aria-current', 'page');
       nav.appendChild(button);
     });
   });
@@ -103,7 +104,14 @@ function render(activeId) {
   app.appendChild(layout);
 }
 
-render('start');
+function renderFromHash() {
+  const hash = location.hash.replace('#', '');
+  const targetId = views.some(v => v.id === hash) ? hash : 'start';
+  render(targetId);
+}
+
+window.addEventListener('hashchange', renderFromHash);
+renderFromHash();
 
 const currentVersion = __APP_VERSION__;
 

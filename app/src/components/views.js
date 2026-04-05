@@ -461,17 +461,17 @@ export function renderAktuellerStand(root, data) {
 
 
   if (data.hypothesen && data.hypothesen.hypothesisBlocks && data.hypothesen.hypothesisBlocks.length > 0) {
-    const activeHypothesen = data.hypothesen.hypothesisBlocks.filter(h => h.status.some(s => s.toLowerCase().includes('aktiv geprüft') || s.toLowerCase().includes('offen')));
+    const activeHypothesen = data.hypothesen.hypothesisBlocks.filter(h => h.normalizedStatus === 'aktiv_geprueft' || h.normalizedStatus === 'offen');
     const displayHypothesen = activeHypothesen.length > 0 ? activeHypothesen.slice(0, 2) : data.hypothesen.hypothesisBlocks.slice(0, 2);
 
     const section = document.createElement('section');
     section.className = 'section-block';
     const heading = document.createElement('h4');
-    heading.textContent = 'Aktive Hypothesenlage';
+    heading.textContent = 'Hypothesenlage';
     section.appendChild(heading);
 
     const countP = document.createElement('p');
-    countP.textContent = `Es liegen ${data.hypothesen.hypothesisBlocks.length} strukturierte Hypothesen vor (${activeHypothesen.length} aktiv/offen).`;
+    countP.textContent = `Anzahl strukturierter Hypothesen: ${data.hypothesen.hypothesisBlocks.length} (${activeHypothesen.length} offen/aktiv geprüft).`;
     section.appendChild(countP);
 
     displayHypothesen.forEach(h => {
@@ -479,7 +479,8 @@ export function renderAktuellerStand(root, data) {
         const strong = document.createElement('strong');
         strong.textContent = h.id ? `${h.id} – ${h.heading}: ` : `${h.heading}: `;
         p.appendChild(strong);
-        p.appendChild(document.createTextNode(h.aussage.join(' ')));
+        const aussageText = h.aussage.length > 0 ? h.aussage.join(' ') : 'Noch unklar.';
+        p.appendChild(document.createTextNode(aussageText));
         section.appendChild(p);
     });
 
@@ -525,17 +526,17 @@ export function renderHypothesen(root, data) {
 
   data.hypothesen.hypothesisBlocks.forEach((block) => {
     const card = document.createElement('article');
-    card.className = 'card decision-card';
+    card.className = 'card hypothesis-card';
 
     const title = document.createElement('h3');
     title.textContent = block.id ? `${block.id} – ${block.heading}` : block.heading;
     card.appendChild(title);
 
     const blockCard = document.createElement('section');
-    blockCard.className = 'decision-block';
+    blockCard.className = 'hypothesis-block';
 
     const detailsContainer = document.createElement('div');
-    detailsContainer.className = 'decision-details-grid';
+    detailsContainer.className = 'hypothesis-details-grid';
 
     const details = {
       'Status': block.status,
@@ -550,12 +551,10 @@ export function renderHypothesen(root, data) {
     Object.entries(details).forEach(([label, values]) => {
       const detailSection = document.createElement('section');
       detailSection.className = 'section-block detail-box';
-
-      // Make Status and Steuerungsrelevanz visually prominent
       if (label === 'Status' || label === 'Steuerungsrelevanz' || label === 'Kategorie') {
-         detailSection.style.borderLeft = '4px solid var(--accent-color, #005fcc)';
-         detailSection.style.backgroundColor = 'var(--bg-light, #f8f9fa)';
+         detailSection.classList.add('hypothesis-highlight');
       }
+
 
       const h5 = document.createElement('h5');
       h5.textContent = label;

@@ -3,7 +3,7 @@
 ## H1 – Handlungssicherheit in praktischen Tätigkeiten
 - **Aussage:** Es ist plausibel, dass praktische Tätigkeiten (wie Rechnen, Sammeln, Planen) X leichter fallen und er dabei ausdauernder agiert, da er hier wiederkehrend Eigeninitiative und zielgerichtetes Verhalten zeigt.
 - **Kategorie:** Verhaltens- und Regulationshypothese
-- **Gestützt durch:** Bisherige Beobachtungen, Tagebuchaufzeichnungen (wiederkehrend)
+- **Gestützt durch:** Beobachtungen: Verhalten in verschiedenen Situationen; Tagebuch: Tag 1
 - **Alternativerklärung:** Das ausdauerndere Agieren entsteht nicht primär aus der Art der Tätigkeit, sondern aus der stärkeren Strukturiertheit und Eindeutigkeit (Richtig/Falsch) dieser Aufgaben im Gegensatz zu sozialen Situationen.
 - **Prüfweg:** Vergleiche das Verhalten in praktischen Tätigkeiten mit unstrukturierten oder sozial dichten Phasen. Lässt sich die Ausdauer durch mehr Struktur in anderen Bereichen ebenfalls steigern?
 - **Status:** offen
@@ -20,8 +20,8 @@
 
 ## H3 – Angebotswahl zur Vermeidung von Herausforderungen
 - **Aussage:** Möglicherweise wählt X bereits bekannte Handlungsangebote Dritter bevorzugt, um neuen, noch unbekannten Projektherausforderungen auszuweichen.
-- **Kategorie:** Verhaltenshypothese
-- **Gestützt durch:** Beobachtungen zur Projektarbeit
+- **Kategorie:** Verhaltens- und Regulationshypothese
+- **Gestützt durch:** Tagebuch: Tag 2; Beobachtungen: Fokus und Ausweichverhalten
 - **Alternativerklärung:** Die Bevorzugung bekannter Angebote resultiert aus einem Bedürfnis nach Autonomie oder aus Erschöpfung, nicht zwingend aus Angst vor Neuem.
 - **Prüfweg:** X schrittweise an neue, kleine Teilaufgaben heranführen, die als "bereits bekannt" geframed werden können. Tritt das Ausweichverhalten dennoch auf?
 - **Status:** offen
@@ -30,7 +30,7 @@
 ## H4 – Reaktionen auf direkte Grenzsetzungen
 - **Aussage:** Es könnte sein, dass plötzliche lautstarke oder physische Ausfälle nach direkter Grenzsetzung ein Signal für situative Überforderung sind, in der X mit wiederkehrenden, bereits beobachteten Verhaltensweisen reagiert.
 - **Kategorie:** Verhaltens- und Regulationshypothese
-- **Gestützt durch:** Tagebuchaufzeichnungen zu Eskalationen
+- **Gestützt durch:** Tagebuch: Tag 3 (Eskalation)
 - **Alternativerklärung:** Die Ausfälle sind keine reine Überforderung, sondern ein erlerntes, funktionierendes Mittel, um sich aus einer unangenehmen Situation zu entziehen oder Autonomie wiederherzustellen.
 - **Prüfweg:** Vorhersehbare Grenzsetzungen etablieren (z. B. klare Wenn-Dann-Regeln im Voraus besprechen). Reduziert Berechenbarkeit die Häufigkeit der Ausfälle?
 - **Status:** offen
@@ -39,7 +39,7 @@
 ## H5 – Verhalten bei Anspannung
 - **Aussage:** Es ist plausibel, dass X ein Verhalten zeigt, das kurzfristig zur Reduktion von Anspannung oder Bedürfnisdruck beiträgt. Alternativ könnte das Verhalten auch situativ oder ohne klare funktionale Zielrichtung entstehen.
 - **Kategorie:** Verhaltens- und Regulationshypothese
-- **Gestützt durch:** noch unklar (allgemeine Beobachtungen)
+- **Gestützt durch:** noch unklar
 - **Alternativerklärung:** Das Verhalten dient nicht primär der Reduktion von Anspannung, sondern der Stimulation (Unterstimulation) oder ist Teil eines sozialen Austauschs.
 - **Prüfweg:** Beobachtung auf frühe Stress-Signale (z. B. Unruhe) vor dem Verhalten. Tritt das Verhalten häufiger in "Leelauf"-Phasen oder in Anforderungsphasen auf?
 - **Status:** offen
@@ -57,7 +57,7 @@
 ## H7 – Systemkonkurrenz
 - **Aussage:** Es ist denkbar, dass die Verbindlichkeit und Lernprozesse im Projekt strukturell unterlaufen werden, solange das Gesamtsystem parallele, leichter zugängliche und bequemere Angebote zulässt.
 - **Kategorie:** Systemhypothese
-- **Gestützt durch:** Entscheidung: Systemarchitektur und Regulation (indirekt)
+- **Gestützt durch:** Entscheidung: Systemarchitektur und Regulation
 - **Alternativerklärung:** Die fehlende Verbindlichkeit liegt nicht an bequemen Alternativen, sondern daran, dass das Projektangebot die aktuellen Interessen oder das Leistungsniveau von X noch nicht passgenau trifft.
 - **Prüfweg:** Reduktion der Parallelangebote an bestimmten Tagen und genaue Dokumentation, ob die Beteiligung im Projekt dann steigt oder sich der Rückzug auf andere Weise (z.B. Schuldistanz) äußert.
 - **Status:** fraglich
@@ -66,7 +66,7 @@
 ## H8 – Frühe Eskalationssignale
 - **Aussage:** Es ist anzunehmen, dass Eskalationen nicht spontan erfolgen, sondern durch frühe Signale (z. B. verbale Abwertungen oder Annäherungen an Grenzen) vorbereitet werden, was auf eine ansteigende Anspannung hindeutet.
 - **Kategorie:** Verhaltens- und Regulationshypothese
-- **Gestützt durch:** Tagebuchaufzeichnungen
+- **Gestützt durch:** Tagebuch: Vorfall Tag 3
 - **Alternativerklärung:** Bestimmte Eskalationen sind tatsächlich spontan oder reaktiv auf einen Trigger, der für uns nicht sofort erkennbar ist.
 - **Prüfweg:** Systematische Dokumentation des Vorfelds (15-30 Min.) von Eskalationen im Tagebuch. Lassen sich zuverlässige Muster identifizieren?
 - **Status:** aktiv geprüft

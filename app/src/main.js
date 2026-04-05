@@ -1,6 +1,5 @@
 import './styles.css';
-import {
-  loadData } from './lib/data';
+import { loadData } from './lib/data';
 import {
   renderHypothesen,
   renderBeobachtungen,

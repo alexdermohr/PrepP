@@ -185,6 +185,26 @@ export function parseDecisionBlocks(markdown) {
   return blocks.length > 0 ? blocks : [createDecisionBlock()];
 }
 
+
+export function normalizeHypothesisStatus(statusStr) {
+  const s = statusStr.toLowerCase().trim();
+  if (s.includes('aktiv geprüft') || s.includes('aktiv geprueft')) return 'aktiv_geprueft';
+  if (s.includes('vorläufig gestützt') || s.includes('vorlaeufig gestuetzt')) return 'vorlaeufig_gestuetzt';
+  if (s.includes('fraglich')) return 'fraglich';
+  if (s.includes('widerlegt')) return 'widerlegt';
+  if (s.includes('pausiert')) return 'pausiert';
+  return 'offen'; // Default
+}
+
+export function normalizeHypothesisCategory(categoryStr) {
+  const c = categoryStr.toLowerCase().trim();
+  if (c.includes('verhaltens') && c.includes('regulations')) return 'Verhaltens- und Regulationshypothese';
+  if (c.includes('situations') || c.includes('kontext')) return 'Situations- / Kontext-Hypothese';
+  if (c.includes('system')) return 'Systemhypothese';
+  if (c.includes('methodisch')) return 'methodische Hypothese';
+  return 'Allgemeine Hypothese';
+}
+
 function createHypothesisBlock(id = '', heading = 'Hypothese') {
   return {
     id,
@@ -195,7 +215,9 @@ function createHypothesisBlock(id = '', heading = 'Hypothese') {
     alternativerklaerung: [],
     pruefweg: [],
     status: [],
-    steuerungsrelevanz: []
+    steuerungsrelevanz: [],
+    normalizedStatus: 'offen',
+    normalizedCategory: 'Allgemeine Hypothese'
   };
 }
 
@@ -206,6 +228,7 @@ function applyHypothesisLabeledValue(block, labeled) {
   }
   if (labeled.label.startsWith('kategorie')) {
     block.kategorie.push(labeled.value);
+    block.normalizedCategory = normalizeHypothesisCategory(labeled.value);
     return;
   }
   if (labeled.label.startsWith('gestützt durch') || labeled.label.startsWith('gestuetzt durch')) {
@@ -222,6 +245,7 @@ function applyHypothesisLabeledValue(block, labeled) {
   }
   if (labeled.label.startsWith('status')) {
     block.status.push(labeled.value);
+    block.normalizedStatus = normalizeHypothesisStatus(labeled.value);
     return;
   }
   if (labeled.label.startsWith('steuerungsrelevanz')) {

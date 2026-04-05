@@ -6,6 +6,7 @@ import {
   renderStart,
   renderSimpleDoc,
   renderTagebuch,
+  renderFeedback,
   renderProjektplan,
   renderICFReports,
   renderMeta,
@@ -30,7 +31,8 @@ const viewGroups = [
   {
     heading: 'Verlauf',
     views: [
-      { id: 'tagebuch', label: 'Tagebuch', render: renderTagebuch }
+      { id: 'tagebuch', label: 'Tagebuch', render: renderTagebuch },
+      { id: 'feedback', label: 'Feedback', render: renderFeedback }
     ]
   },
   {

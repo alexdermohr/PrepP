@@ -17,6 +17,10 @@ Das folgende Modell skizziert die Logik der "Prep - Planung", wie sie dem Projek
              |                        |
              |                        v
              |                  Zielerreichung ?
+             |                        |
+             |                        v
+             |               Rückmeldung der Zielperson
+             |                (Schleife zurück)
 ```
 
 **Erklärung der Logik:**
@@ -24,3 +28,5 @@ Das folgende Modell skizziert die Logik der "Prep - Planung", wie sie dem Projek
 - **Partizipation** ist ein wesentlicher Bestandteil, der eng an die Aktivität angegliedert ist.
 - Die Aktivität zielt auf eine **Zielerreichung** ab, die am Ende hinterfragt bzw. evaluiert wird ("?").
 - Das gesamte Konstrukt wird durch das übergeordnete Prinzip des **Empowerments** gerahmt und getragen.
+
+- **Rückmeldung:** Die Partizipation schließt ausdrücklich die Rückmeldung zur erlebten Wirkung der Maßnahmen ein.

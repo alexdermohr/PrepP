@@ -24,3 +24,8 @@
 - **Maßnahme:** Eigentumsgrenzen (z. B. Essen der Projektleitung) werden experimentell im Vorfeld, in ruhigen Situationen, klar benannt, um zu prüfen, ob dies präventiv wirkt.
 - **Begründung:** Die Klärung im Konfliktmoment könnte den Druck erhöhen und Eskalationen begünstigen.
 - **Prüfhinweis / Beobachtungskriterium:** Respektiert X Eigentumsgrenzen, wenn diese explizit vor Beginn einer Phase geklärt wurden?
+
+## Gegenprüfung durch subjektives Feedback
+- **Maßnahme:** Relevante Maßnahmen sollen, wenn möglich, zusätzlich gegen die subjektive Rückmeldung der Zielperson geprüft werden. Fehlende Rückmeldung ist explizit als Leerstelle markierbar.
+- **Begründung:** Die Perspektive der Zielperson ermöglicht es, die erwachsenenzentrierte Planung auf ihre tatsächliche Wirkung und Erlebbarkeit hin zu evaluieren.
+- **Prüfhinweis / Beobachtungskriterium:** Wurde Feedback zur Maßnahme eingeholt und dokumentiert? Bestätigt oder widerlegt die subjektive Perspektive die Hypothese hinter der Maßnahme?

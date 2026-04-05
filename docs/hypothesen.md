@@ -9,3 +9,5 @@
 - **Arbeitshypothese zur Systemkonkurrenz:** Es ist denkbar, dass die Verbindlichkeit und Lernprozesse im Projekt strukturell unterlaufen werden, solange das Gesamtsystem parallele, leichter zugängliche und bequemere Angebote zulässt.
 - **Arbeitshypothese zu frühen Eskalationssignalen:** Es ist anzunehmen, dass Eskalationen nicht spontan erfolgen, sondern durch frühe Signale (z. B. verbale Abwertungen oder Annäherungen an Grenzen) vorbereitet werden, was auf eine ansteigende Anspannung hindeutet.
 - **Arbeitshypothese zur Kooperationsbereitschaft als Ressource:** Es ist plausibel, dass die wiederkehrende Bereitschaft von X, nach Konflikten zurückzukehren und Vorschläge zu machen, eine zentrale Ressource und grundlegende Kooperationsfähigkeit darstellt.
+
+- **Arbeitshypothese zur subjektiven Rückmeldung:** Wenn die Zielperson regelmäßig in einfacher Form Rückmeldung geben kann, verbessert sich die Einschätzung, welche Maßnahmen als unterstützend vs. überfordernd erlebt werden.

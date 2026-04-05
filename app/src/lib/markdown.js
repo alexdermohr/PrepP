@@ -89,6 +89,10 @@ export function parseMarkdownSections(markdown) {
   }
 
 
+  if (inCodeBlock) {
+    current.blocks.push({ type: 'code', text: codeContent.join('\n') });
+  }
+
   if (current.heading || current.blocks.length) {
     sections.push(current);
   }

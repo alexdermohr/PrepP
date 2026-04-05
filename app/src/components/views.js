@@ -428,7 +428,7 @@ export function renderAktuellerStand(root, data) {
   icfSection.appendChild(icfHeading);
   const icfP = document.createElement('p');
   if (data.icfReports.length > 0) {
-    icfP.textContent = 'ICF-Verlauf liegt vor und stützt die Beobachtungen mit normierter Evidenz.';
+    icfP.textContent = 'ICF-Reports liegen vor und stützen die Beobachtungen mit normierter Evidenz.';
   } else {
     icfP.textContent = 'Noch keine normierten ICF-Reports verknüpft.';
   }

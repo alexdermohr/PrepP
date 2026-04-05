@@ -66,6 +66,7 @@ const data = loadData();
 const app = document.querySelector('#app');
 
 function render(activeId) {
+  currentActiveView = activeId;
   app.innerHTML = '';
 
   const skipLink = document.createElement('a');
@@ -113,10 +114,27 @@ function render(activeId) {
   app.appendChild(layout);
 }
 
+
+let currentActiveView = null;
+
 function renderFromHash() {
   const hash = location.hash.replace('#', '');
-  const targetId = views.some(v => v.id === hash) ? hash : 'start';
-  render(targetId);
+
+  if (!hash) {
+    if (currentActiveView !== 'start') render('start');
+    return;
+  }
+
+  const isViewHash = views.some(v => v.id === hash);
+  if (isViewHash) {
+    if (currentActiveView !== hash) {
+      render(hash);
+      // Optional focus management for genuine view changes
+      const mainContent = document.getElementById('main-content');
+      if (mainContent) mainContent.focus();
+    }
+  }
+  // Unknown hashes (like #main-content or other internal anchors) are ignored by the router
 }
 
 window.addEventListener('hashchange', renderFromHash);

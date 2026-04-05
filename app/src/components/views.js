@@ -6,14 +6,23 @@ function renderEmptyState(root, text) {
 }
 
 function extractFirstSnippet(sections) {
+  let fallbackText = '';
+
   for (const s of sections) {
     const blocks = s.blocks ?? [];
-    const tb = blocks.find(b => b.type === 'text' || b.type === 'bullet');
-    if (tb && tb.text.length > 20) {
-      return tb.text;
+
+    for (const b of blocks) {
+      if (b.type === 'text' || b.type === 'bullet') {
+        if (!fallbackText) fallbackText = b.text;
+
+        if (b.text.length > 20) {
+          return b.text;
+        }
+      }
     }
   }
-  return '';
+
+  return fallbackText;
 }
 
 function createSummarySection(title, contentSnippet) {

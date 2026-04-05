@@ -85,6 +85,22 @@ body {
   margin-top: 0;
 }
 
+
+/* Sidebar Group Headers */
+.sidebar-group-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #9ca3af;
+  margin-top: 1.2rem;
+  margin-bottom: 0.3rem;
+  padding-left: 0.75rem;
+  font-weight: 600;
+}
+.sidebar-group-label:first-child {
+  margin-top: 0.5rem;
+}
+
 @media (max-width: 900px) {
   .layout {
     grid-template-columns: 1fr;
@@ -105,76 +121,6 @@ body {
     padding: 0.4rem 0.6rem;
     font-size: 0.85rem;
   }
-
-  .sidebar-group-label {
-    width: 100%;
-    margin-top: 0.8rem;
-    padding-bottom: 0.2rem;
-    border-bottom: 1px solid #374151;
-  }
-}
-
-/* ICF Reports (HTML) */
-.icf-report-card {
-  display: flex;
-  flex-direction: column;
-}
-
-.icf-report-meta {
-  margin-bottom: 1rem;
-}
-
-.icf-report-frame {
-  width: 100%;
-  min-height: 600px;
-  border: 1px solid #e5e7eb;
-  border-radius: 0.4rem;
-  background: #ffffff;
-}
-
-@media (max-width: 900px) {
-  .icf-report-frame {
-    min-height: 400px;
-  }
-}
-
-/* ICF Report Groups */
-.icf-report-group {
-  background: #fdfdfd;
-  border: 1px solid #e5e7eb;
-  border-radius: 0.8rem;
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-.icf-format-label {
-  margin: 0 0 0.5rem 0;
-  color: #4b5563;
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.icf-report-group .card {
-  margin-bottom: 1.5rem;
-}
-.icf-report-group .card:last-child {
-  margin-bottom: 0;
-}
-
-/* Sidebar Group Headers */
-.sidebar-group-label {
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: #9ca3af;
-  margin-top: 1.2rem;
-  margin-bottom: 0.3rem;
-  padding-left: 0.75rem;
-  font-weight: 600;
-}
-.sidebar-group-label:first-child {
-  margin-top: 0.5rem;
 }
 
 /* Start Page & Status Cards */
@@ -313,10 +259,7 @@ code {
   outline-offset: 2px;
 }
 
-button:focus-visible, a:focus-visible, summary:focus-visible {
-  outline: 2px solid #3b82f6;
-  outline-offset: 2px;
-}
+
 
 
 /* Hypothesis Layout Tweaks */

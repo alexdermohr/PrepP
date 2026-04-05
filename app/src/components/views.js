@@ -152,7 +152,7 @@ export function renderStart(root, data) {
     { label: 'Tagebuch-Einträge', status: data.tagebuch.length },
     { label: 'Beobachtungen', status: data.beobachtungen.length },
     { label: 'Entscheidungen', status: data.entscheidungen.length },
-    { label: 'ICF-Verlauf', status: data.icfReports.length > 0 ? 'Vorhanden' : 'Fehlt' }
+    { label: 'ICF-Reports', status: data.icfReports.length > 0 ? 'Vorhanden' : 'Fehlt' }
   ];
 
   areas.forEach((area) => {
@@ -432,7 +432,7 @@ export function renderAktuellerStand(root, data) {
   icfSection.appendChild(icfHeading);
   const icfP = document.createElement('p');
   if (data.icfReports.length > 0) {
-    icfP.textContent = 'ICF-Verlauf liegt vor und stützt die Beobachtungen mit normierter Evidenz.';
+    icfP.textContent = 'ICF-Reports liegen vor und stützen die Beobachtungen mit normierter Evidenz.';
   } else {
     icfP.textContent = 'Noch keine normierten ICF-Reports verknüpft.';
   }

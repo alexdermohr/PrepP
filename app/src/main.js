@@ -50,7 +50,7 @@ const viewGroups = [
   {
     heading: 'Evidenz & Rahmen',
     views: [
-      { id: 'icf-reports', label: 'ICF-Verlauf', render: renderICFReports },
+      { id: 'icf-reports', label: 'ICF-Reports', render: renderICFReports },
       { id: 'modelle', label: 'Modelle', render: renderModels },
       { id: 'meta', label: 'Meta', render: renderMeta }
     ]

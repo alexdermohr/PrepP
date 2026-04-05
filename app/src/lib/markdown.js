@@ -184,3 +184,83 @@ export function parseDecisionBlocks(markdown) {
 
   return blocks.length > 0 ? blocks : [createDecisionBlock()];
 }
+
+function createHypothesisBlock(id = '', heading = 'Hypothese') {
+  return {
+    id,
+    heading,
+    aussage: [],
+    kategorie: [],
+    gestuetztDurch: [],
+    alternativerklaerung: [],
+    pruefweg: [],
+    status: [],
+    steuerungsrelevanz: []
+  };
+}
+
+function applyHypothesisLabeledValue(block, labeled) {
+  if (labeled.label.startsWith('aussage')) {
+    block.aussage.push(labeled.value);
+    return;
+  }
+  if (labeled.label.startsWith('kategorie')) {
+    block.kategorie.push(labeled.value);
+    return;
+  }
+  if (labeled.label.startsWith('gestützt durch') || labeled.label.startsWith('gestuetzt durch')) {
+    block.gestuetztDurch.push(labeled.value);
+    return;
+  }
+  if (labeled.label.startsWith('alternativerklärung') || labeled.label.startsWith('alternativerklaerung')) {
+    block.alternativerklaerung.push(labeled.value);
+    return;
+  }
+  if (labeled.label.startsWith('prüfweg') || labeled.label.startsWith('pruefweg')) {
+    block.pruefweg.push(labeled.value);
+    return;
+  }
+  if (labeled.label.startsWith('status')) {
+    block.status.push(labeled.value);
+    return;
+  }
+  if (labeled.label.startsWith('steuerungsrelevanz')) {
+    block.steuerungsrelevanz.push(labeled.value);
+    return;
+  }
+}
+
+export function parseHypothesisBlocks(markdown) {
+  const rawLines = lines(markdown);
+  const blocks = [];
+  let current = null;
+
+  rawLines.forEach((rawLine) => {
+    const line = rawLine.trim();
+    if (/^##\s+/.test(line)) {
+      if (current) {
+        blocks.push(current);
+      }
+      const rawHeading = line.replace(/^##\s+/, '').trim();
+      let idMatch = rawHeading.match(/^(H\d+)\s*(?:[-–:]\s*)?(.*)$/);
+      if (idMatch) {
+         current = createHypothesisBlock(idMatch[1], idMatch[2] || idMatch[1]);
+      } else {
+         current = createHypothesisBlock('', rawHeading);
+      }
+      return;
+    }
+
+    if (!current) return; // Skip content before first hypothesis block (e.g. # Hypothesen)
+
+    const labeled = extractLabeledBullet(line);
+    if (!labeled) return;
+    applyHypothesisLabeledValue(current, labeled);
+  });
+
+  if (current) {
+    blocks.push(current);
+  }
+
+  return blocks;
+}

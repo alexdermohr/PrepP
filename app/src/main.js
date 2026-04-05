@@ -1,6 +1,8 @@
 import './styles.css';
-import { loadData } from './lib/data';
 import {
+  loadData } from './lib/data';
+import {
+  renderHypothesen,
   renderBeobachtungen,
   renderEntscheidungen,
   renderStart,
@@ -39,7 +41,7 @@ const viewGroups = [
     heading: 'Analyse',
     views: [
       { id: 'beobachtungen', label: 'Beobachtungen', render: renderBeobachtungen },
-      { id: 'hypothesen', label: 'Hypothesen', render: (el, data) => renderSimpleDoc(el, data.hypothesen) },
+      { id: 'hypothesen', label: 'Hypothesen', render: renderHypothesen },
       { id: 'reflexion', label: 'Reflexion', render: (el, data) => renderSimpleDoc(el, data.reflexion) }
     ]
   },

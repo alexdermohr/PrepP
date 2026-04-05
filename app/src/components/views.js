@@ -459,6 +459,33 @@ export function renderAktuellerStand(root, data) {
 
   }
 
+
+  if (data.hypothesen && data.hypothesen.hypothesisBlocks && data.hypothesen.hypothesisBlocks.length > 0) {
+    const activeHypothesen = data.hypothesen.hypothesisBlocks.filter(h => h.status.some(s => s.toLowerCase().includes('aktiv geprüft') || s.toLowerCase().includes('offen')));
+    const displayHypothesen = activeHypothesen.length > 0 ? activeHypothesen.slice(0, 2) : data.hypothesen.hypothesisBlocks.slice(0, 2);
+
+    const section = document.createElement('section');
+    section.className = 'section-block';
+    const heading = document.createElement('h4');
+    heading.textContent = 'Aktive Hypothesenlage';
+    section.appendChild(heading);
+
+    const countP = document.createElement('p');
+    countP.textContent = `Es liegen ${data.hypothesen.hypothesisBlocks.length} strukturierte Hypothesen vor (${activeHypothesen.length} aktiv/offen).`;
+    section.appendChild(countP);
+
+    displayHypothesen.forEach(h => {
+        const p = document.createElement('p');
+        const strong = document.createElement('strong');
+        strong.textContent = h.id ? `${h.id} – ${h.heading}: ` : `${h.heading}: `;
+        p.appendChild(strong);
+        p.appendChild(document.createTextNode(h.aussage.join(' ')));
+        section.appendChild(p);
+    });
+
+    article.appendChild(section);
+  }
+
   const icfSection = document.createElement('section');
   icfSection.className = 'section-block';
   const icfHeading = document.createElement('h4');
@@ -485,4 +512,69 @@ export function renderFeedback(root, data) {
     return;
   }
   data.feedback.forEach((entry) => root.appendChild(createFileCard(entry)));
+}
+
+
+export function renderHypothesen(root, data) {
+  if (!data.hypothesen || !data.hypothesen.hypothesisBlocks) {
+    const p = document.createElement('p');
+    p.textContent = 'Keine Hypothesen gefunden.';
+    root.appendChild(p);
+    return;
+  }
+
+  data.hypothesen.hypothesisBlocks.forEach((block) => {
+    const card = document.createElement('article');
+    card.className = 'card decision-card';
+
+    const title = document.createElement('h3');
+    title.textContent = block.id ? `${block.id} – ${block.heading}` : block.heading;
+    card.appendChild(title);
+
+    const blockCard = document.createElement('section');
+    blockCard.className = 'decision-block';
+
+    const detailsContainer = document.createElement('div');
+    detailsContainer.className = 'decision-details-grid';
+
+    const details = {
+      'Status': block.status,
+      'Kategorie': block.kategorie,
+      'Steuerungsrelevanz': block.steuerungsrelevanz,
+      'Aussage': block.aussage,
+      'Gestützt durch': block.gestuetztDurch,
+      'Alternativerklärung': block.alternativerklaerung,
+      'Prüfweg': block.pruefweg
+    };
+
+    Object.entries(details).forEach(([label, values]) => {
+      const detailSection = document.createElement('section');
+      detailSection.className = 'section-block detail-box';
+
+      // Make Status and Steuerungsrelevanz visually prominent
+      if (label === 'Status' || label === 'Steuerungsrelevanz' || label === 'Kategorie') {
+         detailSection.style.borderLeft = '4px solid var(--accent-color, #005fcc)';
+         detailSection.style.backgroundColor = 'var(--bg-light, #f8f9fa)';
+      }
+
+      const h5 = document.createElement('h5');
+      h5.textContent = label;
+      detailSection.appendChild(h5);
+
+      const ul = document.createElement('ul');
+      const list = values.length > 0 ? values : ['noch unklar'];
+      list.forEach((value) => {
+        const li = document.createElement('li');
+        li.textContent = normalizeInlineMarkdown(value);
+        ul.appendChild(li);
+      });
+
+      detailSection.appendChild(ul);
+      detailsContainer.appendChild(detailSection);
+    });
+
+    blockCard.appendChild(detailsContainer);
+    card.appendChild(blockCard);
+    root.appendChild(card);
+  });
 }

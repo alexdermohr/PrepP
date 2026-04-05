@@ -1,4 +1,4 @@
-import { firstHeading, normalizePath, parseDecisionBlocks, parseMarkdownSections } from './markdown';
+import { firstHeading, normalizePath, parseDecisionBlocks, parseMarkdownSections, parseHypothesisBlocks } from './markdown';
 
 const markdownFiles = import.meta.glob('../../../{docs,meta,models}/**/*.md', {
   query: '?raw',
@@ -101,7 +101,7 @@ export function loadData() {
   const hypothesenEntry = Object.entries(markdownFiles).find(([path]) => path.endsWith('/docs/hypothesen.md'));
   const reflexionEntry = Object.entries(markdownFiles).find(([path]) => path.endsWith('/docs/reflexion.md'));
 
-  const hypothesen = hypothesenEntry ? parseFile(hypothesenEntry[0], hypothesenEntry[1]) : null;
+  const hypothesen = hypothesenEntry ? { ...parseFile(hypothesenEntry[0], hypothesenEntry[1]), hypothesisBlocks: parseHypothesisBlocks(hypothesenEntry[1]) } : null;
   const reflexion = reflexionEntry ? parseFile(reflexionEntry[0], reflexionEntry[1]) : null;
 
   const projektplanEntry = Object.entries(markdownFiles).find(([path]) => path.endsWith('/docs/projektplan.md'));

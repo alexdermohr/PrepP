@@ -13,7 +13,7 @@
 - Quellentreue: wörtlich / sinngemäß / strukturiert / nicht erhoben
 - Frage:
 - Antwort:
-- Valenz: positiv / neutral / negativ / ambivalent / unklar
+- Valenz: positiv | neutral | negativ | ambivalent | unklar
 - Handlungswunsch der Zielperson:
 - Unsicherheit:
 - Trennungshinweis: "Dieser Block enthält Feedback, keine Interpretation."

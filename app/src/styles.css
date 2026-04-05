@@ -268,3 +268,34 @@ code {
 .project-context-block p:last-child {
   margin-bottom: 0;
 }
+
+/* Hypothesis Classes */
+.hypothesis-card {
+  border-top: 4px solid var(--accent-color, #005fcc);
+}
+
+.hypothesis-block {
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  margin-top: 0.8rem;
+  background: #fafafa;
+}
+
+.hypothesis-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 0.8rem;
+}
+
+.hypothesis-highlight {
+  border-left: 4px solid var(--accent-color, #005fcc) !important;
+  background-color: var(--bg-light, #f8f9fa) !important;
+}
+
+@media (max-width: 600px) {
+  .hypothesis-details-grid {
+    grid-template-columns: 1fr;
+  }
+}

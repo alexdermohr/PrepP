@@ -108,7 +108,9 @@ body {
 
   .sidebar-group-label {
     width: 100%;
-    margin-top: 0.5rem;
+    margin-top: 0.8rem;
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid #374151;
   }
 }
 
@@ -295,23 +297,14 @@ code {
   background: #fafafa;
 }
 
-.hypothesis-details-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  margin-top: 0.8rem;
-}
+
 
 .hypothesis-highlight {
   border-left: 4px solid var(--accent-color, #005fcc) !important;
   background-color: var(--bg-light, #f8f9fa) !important;
 }
 
-@media (max-width: 600px) {
-  .hypothesis-details-grid {
-    grid-template-columns: 1fr;
-  }
-}
+
 
 
 /* Accessibility Improvements */
@@ -352,4 +345,27 @@ button:focus-visible, a:focus-visible, summary:focus-visible {
 }
 .icf-html-details summary:hover {
   background: #e5e7eb;
+}
+
+
+/* Specific margin for ICF HTML Label inside details */
+.icf-html-label {
+  margin-top: 1rem;
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #3b82f6;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.skip-link:focus-visible {
+  top: 0;
 }

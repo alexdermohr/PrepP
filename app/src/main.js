@@ -68,6 +68,13 @@ const app = document.querySelector('#app');
 function render(activeId) {
   app.innerHTML = '';
 
+  const skipLink = document.createElement('a');
+  skipLink.href = '#main-content';
+  skipLink.className = 'skip-link';
+  skipLink.textContent = 'Zum Inhalt springen';
+  app.appendChild(skipLink);
+
+
   const layout = document.createElement('div');
   layout.className = 'layout';
 
@@ -92,6 +99,8 @@ function render(activeId) {
 
   const content = document.createElement('main');
   content.className = 'content';
+  content.id = 'main-content';
+  content.tabIndex = -1;
 
   const current = views.find((view) => view.id === activeId) || views[0];
   const h1 = document.createElement('h1');

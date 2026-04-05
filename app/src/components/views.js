@@ -320,7 +320,7 @@ export function renderICFReports(root, data) {
       const label = document.createElement('div');
       label.className = 'icf-format-label';
       label.textContent = 'HTML';
-      label.style.marginTop = '1rem';
+      label.classList.add('icf-html-label');
       details.appendChild(label);
 
       details.appendChild(createHtmlFileCard(report));

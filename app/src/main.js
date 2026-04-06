@@ -95,8 +95,11 @@ function render(activeId) {
       link.textContent = view.label;
       link.className = view.id === activeId ? 'active' : '';
 
-      if (view.id === activeId) link.setAttribute('aria-current', 'page');
-      // aria-current is implicitly removed when the element is recreated, because it's only set if active
+      if (view.id === activeId) {
+        link.setAttribute('aria-current', 'page');
+      } else {
+        link.removeAttribute('aria-current');
+      }
       nav.appendChild(link);
     });
   });

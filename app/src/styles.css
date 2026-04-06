@@ -107,7 +107,11 @@ p, li {
   border-radius: 0.4rem;
   cursor: pointer;
   font-size: 0.95rem;
-  display: flex;
+}
+
+.sidebar a:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
 }
 
 .sidebar a.active {

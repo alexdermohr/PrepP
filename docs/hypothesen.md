@@ -89,3 +89,12 @@
 - **Prüfweg:** Abgleich der direkten Rückmeldungen (Feedback) mit Beobachtungen zum Anspannungsniveau am selben Tag. Gibt es hier starke Diskrepanzen?
 - **Status:** offen
 - **Steuerungsrelevanz:** relevant für die Weiterentwicklung des Instrumentariums zur Partizipation
+
+## H11 – Aggression als Strategie bei Kontrollverlust
+- **Aussage:** Aggressives Verhalten tritt bei X vor allem dann auf, wenn Kontrollverlust oder inkompatible Bedürfnisse entstehen. Es fungiert als erlernte Strategie, da alternative (sprachlich-kognitive) Lösungswege schwerer zugänglich sind.
+- **Kategorie:** Verhaltens- und Regulationshypothese
+- **Gestützt durch:** noch unklar
+- **Alternativerklärung:** Physiologische Übererregung (Arousal) verhindert Zugriff auf vorhandene Strategien; Gruppendynamik verstärkt Verhalten (Aufmerksamkeit, Machtgewinn)
+- **Prüfweg:** Beobachten: tritt Aggression nach Kontrollverlust auf? Test: explizite Exit-Strategien anbieten und Wirkung prüfen. Zusätzlich: Häufigkeit und Kontext von Eskalationen protokollieren
+- **Status:** offen
+- **Steuerungsrelevanz:** hoch

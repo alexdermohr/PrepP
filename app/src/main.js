@@ -65,6 +65,7 @@ const views = viewGroups.flatMap(group => group.views);
 const data = loadData();
 const app = document.querySelector('#app');
 
+
 function render(activeId) {
   currentActiveView = activeId;
   app.innerHTML = '';

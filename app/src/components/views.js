@@ -343,7 +343,7 @@ export function renderICFReports(root, data) {
       details.className = 'icf-html-details';
       details.open = true;
       const summary = document.createElement('summary');
-      summary.textContent = 'HTML-Ansicht einblenden';
+      summary.textContent = 'HTML-Ansicht ein-/ausblenden';
       details.appendChild(summary);
 
       const label = document.createElement('div');

@@ -423,7 +423,11 @@ export function renderAktuellerStand(root, data) {
     let content = latest.title;
     if (latest.decisionBlocks && latest.decisionBlocks.length > 0) {
         const block = latest.decisionBlocks[0];
-        if (block.massnahme.length > 0) content = block.massnahme[0];
+        if (block.massnahme.length > 0) {
+            content = block.massnahme[0];
+        } else if (block.begruendung && block.begruendung.length > 0) {
+            content = block.begruendung[0];
+        }
     }
     card.appendChild(createSummarySection('Letzte Entscheidung', content));
     primaryGrid.appendChild(card);

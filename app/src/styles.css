@@ -445,3 +445,20 @@ pre code {
   letter-spacing: 0.05em;
   font-weight: 600;
 }
+
+
+.hypothesis-title .meta {
+  display: block;
+  margin-bottom: 0.35rem;
+}
+
+.decision-block + .decision-block {
+  margin-top: 1rem;
+}
+
+.detail-box {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+}

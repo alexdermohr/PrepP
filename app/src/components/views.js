@@ -1,4 +1,25 @@
 
+
+function renderInlineText(container, text) {
+  if (!text) return;
+  // Simple regex to split text into tokens
+  const parts = text.split(/(\*\*.*?\*\*|`.*?`)/g);
+
+  parts.forEach(part => {
+    if (part.startsWith('**') && part.endsWith('**')) {
+      const strong = document.createElement('strong');
+      strong.textContent = part.slice(2, -2);
+      container.appendChild(strong);
+    } else if (part.startsWith('`') && part.endsWith('`')) {
+      const code = document.createElement('code');
+      code.textContent = part.slice(1, -1);
+      container.appendChild(code);
+    } else if (part) {
+      container.appendChild(document.createTextNode(part));
+    }
+  });
+}
+
 function renderEmptyState(root, text) {
   const p = document.createElement('p');
   p.textContent = text;
@@ -12,11 +33,13 @@ function extractFirstSnippet(sections) {
     const blocks = s.blocks ?? [];
 
     for (const b of blocks) {
-      if (b.type === 'text' || b.type === 'bullet') {
+      if (b.type === 'text') {
         if (!fallbackText) fallbackText = b.text;
-
-        if (b.text.length > 20) {
-          return b.text;
+        if (b.text.length > 20) return b.text;
+      } else if (b.type === 'list' && b.items && b.items.length > 0) {
+        if (!fallbackText) fallbackText = b.items[0];
+        for (const item of b.items) {
+          if (item.length > 20) return item;
         }
       }
     }
@@ -35,10 +58,45 @@ function createSummarySection(title, contentSnippet) {
 
   if (contentSnippet) {
     const p = document.createElement('p');
-    p.textContent = contentSnippet;
+    renderInlineText(p, contentSnippet);
     section.appendChild(p);
   }
   return section;
+}
+
+const blockRenderers = {
+  text: (b, container) => {
+    const p = document.createElement('p');
+    renderInlineText(p, b.text);
+    container.appendChild(p);
+  },
+  list: (b, container) => {
+    const listEl = document.createElement(b.ordered ? 'ol' : 'ul');
+    b.items.forEach(item => {
+      const li = document.createElement('li');
+      renderInlineText(li, item);
+      listEl.appendChild(li);
+    });
+    container.appendChild(listEl);
+  },
+  code: (b, container) => {
+    const pre = document.createElement('pre');
+    const code = document.createElement('code');
+    code.textContent = b.text;
+    pre.appendChild(code);
+    container.appendChild(pre);
+  }
+};
+
+function renderBlock(block, container) {
+  if (blockRenderers[block.type]) {
+    blockRenderers[block.type](block, container);
+  } else {
+    const p = document.createElement('p');
+    p.className = 'unknown-block-type';
+    p.textContent = '[Unbekannter Blocktyp]';
+    container.appendChild(p);
+  }
 }
 
 function createSectionBlock(section) {
@@ -50,49 +108,10 @@ function createSectionBlock(section) {
   sectionEl.appendChild(heading);
 
   if (section.blocks && section.blocks.length > 0) {
-    let currentUl = null;
-
-    section.blocks.forEach((block) => {
-      if (block.type === 'bullet') {
-        if (!currentUl) {
-          currentUl = document.createElement('ul');
-          sectionEl.appendChild(currentUl);
-        }
-        const li = document.createElement('li');
-        li.textContent = normalizeInlineMarkdown(block.text);
-        currentUl.appendChild(li);
-      } else if (block.type === 'code') {
-        currentUl = null;
-        const pre = document.createElement('pre');
-        const code = document.createElement('code');
-        code.textContent = block.text;
-        pre.appendChild(code);
-        sectionEl.appendChild(pre);
-      } else {
-        currentUl = null;
-        const p = document.createElement('p');
-        p.textContent = normalizeInlineMarkdown(block.text);
-        sectionEl.appendChild(p);
-      }
-    });
-  } else if (section.bullets && section.bullets.length > 0) {
-    // Fallback for old structure if any
-    const ul = document.createElement('ul');
-    section.bullets.forEach((bullet) => {
-      const li = document.createElement('li');
-      li.textContent = normalizeInlineMarkdown(bullet);
-      ul.appendChild(li);
-    });
-    sectionEl.appendChild(ul);
+    section.blocks.forEach((block) => renderBlock(block, sectionEl));
   }
 
   return sectionEl;
-}
-
-function normalizeInlineMarkdown(text) {
-  return text
-    .replace(/\*\*(.*?)\*\*/g, '$1')
-    .replace(/`([^`]+)`/g, '$1');
 }
 
 function createFileCard(entry) {
@@ -110,8 +129,8 @@ function createFileCard(entry) {
 
   entry.sections.forEach((section, index) => {
     if (index === 0 && section.heading === entry.title) {
-      if ((section.blocks && section.blocks.length > 0) || (section.bullets && section.bullets.length > 0)) {
-        const bulletOnly = createSectionBlock({ heading: '', blocks: section.blocks, bullets: section.bullets });
+      if (section.blocks && section.blocks.length > 0) {
+        const bulletOnly = createSectionBlock({ heading: '', blocks: section.blocks });
         const heading = bulletOnly.querySelector('h4');
         if (heading) heading.remove();
         card.appendChild(bulletOnly);
@@ -143,8 +162,8 @@ function createHtmlFileCard(report) {
   iframe.className = 'icf-report-frame';
 
   // Use srcdoc with raw content
-  iframe.srcdoc = entry.content;
   iframe.setAttribute('sandbox', '');
+  iframe.srcdoc = entry.content;
 
   iframe.loading = 'lazy';
   iframe.title = `ICF Report: ${report.title}`;
@@ -274,7 +293,7 @@ export function renderEntscheidungen(root, data) {
         const list = values.length > 0 ? values : ['Nicht explizit angegeben'];
         list.forEach((value) => {
           const li = document.createElement('li');
-          li.textContent = normalizeInlineMarkdown(value);
+          renderInlineText(li, value);
           ul.appendChild(li);
         });
 
@@ -322,8 +341,9 @@ export function renderICFReports(root, data) {
     if (report.html) {
       const details = document.createElement('details');
       details.className = 'icf-html-details';
+      details.open = true;
       const summary = document.createElement('summary');
-      summary.textContent = 'HTML-Ansicht einblenden';
+      summary.textContent = 'HTML-Ansicht ein-/ausblenden';
       details.appendChild(summary);
 
       const label = document.createElement('div');
@@ -426,7 +446,9 @@ export function renderAktuellerStand(root, data) {
         strong.textContent = h.id ? `${h.id} – ${h.heading}: ` : `${h.heading}: `;
         p.appendChild(strong);
         const aussageText = h.aussage.length > 0 ? h.aussage.join(' ') : 'Noch unklar.';
-        p.appendChild(document.createTextNode(aussageText));
+        const span = document.createElement('span');
+        renderInlineText(span, aussageText);
+        p.appendChild(span);
         section.appendChild(p);
     });
     article.appendChild(section);
@@ -516,7 +538,7 @@ export function renderHypothesen(root, data) {
       const list = values.length > 0 ? values : ['noch unklar'];
       list.forEach((value) => {
         const li = document.createElement('li');
-        li.textContent = normalizeInlineMarkdown(value);
+        renderInlineText(li, value);
         ul.appendChild(li);
       });
 

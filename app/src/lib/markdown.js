@@ -10,17 +10,29 @@ export function parseMarkdownSections(markdown) {
   let inCodeBlock = false;
   let codeContent = [];
 
-
   let currentTextBlock = null;
+  let currentListBlock = null;
+
+  function flushText() {
+    if (currentTextBlock) {
+      current.blocks.push(currentTextBlock);
+      currentTextBlock = null;
+    }
+  }
+
+  function flushList() {
+    if (currentListBlock) {
+      current.blocks.push(currentListBlock);
+      currentListBlock = null;
+    }
+  }
 
   for (const rawLine of rawLines) {
     const line = rawLine.trim();
 
     if (line.startsWith('```')) {
-      if (currentTextBlock) {
-        current.blocks.push(currentTextBlock);
-        currentTextBlock = null;
-      }
+      flushText();
+      flushList();
       if (inCodeBlock) {
         current.blocks.push({ type: 'code', text: codeContent.join('\n') });
         inCodeBlock = false;
@@ -37,18 +49,14 @@ export function parseMarkdownSections(markdown) {
     }
 
     if (!line) {
-      if (currentTextBlock) {
-        current.blocks.push(currentTextBlock);
-        currentTextBlock = null;
-      }
+      flushText();
+      flushList();
       continue;
     }
 
     if (/^#{1,6}\s+/.test(line)) {
-      if (currentTextBlock) {
-        current.blocks.push(currentTextBlock);
-        currentTextBlock = null;
-      }
+      flushText();
+      flushList();
       if (current.heading || current.blocks.length) {
         sections.push(current);
       }
@@ -60,34 +68,39 @@ export function parseMarkdownSections(markdown) {
     }
 
     if (/^-\s+/.test(line)) {
-      if (currentTextBlock) {
-        current.blocks.push(currentTextBlock);
-        currentTextBlock = null;
+      flushText();
+      if (!currentListBlock || currentListBlock.ordered) {
+        flushList();
+        currentListBlock = { type: 'list', ordered: false, items: [] };
       }
-      current.blocks.push({ type: 'bullet', text: line.replace(/^-\s+/, '').trim() });
+      const rawText = line.replace(/^-\s+/, '').trim();
+      currentListBlock.items.push(rawText);
       continue;
     }
 
     if (/^\d+\.\s+/.test(line)) {
-      if (currentTextBlock) {
-        current.blocks.push(currentTextBlock);
-        currentTextBlock = null;
+      flushText();
+      if (!currentListBlock || !currentListBlock.ordered) {
+        flushList();
+        currentListBlock = { type: 'list', ordered: true, items: [] };
       }
-      current.blocks.push({ type: 'bullet', text: line.replace(/^\d+\.\s+/, '').trim() });
+      const rawText = line.replace(/^\d+\.\s+/, '').trim();
+      currentListBlock.items.push(rawText);
       continue;
     }
 
+    flushList();
+
+    const rawText = line; // Maintain raw text
     if (currentTextBlock) {
-      currentTextBlock.text += ' ' + line;
+      currentTextBlock.text += ' ' + rawText;
     } else {
-      currentTextBlock = { type: 'text', text: line };
+      currentTextBlock = { type: 'text', text: rawText };
     }
   }
 
-  if (currentTextBlock) {
-    current.blocks.push(currentTextBlock);
-  }
-
+  flushText();
+  flushList();
 
   if (inCodeBlock) {
     current.blocks.push({ type: 'code', text: codeContent.join('\n') });

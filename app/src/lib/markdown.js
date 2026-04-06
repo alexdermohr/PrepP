@@ -69,34 +69,33 @@ export function parseMarkdownSections(markdown) {
 
     if (/^-\s+/.test(line)) {
       flushText();
-      if (!currentListBlock) {
-        currentListBlock = { type: 'list', items: [] };
+      if (!currentListBlock || currentListBlock.ordered) {
+        flushList();
+        currentListBlock = { type: 'list', ordered: false, items: [] };
       }
-      // Inline markdown processing moved to the parser
-      let plainText = line.replace(/^-\s+/, '').trim();
-      plainText = plainText.replace(/\*\*(.*?)\*\*/g, '$1').replace(/`([^`]+)`/g, '$1');
-      currentListBlock.items.push(plainText);
+      let rawText = line.replace(/^-\s+/, '').trim();
+      currentListBlock.items.push(rawText);
       continue;
     }
 
     if (/^\d+\.\s+/.test(line)) {
       flushText();
-      if (!currentListBlock) {
-        currentListBlock = { type: 'list', items: [] };
+      if (!currentListBlock || !currentListBlock.ordered) {
+        flushList();
+        currentListBlock = { type: 'list', ordered: true, items: [] };
       }
-      let plainText = line.replace(/^\d+\.\s+/, '').trim();
-      plainText = plainText.replace(/\*\*(.*?)\*\*/g, '$1').replace(/`([^`]+)`/g, '$1');
-      currentListBlock.items.push(plainText);
+      let rawText = line.replace(/^\d+\.\s+/, '').trim();
+      currentListBlock.items.push(rawText);
       continue;
     }
 
     flushList();
 
-    let plainText = line.replace(/\*\*(.*?)\*\*/g, '$1').replace(/`([^`]+)`/g, '$1');
+    let rawText = line; // Maintain raw text
     if (currentTextBlock) {
-      currentTextBlock.text += ' ' + plainText;
+      currentTextBlock.text += ' ' + rawText;
     } else {
-      currentTextBlock = { type: 'text', text: plainText };
+      currentTextBlock = { type: 'text', text: rawText };
     }
   }
 

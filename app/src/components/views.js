@@ -48,13 +48,13 @@ const blockRenderers = {
     container.appendChild(p);
   },
   list: (b, container) => {
-    const ul = document.createElement('ul');
+    const listEl = document.createElement(b.ordered ? 'ol' : 'ul');
     b.items.forEach(item => {
       const li = document.createElement('li');
       li.textContent = item;
-      ul.appendChild(li);
+      listEl.appendChild(li);
     });
-    container.appendChild(ul);
+    container.appendChild(listEl);
   },
   code: (b, container) => {
     const pre = document.createElement('pre');
@@ -70,7 +70,9 @@ function renderBlock(block, container) {
     blockRenderers[block.type](block, container);
   } else {
     const p = document.createElement('p');
-    p.textContent = block.text || JSON.stringify(block);
+    p.className = 'unknown-block-type';
+    p.textContent = '[Unbekannter Blocktyp]';
+    p.title = JSON.stringify(block);
     container.appendChild(p);
   }
 }
@@ -138,7 +140,7 @@ function createHtmlFileCard(report) {
   iframe.className = 'icf-report-frame';
 
   // Use srcdoc with raw content
-  iframe.setAttribute('sandbox', 'allow-same-origin');
+  iframe.setAttribute('sandbox', '');
   iframe.srcdoc = entry.content;
 
   iframe.loading = 'lazy';

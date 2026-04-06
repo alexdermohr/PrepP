@@ -73,7 +73,7 @@ export function parseMarkdownSections(markdown) {
         flushList();
         currentListBlock = { type: 'list', ordered: false, items: [] };
       }
-      let rawText = line.replace(/^-\s+/, '').trim();
+      const rawText = line.replace(/^-\s+/, '').trim();
       currentListBlock.items.push(rawText);
       continue;
     }
@@ -91,7 +91,7 @@ export function parseMarkdownSections(markdown) {
 
     flushList();
 
-    let rawText = line; // Maintain raw text
+    const rawText = line; // Maintain raw text
     if (currentTextBlock) {
       currentTextBlock.text += ' ' + rawText;
     } else {

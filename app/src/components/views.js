@@ -38,7 +38,9 @@ function extractFirstSnippet(sections) {
         if (b.text.length > 20) return b.text;
       } else if (b.type === 'list' && b.items && b.items.length > 0) {
         if (!fallbackText) fallbackText = b.items[0];
-        if (b.items[0].length > 20) return b.items[0];
+        for (const item of b.items) {
+          if (item.length > 20) return item;
+        }
       }
     }
   }
@@ -292,7 +294,7 @@ export function renderEntscheidungen(root, data) {
         list.forEach((value) => {
           const li = document.createElement('li');
           renderInlineText(li, value);
-          ul.appendChild(li);
+        ul.appendChild(li);
         });
 
         detailSection.appendChild(ul);
@@ -536,7 +538,7 @@ export function renderHypothesen(root, data) {
       list.forEach((value) => {
         const li = document.createElement('li');
         renderInlineText(li, value);
-          ul.appendChild(li);
+        ul.appendChild(li);
       });
 
       detailSection.appendChild(ul);

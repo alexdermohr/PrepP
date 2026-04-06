@@ -84,7 +84,7 @@ export function parseMarkdownSections(markdown) {
         flushList();
         currentListBlock = { type: 'list', ordered: true, items: [] };
       }
-      let rawText = line.replace(/^\d+\.\s+/, '').trim();
+      const rawText = line.replace(/^\d+\.\s+/, '').trim();
       currentListBlock.items.push(rawText);
       continue;
     }

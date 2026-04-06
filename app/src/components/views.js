@@ -346,7 +346,7 @@ export function renderICFReports(root, data) {
       details.className = 'icf-html-details';
       details.open = true;
       const summary = document.createElement('summary');
-      summary.textContent = 'Formale ICF-Ansicht (HTML) öffnen';
+      summary.textContent = 'Formale ICF-Ansicht (HTML) ein-/ausblenden';
       details.appendChild(summary);
 
       details.appendChild(createHtmlFileCard(report));

@@ -65,6 +65,21 @@ const views = viewGroups.flatMap(group => group.views);
 const data = loadData();
 const app = document.querySelector('#app');
 
+
+function getViewCount(viewId, data) {
+  switch (viewId) {
+    case 'tagebuch': return data.tagebuch ? data.tagebuch.length : 0;
+    case 'feedback': return data.feedback ? data.feedback.length : 0;
+    case 'beobachtungen': return data.beobachtungen ? data.beobachtungen.length : 0;
+    case 'hypothesen': return data.hypothesen && data.hypothesen.hypothesisBlocks ? data.hypothesen.hypothesisBlocks.length : 0;
+    case 'entscheidungen': return data.entscheidungen ? data.entscheidungen.length : 0;
+    case 'icf-reports': return data.icfReports ? data.icfReports.length : 0;
+    case 'modelle': return data.models ? data.models.length : 0;
+    case 'meta': return data.meta ? data.meta.length : 0;
+    default: return null;
+  }
+}
+
 function render(activeId) {
   currentActiveView = activeId;
   app.innerHTML = '';
@@ -90,10 +105,22 @@ function render(activeId) {
 
     group.views.forEach((view) => {
       const button = document.createElement('button');
-      button.textContent = view.label;
       button.className = view.id === activeId ? 'active' : '';
       button.addEventListener('click', () => { location.hash = view.id; });
       if (view.id === activeId) button.setAttribute('aria-current', 'page');
+
+      const labelSpan = document.createElement('span');
+      labelSpan.textContent = view.label;
+      button.appendChild(labelSpan);
+
+      const count = getViewCount(view.id, data);
+      if (count !== null) {
+        const countSpan = document.createElement('span');
+        countSpan.className = 'sidebar-counter';
+        countSpan.textContent = count;
+        button.appendChild(countSpan);
+      }
+
       nav.appendChild(button);
     });
   });

@@ -90,12 +90,14 @@ function render(activeId) {
     nav.appendChild(header);
 
     group.views.forEach((view) => {
-      const button = document.createElement('button');
-      button.textContent = view.label;
-      button.className = view.id === activeId ? 'active' : '';
-      button.addEventListener('click', () => { location.hash = view.id; });
-      if (view.id === activeId) button.setAttribute('aria-current', 'page');
-      nav.appendChild(button);
+      const link = document.createElement('a');
+      link.href = `#${view.id}`;
+      link.textContent = view.label;
+      link.className = view.id === activeId ? 'active' : '';
+
+      if (view.id === activeId) link.setAttribute('aria-current', 'page');
+      // aria-current is implicitly removed when the element is recreated, because it's only set if active
+      nav.appendChild(link);
     });
   });
 

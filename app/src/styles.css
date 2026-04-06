@@ -96,7 +96,9 @@ p, li {
   margin-top: 0;
 }
 
-.sidebar button {
+.sidebar a {
+  display: block;
+  text-decoration: none;
   border: none; /* Removed border */
   background: transparent;
   color: #d1d5db;
@@ -108,13 +110,13 @@ p, li {
   display: flex;
 }
 
-.sidebar button.active {
+.sidebar a.active {
   background: #374151;
   color: #ffffff;
   font-weight: 600;
 }
 
-.sidebar button:hover:not(.active) {
+.sidebar a:hover:not(.active) {
   background: #1f2937;
   color: #f3f4f6;
 }
@@ -145,7 +147,7 @@ p, li {
   .sidebar-group-label {
     display: none; /* Hide labels on mobile to save space */
   }
-  .sidebar button {
+  .sidebar a {
     padding: 0.4rem 0.6rem;
     font-size: 0.85rem;
   }

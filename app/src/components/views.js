@@ -1,4 +1,25 @@
 
+
+function renderInlineText(container, text) {
+  if (!text) return;
+  // Simple regex to split text into tokens
+  const parts = text.split(/(\*\*.*?\*\*|`.*?`)/g);
+
+  parts.forEach(part => {
+    if (part.startsWith('**') && part.endsWith('**')) {
+      const strong = document.createElement('strong');
+      strong.textContent = part.slice(2, -2);
+      container.appendChild(strong);
+    } else if (part.startsWith('`') && part.endsWith('`')) {
+      const code = document.createElement('code');
+      code.textContent = part.slice(1, -1);
+      container.appendChild(code);
+    } else if (part) {
+      container.appendChild(document.createTextNode(part));
+    }
+  });
+}
+
 function renderEmptyState(root, text) {
   const p = document.createElement('p');
   p.textContent = text;
@@ -35,7 +56,7 @@ function createSummarySection(title, contentSnippet) {
 
   if (contentSnippet) {
     const p = document.createElement('p');
-    p.textContent = contentSnippet;
+    renderInlineText(p, contentSnippet);
     section.appendChild(p);
   }
   return section;
@@ -44,14 +65,14 @@ function createSummarySection(title, contentSnippet) {
 const blockRenderers = {
   text: (b, container) => {
     const p = document.createElement('p');
-    p.textContent = b.text;
+    renderInlineText(p, b.text);
     container.appendChild(p);
   },
   list: (b, container) => {
     const listEl = document.createElement(b.ordered ? 'ol' : 'ul');
     b.items.forEach(item => {
       const li = document.createElement('li');
-      li.textContent = item;
+      renderInlineText(li, item);
       listEl.appendChild(li);
     });
     container.appendChild(listEl);
@@ -72,7 +93,6 @@ function renderBlock(block, container) {
     const p = document.createElement('p');
     p.className = 'unknown-block-type';
     p.textContent = '[Unbekannter Blocktyp]';
-    p.title = JSON.stringify(block);
     container.appendChild(p);
   }
 }
@@ -271,7 +291,7 @@ export function renderEntscheidungen(root, data) {
         const list = values.length > 0 ? values : ['Nicht explizit angegeben'];
         list.forEach((value) => {
           const li = document.createElement('li');
-          li.textContent = value;
+          renderInlineText(li, value);
           ul.appendChild(li);
         });
 
@@ -423,7 +443,9 @@ export function renderAktuellerStand(root, data) {
         strong.textContent = h.id ? `${h.id} – ${h.heading}: ` : `${h.heading}: `;
         p.appendChild(strong);
         const aussageText = h.aussage.length > 0 ? h.aussage.join(' ') : 'Noch unklar.';
-        p.appendChild(document.createTextNode(aussageText));
+        const span = document.createElement('span');
+        renderInlineText(span, aussageText);
+        p.appendChild(span);
         section.appendChild(p);
     });
     article.appendChild(section);
@@ -513,8 +535,8 @@ export function renderHypothesen(root, data) {
       const list = values.length > 0 ? values : ['noch unklar'];
       list.forEach((value) => {
         const li = document.createElement('li');
-        li.textContent = value;
-        ul.appendChild(li);
+        renderInlineText(li, value);
+          ul.appendChild(li);
       });
 
       detailSection.appendChild(ul);

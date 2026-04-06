@@ -447,3 +447,13 @@ pre code {
 .skip-link:focus-visible {
   top: 0;
 }
+
+/* ICF Format Label */
+.icf-format-label {
+  margin: 0 0 0.5rem 0;
+  color: #6b7280;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}

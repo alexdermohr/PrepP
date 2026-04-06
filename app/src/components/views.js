@@ -344,7 +344,7 @@ export function renderICFReports(root, data) {
     if (report.html) {
       const details = document.createElement('details');
       details.className = 'icf-html-details';
-      details.open = false; // Collapsed by default for visual reduction
+      details.open = true;
       const summary = document.createElement('summary');
       summary.textContent = 'Formale ICF-Ansicht (HTML) öffnen';
       details.appendChild(summary);
@@ -483,9 +483,22 @@ export function renderHypothesen(root, data) {
     // Titel = Aussage
     const title = document.createElement('h3');
     title.className = 'hypothesis-title';
-    const titlePrefix = block.id ? `${block.id} – ${block.heading}` : block.heading;
-    const aussageText = block.aussage.length > 0 ? block.aussage.join(' ') : 'Aussage noch unklar';
-    title.innerHTML = `<span class="meta">${titlePrefix}</span><br>${aussageText}`;
+
+    const metaSpan = document.createElement('span');
+    metaSpan.className = 'meta';
+    metaSpan.textContent = block.id ? `${block.id} – ${block.heading}` : block.heading;
+    title.appendChild(metaSpan);
+
+    title.appendChild(document.createElement('br'));
+
+    const aussageSpan = document.createElement('span');
+    if (block.aussage.length > 0) {
+      renderInlineText(aussageSpan, block.aussage.join(' '));
+    } else {
+      aussageSpan.textContent = 'Aussage noch unklar';
+    }
+    title.appendChild(aussageSpan);
+
     card.appendChild(title);
 
     // Badges Row
@@ -502,7 +515,13 @@ export function renderHypothesen(root, data) {
       const valText = bd.values.length > 0 ? bd.values.join(', ') : 'unklar';
       const badge = document.createElement('span');
       badge.className = 'badge';
-      badge.innerHTML = `<span class="badge-label">${bd.label}:</span> ${valText}`;
+
+      const labelSpan = document.createElement('span');
+      labelSpan.className = 'badge-label';
+      labelSpan.textContent = bd.label + ':';
+      badge.appendChild(labelSpan);
+
+      badge.appendChild(document.createTextNode(' ' + valText));
       badgesRow.appendChild(badge);
     });
 

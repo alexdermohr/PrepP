@@ -11,8 +11,7 @@ import {
   renderProjektplan,
   renderICFReports,
   renderMeta,
-  renderModels,
-  renderAktuellerStand
+  renderModels
 } from './components/views';
 
 const viewGroups = [
@@ -26,7 +25,13 @@ const viewGroups = [
     heading: 'Projekt',
     views: [
       { id: 'projektplan', label: 'Projektplan', render: renderProjektplan },
-      { id: 'aktueller_stand', label: 'Aktueller Stand', render: renderAktuellerStand }
+      // Deaktiviert: „Aktueller Stand“ erzeugt eine interpretative Aggregation,
+      // die aktuell nicht strikt deterministisch aus den zugrunde liegenden Dokumenten ableitbar ist.
+      // Daher bewusst nicht im UI enthalten.
+      // Reaktivierung nur sinnvoll, wenn:
+      // - klare Ableitungsregeln definiert sind ODER
+      // - der interpretative Charakter explizit gekennzeichnet wird
+      // { id: 'aktueller_stand', label: 'Aktueller Stand', render: renderAktuellerStand }
     ]
   },
   {

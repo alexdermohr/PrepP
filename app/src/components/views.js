@@ -3,7 +3,7 @@
 function renderInlineText(container, text) {
   if (!text) return;
   // Simple regex to split text into tokens
-  const parts = text.split(/(\*\*.*?\*\*|`.*?`)/g);
+  const parts = text.split(/(\*\*.*?\*\*|`.*?`|\[.*?\]\(.*?\))/g);
 
   parts.forEach(part => {
     if (part.startsWith('**') && part.endsWith('**')) {
@@ -14,6 +14,67 @@ function renderInlineText(container, text) {
       const code = document.createElement('code');
       code.textContent = part.slice(1, -1);
       container.appendChild(code);
+    } else if (part.startsWith('[') && part.includes('](') && part.endsWith(')')) {
+      const match = part.match(/\[(.*?)\]\((.*?)\)/);
+      if (match) {
+        let url = match[2];
+
+        if (url.endsWith('.md')) {
+           const a = document.createElement('a');
+           a.textContent = match[1];
+           // Map internal .md files to meaningful app views
+           a.title = url;
+           if (url.includes('/beobachtungen/')) {
+               a.href = '#beobachtungen';
+           } else if (url.includes('/feedback/')) {
+               a.href = '#feedback';
+           } else if (url.includes('/tagebuch/')) {
+               a.href = '#tagebuch';
+           } else if (url.includes('/entscheidungen/')) {
+               a.href = '#entscheidungen';
+           } else if (url.includes('/hypothesen.md')) {
+               a.href = '#hypothesen';
+           } else if (url.includes('/projektplan.md')) {
+               a.href = '#projektplan';
+           } else if (url.includes('/reflexion.md')) {
+               a.href = '#reflexion';
+           } else if (url.includes('/meta/')) {
+               a.href = '#meta';
+           } else if (url.includes('/models/')) {
+               a.href = '#modelle';
+           } else if (url.includes('/intervention/')) {
+               a.href = '#entscheidungen';
+           } else {
+               a.href = '#start';
+           }
+           container.appendChild(a);
+        } else {
+           // Whitelist allowed external protocols
+           let isAllowed = false;
+           try {
+               const parsedUrl = new URL(url);
+               if (['http:', 'https:', 'mailto:', 'tel:'].includes(parsedUrl.protocol)) {
+                   isAllowed = true;
+               }
+           } catch (e) {
+               // Invalid URL, ignore as link
+           }
+
+           if (isAllowed) {
+               const a = document.createElement('a');
+               a.textContent = match[1];
+               a.href = url;
+               if (url.startsWith('http')) {
+                   a.target = '_blank';
+                   a.rel = 'noopener noreferrer';
+               }
+               container.appendChild(a);
+           } else {
+               // Render as plain text for unsafe/unsupported URLs
+               container.appendChild(document.createTextNode(match[1]));
+           }
+        }
+      }
     } else if (part) {
       container.appendChild(document.createTextNode(part));
     }
@@ -272,14 +333,18 @@ export function renderEntscheidungen(root, data) {
       const detailsContainer = document.createElement('div');
       detailsContainer.className = 'decision-details-grid';
 
-      const details = {
-        Maßnahme: decisionBlock.massnahme,
-        Begründung: decisionBlock.begruendung,
-        Ziel: decisionBlock.ziel,
-        Prüfhinweis: decisionBlock.pruefhinweis
-      };
+      const detailsEntries = [
+        ['Maßnahme', decisionBlock.massnahme],
+        ['Begründung', decisionBlock.begruendung],
+        ['Ziel', decisionBlock.ziel],
+        ['Prüfhinweis / Messkriterien', decisionBlock.pruefhinweis]
+      ];
 
-      Object.entries(details).forEach(([label, values]) => {
+      if (decisionBlock.bezugZurHypothese && decisionBlock.bezugZurHypothese.length > 0) {
+        detailsEntries.push(['Bezug zur Hypothese', decisionBlock.bezugZurHypothese]);
+      }
+
+      detailsEntries.forEach(([label, values]) => {
         const detailSection = document.createElement('section');
         detailSection.className = 'section-block detail-box';
 

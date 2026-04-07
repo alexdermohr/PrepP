@@ -3,7 +3,7 @@
 function renderInlineText(container, text) {
   if (!text) return;
   // Simple regex to split text into tokens
-  const parts = text.split(/(\*\*.*?\*\*|`.*?`|\[.*?\]\(.*?\))/g);
+  const parts = text.split(/(\*\*.*?\*\*|`.*?`)/g);
 
   parts.forEach(part => {
     if (part.startsWith('**') && part.endsWith('**')) {
@@ -14,28 +14,6 @@ function renderInlineText(container, text) {
       const code = document.createElement('code');
       code.textContent = part.slice(1, -1);
       container.appendChild(code);
-    } else if (part.startsWith('[') && part.includes('](') && part.endsWith(')')) {
-      const match = part.match(/\[(.*?)\]\((.*?)\)/);
-      if (match) {
-        const a = document.createElement('a');
-        a.textContent = match[1];
-
-        let url = match[2];
-
-        // Very simple mapping for the most critical view: "intervention" tools
-        // So ../intervention/pause_protokoll.md points realistically to a blank Github/raw
-        // or hash navigation. Since hash routing isn't fully aware of individual docs in all categories,
-        // we will link relative Markdown URLs nicely to a target.
-
-        if (url.endsWith('.md')) {
-           // Just keep the url as an href so it looks clickable but doesn't break the app
-           a.href = url;
-           a.target = '_blank';
-        } else {
-           a.href = url;
-        }
-        container.appendChild(a);
-      }
     } else if (part) {
       container.appendChild(document.createTextNode(part));
     }

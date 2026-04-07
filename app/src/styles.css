@@ -461,3 +461,16 @@ pre code {
   border-radius: 0.5rem;
   padding: 0.75rem 1rem;
 }
+
+/* --- Links --- */
+a {
+  color: #3b82f6;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover, a:focus {
+  color: #2563eb;
+  text-decoration: underline;
+  outline: none;
+}

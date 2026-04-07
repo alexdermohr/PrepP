@@ -1,0 +1,11 @@
+--- app/src/main.js
++++ app/src/main.js
+@@ -19,8 +19,7 @@
+   {
+     heading: 'Projekt',
+     views: [
+-      { id: 'projektplan', label: 'Projektplan', render: renderProjektplan },
+-      { id: 'aktueller_stand', label: 'Aktueller Stand', render: renderAktuellerStand }
++      { id: 'projektplan', label: 'Projektplan', render: renderProjektplan }
+     ]
+   },

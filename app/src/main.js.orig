@@ -25,7 +25,8 @@ const viewGroups = [
   {
     heading: 'Projekt',
     views: [
-      { id: 'projektplan', label: 'Projektplan', render: renderProjektplan }
+      { id: 'projektplan', label: 'Projektplan', render: renderProjektplan },
+      { id: 'aktueller_stand', label: 'Aktueller Stand', render: renderAktuellerStand }
     ]
   },
   {

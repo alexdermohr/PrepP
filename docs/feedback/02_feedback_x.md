@@ -7,5 +7,4 @@
 - Frage: Wie gefällt dir das Projekt?
 - Antwort: gut
 - Handlungswunsch der Zielperson: nicht erhoben
-- Antwortumfang: knapp
 - Trennungshinweis: Dieser Block enthält Feedback, keine Interpretation.

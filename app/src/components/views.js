@@ -23,10 +23,31 @@ function renderInlineText(container, text) {
         let url = match[2];
 
         if (url.endsWith('.md')) {
-           // Provide a stable fallback hash target for internal .md files
-           // to avoid breaking the SPA or opening raw file paths.
-           a.href = '#entscheidungen';
+           // Map internal .md files to meaningful app views
            a.title = url;
+           if (url.includes('/beobachtungen/')) {
+               a.href = '#beobachtungen';
+           } else if (url.includes('/feedback/')) {
+               a.href = '#feedback';
+           } else if (url.includes('/tagebuch/')) {
+               a.href = '#tagebuch';
+           } else if (url.includes('/entscheidungen/')) {
+               a.href = '#entscheidungen';
+           } else if (url.includes('/hypothesen.md')) {
+               a.href = '#hypothesen';
+           } else if (url.includes('/projektplan.md')) {
+               a.href = '#projektplan';
+           } else if (url.includes('/reflexion.md')) {
+               a.href = '#reflexion';
+           } else if (url.includes('/meta/')) {
+               a.href = '#meta';
+           } else if (url.includes('/models/')) {
+               a.href = '#modelle';
+           } else if (url.includes('/intervention/')) {
+               a.href = '#entscheidungen';
+           } else {
+               a.href = '#start';
+           }
         } else {
            a.href = url;
            if (url.startsWith('http')) {

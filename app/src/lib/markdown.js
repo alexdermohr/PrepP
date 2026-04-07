@@ -233,19 +233,19 @@ export function parseDecisionBlocks(markdown) {
     }
 
     if (activeSection && line) {
-        let textToAdd = rawLine;
+      let textToAdd = rawLine;
 
-        if (textToAdd.trim().startsWith('- ')) {
-            textToAdd = textToAdd.trim().substring(2);
-        } else if (textToAdd.trim().match(/^\d+\.\s+/)) {
-            textToAdd = textToAdd.trim().replace(/^\d+\.\s+/, '');
-        } else {
-            textToAdd = textToAdd.trim();
-        }
+      if (textToAdd.trim().startsWith('- ')) {
+        textToAdd = textToAdd.trim().substring(2);
+      } else if (textToAdd.trim().match(/^\d+\.\s+/)) {
+        textToAdd = textToAdd.trim().replace(/^\d+\.\s+/, '');
+      } else {
+        textToAdd = textToAdd.trim();
+      }
 
-        if (textToAdd) {
-            current[activeSection].push(textToAdd);
-        }
+      if (textToAdd) {
+        current[activeSection].push(textToAdd);
+      }
     }
   });
 

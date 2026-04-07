@@ -17,12 +17,11 @@ function renderInlineText(container, text) {
     } else if (part.startsWith('[') && part.includes('](') && part.endsWith(')')) {
       const match = part.match(/\[(.*?)\]\((.*?)\)/);
       if (match) {
-        const a = document.createElement('a');
-        a.textContent = match[1];
-
         let url = match[2];
 
         if (url.endsWith('.md')) {
+           const a = document.createElement('a');
+           a.textContent = match[1];
            // Map internal .md files to meaningful app views
            a.title = url;
            if (url.includes('/beobachtungen/')) {
@@ -48,14 +47,33 @@ function renderInlineText(container, text) {
            } else {
                a.href = '#start';
            }
+           container.appendChild(a);
         } else {
-           a.href = url;
-           if (url.startsWith('http')) {
-               a.target = '_blank';
-               a.rel = 'noopener noreferrer';
+           // Whitelist allowed external protocols
+           let isAllowed = false;
+           try {
+               const parsedUrl = new URL(url);
+               if (['http:', 'https:', 'mailto:', 'tel:'].includes(parsedUrl.protocol)) {
+                   isAllowed = true;
+               }
+           } catch (e) {
+               // Invalid URL, ignore as link
+           }
+
+           if (isAllowed) {
+               const a = document.createElement('a');
+               a.textContent = match[1];
+               a.href = url;
+               if (url.startsWith('http')) {
+                   a.target = '_blank';
+                   a.rel = 'noopener noreferrer';
+               }
+               container.appendChild(a);
+           } else {
+               // Render as plain text for unsafe/unsupported URLs
+               container.appendChild(document.createTextNode(match[1]));
            }
         }
-        container.appendChild(a);
       }
     } else if (part) {
       container.appendChild(document.createTextNode(part));

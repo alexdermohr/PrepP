@@ -469,8 +469,12 @@ a {
   transition: color 0.2s ease;
 }
 
-a:hover, a:focus {
+a:hover {
   color: #2563eb;
   text-decoration: underline;
-  outline: none;
+}
+
+a:focus-visible {
+  color: #2563eb;
+  text-decoration: underline;
 }

@@ -43,7 +43,7 @@ function renderInlineText(container, text) {
            } else if (url.includes('/models/')) {
                a.href = '#modelle';
            } else if (url.includes('/intervention/')) {
-               a.href = '#entscheidungen';
+               a.href = '#intervention';
            } else {
                a.href = '#start';
            }
@@ -634,5 +634,17 @@ export function renderHypothesen(root, data) {
 
     card.appendChild(detailsGrid);
     root.appendChild(card);
+  });
+}
+
+export function renderIntervention(root, data) {
+  if (!data.intervention || data.intervention.length === 0) {
+    const p = document.createElement('p');
+    p.textContent = 'Keine Interventionen vorhanden.';
+    root.appendChild(p);
+    return;
+  }
+  data.intervention.forEach((entry) => {
+    renderSimpleDoc(root, entry);
   });
 }

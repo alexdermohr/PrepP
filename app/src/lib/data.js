@@ -97,6 +97,7 @@ export function loadData() {
     .map(([path, content]) => parseFile(path, content));
   const beobachtungen = byFolder('beobachtungen').reverse().map(([path, content]) => parseFile(path, content));
   const entscheidungen = byFolder('entscheidungen').reverse().map(([path, content]) => parseDecisionFile(path, content));
+  const intervention = byFolder('intervention').reverse().map(([path, content]) => parseFile(path, content));
 
   const hypothesenEntry = Object.entries(markdownFiles).find(([path]) => path.endsWith('/docs/hypothesen.md'));
   const reflexionEntry = Object.entries(markdownFiles).find(([path]) => path.endsWith('/docs/reflexion.md'));
@@ -124,6 +125,7 @@ export function loadData() {
     feedback,
     beobachtungen,
     entscheidungen,
+    intervention,
     hypothesen,
     reflexion,
     projektplan,

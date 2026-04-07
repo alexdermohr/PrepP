@@ -11,7 +11,8 @@ import {
   renderProjektplan,
   renderICFReports,
   renderMeta,
-  renderModels
+  renderModels,
+  renderIntervention
 } from './components/views';
 
 const viewGroups = [
@@ -52,7 +53,8 @@ const viewGroups = [
   {
     heading: 'Steuerung',
     views: [
-      { id: 'entscheidungen', label: 'Entscheidungen', render: renderEntscheidungen }
+      { id: 'entscheidungen', label: 'Entscheidungen', render: renderEntscheidungen },
+      { id: 'intervention', label: 'Intervention', render: renderIntervention }
     ]
   },
   {

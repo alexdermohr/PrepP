@@ -25,7 +25,9 @@ const viewGroups = [
   {
     heading: 'Projekt',
     views: [
-      { id: 'projektplan', label: 'Projektplan', render: renderProjektplan }
+      { id: 'projektplan', label: 'Projektplan', render: renderProjektplan },
+      // Temporär deaktiviert: zu interpretativ, nicht deterministisch aus Quellen ableitbar
+      // { id: 'aktueller_stand', label: 'Aktueller Stand', render: renderAktuellerStand }
     ]
   },
   {

@@ -59,7 +59,7 @@ Beobachtung, Interpretation, Entscheidung und subjektive Rückmeldung der Zielpe
 
 ## Zustandsmodell
 
-Jede Datei im Gruppennachweis trägt einen expliziten Status:
+Jede Kapitel-Datei (`docs/gruppennachweis/kapitel/*.md`) und `_compiled.md` trägt als erste Zeile einen expliziten Status. Strukturdateien (`_state.md`, `_contract.md`) und Stützapparat (`mapping/`, `apparat/`) sind ausgenommen.
 
 ```
 draft → structured → integrated → final

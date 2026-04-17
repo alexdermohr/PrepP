@@ -7,13 +7,13 @@ Dieses Repository dient der strukturierten Dokumentation eines Entwicklungsproze
 Ziel ist es, Beobachtungen, Hypothesen und Entscheidungen nachvollziehbar zu machen,
 um Lernen, Reflexion und Weiterentwicklung zu ermöglichen.
 
-Das Repo ist **kein reiner Dokumentenspeicher**, sondern eine **Transformationsmaschine**:
+Das Repo ist **kein reiner Dokumentenspeicher**, sondern eine **Evidenzmaschine**:
 
-> Beobachtung → Struktur → Argument → Hausarbeit
+> Quellenebene → Zieltextebene → Stützapparat
 
-## Architektur: Vier Ebenen
+## Architektur
 
-### Ebene 1: Rohmaterial (Beobachtung & Dokumentation)
+### Quellenebene: Rohmaterial
 
 Unverarbeitete Quellen – Ereignisse, Muster, Entscheidungen, Feedback.
 
@@ -26,37 +26,32 @@ Unverarbeitete Quellen – Ereignisse, Muster, Entscheidungen, Feedback.
 - `docs/intervention/` – Interventionsprotokolle
 - `docs/icf-reports/` – ICF-bezogene Berichte
 
-### Ebene 2: Gruppennachweis (strukturierte Verdichtung)
+### Zieltextebene: Gruppennachweis
 
-Verdichtung des Rohmaterials zu einem bewertbaren Dokument. Zusammenfassen, nicht interpretieren.
+Der Gruppennachweis ist das **einzige Zielartefakt** des Repos.
+Er verdichtet das Rohmaterial zu einem bewertbaren Dokument.
 
-- `docs/gruppennachweis/_contract.md` – was rein darf und was nicht
-- `docs/gruppennachweis/_state.md` – Zustandsmodell (draft → structured → integrated → final)
-- `docs/gruppennachweis/kapitel/` – Kapitelstruktur (Thema, Kontext, Menschen, Zielsetzung, Reflexion, Formalia)
-- `docs/gruppennachweis/_compiled.md` – zusammengeführte Fassung
+- `docs/gruppennachweis/_contract.md` – erlaubte/verbotene Inhalte, Quellenpflicht
+- `docs/gruppennachweis/_state.md` – Zustandsmodell und Übergangsregeln
+- `docs/gruppennachweis/_compiled.md` – laufende Arbeitsfassung (Gesamttext)
+- `docs/gruppennachweis/kapitel/` – Kapitelstruktur nach Bewertungsbogen:
+  - `01_thema.md`
+  - `02_kontext.md`
+  - `03_menschen_und_icf.md`
+  - `04_zielsetzung_und_paedagogisches_handeln.md`
+  - `05_reflexion.md`
+  - `06_formalia_und_anhang.md`
 
-### Ebene 3: Hausarbeit (argumentative Transformation)
+### Stützapparat (innerhalb Gruppennachweis)
 
-Wissenschaftliche Aufarbeitung auf Basis des Gruppennachweises. Interpretieren, aber nur mit Quellenreferenz.
-
-- `docs/hausarbeit/_contract.md` – was rein darf und was nicht
-- `docs/hausarbeit/_state.md` – Zustandsmodell
-- `docs/hausarbeit/outline.md` – Gliederung
-- `docs/hausarbeit/kapitel/` – Kapitelstruktur (Einleitung, Theoretischer Rahmen, Methodik, Ergebnisse, Diskussion, Fazit)
-- `docs/hausarbeit/apparat/` – Literaturverzeichnis und ergänzende Materialien
-- `docs/hausarbeit/mapping/` – Rückverfolgbarkeit: welche Quelle stützt welche Aussage
-
-### Ebene 4: Transformation (Brücken zwischen Ebenen)
-
-Explizite Beschreibung, wie Inhalte von einer Ebene zur nächsten überführt werden.
-
-- `docs/transformation/beobachtung_to_gruppennachweis.md` – Regeln für die Verdichtung
-- `docs/transformation/gruppennachweis_to_hausarbeit.md` – Regeln für die Argumentation
+- `docs/gruppennachweis/mapping/rohmaterial_zu_kapiteln.md` – Rückverfolgbarkeit: welche Quelle stützt welche Aussage
+- `docs/gruppennachweis/apparat/literaturverzeichnis.md` – Literatur und ergänzende Materialien
 
 ### Übergreifend
 
 - `models/` – übergreifende Modelle (z. B. Bedürfnisse, Prep-Planung)
 - `meta/` – Zielsetzung und Arbeitsregeln
+- `docs/transformation/` – Regeln für die Überführung von Rohmaterial in den Gruppennachweis (`rohmaterial_to_gruppennachweis.md`)
 
 ## Prinzip
 
@@ -64,25 +59,25 @@ Beobachtung, Interpretation, Entscheidung und subjektive Rückmeldung der Zielpe
 
 ## Zustandsmodell
 
-Jede Datei in Gruppennachweis und Hausarbeit trägt einen expliziten Status:
+Jede Datei im Gruppennachweis trägt einen expliziten Status:
 
 ```
 draft → structured → integrated → final
 ```
 
 - **draft**: Erste Skizze, unvollständig
-- **structured**: Struktur steht, Lücken markiert
-- **integrated**: Alle Quellen eingebunden, geprüft
+- **structured**: Pflichtstruktur vollständig, Quellenbezüge vorhanden
+- **integrated**: Alle `[OFFEN]`-Punkte aufgelöst, Mapping geprüft
 - **final**: Freigegeben, keine inhaltlichen Änderungen
 
-Details: `_state.md` in den jeweiligen Verzeichnissen.
+Details: `docs/gruppennachweis/_state.md`.
 
 ## Arbeitsweise mit Agenten
 
 1. **Texte werden geliefert** – Neue Inhalte kommen als Rohmaterial ins Repository
 2. **Agenten ordnen ein** – Inhalte werden gemäß Contract und Transformationsregeln zugeordnet
 3. **Keine freie Umstrukturierung** – Agenten dürfen keine Struktur eigenmächtig ändern
-4. **Statusregeln beachten** – Kein stiller Statuswechsel, keine Vermischung von Reifegrade
+4. **Statusregeln beachten** – Kein stiller Statuswechsel, keine Vermischung von Reifegraden
 5. **Rückverfolgbarkeit** – Keine Aussage ohne Quellenrückverweis
 
 ## Visualisierung

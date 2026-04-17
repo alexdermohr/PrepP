@@ -25,5 +25,5 @@ Förderung von Selbstvertrauen, sozialer Kooperation und Selbstständigkeit durc
 
 ## Offene Punkte
 
-- [OFFEN] Präzisere thematische Eingrenzung für die Hausarbeit
+- [OFFEN] Präzisere thematische Eingrenzung für den Gruppennachweis
 - [OFFEN] Abgrenzung zu anderen Förderbereichen

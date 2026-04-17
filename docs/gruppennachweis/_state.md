@@ -11,7 +11,7 @@
 
 ## Regeln
 
-1. Jede Datei im Gruppennachweis trägt im YAML-Frontmatter oder als erste Zeile ihren aktuellen Status:
+1. Jede Datei im Gruppennachweis trägt als erste Zeile ihren aktuellen Status:
    ```
    <!-- status: draft -->
    ```
@@ -20,14 +20,10 @@
 4. Kein Agent darf den Status stillschweigend ändern.
 5. Vor jedem Statusübergang muss geprüft werden, ob die Anforderungen des Zielstatus erfüllt sind.
 
-## Aktuelle Status-Übersicht
+## Übergangsbedingungen
 
-| Datei | Status | Letzte Änderung |
+| Von | Nach | Bedingung |
 |---|---|---|
-| `kapitel/01_thema.md` | draft | 2026-04-17 |
-| `kapitel/02_kontext.md` | draft | 2026-04-17 |
-| `kapitel/03_menschen.md` | draft | 2026-04-17 |
-| `kapitel/04_zielsetzung.md` | draft | 2026-04-17 |
-| `kapitel/05_reflexion.md` | draft | 2026-04-17 |
-| `kapitel/06_formalia.md` | draft | 2026-04-17 |
-| `_compiled.md` | draft | 2026-04-17 |
+| `draft` | `structured` | Pflichtstruktur des Kapitels vollständig vorhanden, alle Abschnitte haben mindestens einen Quellenverweis |
+| `structured` | `integrated` | Alle `[OFFEN]`-Punkte aufgelöst, Quellenbezüge geprüft, Mapping aktualisiert |
+| `integrated` | `final` | Inhaltliche Freigabe durch Projektleitung |

@@ -2,14 +2,15 @@
 
 ## Zweck
 
-Der Gruppennachweis ist die strukturierte Verdichtung des Rohmaterials.
-Er bündelt Beobachtungen, Hypothesen, Entscheidungen und Reflexionen zu einem kohärenten, bewertbaren Dokument.
+Der Gruppennachweis ist das einzige Zielartefakt des Repos.
+Er verdichtet Rohmaterial (Beobachtungen, Hypothesen, Entscheidungen, Feedback, Reflexion) zu einem kohärenten, bewertbaren Dokument.
 
 ## Verhältnis zu anderen Ebenen
 
-- **Eingang:** Rohmaterial aus `docs/beobachtungen/`, `docs/tagebuch/`, `docs/entscheidungen/`, `docs/feedback/`, `docs/hypothesen.md`, `docs/reflexion.md`, `docs/intervention/`, `models/`
-- **Ausgang:** dient als Grundlage für die Hausarbeit (`docs/hausarbeit/`)
-- **Transformation:** beschrieben in `docs/transformation/beobachtung_to_gruppennachweis.md`
+- **Eingang:** Rohmaterial aus `docs/beobachtungen/`, `docs/tagebuch/`, `docs/entscheidungen/`, `docs/feedback/`, `docs/hypothesen.md`, `docs/reflexion.md`, `docs/intervention/`, `docs/icf-reports/`, `models/`
+- **Transformation:** beschrieben in `docs/transformation/rohmaterial_to_gruppennachweis.md`
+- **Rückverfolgbarkeit:** `mapping/rohmaterial_zu_kapiteln.md`
+- **Stützapparat:** `apparat/literaturverzeichnis.md`
 
 ## Erlaubte Inhalte
 
@@ -18,7 +19,7 @@ Er bündelt Beobachtungen, Hypothesen, Entscheidungen und Reflexionen zu einem k
 - Begründete Entscheidungen mit Verweis auf Quellen
 - Reflexion von Wirkungen und offenen Fragen
 - Verweise auf ICF-Codes und Modelle
-- Offene Lücken, explizit als solche markiert
+- Offene Lücken, explizit als `[OFFEN]` markiert
 
 ## Verbotene Inhalte
 
@@ -38,6 +39,7 @@ Jede Aussage im Gruppennachweis muss auf mindestens eine der folgenden Quellen v
 - `docs/feedback/` (Rückmeldungen der Zielperson)
 - `docs/hypothesen.md` (explizite Annahmen)
 - `docs/reflexion.md` (Wirkungsbewertungen)
+- `docs/icf-reports/` (ICF-Klassifikationen)
 - `models/` (übergreifende Modelle)
 
 ## Qualitätskriterien
@@ -46,3 +48,4 @@ Jede Aussage im Gruppennachweis muss auf mindestens eine der folgenden Quellen v
 - Verdichtung darf zusammenfassen, aber nicht interpretativ überziehen
 - Offene Punkte werden als `[OFFEN]` markiert
 - Jede Datei trägt einen Status gemäß `_state.md`
+- Kapitelstruktur folgt dem Bewertungsbogen (Thema, Kontext, Menschen+ICF, Zielsetzung+päd. Handeln, Reflexion, Formalia+Anhang)

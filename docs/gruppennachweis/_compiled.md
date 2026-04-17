@@ -2,22 +2,24 @@
 
 # Gruppennachweis: Kompilierte Fassung
 
-> Dieses Dokument wird erstellt, wenn alle Kapitel den Status `integrated` erreicht haben.
-> Es ist die zusammengeführte Version aller Einzelkapitel.
-
-## Status: nicht kompiliert
-
-Die Kompilierung erfolgt erst, wenn:
-
-1. Alle Kapitel mindestens den Status `structured` haben
-2. Alle `[OFFEN]`-Markierungen in den Kapiteln aufgelöst sind
-3. Die Quellenbezüge geprüft wurden
+> Dieses Dokument ist die laufende Arbeitsfassung des Gruppennachweises.
+> Es darf auch mit offenen Punkten (`[OFFEN]`) gepflegt werden.
+> Es ist die einzige Zieltextebene des Repos.
 
 ## Kapitelreihenfolge
 
 1. Thema (`kapitel/01_thema.md`)
-2. Kontext (`kapitel/02_kontext.md`)
-3. Menschen (`kapitel/03_menschen.md`)
-4. Zielsetzung (`kapitel/04_zielsetzung.md`)
+2. Kontext und Situation (`kapitel/02_kontext.md`)
+3. Menschen und ICF (`kapitel/03_menschen_und_icf.md`)
+4. Zielsetzung und pädagogisches Handeln (`kapitel/04_zielsetzung_und_paedagogisches_handeln.md`)
 5. Reflexion (`kapitel/05_reflexion.md`)
-6. Formalia (`kapitel/06_formalia.md`)
+6. Formalia und Anhang (`kapitel/06_formalia_und_anhang.md`)
+
+## Stützapparat
+
+- Mapping: `mapping/rohmaterial_zu_kapiteln.md`
+- Literaturverzeichnis: `apparat/literaturverzeichnis.md`
+
+---
+
+*(Kompilierter Text wird hier eingefügt, sobald Kapitel den Status `integrated` erreichen)*

@@ -1,13 +1,13 @@
 <!-- status: draft -->
 
-# Kapitel 6: Formalia
+# Kapitel 6: Formalia und Anhang
 
-## Dokumentationsrahmen
+## 6.1 Dokumentationsrahmen
 
 - Arbeitsregeln: `meta/arbeitsregeln.md`
 - Projektziel: `meta/projektziel.md`
 
-## Einhaltung der Arbeitsregeln
+## 6.2 Einhaltung der Arbeitsregeln
 
 | Regel | Umsetzung | Nachweis |
 |---|---|---|
@@ -20,7 +20,20 @@
 | Feedback als eigene Quelle | Separater Ordner mit 3 Einträgen | `docs/feedback/*.md` |
 | Form der Rückmeldung markiert | [OFFEN] Noch nicht systematisch umgesetzt | — |
 
+## 6.3 Anhang
+
+> Der Bewertungsbogen sieht Protokolle und Notizen im Anhang vor.
+> Hier werden relevante Rohdokumente referenziert, die den Gruppennachweis stützen.
+
+| Anhang | Beschreibung | Quelle |
+|---|---|---|
+| Pause-Protokoll | Deeskalationsintervention | `docs/intervention/pause_protokoll.md` |
+| ICF-Report | Klassifikationsbericht | `docs/icf-reports/` |
+| Tagebucheinträge | Chronologische Projektdokumentation | `docs/tagebuch/*.md` |
+| Beobachtungsraster | Strukturierte Beobachtungen | `docs/beobachtungen/03_pause_und_pfandprojekt_beobachtungsraster.md` |
+
 ## Offene Punkte
 
 - [OFFEN] Systematische Markierung der Feedback-Form (wörtlich, paraphrasiert, etc.)
-- [OFFEN] Formale Anforderungen an den Gruppennachweis (Umfang, Abgabeformat)
+- [OFFEN] Formale Anforderungen an den Gruppennachweis (Umfang, Abgabeformat) klären
+- [OFFEN] Anhangsliste vervollständigen und als nummerierte Anhänge formatieren

@@ -1,4 +1,4 @@
-function renderInlineText(container, text) {
+function renderInlineText(container, text, contextPath = null) {
   if (!text) return;
   // Simple regex to split text into tokens
   const parts = text.split(/(\*\*.*?\*\*|`.*?`|\[.*?\]\(.*?\))/g);
@@ -493,7 +493,7 @@ export function renderEntscheidungen(root, data) {
         const list = values.length > 0 ? values : ["Nicht explizit angegeben"];
         list.forEach((value) => {
           const li = document.createElement("li");
-          renderInlineText(li, value);
+          renderInlineText(li, value, data.hypothesen?.path);
           ul.appendChild(li);
         });
 
@@ -798,7 +798,7 @@ export function renderHypothesen(root, data) {
       const list = values.length > 0 ? values : ["nicht explizit angegeben"];
       list.forEach((value) => {
         const li = document.createElement("li");
-        renderInlineText(li, value);
+        renderInlineText(li, value, data.hypothesen?.path);
         ul.appendChild(li);
       });
       detailSection.appendChild(ul);

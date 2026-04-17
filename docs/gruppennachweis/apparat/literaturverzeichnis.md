@@ -1,6 +1,6 @@
 # Apparat: Literaturverzeichnis
 
-> Dieses Verzeichnis wird im Laufe der Hausarbeit befüllt.
+> Dieses Verzeichnis wird im Laufe des Gruppennachweises befüllt.
 > Jede hier aufgeführte Quelle muss im Text referenziert sein.
 
 ## Fachliteratur

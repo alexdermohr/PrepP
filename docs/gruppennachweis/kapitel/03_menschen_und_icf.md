@@ -46,15 +46,15 @@
   → Quelle: `docs/beobachtungen/01_verhalten_in_situationen.md`, `docs/icf-reports/`
 - d7400 (Formelle Beziehungen): Rückzugsverhalten in formellen Kontexten
   → Quelle: `docs/beobachtungen/01_verhalten_in_situationen.md`, `docs/icf-reports/`
+- d865 (Komplexe wirtschaftliche Transaktionen): Pfandprojekt als Kontext
+  → Quelle: `docs/icf-reports/`
 - [OFFEN] Bewertungen (Leistung / Kapazität) ergänzen
 
 ## 3.7 ICF-CY: Umweltfaktoren
 
 > Pflicht: mind. 2 Beispiele mit ICF-Code und Bewertung
 
-- d865 (Komplexe wirtschaftliche Transaktionen): Pfandprojekt als Kontext
-  → Quelle: `docs/icf-reports/`
-- [OFFEN] Weitere Umweltfaktoren (z. B. Systemarchitektur, Mitschüler Y als Ressource)
+- [OFFEN] Umweltfaktoren mit ICF-Codes (e-Codes) aus ICF-Reports ableiten (z. B. Mitschüler Y als sozialer Umweltfaktor, Systemarchitektur als institutioneller Umweltfaktor)
   → Quelle: `docs/entscheidungen/03_systemarchitektur_und_regulation.md`, `docs/reflexion.md`
 - [OFFEN] Bewertungen ergänzen
 

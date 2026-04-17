@@ -13,7 +13,7 @@
 |---|---|---|
 | Beobachtung und Interpretation getrennt | Getrennte Ordner (`beobachtungen/`, `tagebuch/` vs. `hypothesen.md`, `reflexion.md`) | Verzeichnisstruktur |
 | Hypothesen explizit formuliert | 11 Hypothesen mit Status, Prüfweg, Alternativerklärung | `docs/hypothesen.md` |
-| Entscheidungen begründet | 6 dokumentierte Entscheidungen mit Begründung und Prüfhinweis | `docs/entscheidungen/*.md` |
+| Entscheidungen begründet | 5 dokumentierte Entscheidungen mit Begründung und Prüfhinweis | `docs/entscheidungen/*.md` |
 | Reflexion prüft Wirkung, nicht Absicht | Reflexionspunkte fokussieren auf beobachtete Effekte | `docs/reflexion.md` |
 | Dokumentation kurz und regelmäßig | 7+ Tageseinträge | `docs/tagebuch/*.md` |
 | Keine identifizierenden Angaben | Zielperson als X, Mitschüler als Y | Alle Dateien |

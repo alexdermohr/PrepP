@@ -47,5 +47,5 @@ Jede Aussage im Gruppennachweis muss auf mindestens eine der folgenden Quellen v
 - Keine Aussage ohne Rückverweis auf Rohmaterial
 - Verdichtung darf zusammenfassen, aber nicht interpretativ überziehen
 - Offene Punkte werden als `[OFFEN]` markiert
-- Jede Datei trägt einen Status gemäß `_state.md`
+- Jede Kapitel-Datei (`kapitel/*.md`) und `_compiled.md` trägt einen Status gemäß `_state.md`
 - Kapitelstruktur folgt dem Bewertungsbogen (Thema, Kontext, Menschen+ICF, Zielsetzung+päd. Handeln, Reflexion, Formalia+Anhang)

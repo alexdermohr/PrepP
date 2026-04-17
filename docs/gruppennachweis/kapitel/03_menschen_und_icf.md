@@ -66,8 +66,8 @@
 ## 3.8 Weitere Beteiligte
 
 - **Y** – Mitschüler, vermittelnde Rolle → Quelle: `docs/tagebuch/01_tag_1.md`, `docs/reflexion.md`
-- **Projektleitung** – T. & A.
-- **Weitere Akteure** – Hausmeister, stellvertretender Schulleiter K, Mitschülerinnen
+- [OFFEN] **Projektleitung** – T. & A. → Quelle nachtragen (z. B. `docs/projektplan.md`, `docs/tagebuch/*.md`)
+- [OFFEN] **Weitere Akteure** – Hausmeister, stellvertretender Schulleiter K, Mitschülerinnen → Quelle nachtragen (z. B. `docs/beobachtungen/*.md`, `docs/tagebuch/*.md`)
 
 ## Offene Punkte
 

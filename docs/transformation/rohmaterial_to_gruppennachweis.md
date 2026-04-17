@@ -15,7 +15,7 @@ Dieses Dokument beschreibt, wie Rohmaterial (Beobachtungen, Tagebuch, Hypothesen
 
 | Quelle | Ziel im Gruppennachweis | Transformation |
 |---|---|---|
-| `docs/tagebuch/*.md` | `kapitel/02_kontext.md`, `kapitel/05_reflexion.md` | Chronologische Einträge werden zu thematischen Blöcken verdichtet |
+| `docs/tagebuch/*.md` | `../gruppennachweis/kapitel/02_kontext.md`, `../gruppennachweis/kapitel/05_reflexion.md` | Chronologische Einträge werden zu thematischen Blöcken verdichtet |
 | Einzelereignisse | Kontextbeschreibung | Muster und Wiederholungen herausarbeiten |
 | Wörtliche Beschreibungen | Zusammenfassungen | Kürzen, ohne Bedeutung zu verändern |
 
@@ -23,41 +23,41 @@ Dieses Dokument beschreibt, wie Rohmaterial (Beobachtungen, Tagebuch, Hypothesen
 
 | Quelle | Ziel im Gruppennachweis | Transformation |
 |---|---|---|
-| `docs/beobachtungen/*.md` | `kapitel/01_thema.md`, `kapitel/03_menschen_und_icf.md` | Situative Beobachtungen werden zu Verhaltensmustern zusammengefasst |
+| `docs/beobachtungen/*.md` | `../gruppennachweis/kapitel/01_thema.md`, `../gruppennachweis/kapitel/03_menschen_und_icf.md` | Situative Beobachtungen werden zu Verhaltensmustern zusammengefasst |
 | Einzelbeobachtungen | Kategorisierte Muster | Gruppierung nach Situationstyp |
 
 ### 3. Hypothesen → Gruppennachweis
 
 | Quelle | Ziel im Gruppennachweis | Transformation |
 |---|---|---|
-| `docs/hypothesen.md` | `kapitel/04_zielsetzung_und_paedagogisches_handeln.md`, `kapitel/05_reflexion.md` | Hypothesen werden mit ihrem aktuellen Status und Prüfweg dargestellt |
+| `docs/hypothesen.md` | `../gruppennachweis/kapitel/04_zielsetzung_und_paedagogisches_handeln.md`, `../gruppennachweis/kapitel/05_reflexion.md` | Hypothesen werden mit ihrem aktuellen Status und Prüfweg dargestellt |
 | Einzelhypothesen | Hypothesenübersicht | Statusbewertung hinzufügen |
 
 ### 4. Entscheidungen → Gruppennachweis
 
 | Quelle | Ziel im Gruppennachweis | Transformation |
 |---|---|---|
-| `docs/entscheidungen/*.md` | `kapitel/04_zielsetzung_und_paedagogisches_handeln.md`, `kapitel/05_reflexion.md` | Entscheidungen werden mit Begründung und beobachteter Wirkung dargestellt |
+| `docs/entscheidungen/*.md` | `../gruppennachweis/kapitel/04_zielsetzung_und_paedagogisches_handeln.md`, `../gruppennachweis/kapitel/05_reflexion.md` | Entscheidungen werden mit Begründung und beobachteter Wirkung dargestellt |
 | Einzelentscheidungen | Maßnahmenübersicht | Wirkungszusammenhänge herstellen |
 
 ### 5. Feedback → Gruppennachweis
 
 | Quelle | Ziel im Gruppennachweis | Transformation |
 |---|---|---|
-| `docs/feedback/*.md` | `kapitel/03_menschen_und_icf.md`, `kapitel/05_reflexion.md` | Rückmeldungen der Zielperson werden als eigene Perspektive dokumentiert |
+| `docs/feedback/*.md` | `../gruppennachweis/kapitel/03_menschen_und_icf.md`, `../gruppennachweis/kapitel/05_reflexion.md` | Rückmeldungen der Zielperson werden als eigene Perspektive dokumentiert |
 | Einzelfeedback | Perspektivenübersicht | Subjektive Qualität und Form (wörtlich/paraphrasiert) markieren |
 
 ### 6. ICF-Reports → Gruppennachweis
 
 | Quelle | Ziel im Gruppennachweis | Transformation |
 |---|---|---|
-| `docs/icf-reports/*.html` | `kapitel/03_menschen_und_icf.md` | ICF-Codes und Bewertungen extrahieren; mind. 2 Beispiele je Dimension |
+| `docs/icf-reports/*.html` | `../gruppennachweis/kapitel/03_menschen_und_icf.md` | ICF-Codes und Bewertungen extrahieren; mind. 2 Beispiele je Dimension |
 
 ### 7. Modelle → Gruppennachweis
 
 | Quelle | Ziel im Gruppennachweis | Transformation |
 |---|---|---|
-| `models/*.md` | `kapitel/04_zielsetzung_und_paedagogisches_handeln.md` | Modelle werden als Rahmen referenziert |
+| `models/*.md` | `../gruppennachweis/kapitel/04_zielsetzung_und_paedagogisches_handeln.md` | Modelle werden als Rahmen referenziert |
 
 ## Qualitätsprüfung
 
@@ -67,4 +67,4 @@ Vor Abschluss der Transformation muss geprüft werden:
 - [ ] Keine eigenständige Interpretation wurde hinzugefügt
 - [ ] Offene Lücken sind als `[OFFEN]` markiert
 - [ ] Status in den Kapiteln ist aktualisiert
-- [ ] Mapping (`mapping/rohmaterial_zu_kapiteln.md`) ist aktuell
+- [ ] Mapping (`../gruppennachweis/mapping/rohmaterial_zu_kapiteln.md`) ist aktuell

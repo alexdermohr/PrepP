@@ -11,10 +11,11 @@
 
 ## Regeln
 
-1. Jede Datei im Gruppennachweis trägt als erste Zeile ihren aktuellen Status:
+1. Jede **Kapitel-Datei** (`kapitel/*.md`) und `_compiled.md` trägt als erste Zeile ihren aktuellen Status:
    ```
    <!-- status: draft -->
    ```
+   Strukturdateien (`_state.md`, `_contract.md`) sowie Stützapparat-Dateien (`mapping/`, `apparat/`) sind von dieser Regel ausgenommen.
 2. Statusübergänge sind nur in der Reihenfolge `draft → structured → integrated → final` erlaubt.
 3. Ein Rücksprung (z. B. `integrated → draft`) ist nur mit expliziter Begründung erlaubt und muss dokumentiert werden.
 4. Kein Agent darf den Status stillschweigend ändern.

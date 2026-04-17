@@ -1,78 +1,95 @@
-
-
 function renderInlineText(container, text) {
   if (!text) return;
   // Simple regex to split text into tokens
   const parts = text.split(/(\*\*.*?\*\*|`.*?`|\[.*?\]\(.*?\))/g);
 
-  parts.forEach(part => {
-    if (part.startsWith('**') && part.endsWith('**')) {
-      const strong = document.createElement('strong');
+  parts.forEach((part) => {
+    if (part.startsWith("**") && part.endsWith("**")) {
+      const strong = document.createElement("strong");
       strong.textContent = part.slice(2, -2);
       container.appendChild(strong);
-    } else if (part.startsWith('`') && part.endsWith('`')) {
-      const code = document.createElement('code');
+    } else if (part.startsWith("`") && part.endsWith("`")) {
+      const code = document.createElement("code");
       code.textContent = part.slice(1, -1);
       container.appendChild(code);
-    } else if (part.startsWith('[') && part.includes('](') && part.endsWith(')')) {
+    } else if (
+      part.startsWith("[") &&
+      part.includes("](") &&
+      part.endsWith(")")
+    ) {
       const match = part.match(/\[(.*?)\]\((.*?)\)/);
       if (match) {
         let url = match[2];
 
-        if (url.endsWith('.md')) {
-           const a = document.createElement('a');
-           a.textContent = match[1];
-           // Map internal .md files to meaningful app views
-           a.title = url;
-           if (url.includes('/beobachtungen/')) {
-               a.href = '#beobachtungen';
-           } else if (url.includes('/feedback/')) {
-               a.href = '#feedback';
-           } else if (url.includes('/tagebuch/')) {
-               a.href = '#tagebuch';
-           } else if (url.includes('/entscheidungen/')) {
-               a.href = '#entscheidungen';
-           } else if (url.includes('/hypothesen.md')) {
-               a.href = '#hypothesen';
-           } else if (url.includes('/projektplan.md')) {
-               a.href = '#projektplan';
-           } else if (url.includes('/reflexion.md')) {
-               a.href = '#reflexion';
-           } else if (url.includes('/meta/')) {
-               a.href = '#meta';
-           } else if (url.includes('/models/')) {
-               a.href = '#modelle';
-           } else if (url.includes('/intervention/')) {
-               a.href = '#intervention';
-           } else {
-               a.href = '#start';
-           }
-           container.appendChild(a);
+        if (url.endsWith(".md")) {
+          const a = document.createElement("a");
+          a.textContent = match[1];
+          // Map internal .md files to meaningful app views
+          a.title = url;
+          if (url.includes("/beobachtungen/")) {
+            a.href = "#beobachtungen";
+          } else if (url.includes("/feedback/")) {
+            a.href = "#feedback";
+          } else if (url.includes("/tagebuch/")) {
+            a.href = "#tagebuch";
+          } else if (url.includes("/entscheidungen/")) {
+            a.href = "#entscheidungen";
+          } else if (url.includes("/hypothesen.md")) {
+            a.href = "#hypothesen";
+          } else if (url.includes("/projektplan.md")) {
+            a.href = "#projektplan";
+          } else if (url.includes("/reflexion.md")) {
+            a.href = "#reflexion";
+          } else if (url.includes("/meta/")) {
+            a.href = "#meta";
+          } else if (url.includes("/models/")) {
+            a.href = "#modelle";
+          } else if (url.includes("/intervention/")) {
+            a.href = "#intervention";
+          } else if (url.includes("/gruppennachweis/kapitel/")) {
+            a.href = "#gruppennachweis-kapitel";
+          } else if (url.includes("/gruppennachweis/_compiled.md")) {
+            a.href = "#gruppennachweis";
+          } else if (
+            url.includes("/gruppennachweis/_contract.md") ||
+            url.includes("/gruppennachweis/_state.md") ||
+            url.includes("/gruppennachweis/mapping/") ||
+            url.includes("/gruppennachweis/apparat/")
+          ) {
+            a.href = "#gruppennachweis-meta";
+          } else {
+            a.href = "#start";
+          }
+          container.appendChild(a);
         } else {
-           // Whitelist allowed external protocols
-           let isAllowed = false;
-           try {
-               const parsedUrl = new URL(url);
-               if (['http:', 'https:', 'mailto:', 'tel:'].includes(parsedUrl.protocol)) {
-                   isAllowed = true;
-               }
-           } catch (e) {
-               // Invalid URL, ignore as link
-           }
+          // Whitelist allowed external protocols
+          let isAllowed = false;
+          try {
+            const parsedUrl = new URL(url);
+            if (
+              ["http:", "https:", "mailto:", "tel:"].includes(
+                parsedUrl.protocol,
+              )
+            ) {
+              isAllowed = true;
+            }
+          } catch (e) {
+            // Invalid URL, ignore as link
+          }
 
-           if (isAllowed) {
-               const a = document.createElement('a');
-               a.textContent = match[1];
-               a.href = url;
-               if (url.startsWith('http')) {
-                   a.target = '_blank';
-                   a.rel = 'noopener noreferrer';
-               }
-               container.appendChild(a);
-           } else {
-               // Render as plain text for unsafe/unsupported URLs
-               container.appendChild(document.createTextNode(match[1]));
-           }
+          if (isAllowed) {
+            const a = document.createElement("a");
+            a.textContent = match[1];
+            a.href = url;
+            if (url.startsWith("http")) {
+              a.target = "_blank";
+              a.rel = "noopener noreferrer";
+            }
+            container.appendChild(a);
+          } else {
+            // Render as plain text for unsafe/unsupported URLs
+            container.appendChild(document.createTextNode(match[1]));
+          }
         }
       }
     } else if (part) {
@@ -82,34 +99,34 @@ function renderInlineText(container, text) {
 }
 
 function renderEmptyState(root, text) {
-  const p = document.createElement('p');
+  const p = document.createElement("p");
   p.textContent = text;
   root.appendChild(p);
 }
 
 function sanitizeImageUrl(url) {
   if (!url) return null;
-  if (url.startsWith('/images/')) return url;
+  if (url.startsWith("/images/")) return url;
   try {
     const parsed = new URL(url);
-    if (parsed.protocol === 'http:' || parsed.protocol === 'https:') {
+    if (parsed.protocol === "http:" || parsed.protocol === "https:") {
       return url;
     }
-  } catch(e) {}
+  } catch (e) {}
   return null;
 }
 
 function extractFirstSnippet(sections) {
-  let fallbackText = '';
+  let fallbackText = "";
 
   for (const s of sections) {
     const blocks = s.blocks ?? [];
 
     for (const b of blocks) {
-      if (b.type === 'text') {
+      if (b.type === "text") {
         if (!fallbackText) fallbackText = b.text;
         if (b.text.length > 20) return b.text;
-      } else if (b.type === 'list' && b.items && b.items.length > 0) {
+      } else if (b.type === "list" && b.items && b.items.length > 0) {
         if (!fallbackText) fallbackText = b.items[0];
         for (const item of b.items) {
           if (item.length > 20) return item;
@@ -122,15 +139,15 @@ function extractFirstSnippet(sections) {
 }
 
 function createSummarySection(title, contentSnippet) {
-  const section = document.createElement('section');
-  section.className = 'section-block';
+  const section = document.createElement("section");
+  section.className = "section-block";
 
-  const heading = document.createElement('h4');
+  const heading = document.createElement("h4");
   heading.textContent = title;
   section.appendChild(heading);
 
   if (contentSnippet) {
-    const p = document.createElement('p');
+    const p = document.createElement("p");
     renderInlineText(p, contentSnippet);
     section.appendChild(p);
   }
@@ -139,14 +156,14 @@ function createSummarySection(title, contentSnippet) {
 
 const blockRenderers = {
   text: (b, container) => {
-    const p = document.createElement('p');
+    const p = document.createElement("p");
     renderInlineText(p, b.text);
     container.appendChild(p);
   },
   list: (b, container) => {
-    const listEl = document.createElement(b.ordered ? 'ol' : 'ul');
-    b.items.forEach(item => {
-      const li = document.createElement('li');
+    const listEl = document.createElement(b.ordered ? "ol" : "ul");
+    b.items.forEach((item) => {
+      const li = document.createElement("li");
       renderInlineText(li, item);
       listEl.appendChild(li);
     });
@@ -155,44 +172,44 @@ const blockRenderers = {
   image: (b, container) => {
     const safeUrl = sanitizeImageUrl(b.url);
     if (!safeUrl) {
-       const fallback = document.createElement('p');
-       fallback.className = 'meta';
-       fallback.textContent = '[Bild konnte nicht geladen werden]';
-       container.appendChild(fallback);
-       return;
+      const fallback = document.createElement("p");
+      fallback.className = "meta";
+      fallback.textContent = "[Bild konnte nicht geladen werden]";
+      container.appendChild(fallback);
+      return;
     }
-    const img = document.createElement('img');
+    const img = document.createElement("img");
     img.src = safeUrl;
-    img.alt = b.alt || 'Projektbild';
-    img.className = 'content-image';
-    img.loading = 'lazy';
+    img.alt = b.alt || "Projektbild";
+    img.className = "content-image";
+    img.loading = "lazy";
     container.appendChild(img);
   },
   code: (b, container) => {
-    const pre = document.createElement('pre');
-    const code = document.createElement('code');
+    const pre = document.createElement("pre");
+    const code = document.createElement("code");
     code.textContent = b.text;
     pre.appendChild(code);
     container.appendChild(pre);
-  }
+  },
 };
 
 function renderBlock(block, container) {
   if (blockRenderers[block.type]) {
     blockRenderers[block.type](block, container);
   } else {
-    const p = document.createElement('p');
-    p.className = 'unknown-block-type';
-    p.textContent = '[Unbekannter Blocktyp]';
+    const p = document.createElement("p");
+    p.className = "unknown-block-type";
+    p.textContent = "[Unbekannter Blocktyp]";
     container.appendChild(p);
   }
 }
 
 function createSectionBlock(section) {
-  const sectionEl = document.createElement('section');
-  sectionEl.className = 'section-block';
+  const sectionEl = document.createElement("section");
+  sectionEl.className = "section-block";
 
-  const heading = document.createElement('h4');
+  const heading = document.createElement("h4");
   heading.textContent = section.heading;
   sectionEl.appendChild(heading);
 
@@ -204,23 +221,26 @@ function createSectionBlock(section) {
 }
 
 function createFileCard(entry) {
-  const card = document.createElement('article');
-  card.className = 'card';
+  const card = document.createElement("article");
+  card.className = "card";
 
-  const title = document.createElement('h3');
+  const title = document.createElement("h3");
   title.textContent = entry.title;
   card.appendChild(title);
 
-  const meta = document.createElement('p');
-  meta.className = 'meta';
+  const meta = document.createElement("p");
+  meta.className = "meta";
   meta.textContent = entry.path;
   card.appendChild(meta);
 
   entry.sections.forEach((section, index) => {
     if (index === 0 && section.heading === entry.title) {
       if (section.blocks && section.blocks.length > 0) {
-        const bulletOnly = createSectionBlock({ heading: '', blocks: section.blocks });
-        const heading = bulletOnly.querySelector('h4');
+        const bulletOnly = createSectionBlock({
+          heading: "",
+          blocks: section.blocks,
+        });
+        const heading = bulletOnly.querySelector("h4");
         if (heading) heading.remove();
         card.appendChild(bulletOnly);
       }
@@ -235,26 +255,26 @@ function createFileCard(entry) {
 
 function createHtmlFileCard(report) {
   const entry = report.html;
-  const card = document.createElement('article');
-  card.className = 'card icf-report-card';
+  const card = document.createElement("article");
+  card.className = "card icf-report-card";
 
-  const title = document.createElement('h3');
+  const title = document.createElement("h3");
   title.textContent = report.title;
   card.appendChild(title);
 
-  const meta = document.createElement('p');
-  meta.className = 'meta icf-report-meta';
+  const meta = document.createElement("p");
+  meta.className = "meta icf-report-meta";
   meta.textContent = entry.path;
   card.appendChild(meta);
 
-  const iframe = document.createElement('iframe');
-  iframe.className = 'icf-report-frame';
+  const iframe = document.createElement("iframe");
+  iframe.className = "icf-report-frame";
 
   // Use srcdoc with raw content
-  iframe.setAttribute('sandbox', '');
+  iframe.setAttribute("sandbox", "");
   iframe.srcdoc = entry.content;
 
-  iframe.loading = 'lazy';
+  iframe.loading = "lazy";
   iframe.title = `ICF Report: ${report.title}`;
   card.appendChild(iframe);
 
@@ -262,43 +282,43 @@ function createHtmlFileCard(report) {
 }
 
 export function renderStart(root, data) {
-  const article = document.createElement('article');
-  article.className = 'start-page card dashboard-hero';
+  const article = document.createElement("article");
+  article.className = "start-page card dashboard-hero";
 
-  const intro = document.createElement('p');
-  intro.textContent = 'Willkommen zur Projekt-Dokumentation. Diese Oberfläche dient der strukturierten Einsicht in den Entwicklungsprozess, um Beobachtungen, Hypothesen und Entscheidungen nachvollziehbar zu machen.';
+  const intro = document.createElement("p");
+  intro.textContent =
+    "Willkommen zur Projekt-Dokumentation. Diese Oberfläche dient der strukturierten Einsicht in den Entwicklungsprozess, um Beobachtungen, Hypothesen und Entscheidungen nachvollziehbar zu machen.";
   article.appendChild(intro);
 
   if (data.projektplan) {
-    const focusSection = document.createElement('section');
-    focusSection.className = 'section-block project-context-block';
+    const focusSection = document.createElement("section");
+    focusSection.className = "section-block project-context-block";
 
-    const h4 = document.createElement('h4');
-    h4.textContent = 'Worum geht es in diesem Projekt?';
+    const h4 = document.createElement("h4");
+    h4.textContent = "Worum geht es in diesem Projekt?";
     focusSection.appendChild(h4);
 
-    let firstText = 'Ein Projektplan ist hinterlegt.';
+    let firstText = "Ein Projektplan ist hinterlegt.";
     for (const section of data.projektplan.sections) {
       const blocks = section.blocks ?? [];
-      const tb = blocks.find(b => b.type === 'text' && b.text.length > 20);
+      const tb = blocks.find((b) => b.type === "text" && b.text.length > 20);
       if (tb) {
         firstText = tb.text;
         break;
       }
     }
 
-    const p = document.createElement('p');
+    const p = document.createElement("p");
     p.textContent = firstText;
     focusSection.appendChild(p);
     article.appendChild(focusSection);
   }
 
-
   // Find first image of the most recent diary entry containing an image
   const getLatestDiaryImage = () => {
     for (const entry of data.tagebuch) {
       for (const section of entry.sections) {
-        const imgBlock = section.blocks?.find(b => b.type === 'image');
+        const imgBlock = section.blocks?.find((b) => b.type === "image");
         if (imgBlock) return imgBlock;
       }
     }
@@ -309,46 +329,91 @@ export function renderStart(root, data) {
   const safeHeroUrl = latestImage ? sanitizeImageUrl(latestImage.url) : null;
 
   if (safeHeroUrl) {
-    const resultSection = document.createElement('section');
-    resultSection.className = 'section-block project-context-block';
+    const resultSection = document.createElement("section");
+    resultSection.className = "section-block project-context-block";
 
-    const h4 = document.createElement('h4');
-    h4.textContent = 'Aktuelles Ergebnis';
+    const h4 = document.createElement("h4");
+    h4.textContent = "Aktuelles Ergebnis";
     resultSection.appendChild(h4);
 
-    const img = document.createElement('img');
+    const img = document.createElement("img");
     img.src = safeHeroUrl;
-    img.alt = latestImage.alt || 'Projektbild';
-    img.className = 'content-image hero-image';
+    img.alt = latestImage.alt || "Projektbild";
+    img.className = "content-image hero-image";
     // Loading lazy is omitted here to keep hero image fast
     resultSection.appendChild(img);
 
     article.appendChild(resultSection);
   }
 
-  const cardsContainer = document.createElement('div');
-  cardsContainer.className = 'status-cards';
+  const cardsContainer = document.createElement("div");
+  cardsContainer.className = "status-cards";
 
   const areas = [
-    { label: 'Projektplan', status: data.projektplan ? 'Vorhanden' : 'Fehlt', type: data.projektplan ? 'complete' : 'empty' },
-    { label: 'Tagebuch-Einträge', status: data.tagebuch.length, type: data.tagebuch.length > 0 ? 'complete' : 'empty' },
-    { label: 'Beobachtungen', status: data.beobachtungen.length, type: data.beobachtungen.length > 0 ? 'complete' : 'empty' },
-    { label: 'Hypothesen', status: (data.hypothesen?.hypothesisBlocks || []).length > 0 ? `${data.hypothesen.hypothesisBlocks.length} strukturiert` : '0', type: (data.hypothesen?.hypothesisBlocks || []).length > 0 ? 'partial' : 'empty' },
-    { label: 'Entscheidungen', status: data.entscheidungen.length, type: data.entscheidungen.length > 0 ? 'complete' : 'empty' },
-    { label: 'Feedback', status: data.feedback ? data.feedback.length : 0, type: data.feedback && data.feedback.length > 0 ? 'complete' : 'empty' },
-    { label: 'ICF-Reports', status: data.icfReports.length > 0 ? 'Vorhanden' : 'Fehlt', type: data.icfReports.length > 0 ? 'complete' : 'empty' }
+    {
+      label: "Projektplan",
+      status: data.projektplan ? "Vorhanden" : "Fehlt",
+      type: data.projektplan ? "complete" : "empty",
+    },
+    {
+      label: "Tagebuch-Einträge",
+      status: data.tagebuch.length,
+      type: data.tagebuch.length > 0 ? "complete" : "empty",
+    },
+    {
+      label: "Beobachtungen",
+      status: data.beobachtungen.length,
+      type: data.beobachtungen.length > 0 ? "complete" : "empty",
+    },
+    {
+      label: "Hypothesen",
+      status:
+        (data.hypothesen?.hypothesisBlocks || []).length > 0
+          ? `${data.hypothesen.hypothesisBlocks.length} strukturiert`
+          : "0",
+      type:
+        (data.hypothesen?.hypothesisBlocks || []).length > 0
+          ? "partial"
+          : "empty",
+    },
+    {
+      label: "Entscheidungen",
+      status: data.entscheidungen.length,
+      type: data.entscheidungen.length > 0 ? "complete" : "empty",
+    },
+    {
+      label: "Feedback",
+      status: data.feedback ? data.feedback.length : 0,
+      type: data.feedback && data.feedback.length > 0 ? "complete" : "empty",
+    },
+    {
+      label: "ICF-Reports",
+      status: data.icfReports.length > 0 ? "Vorhanden" : "Fehlt",
+      type: data.icfReports.length > 0 ? "complete" : "empty",
+    },
+    {
+      label: "Gruppennachweis",
+      status:
+        data.gruppennachweis && data.gruppennachweis.compiled
+          ? "Vorhanden"
+          : "Fehlt",
+      type:
+        data.gruppennachweis && data.gruppennachweis.compiled
+          ? "complete"
+          : "empty",
+    },
   ];
 
-  areas.forEach(area => {
-    const card = document.createElement('div');
+  areas.forEach((area) => {
+    const card = document.createElement("div");
     card.className = `status-card status--${area.type}`;
 
-    const label = document.createElement('div');
-    label.className = 'status-label';
+    const label = document.createElement("div");
+    label.className = "status-label";
     label.textContent = area.label;
 
-    const value = document.createElement('div');
-    value.className = 'status-value';
+    const value = document.createElement("div");
+    value.className = "status-value";
     value.textContent = area.status;
 
     card.appendChild(label);
@@ -365,58 +430,69 @@ export function renderTagebuch(root, data) {
 }
 
 export function renderBeobachtungen(root, data) {
-  data.beobachtungen.forEach((entry) => root.appendChild(createFileCard(entry)));
+  data.beobachtungen.forEach((entry) =>
+    root.appendChild(createFileCard(entry)),
+  );
 }
 
 export function renderEntscheidungen(root, data) {
   data.entscheidungen.forEach((entry) => {
-    const card = document.createElement('article');
-    card.className = 'card decision-card';
+    const card = document.createElement("article");
+    card.className = "card decision-card";
 
-    const title = document.createElement('h3');
+    const title = document.createElement("h3");
     title.textContent = entry.title;
     card.appendChild(title);
 
     const blocks = entry.decisionBlocks ?? [];
 
-    const hideDefaultHeading = blocks.length === 1 && blocks[0].heading === 'Entscheidung' && blocks[0].implicit;
+    const hideDefaultHeading =
+      blocks.length === 1 &&
+      blocks[0].heading === "Entscheidung" &&
+      blocks[0].implicit;
 
     blocks.forEach((decisionBlock) => {
-      const blockCard = document.createElement('section');
-      blockCard.className = 'decision-block';
+      const blockCard = document.createElement("section");
+      blockCard.className = "decision-block";
 
       if (!hideDefaultHeading) {
-        const subtitle = document.createElement('h4');
+        const subtitle = document.createElement("h4");
         subtitle.textContent = decisionBlock.heading;
         blockCard.appendChild(subtitle);
       }
 
-      const detailsContainer = document.createElement('div');
-      detailsContainer.className = 'decision-details-grid';
+      const detailsContainer = document.createElement("div");
+      detailsContainer.className = "decision-details-grid";
 
       const detailsEntries = [
-        ['Maßnahme', decisionBlock.massnahme],
-        ['Begründung', decisionBlock.begruendung],
-        ['Ziel', decisionBlock.ziel],
-        ['Prüfhinweis / Messkriterien', decisionBlock.pruefhinweis]
+        ["Maßnahme", decisionBlock.massnahme],
+        ["Begründung", decisionBlock.begruendung],
+        ["Ziel", decisionBlock.ziel],
+        ["Prüfhinweis / Messkriterien", decisionBlock.pruefhinweis],
       ];
 
-      if (decisionBlock.bezugZurHypothese && decisionBlock.bezugZurHypothese.length > 0) {
-        detailsEntries.push(['Bezug zur Hypothese', decisionBlock.bezugZurHypothese]);
+      if (
+        decisionBlock.bezugZurHypothese &&
+        decisionBlock.bezugZurHypothese.length > 0
+      ) {
+        detailsEntries.push([
+          "Bezug zur Hypothese",
+          decisionBlock.bezugZurHypothese,
+        ]);
       }
 
       detailsEntries.forEach(([label, values]) => {
-        const detailSection = document.createElement('section');
-        detailSection.className = 'section-block detail-box';
+        const detailSection = document.createElement("section");
+        detailSection.className = "section-block detail-box";
 
-        const h5 = document.createElement('h5');
+        const h5 = document.createElement("h5");
         h5.textContent = label;
         detailSection.appendChild(h5);
 
-        const ul = document.createElement('ul');
-        const list = values.length > 0 ? values : ['Nicht explizit angegeben'];
+        const ul = document.createElement("ul");
+        const list = values.length > 0 ? values : ["Nicht explizit angegeben"];
         list.forEach((value) => {
-          const li = document.createElement('li');
+          const li = document.createElement("li");
           renderInlineText(li, value);
           ul.appendChild(li);
         });
@@ -435,8 +511,8 @@ export function renderEntscheidungen(root, data) {
 
 export function renderSimpleDoc(root, doc) {
   if (!doc) {
-    const p = document.createElement('p');
-    p.textContent = 'Keine Daten gefunden.';
+    const p = document.createElement("p");
+    p.textContent = "Keine Daten gefunden.";
     root.appendChild(p);
     return;
   }
@@ -449,30 +525,31 @@ export function renderProjektplan(root, data) {
 }
 
 export function renderICFReports(root, data) {
-  if (!data.icfReports.length) return renderEmptyState(root, 'Keine ICF-Reports vorhanden.');
+  if (!data.icfReports.length)
+    return renderEmptyState(root, "Keine ICF-Reports vorhanden.");
 
-  data.icfReports.forEach(report => {
-    const group = document.createElement('section');
-    group.className = 'icf-report-group';
+  data.icfReports.forEach((report) => {
+    const group = document.createElement("section");
+    group.className = "icf-report-group";
 
-    const explainer = document.createElement('div');
-    explainer.className = 'icf-explainer';
-    explainer.textContent = 'Formale ICF-Dokumentation';
+    const explainer = document.createElement("div");
+    explainer.className = "icf-explainer";
+    explainer.textContent = "Formale ICF-Dokumentation";
     group.appendChild(explainer);
 
     if (report.md) {
-      const label = document.createElement('div');
-      label.className = 'icf-format-label';
-      label.textContent = 'Markdown (Arbeitsversion)';
+      const label = document.createElement("div");
+      label.className = "icf-format-label";
+      label.textContent = "Markdown (Arbeitsversion)";
       group.appendChild(label);
       group.appendChild(createFileCard(report.md));
     }
     if (report.html) {
-      const details = document.createElement('details');
-      details.className = 'icf-html-details';
+      const details = document.createElement("details");
+      details.className = "icf-html-details";
       details.open = true;
-      const summary = document.createElement('summary');
-      summary.textContent = 'Formale ICF-Ansicht (HTML) ein-/ausblenden';
+      const summary = document.createElement("summary");
+      summary.textContent = "Formale ICF-Ansicht (HTML) ein-/ausblenden";
       details.appendChild(summary);
 
       details.appendChild(createHtmlFileCard(report));
@@ -484,201 +561,243 @@ export function renderICFReports(root, data) {
 }
 
 export function renderMeta(root, data) {
-  if (!data.meta.length) return renderEmptyState(root, 'Keine Meta-Daten vorhanden.');
-  data.meta.forEach(entry => root.appendChild(createFileCard(entry)));
+  if (!data.meta.length)
+    return renderEmptyState(root, "Keine Meta-Daten vorhanden.");
+  data.meta.forEach((entry) => root.appendChild(createFileCard(entry)));
 }
 
 export function renderModels(root, data) {
-  if (!data.models.length) return renderEmptyState(root, 'Keine Modelle vorhanden.');
-  data.models.forEach(entry => root.appendChild(createFileCard(entry)));
+  if (!data.models.length)
+    return renderEmptyState(root, "Keine Modelle vorhanden.");
+  data.models.forEach((entry) => root.appendChild(createFileCard(entry)));
 }
 
 export function renderAktuellerStand(root, data) {
-  const container = document.createElement('div');
-  container.className = 'dashboard-grid';
+  const container = document.createElement("div");
+  container.className = "dashboard-grid";
 
   // [ HERO / HEAD ]
-  const hero = document.createElement('article');
-  hero.className = 'dashboard-hero';
+  const hero = document.createElement("article");
+  hero.className = "dashboard-hero";
 
-  const introTitle = document.createElement('h2');
-  introTitle.textContent = 'Aktueller Projektstand';
+  const introTitle = document.createElement("h2");
+  introTitle.textContent = "Aktueller Projektstand";
   hero.appendChild(introTitle);
 
-  let heroText = 'Kompakter Überblick über den aktuellen Projektstand, extrahiert aus den jüngsten Dokumentationen.';
+  let heroText =
+    "Kompakter Überblick über den aktuellen Projektstand, extrahiert aus den jüngsten Dokumentationen.";
   if (data.projektplan) {
-      const snippet = extractFirstSnippet(data.projektplan.sections);
-      if (snippet) heroText = snippet;
+    const snippet = extractFirstSnippet(data.projektplan.sections);
+    if (snippet) heroText = snippet;
   }
-  const introP = document.createElement('p');
+  const introP = document.createElement("p");
   introP.textContent = heroText;
   hero.appendChild(introP);
   container.appendChild(hero);
 
   // [ PRIMARY BLOCKS - max 3 ]
-  const primaryGrid = document.createElement('div');
-  primaryGrid.className = 'primary-blocks';
+  const primaryGrid = document.createElement("div");
+  primaryGrid.className = "primary-blocks";
 
   // 1. Zuletzt passiert
   if (data.tagebuch && data.tagebuch.length > 0) {
     const latest = data.tagebuch[0];
-    const card = document.createElement('div');
-    card.className = 'card';
-    card.appendChild(createSummarySection('Zuletzt passiert', extractFirstSnippet(latest.sections) || latest.title));
+    const card = document.createElement("div");
+    card.className = "card";
+    card.appendChild(
+      createSummarySection(
+        "Zuletzt passiert",
+        extractFirstSnippet(latest.sections) || latest.title,
+      ),
+    );
     primaryGrid.appendChild(card);
   }
 
   // 2. Aktive Hypothesen
-  if (data.hypothesen && data.hypothesen.hypothesisBlocks && data.hypothesen.hypothesisBlocks.length > 0) {
-    const activeHypothesen = data.hypothesen.hypothesisBlocks.filter(h => h.normalizedStatus === 'aktiv_geprueft' || h.normalizedStatus === 'offen');
+  if (
+    data.hypothesen &&
+    data.hypothesen.hypothesisBlocks &&
+    data.hypothesen.hypothesisBlocks.length > 0
+  ) {
+    const activeHypothesen = data.hypothesen.hypothesisBlocks.filter(
+      (h) =>
+        h.normalizedStatus === "aktiv_geprueft" ||
+        h.normalizedStatus === "offen",
+    );
     if (activeHypothesen.length > 0) {
-        const h = activeHypothesen[0];
-        const card = document.createElement('div');
-        card.className = 'card';
-        const aussageText = h.aussage.length > 0 ? h.aussage.join(' ') : 'Noch unklar.';
-        card.appendChild(createSummarySection('Zentrale Hypothese', aussageText));
-        primaryGrid.appendChild(card);
+      const h = activeHypothesen[0];
+      const card = document.createElement("div");
+      card.className = "card";
+      const aussageText =
+        h.aussage.length > 0 ? h.aussage.join(" ") : "Noch unklar.";
+      card.appendChild(createSummarySection("Zentrale Hypothese", aussageText));
+      primaryGrid.appendChild(card);
     }
   }
 
   // 3. Letzte Entscheidung
   if (data.entscheidungen && data.entscheidungen.length > 0) {
     const latest = data.entscheidungen[0];
-    const card = document.createElement('div');
-    card.className = 'card';
+    const card = document.createElement("div");
+    card.className = "card";
     let content = latest.title;
     if (latest.decisionBlocks && latest.decisionBlocks.length > 0) {
-        const block = latest.decisionBlocks[0];
-        if (block.massnahme.length > 0) {
-            content = block.massnahme[0];
-        } else if (block.begruendung && block.begruendung.length > 0) {
-            content = block.begruendung[0];
-        }
+      const block = latest.decisionBlocks[0];
+      if (block.massnahme.length > 0) {
+        content = block.massnahme[0];
+      } else if (block.begruendung && block.begruendung.length > 0) {
+        content = block.begruendung[0];
+      }
     }
-    card.appendChild(createSummarySection('Letzte Entscheidung', content));
+    card.appendChild(createSummarySection("Letzte Entscheidung", content));
     primaryGrid.appendChild(card);
   }
 
   container.appendChild(primaryGrid);
 
   // [ SECONDARY BLOCKS ]
-  const secondaryGrid = document.createElement('div');
-  secondaryGrid.className = 'secondary-blocks';
+  const secondaryGrid = document.createElement("div");
+  secondaryGrid.className = "secondary-blocks";
 
   // Feedback
   if (data.feedback && data.feedback.length > 0) {
-    const card = document.createElement('div');
-    card.className = 'card';
+    const card = document.createElement("div");
+    card.className = "card";
     const latest = data.feedback[0];
-    card.appendChild(createSummarySection('Jüngstes Feedback', extractFirstSnippet(latest.sections) || latest.title));
+    card.appendChild(
+      createSummarySection(
+        "Jüngstes Feedback",
+        extractFirstSnippet(latest.sections) || latest.title,
+      ),
+    );
     secondaryGrid.appendChild(card);
   }
 
   // Beobachtungen
   if (data.beobachtungen && data.beobachtungen.length > 0) {
-    const card = document.createElement('div');
-    card.className = 'card';
+    const card = document.createElement("div");
+    card.className = "card";
     const latest = data.beobachtungen[0];
-    card.appendChild(createSummarySection('Letzte Beobachtung', extractFirstSnippet(latest.sections) || latest.title));
+    card.appendChild(
+      createSummarySection(
+        "Letzte Beobachtung",
+        extractFirstSnippet(latest.sections) || latest.title,
+      ),
+    );
     secondaryGrid.appendChild(card);
   }
 
   // ICF
-  const icfCard = document.createElement('div');
-  icfCard.className = 'card';
-  const icfSnippet = data.icfReports.length > 0
-    ? 'ICF-Reports liegen vor und stützen die Beobachtungen mit normierter Evidenz.'
-    : 'Noch keine normierten ICF-Reports verknüpft.';
-  icfCard.appendChild(createSummarySection('Evidenz & Rahmen', icfSnippet));
+  const icfCard = document.createElement("div");
+  icfCard.className = "card";
+  const icfSnippet =
+    data.icfReports.length > 0
+      ? "ICF-Reports liegen vor und stützen die Beobachtungen mit normierter Evidenz."
+      : "Noch keine normierten ICF-Reports verknüpft.";
+  icfCard.appendChild(createSummarySection("Evidenz & Rahmen", icfSnippet));
   secondaryGrid.appendChild(icfCard);
 
   container.appendChild(secondaryGrid);
   root.appendChild(container);
 }
 
-
 export function renderFeedback(root, data) {
-  if (!data.feedback || data.feedback.length === 0) return renderEmptyState(root, 'Bislang kein Feedback erfasst.');
+  if (!data.feedback || data.feedback.length === 0)
+    return renderEmptyState(root, "Bislang kein Feedback erfasst.");
   data.feedback.forEach((entry) => root.appendChild(createFileCard(entry)));
 }
 
-
 export function renderHypothesen(root, data) {
-  if (!data.hypothesen || !data.hypothesen.hypothesisBlocks || data.hypothesen.hypothesisBlocks.length === 0) return renderEmptyState(root, 'Keine strukturierten Hypothesen gefunden.');
+  if (
+    !data.hypothesen ||
+    !data.hypothesen.hypothesisBlocks ||
+    data.hypothesen.hypothesisBlocks.length === 0
+  )
+    return renderEmptyState(root, "Keine strukturierten Hypothesen gefunden.");
 
   data.hypothesen.hypothesisBlocks.forEach((block) => {
-    const card = document.createElement('article');
-    card.className = 'card hypothesis-card';
+    const card = document.createElement("article");
+    card.className = "card hypothesis-card";
 
     // Titel = Aussage
-    const title = document.createElement('h3');
-    title.className = 'hypothesis-title';
+    const title = document.createElement("h3");
+    title.className = "hypothesis-title";
 
-    const metaSpan = document.createElement('span');
-    metaSpan.className = 'meta';
-    metaSpan.textContent = block.id ? `${block.id} – ${block.heading}` : block.heading;
+    const metaSpan = document.createElement("span");
+    metaSpan.className = "meta";
+    metaSpan.textContent = block.id
+      ? `${block.id} – ${block.heading}`
+      : block.heading;
     title.appendChild(metaSpan);
 
-    title.appendChild(document.createElement('br'));
+    title.appendChild(document.createElement("br"));
 
-    const aussageSpan = document.createElement('span');
+    const aussageSpan = document.createElement("span");
     if (block.aussage.length > 0) {
-      renderInlineText(aussageSpan, block.aussage.join(' '));
+      renderInlineText(aussageSpan, block.aussage.join(" "));
     } else {
-      aussageSpan.textContent = 'Aussage noch unklar';
+      aussageSpan.textContent = "Aussage noch unklar";
     }
     title.appendChild(aussageSpan);
 
     card.appendChild(title);
 
     // Badges Row
-    const badgesRow = document.createElement('div');
-    badgesRow.className = 'hypothesis-badges';
+    const badgesRow = document.createElement("div");
+    badgesRow.className = "hypothesis-badges";
 
     const badgesData = [
-      { label: 'Status', values: block.status },
-      { label: 'Kategorie', values: block.kategorie.length > 0 ? block.kategorie : (block.normalizedCategory ? [block.normalizedCategory] : []) },
-      { label: 'Steuerung', values: block.steuerungsrelevanz }
+      { label: "Status", values: block.status },
+      {
+        label: "Kategorie",
+        values:
+          block.kategorie.length > 0
+            ? block.kategorie
+            : block.normalizedCategory
+              ? [block.normalizedCategory]
+              : [],
+      },
+      { label: "Steuerung", values: block.steuerungsrelevanz },
     ];
 
-    badgesData.forEach(bd => {
-      const valText = bd.values.length > 0 ? bd.values.join(', ') : 'unklar';
-      const badge = document.createElement('span');
-      badge.className = 'badge';
+    badgesData.forEach((bd) => {
+      const valText = bd.values.length > 0 ? bd.values.join(", ") : "unklar";
+      const badge = document.createElement("span");
+      badge.className = "badge";
 
-      const labelSpan = document.createElement('span');
-      labelSpan.className = 'badge-label';
-      labelSpan.textContent = bd.label + ':';
+      const labelSpan = document.createElement("span");
+      labelSpan.className = "badge-label";
+      labelSpan.textContent = bd.label + ":";
       badge.appendChild(labelSpan);
 
-      badge.appendChild(document.createTextNode(' ' + valText));
+      badge.appendChild(document.createTextNode(" " + valText));
       badgesRow.appendChild(badge);
     });
 
     card.appendChild(badgesRow);
 
     // Details Grid
-    const detailsGrid = document.createElement('div');
-    detailsGrid.className = 'hypothesis-grid';
+    const detailsGrid = document.createElement("div");
+    detailsGrid.className = "hypothesis-grid";
 
-    const leftCol = document.createElement('div');
-    leftCol.className = 'hypothesis-grid-left';
+    const leftCol = document.createElement("div");
+    leftCol.className = "hypothesis-grid-left";
 
-    const rightCol = document.createElement('div');
-    rightCol.className = 'hypothesis-grid-right';
+    const rightCol = document.createElement("div");
+    rightCol.className = "hypothesis-grid-right";
 
     const renderDetailSection = (label, values, targetCol) => {
-      const detailSection = document.createElement('section');
-      detailSection.className = 'hypothesis-section';
+      const detailSection = document.createElement("section");
+      detailSection.className = "hypothesis-section";
 
-      const h5 = document.createElement('h5');
+      const h5 = document.createElement("h5");
       h5.textContent = label;
       detailSection.appendChild(h5);
 
-      const ul = document.createElement('ul');
-      const list = values.length > 0 ? values : ['nicht explizit angegeben'];
+      const ul = document.createElement("ul");
+      const list = values.length > 0 ? values : ["nicht explizit angegeben"];
       list.forEach((value) => {
-        const li = document.createElement('li');
+        const li = document.createElement("li");
         renderInlineText(li, value);
         ul.appendChild(li);
       });
@@ -686,9 +805,13 @@ export function renderHypothesen(root, data) {
       targetCol.appendChild(detailSection);
     };
 
-    renderDetailSection('Alternativerklärung', block.alternativerklaerung, leftCol);
-    renderDetailSection('Prüfweg', block.pruefweg, leftCol);
-    renderDetailSection('Gestützt durch', block.gestuetztDurch, rightCol);
+    renderDetailSection(
+      "Alternativerklärung",
+      block.alternativerklaerung,
+      leftCol,
+    );
+    renderDetailSection("Prüfweg", block.pruefweg, leftCol);
+    renderDetailSection("Gestützt durch", block.gestuetztDurch, rightCol);
 
     detailsGrid.appendChild(leftCol);
     detailsGrid.appendChild(rightCol);
@@ -699,8 +822,76 @@ export function renderHypothesen(root, data) {
 }
 
 export function renderIntervention(root, data) {
-  if (!data.intervention || data.intervention.length === 0) return renderEmptyState(root, 'Keine Interventionen vorhanden.');
+  if (!data.intervention || data.intervention.length === 0)
+    return renderEmptyState(root, "Keine Interventionen vorhanden.");
   data.intervention.forEach((entry) => {
     renderSimpleDoc(root, entry);
   });
+}
+
+export function renderGruppennachweis(root, data) {
+  if (!data.gruppennachweis || !data.gruppennachweis.compiled) {
+    return renderEmptyState(
+      root,
+      "Kein Gruppennachweis (Kompilierte Fassung) vorhanden.",
+    );
+  }
+  renderSimpleDoc(root, data.gruppennachweis.compiled);
+}
+
+export function renderGruppennachweisKapitel(root, data) {
+  if (
+    !data.gruppennachweis ||
+    !data.gruppennachweis.kapitel ||
+    data.gruppennachweis.kapitel.length === 0
+  ) {
+    return renderEmptyState(
+      root,
+      "Keine Kapitel für den Gruppennachweis gefunden.",
+    );
+  }
+  data.gruppennachweis.kapitel.forEach((k) =>
+    root.appendChild(createFileCard(k)),
+  );
+}
+
+export function renderGruppennachweisMeta(root, data) {
+  if (!data.gruppennachweis) {
+    return renderEmptyState(
+      root,
+      "Keine Metadaten für den Gruppennachweis vorhanden.",
+    );
+  }
+
+  let hasContent = false;
+
+  if (data.gruppennachweis.contract) {
+    root.appendChild(createFileCard(data.gruppennachweis.contract));
+    hasContent = true;
+  }
+  if (data.gruppennachweis.state) {
+    root.appendChild(createFileCard(data.gruppennachweis.state));
+    hasContent = true;
+  }
+
+  if (data.gruppennachweis.mapping && data.gruppennachweis.mapping.length > 0) {
+    data.gruppennachweis.mapping.forEach((m) =>
+      root.appendChild(createFileCard(m)),
+    );
+    hasContent = true;
+  }
+
+  if (data.gruppennachweis.apparat && data.gruppennachweis.apparat.length > 0) {
+    data.gruppennachweis.apparat.forEach((a) =>
+      root.appendChild(createFileCard(a)),
+    );
+    hasContent = true;
+  }
+
+  if (!hasContent) {
+    renderEmptyState(
+      root,
+      "Keine Metadaten für den Gruppennachweis vorhanden.",
+    );
+  }
 }

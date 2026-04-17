@@ -1,0 +1,70 @@
+# Transformation: Rohmaterial → Gruppennachweis
+
+## Zweck
+
+Dieses Dokument beschreibt, wie Rohmaterial (Beobachtungen, Tagebuch, Hypothesen, Entscheidungen, Feedback, Reflexion) in den Gruppennachweis überführt wird.
+
+## Prinzip
+
+> Verdichtung, nicht Interpretation.
+> Rohdaten werden strukturiert zusammengefasst, aber nicht eigenständig gedeutet.
+
+## Transformationsregeln
+
+### 1. Tagebuch → Gruppennachweis
+
+| Quelle | Ziel im Gruppennachweis | Transformation |
+|---|---|---|
+| `docs/tagebuch/*.md` | `docs/gruppennachweis/kapitel/02_kontext.md`, `docs/gruppennachweis/kapitel/05_reflexion.md` | Chronologische Einträge werden zu thematischen Blöcken verdichtet |
+| Einzelereignisse | Kontextbeschreibung | Muster und Wiederholungen herausarbeiten |
+| Wörtliche Beschreibungen | Zusammenfassungen | Kürzen, ohne Bedeutung zu verändern |
+
+### 2. Beobachtungen → Gruppennachweis
+
+| Quelle | Ziel im Gruppennachweis | Transformation |
+|---|---|---|
+| `docs/beobachtungen/*.md` | `docs/gruppennachweis/kapitel/01_thema.md`, `docs/gruppennachweis/kapitel/03_menschen_und_icf.md` | Situative Beobachtungen werden zu Verhaltensmustern zusammengefasst |
+| Einzelbeobachtungen | Kategorisierte Muster | Gruppierung nach Situationstyp |
+
+### 3. Hypothesen → Gruppennachweis
+
+| Quelle | Ziel im Gruppennachweis | Transformation |
+|---|---|---|
+| `docs/hypothesen.md` | `docs/gruppennachweis/kapitel/04_zielsetzung_und_paedagogisches_handeln.md`, `docs/gruppennachweis/kapitel/05_reflexion.md` | Hypothesen werden mit ihrem aktuellen Status und Prüfweg dargestellt |
+| Einzelhypothesen | Hypothesenübersicht | Statusbewertung hinzufügen |
+
+### 4. Entscheidungen → Gruppennachweis
+
+| Quelle | Ziel im Gruppennachweis | Transformation |
+|---|---|---|
+| `docs/entscheidungen/*.md` | `docs/gruppennachweis/kapitel/04_zielsetzung_und_paedagogisches_handeln.md`, `docs/gruppennachweis/kapitel/05_reflexion.md` | Entscheidungen werden mit Begründung und beobachteter Wirkung dargestellt |
+| Einzelentscheidungen | Maßnahmenübersicht | Wirkungszusammenhänge herstellen |
+
+### 5. Feedback → Gruppennachweis
+
+| Quelle | Ziel im Gruppennachweis | Transformation |
+|---|---|---|
+| `docs/feedback/*.md` | `docs/gruppennachweis/kapitel/03_menschen_und_icf.md`, `docs/gruppennachweis/kapitel/05_reflexion.md` | Rückmeldungen der Zielperson werden als eigene Perspektive dokumentiert |
+| Einzelfeedback | Perspektivenübersicht | Subjektive Qualität und Form (wörtlich/paraphrasiert) markieren |
+
+### 6. ICF-Reports → Gruppennachweis
+
+| Quelle | Ziel im Gruppennachweis | Transformation |
+|---|---|---|
+| `docs/icf-reports/*.html` | `docs/gruppennachweis/kapitel/03_menschen_und_icf.md` | ICF-Codes und Bewertungen extrahieren; mind. 2 Beispiele je Dimension |
+
+### 7. Modelle → Gruppennachweis
+
+| Quelle | Ziel im Gruppennachweis | Transformation |
+|---|---|---|
+| `models/*.md` | `docs/gruppennachweis/kapitel/04_zielsetzung_und_paedagogisches_handeln.md` | Modelle werden als Rahmen referenziert |
+
+## Qualitätsprüfung
+
+Vor Abschluss der Transformation muss geprüft werden:
+
+- [ ] Jede Aussage im Gruppennachweis hat einen Quellenverweis
+- [ ] Keine eigenständige Interpretation wurde hinzugefügt
+- [ ] Offene Lücken sind als `[OFFEN]` markiert
+- [ ] Status in den Kapiteln ist aktualisiert
+- [ ] Mapping (`docs/gruppennachweis/mapping/rohmaterial_zu_kapiteln.md`) ist aktuell

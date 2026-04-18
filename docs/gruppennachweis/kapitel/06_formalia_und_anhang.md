@@ -5,7 +5,7 @@
 ## 6.1 Dokumentationsrahmen
 
 - Arbeitsregeln: [meta/arbeitsregeln.md](../../../meta/arbeitsregeln.md)
-- Projektziel: [meta/projektziel.md](../../../meta/projektziel.md)
+- Dokumentationsziel (Meta-/Repo-Ebene): [meta/projektziel.md](../../../meta/projektziel.md)
 
 ## 6.2 Einhaltung der Arbeitsregeln
 

@@ -13,7 +13,7 @@ Förderung von Selbstvertrauen, sozialer Kooperation und Selbstständigkeit durc
 ## Quellenbezüge
 
 - Projektplan: [docs/projektplan.md](../../projektplan.md) → Ausgangslage, Förderbedarf, Ressourcen, Interessen
-- Projektziel: [meta/projektziel.md](../../../meta/projektziel.md) → Nachvollziehbarkeit, Reflexion, Explizitmachung
+- Dokumentationsziel (Meta-Ebene): [meta/projektziel.md](../../../meta/projektziel.md) → Nachvollziehbarkeit, Reflexion, Explizitmachung
 - Beobachtungen: [docs/beobachtungen/01_verhalten_in_situationen.md](../../beobachtungen/01_verhalten_in_situationen.md) → Verhaltensmuster als Ausgangspunkt
 
 ## Kernaussagen (zu verdichten)

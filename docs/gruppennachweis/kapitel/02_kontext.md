@@ -9,22 +9,22 @@ Projekt „Schulhof verschönern" als Rahmen für gezielte Förderung.
 
 ## Zeitlicher Rahmen
 
-Dokumentiert über 7+ Tageseinträge (`docs/tagebuch/00_vorlauf.md` bis `07_tag_7.md`).
+Dokumentiert über 7+ Tageseinträge ([docs/tagebuch/00_vorlauf.md](../../tagebuch/00_vorlauf.md) bis [07_tag_7.md](../../tagebuch/07_tag_7.md)).
 
 ## Quellenbezüge
 
-- Tagebuch: `docs/tagebuch/*.md` → chronologischer Verlauf
-- Kontext der Entscheidungen: `docs/entscheidungen/*.md`
-- Arbeitsregeln: `meta/arbeitsregeln.md` → methodischer Rahmen
+- Tagebuch: [docs/tagebuch/*.md](../../tagebuch/00_vorlauf.md) → chronologischer Verlauf
+- Kontext der Entscheidungen: [docs/entscheidungen/*.md](../../entscheidungen/01_konsequenzen.md)
+- Arbeitsregeln: [meta/arbeitsregeln.md](../../../meta/arbeitsregeln.md) → methodischer Rahmen
 
 ## Kernaussagen (zu verdichten)
 
 - Projektdurchführung in Phasen: Planung → Umfrage → konkreter Plan → Umsetzung → Reflexion
-  → Quelle: `docs/projektplan.md` (Projektphasen)
+  → Quelle: [docs/projektplan.md](../../projektplan.md) (Projektphasen)
 - Kontext geprägt durch Spannungsfeld zwischen Struktur und Selbstbestimmung
-  → Quelle: `docs/reflexion.md` (Risiko der Überstrukturierung)
+  → Quelle: [docs/reflexion.md](../../reflexion.md) (Risiko der Überstrukturierung)
 - Systemische Rahmenbedingungen beeinflussen die Projektdurchführung
-  → Quelle: `docs/entscheidungen/03_systemarchitektur_und_regulation.md`
+  → Quelle: [docs/entscheidungen/03_systemarchitektur_und_regulation.md](../../entscheidungen/03_systemarchitektur_und_regulation.md)
 
 ## Offene Punkte
 

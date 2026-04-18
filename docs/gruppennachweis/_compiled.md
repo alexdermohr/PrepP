@@ -16,17 +16,17 @@
 
 ## Kapitelreihenfolge
 
-1. Thema (`kapitel/01_thema.md`)
-2. Kontext und Situation (`kapitel/02_kontext.md`)
-3. Menschen und ICF (`kapitel/03_menschen_und_icf.md`)
-4. Zielsetzung und pädagogisches Handeln (`kapitel/04_zielsetzung_und_paedagogisches_handeln.md`)
-5. Reflexion (`kapitel/05_reflexion.md`)
-6. Formalia und Anhang (`kapitel/06_formalia_und_anhang.md`)
+1. Thema ([kapitel/01_thema.md](kapitel/01_thema.md))
+2. Kontext und Situation ([kapitel/02_kontext.md](kapitel/02_kontext.md))
+3. Menschen und ICF ([kapitel/03_menschen_und_icf.md](kapitel/03_menschen_und_icf.md))
+4. Zielsetzung und pädagogisches Handeln ([kapitel/04_zielsetzung_und_paedagogisches_handeln.md](kapitel/04_zielsetzung_und_paedagogisches_handeln.md))
+5. Reflexion ([kapitel/05_reflexion.md](kapitel/05_reflexion.md))
+6. Formalia und Anhang ([kapitel/06_formalia_und_anhang.md](kapitel/06_formalia_und_anhang.md))
 
 ## Stützapparat
 
-- Mapping: `mapping/rohmaterial_zu_kapiteln.md`
-- Literaturverzeichnis: `apparat/literaturverzeichnis.md`
+- Mapping: [mapping/rohmaterial_zu_kapiteln.md](mapping/rohmaterial_zu_kapiteln.md)
+- Literaturverzeichnis: [apparat/literaturverzeichnis.md](apparat/literaturverzeichnis.md)
 
 ---
 

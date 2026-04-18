@@ -46,6 +46,7 @@ function viewIdForDocPath(path) {
   if (path.includes("/feedback/")) return "feedback";
   if (path.includes("/tagebuch/")) return "tagebuch";
   if (path.includes("/entscheidungen/")) return "entscheidungen";
+  if (path.includes("/icf-reports/")) return "icf-reports";
   if (path.includes("/hypothesen.md")) return "hypothesen";
   if (path.includes("/projektplan.md")) return "projektplan";
   if (path.includes("/reflexion.md")) return "reflexion";
@@ -88,13 +89,19 @@ function renderInlineText(container, text, contextPath = null) {
       if (match) {
         let url = match[2];
         const isExternalLike = /^[a-zA-Z][a-zA-Z0-9+.-]*:/.test(url);
+        const resolvedRefCandidate = !isExternalLike
+          ? resolveInternalRef(url, contextPath)
+          : null;
+        const resolvedPath = resolvedRefCandidate?.path || "";
         const isInternalMarkdownRef = !isExternalLike && /\.md($|#)/.test(url);
+        const isInternalIcfHtmlRef =
+          !isExternalLike && /\/icf-reports\/.+\.html$/.test(resolvedPath);
 
-        if (isInternalMarkdownRef) {
+        if (isInternalMarkdownRef || isInternalIcfHtmlRef) {
           const a = document.createElement("a");
           a.textContent = match[1];
 
-          const resolvedRef = resolveInternalRef(url, contextPath);
+          const resolvedRef = resolvedRefCandidate;
           if (!resolvedRef?.path) {
             container.appendChild(document.createTextNode(match[1]));
             return;

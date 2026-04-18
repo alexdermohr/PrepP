@@ -84,10 +84,10 @@ function renderInlineText(container, text, contextPath = null) {
           } else if (resolvedUrl.includes("/gruppennachweis/_compiled.md")) {
             a.href = "#gruppennachweis";
           } else if (
-            url.includes("/gruppennachweis/_contract.md") ||
-            url.includes("/gruppennachweis/_state.md") ||
-            url.includes("/gruppennachweis/mapping/") ||
-            url.includes("/gruppennachweis/apparat/")
+            resolvedUrl.includes("/gruppennachweis/_contract.md") ||
+            resolvedUrl.includes("/gruppennachweis/_state.md") ||
+            resolvedUrl.includes("/gruppennachweis/mapping/") ||
+            resolvedUrl.includes("/gruppennachweis/apparat/")
           ) {
             a.href = "#gruppennachweis-meta";
           } else {

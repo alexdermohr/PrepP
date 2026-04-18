@@ -28,6 +28,43 @@ function resolveInternalMarkdownPath(url, contextPath) {
   return resolvedUrl;
 }
 
+function resolveInternalRef(url, contextPath) {
+  if (!url) return null;
+
+  const [rawPath, ...fragmentParts] = url.split("#");
+  const resolvedPath = resolveInternalMarkdownPath(rawPath, contextPath);
+  const fragment = fragmentParts.length > 0 ? fragmentParts.join("#") : null;
+
+  return {
+    path: resolvedPath,
+    fragment,
+  };
+}
+
+function viewIdForDocPath(path) {
+  if (path.includes("/beobachtungen/")) return "beobachtungen";
+  if (path.includes("/feedback/")) return "feedback";
+  if (path.includes("/tagebuch/")) return "tagebuch";
+  if (path.includes("/entscheidungen/")) return "entscheidungen";
+  if (path.includes("/hypothesen.md")) return "hypothesen";
+  if (path.includes("/projektplan.md")) return "projektplan";
+  if (path.includes("/reflexion.md")) return "reflexion";
+  if (path.startsWith("meta/") || path.includes("/meta/")) return "meta";
+  if (path.startsWith("models/") || path.includes("/models/")) return "modelle";
+  if (path.includes("/intervention/")) return "intervention";
+  if (path.includes("/gruppennachweis/kapitel/")) return "gruppennachweis-kapitel";
+  if (path.includes("/gruppennachweis/_compiled.md")) return "gruppennachweis";
+  if (
+    path.includes("/gruppennachweis/_contract.md") ||
+    path.includes("/gruppennachweis/_state.md") ||
+    path.includes("/gruppennachweis/mapping/") ||
+    path.includes("/gruppennachweis/apparat/")
+  ) {
+    return "gruppennachweis-meta";
+  }
+  return "start";
+}
+
 function renderInlineText(container, text, contextPath = null) {
   if (!text) return;
   // Simple regex to split text into tokens
@@ -50,49 +87,25 @@ function renderInlineText(container, text, contextPath = null) {
       const match = part.match(/\[(.*?)\]\((.*?)\)/);
       if (match) {
         let url = match[2];
+        const isExternalLike = /^[a-zA-Z][a-zA-Z0-9+.-]*:/.test(url);
+        const isInternalMarkdownRef = !isExternalLike && /\.md($|#)/.test(url);
 
-        if (url.endsWith(".md")) {
+        if (isInternalMarkdownRef) {
           const a = document.createElement("a");
           a.textContent = match[1];
 
-          let resolvedUrl = resolveInternalMarkdownPath(url, contextPath);
-          a.title = resolvedUrl;
-
-          // Map internal .md files to meaningful app views
-          if (resolvedUrl.includes("/beobachtungen/")) {
-            a.href = "#beobachtungen";
-          } else if (resolvedUrl.includes("/feedback/")) {
-            a.href = "#feedback";
-          } else if (resolvedUrl.includes("/tagebuch/")) {
-            a.href = "#tagebuch";
-          } else if (resolvedUrl.includes("/entscheidungen/")) {
-            a.href = "#entscheidungen";
-          } else if (resolvedUrl.includes("/hypothesen.md")) {
-            a.href = "#hypothesen";
-          } else if (resolvedUrl.includes("/projektplan.md")) {
-            a.href = "#projektplan";
-          } else if (resolvedUrl.includes("/reflexion.md")) {
-            a.href = "#reflexion";
-          } else if (resolvedUrl.includes("/meta/")) {
-            a.href = "#meta";
-          } else if (resolvedUrl.includes("/models/")) {
-            a.href = "#modelle";
-          } else if (resolvedUrl.includes("/intervention/")) {
-            a.href = "#intervention";
-          } else if (resolvedUrl.includes("/gruppennachweis/kapitel/")) {
-            a.href = "#gruppennachweis-kapitel";
-          } else if (resolvedUrl.includes("/gruppennachweis/_compiled.md")) {
-            a.href = "#gruppennachweis";
-          } else if (
-            resolvedUrl.includes("/gruppennachweis/_contract.md") ||
-            resolvedUrl.includes("/gruppennachweis/_state.md") ||
-            resolvedUrl.includes("/gruppennachweis/mapping/") ||
-            resolvedUrl.includes("/gruppennachweis/apparat/")
-          ) {
-            a.href = "#gruppennachweis-meta";
-          } else {
-            a.href = "#start";
+          const resolvedRef = resolveInternalRef(url, contextPath);
+          if (!resolvedRef?.path) {
+            container.appendChild(document.createTextNode(match[1]));
+            return;
           }
+
+          const canonicalRef = resolvedRef.fragment
+            ? `${resolvedRef.path}#${resolvedRef.fragment}`
+            : resolvedRef.path;
+          a.title = canonicalRef;
+          const targetViewId = viewIdForDocPath(resolvedRef.path);
+          a.href = `#${targetViewId}?src=${encodeURIComponent(canonicalRef)}`;
           container.appendChild(a);
         } else {
           // Whitelist allowed external protocols
@@ -291,6 +304,32 @@ function createFileCard(entry) {
   return card;
 }
 
+function normalizeSourcePath(src) {
+  if (!src) return null;
+  return src.split("#")[0];
+}
+
+function addSourceHighlights(cards, params) {
+  const sourceRef = params?.get("src");
+  if (!sourceRef) return;
+
+  const sourcePath = normalizeSourcePath(sourceRef);
+  cards.forEach(({ entryPath, card }) => {
+    if (entryPath === sourcePath) {
+      card.classList.add("highlight");
+    }
+  });
+}
+
+function renderEntries(root, entries, params) {
+  const cards = entries.map((entry) => {
+    const card = createFileCard(entry);
+    root.appendChild(card);
+    return { entryPath: entry.path, card };
+  });
+  addSourceHighlights(cards, params);
+}
+
 function createHtmlFileCard(report) {
   const entry = report.html;
   const card = document.createElement("article");
@@ -463,20 +502,22 @@ export function renderStart(root, data) {
   root.appendChild(article);
 }
 
-export function renderTagebuch(root, data) {
-  data.tagebuch.forEach((entry) => root.appendChild(createFileCard(entry)));
+export function renderTagebuch(root, data, params) {
+  renderEntries(root, data.tagebuch, params);
 }
 
-export function renderBeobachtungen(root, data) {
-  data.beobachtungen.forEach((entry) =>
-    root.appendChild(createFileCard(entry)),
-  );
+export function renderBeobachtungen(root, data, params) {
+  renderEntries(root, data.beobachtungen, params);
 }
 
-export function renderEntscheidungen(root, data) {
+export function renderEntscheidungen(root, data, params) {
+  const sourcePath = normalizeSourcePath(params?.get("src"));
   data.entscheidungen.forEach((entry) => {
     const card = document.createElement("article");
     card.className = "card decision-card";
+    if (sourcePath && entry.path === sourcePath) {
+      card.classList.add("highlight");
+    }
 
     const title = document.createElement("h3");
     title.textContent = entry.title;
@@ -587,8 +628,13 @@ export function renderSimpleDoc(root, doc) {
   root.appendChild(createFileCard(doc));
 }
 
-export function renderProjektplan(root, data) {
-  renderSimpleDoc(root, data.projektplan);
+export function renderProjektplan(root, data, params) {
+  const card = data.projektplan ? createFileCard(data.projektplan) : null;
+  if (!card) return renderSimpleDoc(root, data.projektplan);
+  if (normalizeSourcePath(params?.get("src")) === data.projektplan.path) {
+    card.classList.add("highlight");
+  }
+  root.appendChild(card);
 }
 
 export function renderICFReports(root, data) {
@@ -627,16 +673,16 @@ export function renderICFReports(root, data) {
   });
 }
 
-export function renderMeta(root, data) {
+export function renderMeta(root, data, params) {
   if (!data.meta.length)
     return renderEmptyState(root, "Keine Meta-Daten vorhanden.");
-  data.meta.forEach((entry) => root.appendChild(createFileCard(entry)));
+  renderEntries(root, data.meta, params);
 }
 
-export function renderModels(root, data) {
+export function renderModels(root, data, params) {
   if (!data.models.length)
     return renderEmptyState(root, "Keine Modelle vorhanden.");
-  data.models.forEach((entry) => root.appendChild(createFileCard(entry)));
+  renderEntries(root, data.models, params);
 }
 
 export function renderAktuellerStand(root, data) {
@@ -768,13 +814,13 @@ export function renderAktuellerStand(root, data) {
   root.appendChild(container);
 }
 
-export function renderFeedback(root, data) {
+export function renderFeedback(root, data, params) {
   if (!data.feedback || data.feedback.length === 0)
     return renderEmptyState(root, "Bislang kein Feedback erfasst.");
-  data.feedback.forEach((entry) => root.appendChild(createFileCard(entry)));
+  renderEntries(root, data.feedback, params);
 }
 
-export function renderHypothesen(root, data) {
+export function renderHypothesen(root, data, params) {
   if (
     !data.hypothesen ||
     !data.hypothesen.hypothesisBlocks ||
@@ -782,9 +828,15 @@ export function renderHypothesen(root, data) {
   )
     return renderEmptyState(root, "Keine strukturierten Hypothesen gefunden.");
 
-  data.hypothesen.hypothesisBlocks.forEach((block) => {
+  const shouldHighlightSource =
+    normalizeSourcePath(params?.get("src")) === data.hypothesen.path;
+
+  data.hypothesen.hypothesisBlocks.forEach((block, index) => {
     const card = document.createElement("article");
     card.className = "card hypothesis-card";
+    if (shouldHighlightSource && index === 0) {
+      card.classList.add("highlight");
+    }
 
     // Titel = Aussage
     const title = document.createElement("h3");
@@ -892,25 +944,28 @@ export function renderHypothesen(root, data) {
   });
 }
 
-export function renderIntervention(root, data) {
+export function renderIntervention(root, data, params) {
   if (!data.intervention || data.intervention.length === 0)
     return renderEmptyState(root, "Keine Interventionen vorhanden.");
-  data.intervention.forEach((entry) => {
-    renderSimpleDoc(root, entry);
-  });
+  renderEntries(root, data.intervention, params);
 }
 
-export function renderGruppennachweis(root, data) {
+export function renderGruppennachweis(root, data, params) {
   if (!data.gruppennachweis || !data.gruppennachweis.compiled) {
     return renderEmptyState(
       root,
       "Kein Gruppennachweis (Kompilierte Fassung) vorhanden.",
     );
   }
-  renderSimpleDoc(root, cleanStatusComment(data.gruppennachweis.compiled));
+  const entry = cleanStatusComment(data.gruppennachweis.compiled);
+  const card = createFileCard(entry);
+  if (normalizeSourcePath(params?.get("src")) === entry.path) {
+    card.classList.add("highlight");
+  }
+  root.appendChild(card);
 }
 
-export function renderGruppennachweisKapitel(root, data) {
+export function renderGruppennachweisKapitel(root, data, params) {
   if (
     !data.gruppennachweis ||
     !data.gruppennachweis.kapitel ||
@@ -921,12 +976,14 @@ export function renderGruppennachweisKapitel(root, data) {
       "Keine Kapitel für den Gruppennachweis gefunden.",
     );
   }
-  data.gruppennachweis.kapitel.forEach((k) =>
-    root.appendChild(createFileCard(cleanStatusComment(k))),
+  renderEntries(
+    root,
+    data.gruppennachweis.kapitel.map((k) => cleanStatusComment(k)),
+    params,
   );
 }
 
-export function renderGruppennachweisMeta(root, data) {
+export function renderGruppennachweisMeta(root, data, params) {
   if (!data.gruppennachweis) {
     return renderEmptyState(
       root,
@@ -937,28 +994,36 @@ export function renderGruppennachweisMeta(root, data) {
   let hasContent = false;
 
   if (data.gruppennachweis.contract) {
-    root.appendChild(
-      createFileCard(cleanStatusComment(data.gruppennachweis.contract)),
-    );
+    const card = createFileCard(cleanStatusComment(data.gruppennachweis.contract));
+    if (normalizeSourcePath(params?.get("src")) === data.gruppennachweis.contract.path) {
+      card.classList.add("highlight");
+    }
+    root.appendChild(card);
     hasContent = true;
   }
   if (data.gruppennachweis.state) {
-    root.appendChild(
-      createFileCard(cleanStatusComment(data.gruppennachweis.state)),
-    );
+    const card = createFileCard(cleanStatusComment(data.gruppennachweis.state));
+    if (normalizeSourcePath(params?.get("src")) === data.gruppennachweis.state.path) {
+      card.classList.add("highlight");
+    }
+    root.appendChild(card);
     hasContent = true;
   }
 
   if (data.gruppennachweis.mapping && data.gruppennachweis.mapping.length > 0) {
-    data.gruppennachweis.mapping.forEach((m) =>
-      root.appendChild(createFileCard(cleanStatusComment(m))),
+    renderEntries(
+      root,
+      data.gruppennachweis.mapping.map((m) => cleanStatusComment(m)),
+      params,
     );
     hasContent = true;
   }
 
   if (data.gruppennachweis.apparat && data.gruppennachweis.apparat.length > 0) {
-    data.gruppennachweis.apparat.forEach((a) =>
-      root.appendChild(createFileCard(cleanStatusComment(a))),
+    renderEntries(
+      root,
+      data.gruppennachweis.apparat.map((a) => cleanStatusComment(a)),
+      params,
     );
     hasContent = true;
   }

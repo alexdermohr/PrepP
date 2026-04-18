@@ -105,8 +105,18 @@ const views = viewGroups.flatMap((group) => group.views);
 const data = loadData();
 const app = document.querySelector("#app");
 
-function render(activeId) {
-  currentActiveView = activeId;
+function parseHash() {
+  const rawHash = location.hash.replace(/^#/, "");
+  if (!rawHash) {
+    return { view: "", params: new URLSearchParams() };
+  }
+
+  const [view, query = ""] = rawHash.split("?");
+  return { view, params: new URLSearchParams(query) };
+}
+
+function render(activeId, params = new URLSearchParams()) {
+  currentActiveRoute = `${activeId}?${params.toString()}`;
   app.innerHTML = "";
 
   const skipLink = document.createElement("a");
@@ -148,33 +158,34 @@ function render(activeId) {
   h1.textContent = current.label;
   content.appendChild(h1);
 
-  current.render(content, data);
+  current.render(content, data, params);
 
   layout.append(nav, content);
   app.appendChild(layout);
 }
 
-let currentActiveView = null;
+let currentActiveRoute = null;
 
 function renderFromHash() {
-  const hash = location.hash.replace("#", "");
+  const { view, params } = parseHash();
 
-  if (!hash) {
-    if (currentActiveView !== "start") render("start");
+  if (!view) {
+    if (currentActiveRoute !== "start?") render("start");
     return;
   }
 
-  const isViewHash = views.some((v) => v.id === hash);
+  const isViewHash = views.some((v) => v.id === view);
   if (isViewHash) {
-    if (currentActiveView !== hash) {
-      render(hash);
+    const routeKey = `${view}?${params.toString()}`;
+    if (currentActiveRoute !== routeKey) {
+      render(view, params);
       // Optional focus management for genuine view changes
       const mainContent = document.getElementById("main-content");
       if (mainContent) mainContent.focus();
     }
   } else {
     // If it's an unknown hash but nothing is rendered yet (initial load), fallback to start
-    if (currentActiveView === null) {
+    if (currentActiveRoute === null) {
       render("start");
     }
     // Otherwise, ignore the unknown hash (allows in-page anchors like #main-content to work)

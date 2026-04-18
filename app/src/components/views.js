@@ -49,8 +49,8 @@ function viewIdForDocPath(path) {
   if (path.includes("/hypothesen.md")) return "hypothesen";
   if (path.includes("/projektplan.md")) return "projektplan";
   if (path.includes("/reflexion.md")) return "reflexion";
-  if (path.includes("/meta/")) return "meta";
-  if (path.includes("/models/")) return "modelle";
+  if (path.startsWith("meta/") || path.includes("/meta/")) return "meta";
+  if (path.startsWith("models/") || path.includes("/models/")) return "modelle";
   if (path.includes("/intervention/")) return "intervention";
   if (path.includes("/gruppennachweis/kapitel/")) return "gruppennachweis-kapitel";
   if (path.includes("/gruppennachweis/_compiled.md")) return "gruppennachweis";
@@ -87,8 +87,10 @@ function renderInlineText(container, text, contextPath = null) {
       const match = part.match(/\[(.*?)\]\((.*?)\)/);
       if (match) {
         let url = match[2];
+        const isExternalLike = /^[a-zA-Z][a-zA-Z0-9+.-]*:/.test(url);
+        const isInternalMarkdownRef = !isExternalLike && /\.md($|#)/.test(url);
 
-        if (/\.md($|#)/.test(url)) {
+        if (isInternalMarkdownRef) {
           const a = document.createElement("a");
           a.textContent = match[1];
 
@@ -307,7 +309,7 @@ function normalizeSourcePath(src) {
   return src.split("#")[0];
 }
 
-function addSourceHighlights(root, cards, params) {
+function addSourceHighlights(cards, params) {
   const sourceRef = params?.get("src");
   if (!sourceRef) return;
 
@@ -325,7 +327,7 @@ function renderEntries(root, entries, params) {
     root.appendChild(card);
     return { entryPath: entry.path, card };
   });
-  addSourceHighlights(root, cards, params);
+  addSourceHighlights(cards, params);
 }
 
 function createHtmlFileCard(report) {

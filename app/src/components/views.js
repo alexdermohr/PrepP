@@ -531,7 +531,7 @@ export function renderEntscheidungen(root, data) {
         const list = values.length > 0 ? values : ["Nicht explizit angegeben"];
         list.forEach((value) => {
           const li = document.createElement("li");
-          renderInlineText(li, value, data.hypothesen?.path);
+          renderInlineText(li, value, entry.path);
           ul.appendChild(li);
         });
 
@@ -545,6 +545,35 @@ export function renderEntscheidungen(root, data) {
 
     root.appendChild(card);
   });
+}
+
+export function cleanStatusComment(entry) {
+  if (!entry || !entry.sections) return entry;
+
+  // Create a deep copy to not mutate the original data
+  const cleanedEntry = JSON.parse(JSON.stringify(entry));
+
+  cleanedEntry.sections.forEach((section) => {
+    if (section.blocks) {
+      // Filter out text blocks that contain exactly the status comment
+      section.blocks = section.blocks.filter((block) => {
+        if (block.type === "text") {
+          const text = block.text.trim();
+          // Remove HTML comments like <!-- status: draft -->
+          if (
+            text.startsWith("<!--") &&
+            text.endsWith("-->") &&
+            text.includes("status:")
+          ) {
+            return false;
+          }
+        }
+        return true;
+      });
+    }
+  });
+
+  return cleanedEntry;
 }
 
 export function renderSimpleDoc(root, doc) {
@@ -836,7 +865,7 @@ export function renderHypothesen(root, data) {
       const list = values.length > 0 ? values : ["nicht explizit angegeben"];
       list.forEach((value) => {
         const li = document.createElement("li");
-        renderInlineText(li, value, data.hypothesen?.path);
+        renderInlineText(li, value, entry.path);
         ul.appendChild(li);
       });
       detailSection.appendChild(ul);
@@ -874,7 +903,7 @@ export function renderGruppennachweis(root, data) {
       "Kein Gruppennachweis (Kompilierte Fassung) vorhanden.",
     );
   }
-  renderSimpleDoc(root, data.gruppennachweis.compiled);
+  renderSimpleDoc(root, cleanStatusComment(data.gruppennachweis.compiled));
 }
 
 export function renderGruppennachweisKapitel(root, data) {
@@ -889,7 +918,7 @@ export function renderGruppennachweisKapitel(root, data) {
     );
   }
   data.gruppennachweis.kapitel.forEach((k) =>
-    root.appendChild(createFileCard(k)),
+    root.appendChild(createFileCard(cleanStatusComment(k))),
   );
 }
 
@@ -904,24 +933,28 @@ export function renderGruppennachweisMeta(root, data) {
   let hasContent = false;
 
   if (data.gruppennachweis.contract) {
-    root.appendChild(createFileCard(data.gruppennachweis.contract));
+    root.appendChild(
+      createFileCard(cleanStatusComment(data.gruppennachweis.contract)),
+    );
     hasContent = true;
   }
   if (data.gruppennachweis.state) {
-    root.appendChild(createFileCard(data.gruppennachweis.state));
+    root.appendChild(
+      createFileCard(cleanStatusComment(data.gruppennachweis.state)),
+    );
     hasContent = true;
   }
 
   if (data.gruppennachweis.mapping && data.gruppennachweis.mapping.length > 0) {
     data.gruppennachweis.mapping.forEach((m) =>
-      root.appendChild(createFileCard(m)),
+      root.appendChild(createFileCard(cleanStatusComment(m))),
     );
     hasContent = true;
   }
 
   if (data.gruppennachweis.apparat && data.gruppennachweis.apparat.length > 0) {
     data.gruppennachweis.apparat.forEach((a) =>
-      root.appendChild(createFileCard(a)),
+      root.appendChild(createFileCard(cleanStatusComment(a))),
     );
     hasContent = true;
   }

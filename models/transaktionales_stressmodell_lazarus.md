@@ -7,7 +7,7 @@
 
 ## Begriff & Etymologie
 
-- **Transaktional** = Wechselwirkung (lat. *trans* + *agere*)
+- **Transaktional** = Wechselwirkung (lat. `trans` + `agere`)
 - **Stress** = Druck/Spannung
 
 → Stress entsteht aus Person-Umwelt-Bewertung, nicht nur aus Reizstärke.

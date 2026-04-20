@@ -4,19 +4,19 @@ Dieser Index ordnet den Modellkorpus als Werkzeugkasten.
 
 ## 1) Leitfrage je Modell
 
-- **Stresstoleranzfenster (STATE):** Ist Regulation aktuell möglich? → Vorrang bei akuter Dysregulation.
-- **Maslow (NEED):** Welche Grundbedürfnisse sind ungedeckt? → Vorrang vor höheren Modellen bei Basisdefiziten.
-- **Selbstbestimmungstheorie (NEED + MOTIVATION):** Warum kippt Mitmachen in Widerstand? → Nach STF/Maslow, vor Feintuning.
-- **Lazarus (STATE + COGNITION):** Wie wird die Situation bewertet? → Nach STF, ergänzend zu SDT.
-- **Yerkes-Dodson (PERFORMANCE):** Ist das Aktivierungsniveau passend? → Nach STF/Lazarus zur Leistungssteuerung.
-- **ABC/SORKC (BEHAVIOR):** Welche Sequenz stabilisiert Verhalten? → Funktionsanalyse, nicht alleinige Primärursache.
-- **Bindungstheorie (RELATION + STATE):** Bei wem ist Co-Regulation möglich? → Vorrang bei klarer Personenspezifik.
-- **Big Five (TRAIT):** Welche stabilen Dispositionen prägen Verhalten? → Nachrangig bei starker Situationsdynamik.
-- **Emotionsregulation (STATE + PROCESS):** Wo im Prozess kippt Regulation? → Nach STF, ergänzend zu Lazarus/ABC.
-- **Frustration-Aggression (DRIVE/STATE):** Welches Ziel wurde blockiert? → Ergänzend bei Zielunterbrechung.
-- **Ökologische Systemtheorie (SYSTEM):** Welcher Kontext erzeugt Verhalten mit? → Ergänzend bei Kontextvarianz.
-- **Erikson (DEVELOPMENT):** Welche Entwicklungsfrage ist aktiv? → Ergänzend für Langzeitdeutung.
-- **Prep-Planung (PLANNING):** Wie wird aus Bedarf/Interessen/Ressourcen eine Intervention? → Rahmenlogik; setzt psychologische Klärung voraus.
+- **[Stresstoleranzfenster](./stresstoleranzfenster.md) (STATE):** Ist Regulation aktuell möglich? → Vorrang bei akuter Dysregulation.
+- **[Maslow](./maslow.md) (NEED):** Welche Grundbedürfnisse sind ungedeckt? → Vorrang vor höheren Modellen bei Basisdefiziten.
+- **[Selbstbestimmungstheorie](./selbstbestimmungstheorie.md) (NEED + MOTIVATION):** Warum kippt Mitmachen in Widerstand? → Nach STF/Maslow, vor Feintuning.
+- **[Lazarus](./transaktionales_stressmodell_lazarus.md) (STATE + COGNITION):** Wie wird die Situation bewertet? → Nach STF, ergänzend zu SDT.
+- **[Yerkes-Dodson](./yerkes_dodson.md) (PERFORMANCE):** Ist das Aktivierungsniveau passend? → Nach STF/Lazarus zur Leistungssteuerung.
+- **[ABC/SORKC](./abc_sorkc.md) (BEHAVIOR):** Welche Sequenz stabilisiert Verhalten? → Funktionsanalyse, nicht alleinige Primärursache.
+- **[Bindungstheorie](./bindungstheorie.md) (RELATION + STATE):** Bei wem ist Co-Regulation möglich? → Vorrang bei klarer Personenspezifik.
+- **[Big Five](./big_five.md) (TRAIT):** Welche stabilen Dispositionen prägen Verhalten? → Nachrangig bei starker Situationsdynamik.
+- **[Emotionsregulation](./emotionsregulation_gross.md) (STATE + PROCESS):** Wo im Prozess kippt Regulation? → Nach STF, ergänzend zu Lazarus/ABC.
+- **[Frustration-Aggression](./frustration_aggression.md) (DRIVE/STATE):** Welches Ziel wurde blockiert? → Ergänzend bei Zielunterbrechung.
+- **[Ökologische Systemtheorie](./oekologische_systemtheorie_bronfenbrenner.md) (SYSTEM):** Welcher Kontext erzeugt Verhalten mit? → Ergänzend bei Kontextvarianz.
+- **[Erikson](./psychosoziale_entwicklung_erikson.md) (DEVELOPMENT):** Welche Entwicklungsfrage ist aktiv? → Ergänzend für Langzeitdeutung.
+- **[Prep-Planung](./prep_planung.md) (PLANNING):** Wie wird aus Bedarf/Interessen/Ressourcen eine Intervention? → Rahmenlogik; setzt psychologische Klärung voraus.
 
 ## 2) Gate-Schema (empfohlene Reihenfolge)
 

@@ -7,7 +7,7 @@
 
 ## Begriff & Etymologie
 
-- Emotion (lat. *emovere*) = herausbewegen
+- Emotion (lat. `emovere`) = herausbewegen
 - Regulation = steuern
 
 → Verhalten kann als Regulationsversuch verstanden werden.

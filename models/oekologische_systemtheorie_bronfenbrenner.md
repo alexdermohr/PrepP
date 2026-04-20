@@ -7,7 +7,7 @@
 
 ## Begriff & Etymologie
 
-- Ökologie (gr. *oikos*) = Lebensraum
+- Ökologie (gr. `oikos`) = Lebensraum
 - System = zusammenhängendes Ganzes
 
 → Verhalten ist kontextgebunden, nicht nur personenbezogen.

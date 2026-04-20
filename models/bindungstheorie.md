@@ -7,7 +7,7 @@
 
 ## Begriff & Etymologie
 
-- **Bindung** = althochdeutsch *bintan* (festmachen, verknüpfen)
+- **Bindung** = althochdeutsch `bintan` (festmachen, verknüpfen)
 
 → psychologisch: emotionale Verankerung an Bezugspersonen.
 

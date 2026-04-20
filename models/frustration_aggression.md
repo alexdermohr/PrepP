@@ -7,8 +7,8 @@
 
 ## Begriff & Etymologie
 
-- Frustration (lat. *frustra*) = vergeblich
-- Aggression (lat. *aggredi*) = herangehen/angreifen
+- Frustration (lat. `frustra`) = vergeblich
+- Aggression (lat. `aggredi`) = herangehen/angreifen
 
 → Zielblockade kann zu Spannungsanstieg und aggressiver Reaktion führen.
 

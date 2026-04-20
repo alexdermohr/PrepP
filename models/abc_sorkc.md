@@ -8,7 +8,7 @@
 ## Begriff & Etymologie
 
 - **ABC**: Antecedent, Behavior, Consequence
-- **SORKC**: Stimulus, Organismusvariable, Reaktion, Konsequenz, Kontingenz
+- **SORKC**: Stimulus, Organismusvariable, Reaktion, Kontingenz, Konsequenz
 
 → Verhalten wird über wiederkehrende Kopplungen stabilisiert.
 
@@ -25,14 +25,15 @@ Verhalten entsteht auch durch Emotion, Beziehung und Bewertung.
 ### Synthese
 
 ABC/SORKC erklärt vor allem die **Stabilisierung** von Verhalten, nicht allein seine Primärursache.
+ABC ist die reduzierte Kurzform, SORKC die erweiterte funktionale Analyse.
 
 ## II. Kernlogik
 
 - **A/S**: Was geht voraus?
 - **B/R**: Was wird gezeigt?
-- **C/K**: Was folgt darauf?
+- **C**: Was folgt darauf?
 - **O**: Welche Organismusfaktoren beeinflussen die Reaktion?
-- **C (Kontingenz)**: Wie regelmäßig ist die Kopplung?
+- **K**: Wie regelmäßig ist die Kopplung?
 
 ## III. Epistemische Einordnung
 

@@ -39,11 +39,11 @@ Das folgende Modell skizziert die Logik der "Prep - Planung", wie sie dem Projek
 
 ## Epistemische Einordnung
 
-* Struktur aus Förderbedarf, Interessen, Ressourcen → Aktivität [PLAUSIBEL] – Unsicherheit: 0.20 – fachlich begründet, aber nicht empirisch validiert
-* Partizipation als Wirkfaktor [BELEGT] – Unsicherheit: 0.15 – empirische Evidenz aus Empowerment-Forschung
-* Empowerment als Rahmenprinzip [PLAUSIBEL] – Unsicherheit: 0.25 – konzeptionell fundiert, Operationalisierung offen
-* Rückkopplungsschleife (Zielerreichung → Rückmeldung → Anpassung) [HEURISTISCH] – Unsicherheit: 0.35 – logisch, aber Umsetzung kontextabhängig
-* Lineare Abfolge Förderbedarf → Aktivität → Zielerreichung [HEURISTISCH] – Unsicherheit: 0.40 – reale Prozesse sind iterativer
+- Struktur aus Förderbedarf, Interessen, Ressourcen → Aktivität [PLAUSIBEL] – Unsicherheit: 0.20 – fachlich begründet, aber nicht empirisch validiert
+- Partizipation als Wirkfaktor [BELEGT] – Unsicherheit: 0.15 – empirische Evidenz aus Empowerment-Forschung
+- Empowerment als Rahmenprinzip [PLAUSIBEL] – Unsicherheit: 0.25 – konzeptionell fundiert, Operationalisierung offen
+- Rückkopplungsschleife (Zielerreichung → Rückmeldung → Anpassung) [HEURISTISCH] – Unsicherheit: 0.35 – logisch, aber Umsetzung kontextabhängig
+- Lineare Abfolge Förderbedarf → Aktivität → Zielerreichung [HEURISTISCH] – Unsicherheit: 0.40 – reale Prozesse sind iterativer
 
 ---
 
@@ -62,28 +62,28 @@ Das folgende Modell skizziert die Logik der "Prep - Planung", wie sie dem Projek
 
 ### B. Schwellen
 
-* **Aktivität gilt als partizipativ:** Wenn Zielperson mindestens 1 inhaltlich relevante Entscheidung innerhalb der Aktivität selbst trifft (nicht nur Ja/Nein, sondern gestaltende Wahl) UND Rückmeldung eingeholt und berücksichtigt wird
-* **Empowerment erkennbar:** Wenn Zielperson über mehrere Einheiten Eigeninitiative zeigt UND Kompetenzerleben berichtet oder beobachtet wird (Richtwert, keine feste Schwelle)
-* **Zielerreichung positiv:** Wenn geplantes Ergebnis eintritt ODER Abweichung dokumentiert und reflektiert wird
-* **Kipppunkt (Planung gescheitert):** Wenn Aktivität nicht stattfindet ODER Zielperson Beteiligung verweigert ODER kein Bezug zu Förderbedarf erkennbar
+- **Aktivität gilt als partizipativ:** Wenn Zielperson mindestens 1 inhaltlich relevante Entscheidung innerhalb der Aktivität selbst trifft (nicht nur Ja/Nein, sondern gestaltende Wahl) UND Rückmeldung eingeholt und berücksichtigt wird
+- **Empowerment erkennbar:** Wenn Zielperson über mehrere Einheiten Eigeninitiative zeigt UND Kompetenzerleben berichtet oder beobachtet wird (Richtwert, keine feste Schwelle)
+- **Zielerreichung positiv:** Wenn geplantes Ergebnis eintritt ODER Abweichung dokumentiert und reflektiert wird
+- **Kipppunkt (Planung gescheitert):** Wenn Aktivität nicht stattfindet ODER Zielperson Beteiligung verweigert ODER kein Bezug zu Förderbedarf erkennbar
 
 ### C. Entscheidungslogik
 
 **Vorbedingung für alle Regeln:** IF Hinweise auf Planungselement vorliegen UND Zielperson im Toleranzfenster (STF) UND Grundbedürfnisse gedeckt (Maslow) → THEN Intervention
 
-* IF Förderbedarf unklar → THEN Planung stoppen, Diagnostik vertiefen
-* IF Interessen nicht einbezogen → THEN Aktivität gemeinsam mit Zielperson umgestalten
-* IF Ressourcen fehlen → THEN Aktivität anpassen oder Ressourcen beschaffen, bevor Durchführung
-* IF keine Partizipation → THEN Entscheidungsspielräume schaffen; Rückmeldungsformat einführen
-* IF Zielerreichung nicht eingetreten → THEN Reflexion: Ziel unrealistisch, Aktivität unpassend, oder externe Faktoren?
-* IF Rückmeldung negativ → THEN Anpassung in nächster Iteration; kein Beharren auf ursprünglichem Plan
+- IF Förderbedarf unklar → THEN Planung stoppen, Diagnostik vertiefen
+- IF Interessen nicht einbezogen → THEN Aktivität gemeinsam mit Zielperson umgestalten
+- IF Ressourcen fehlen → THEN Aktivität anpassen oder Ressourcen beschaffen, bevor Durchführung
+- IF keine Partizipation → THEN Entscheidungsspielräume schaffen; Rückmeldungsformat einführen
+- IF Zielerreichung nicht eingetreten → THEN Reflexion: Ziel unrealistisch, Aktivität unpassend, oder externe Faktoren?
+- IF Rückmeldung negativ → THEN Anpassung in nächster Iteration; kein Beharren auf ursprünglichem Plan
 
 ### D. Gegenindikatoren (wann gilt Modell NICHT)
 
-* Wenn Zielperson sich in akuter Krise befindet → Stabilisierung hat Vorrang vor Planung
-* Wenn Zielperson außerhalb des Stresstoleranzfensters → keine Partizipationserwartung stellen
-* Wenn grundlegende Bedürfnisse nicht gedeckt (Maslow) → Planung kann nicht an Interessen/Empowerment ansetzen
-* Wenn Förderbedarf nicht diagnostisch abgesichert ist → Planung auf unsicherer Grundlage
+- Wenn Zielperson sich in akuter Krise befindet → Stabilisierung hat Vorrang vor Planung
+- Wenn Zielperson außerhalb des Stresstoleranzfensters → keine Partizipationserwartung stellen
+- Wenn grundlegende Bedürfnisse nicht gedeckt (Maslow) → Planung kann nicht an Interessen/Empowerment ansetzen
+- Wenn Förderbedarf nicht diagnostisch abgesichert ist → Planung auf unsicherer Grundlage
 
 ---
 
@@ -141,8 +141,8 @@ Die Macht, den Plan zu sprengen.
 
 ## Entscheidungszusammenfassung
 
-* **Zustand:** Planung einer partizipativen, empowerment-orientierten Aktivität
-* **Indikatoren:** Förderbedarf adressiert, Interessen einbezogen, Partizipation erkennbar, Eigeninitiative, Zielerreichung
-* **Schwelle:** Partizipativ: mindestens eine gestaltende Entscheidung durch Zielperson + Rückmeldung; Empowerment: Eigeninitiative über mehrere Einheiten erkennbar; Kipppunkt: Verweigerung oder kein Förderbedarfsbezug (Richtwerte, keine festen Zahlen)
-* **Handlung:** Förderbedarf unklar → stoppen; Interessen fehlen → umgestalten; keine Partizipation → Spielräume schaffen; Ziel nicht erreicht → reflektieren und anpassen
-* **Unsicherheit:** 0.25 – Planungsstruktur nachvollziehbar, aber Wirksamkeit im Einzelfall nicht vorhersagbar
+- **Zustand:** Planung einer partizipativen, empowerment-orientierten Aktivität
+- **Indikatoren:** Förderbedarf adressiert, Interessen einbezogen, Partizipation erkennbar, Eigeninitiative, Zielerreichung
+- **Schwelle:** Partizipativ: mindestens eine gestaltende Entscheidung durch Zielperson + Rückmeldung; Empowerment: Eigeninitiative über mehrere Einheiten erkennbar; Kipppunkt: Verweigerung oder kein Förderbedarfsbezug (Richtwerte, keine festen Zahlen)
+- **Handlung:** Förderbedarf unklar → stoppen; Interessen fehlen → umgestalten; keine Partizipation → Spielräume schaffen; Ziel nicht erreicht → reflektieren und anpassen
+- **Unsicherheit:** 0.25 – Planungsstruktur nachvollziehbar, aber Wirksamkeit im Einzelfall nicht vorhersagbar

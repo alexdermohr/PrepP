@@ -14,9 +14,9 @@ Die Big Five Persönlichkeitsmodell liefern ein robustes, empirisch gut abgesich
 
 Sie erklären Verhalten nicht, sondern **beschreiben nur statistische Muster**:
 
-* keine Kausalität
-* keine Situationssensitivität
-* keine Entwicklungsdynamik
+- keine Kausalität
+- keine Situationssensitivität
+- keine Entwicklungsdynamik
 
 ### **Synthese**
 
@@ -41,10 +41,10 @@ Das Modell basiert auf der Annahme, dass sich Persönlichkeit in fünf grundlege
 
 ### 1. **Offenheit für Erfahrungen (Openness)**
 
-* Fantasie
-* Kreativität
-* Neugier
-* Interesse an Neuem
+- Fantasie
+- Kreativität
+- Neugier
+- Interesse an Neuem
 
 → niedrig: eher praktisch, konservativ
 → hoch: explorativ, ideenreich
@@ -53,10 +53,10 @@ Das Modell basiert auf der Annahme, dass sich Persönlichkeit in fünf grundlege
 
 ### 2. **Gewissenhaftigkeit (Conscientiousness)**
 
-* Selbstdisziplin
-* Ordnung
-* Zielorientierung
-* Verlässlichkeit
+- Selbstdisziplin
+- Ordnung
+- Zielorientierung
+- Verlässlichkeit
 
 → niedrig: impulsiv, spontan
 → hoch: strukturiert, planend
@@ -65,10 +65,10 @@ Das Modell basiert auf der Annahme, dass sich Persönlichkeit in fünf grundlege
 
 ### 3. **Extraversion**
 
-* Geselligkeit
-* Aktivität
-* Durchsetzungsfähigkeit
-* positive Emotionalität
+- Geselligkeit
+- Aktivität
+- Durchsetzungsfähigkeit
+- positive Emotionalität
 
 → niedrig: introvertiert, zurückhaltend
 → hoch: kontaktfreudig, energiegeladen
@@ -77,9 +77,9 @@ Das Modell basiert auf der Annahme, dass sich Persönlichkeit in fünf grundlege
 
 ### 4. **Verträglichkeit (Agreeableness)**
 
-* Empathie
-* Kooperationsbereitschaft
-* Altruismus
+- Empathie
+- Kooperationsbereitschaft
+- Altruismus
 
 → niedrig: konkurrenzorientiert, kritisch
 → hoch: kooperativ, rücksichtsvoll
@@ -88,9 +88,9 @@ Das Modell basiert auf der Annahme, dass sich Persönlichkeit in fünf grundlege
 
 ### 5. **Neurotizismus (Neuroticism)**
 
-* emotionale Instabilität
-* Ängstlichkeit
-* Reizbarkeit
+- emotionale Instabilität
+- Ängstlichkeit
+- Reizbarkeit
 
 → niedrig: stabil, gelassen
 → hoch: verletzlich, stressanfällig
@@ -127,10 +127,10 @@ Situation bestimmt, welcher Trait sichtbar wird
 
 ## VI. Epistemische Einordnung
 
-* Faktorstruktur (fünf Dimensionen) [BELEGT] – Unsicherheit: 0.05 – kontextunabhängig, hoch repliziert
-* Hohe Replizierbarkeit über Kulturen hinweg [BELEGT] – Unsicherheit: 0.10 – mit Einschränkungen in nicht-westlichen Kulturen
-* Zusammenhang zwischen Traits und Verhalten [PLAUSIBEL] – Unsicherheit: 0.30 – kontextabhängig (Trait × Situation)
-* Direkte Ableitung konkreter Handlungen aus Traits [HEURISTISCH] – Unsicherheit: 0.70 – ohne Situationsanalyse nicht valide
+- Faktorstruktur (fünf Dimensionen) [BELEGT] – Unsicherheit: 0.05 – kontextunabhängig, hoch repliziert
+- Hohe Replizierbarkeit über Kulturen hinweg [BELEGT] – Unsicherheit: 0.10 – mit Einschränkungen in nicht-westlichen Kulturen
+- Zusammenhang zwischen Traits und Verhalten [PLAUSIBEL] – Unsicherheit: 0.30 – kontextabhängig (Trait × Situation)
+- Direkte Ableitung konkreter Handlungen aus Traits [HEURISTISCH] – Unsicherheit: 0.70 – ohne Situationsanalyse nicht valide
 
 ---
 
@@ -163,10 +163,10 @@ deren Lautstärke je nach Situation variiert.
 
 ## IX. Grenzen des Modells
 
-* keine Erklärung von Ursachen (nur Beschreibung)
-* wenig Sensitivität für situative Dynamik
-* kulturelle Unterschiede werden teilweise nivelliert
-* keine direkte Handlungsableitung
+- keine Erklärung von Ursachen (nur Beschreibung)
+- wenig Sensitivität für situative Dynamik
+- kulturelle Unterschiede werden teilweise nivelliert
+- keine direkte Handlungsableitung
 
 ---
 
@@ -191,12 +191,12 @@ aber kein Modell, das Verhalten erklärt oder vorhersagt, ohne Kontext zu berüc
 **Unsicherheitsgrad:** 0.12
 Ursachen:
 
-* hohe empirische Stabilität, aber Interpretationsspielräume bei Anwendung
+- hohe empirische Stabilität, aber Interpretationsspielräume bei Anwendung
 
 **Interpolationsgrad:** 0.15
 Annahmen:
 
-* Darstellung als allgemeines Grundlagenmodell ohne spezifischen Anwendungskontext
+- Darstellung als allgemeines Grundlagenmodell ohne spezifischen Anwendungskontext
 
 ---
 
@@ -214,30 +214,30 @@ Annahmen:
 
 ### B. Schwellen
 
-* **Trait-Identifikation:** Wenn mehrere (mindestens zwei) Indikatoren einer Dimension wiederkehrend über mehrere Beobachtungseinheiten auftreten (Richtwert, keine feste Zahl; gelegentliche Abweichung ist erwartbar und kein Ausschlusskriterium)
-* **Trait-Aktivierung (situativ):** Wenn Trait-konsistentes Verhalten in einer neuen Situation erstmalig auftritt
-* **Trait-Kontra-Verhalten:** Wenn Verhalten dem identifizierten Trait widerspricht → Situation prüfen (Situationsdruck kann Traits überlagern)
+- **Trait-Identifikation:** Wenn mehrere (mindestens zwei) Indikatoren einer Dimension wiederkehrend über mehrere Beobachtungseinheiten auftreten (Richtwert, keine feste Zahl; gelegentliche Abweichung ist erwartbar und kein Ausschlusskriterium)
+- **Trait-Aktivierung (situativ):** Wenn Trait-konsistentes Verhalten in einer neuen Situation erstmalig auftritt
+- **Trait-Kontra-Verhalten:** Wenn Verhalten dem identifizierten Trait widerspricht → Situation prüfen (Situationsdruck kann Traits überlagern)
 
 ### C. Entscheidungslogik
 
 **Vorbedingung für alle Regeln:** IF Hinweise auf Trait-Muster vorliegen UND keine Gegenindikatoren aktiv UND keine akute Dysregulation → THEN Intervention
 
-* IF hohe Offenheit → THEN neue Aufgaben und Explorationsräume anbieten
-* IF niedrige Offenheit → THEN bekannte Strukturen beibehalten, Neues schrittweise einführen
-* IF hohe Gewissenhaftigkeit → THEN klare Ziele und Aufgabenstrukturen nutzen
-* IF niedrige Gewissenhaftigkeit → THEN externe Strukturhilfen anbieten (Checklisten, Erinnerungen)
-* IF hohe Extraversion → THEN Gruppenaktivitäten, soziale Aufgaben
-* IF niedrige Extraversion → THEN Einzelarbeit ermöglichen, Rückzugsräume
-* IF hoher Neurotizismus → THEN Vorhersagbarkeit erhöhen, emotionale Stabilisierung, Toleranzfenster enger einschätzen
-* IF niedrige Verträglichkeit → THEN klare Regeln, Konflikte explizit bearbeiten
+- IF hohe Offenheit → THEN neue Aufgaben und Explorationsräume anbieten
+- IF niedrige Offenheit → THEN bekannte Strukturen beibehalten, Neues schrittweise einführen
+- IF hohe Gewissenhaftigkeit → THEN klare Ziele und Aufgabenstrukturen nutzen
+- IF niedrige Gewissenhaftigkeit → THEN externe Strukturhilfen anbieten (Checklisten, Erinnerungen)
+- IF hohe Extraversion → THEN Gruppenaktivitäten, soziale Aufgaben
+- IF niedrige Extraversion → THEN Einzelarbeit ermöglichen, Rückzugsräume
+- IF hoher Neurotizismus → THEN Vorhersagbarkeit erhöhen, emotionale Stabilisierung, Toleranzfenster enger einschätzen
+- IF niedrige Verträglichkeit → THEN klare Regeln, Konflikte explizit bearbeiten
 
 ### D. Gegenindikatoren (wann gilt Modell NICHT)
 
-* Wenn Verhalten situativ bedingt ist und nicht trait-konsistent → Situation analysieren, nicht Person
-* Wenn akute Stressreaktion vorliegt → Stresstoleranzfenster hat Vorrang
-* Wenn Verhalten durch unerfüllte Bedürfnisse erklärt wird → Maslow hat Vorrang
-* Bei Kindern/Jugendlichen in Entwicklung → Traits noch nicht stabil; Vorsicht vor Zuschreibung
-* Modell darf nicht zur Etikettierung verwendet werden („der ist halt so")
+- Wenn Verhalten situativ bedingt ist und nicht trait-konsistent → Situation analysieren, nicht Person
+- Wenn akute Stressreaktion vorliegt → Stresstoleranzfenster hat Vorrang
+- Wenn Verhalten durch unerfüllte Bedürfnisse erklärt wird → Maslow hat Vorrang
+- Bei Kindern/Jugendlichen in Entwicklung → Traits noch nicht stabil; Vorsicht vor Zuschreibung
+- Modell darf nicht zur Etikettierung verwendet werden („der ist halt so")
 
 ---
 
@@ -290,8 +290,8 @@ Nur leider ohne Bedienungsanleitung.
 
 ## Entscheidungszusammenfassung
 
-* **Zustand:** Trait-konsistentes Verhaltensmuster erkennbar
-* **Indikatoren:** Je Dimension spezifische beobachtbare Verhaltensweisen (siehe Indikatorentabelle)
-* **Schwelle:** Mehrere (mindestens zwei) Indikatoren einer Dimension wiederkehrend über mehrere Beobachtungseinheiten (Richtwert, keine feste Zahl)
-* **Handlung:** Aufgaben- und Umgebungsgestaltung an Trait-Profil anpassen (Struktur, Sozialform, Komplexität, Vorhersagbarkeit)
-* **Unsicherheit:** 0.12 – Modell empirisch robust, aber Anwendung auf Einzelfall ohne standardisierte Messung heuristisch
+- **Zustand:** Trait-konsistentes Verhaltensmuster erkennbar
+- **Indikatoren:** Je Dimension spezifische beobachtbare Verhaltensweisen (siehe Indikatorentabelle)
+- **Schwelle:** Mehrere (mindestens zwei) Indikatoren einer Dimension wiederkehrend über mehrere Beobachtungseinheiten (Richtwert, keine feste Zahl)
+- **Handlung:** Aufgaben- und Umgebungsgestaltung an Trait-Profil anpassen (Struktur, Sozialform, Komplexität, Vorhersagbarkeit)
+- **Unsicherheit:** 0.12 – Modell empirisch robust, aber Anwendung auf Einzelfall ohne standardisierte Messung heuristisch

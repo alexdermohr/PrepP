@@ -94,10 +94,10 @@ Im vorhandenen Prep-Planungsmodell wird Aktivierung nicht explizit benannt, ist 
 
 ## Epistemische Einordnung
 
-* Zusammenhang zwischen Aktivierung und Leistung [BELEGT] – Unsicherheit: 0.10 – kontextunabhängig
-* Umgekehrt U-förmige Beziehung bei komplexen Aufgaben [BELEGT] – Unsicherheit: 0.15 – repliziert in Laborstudien
-* Kontextabhängigkeit der optimalen Aktivierung [PLAUSIBEL] – Unsicherheit: 0.30 – situativ variabel
-* Konkrete Anwendung auf einzelne Verhaltensmuster ohne Messdaten [HEURISTISCH] – Unsicherheit: 0.65 – keine Validierung im Einzelfall
+- Zusammenhang zwischen Aktivierung und Leistung [BELEGT] – Unsicherheit: 0.10 – kontextunabhängig
+- Umgekehrt U-förmige Beziehung bei komplexen Aufgaben [BELEGT] – Unsicherheit: 0.15 – repliziert in Laborstudien
+- Kontextabhängigkeit der optimalen Aktivierung [PLAUSIBEL] – Unsicherheit: 0.30 – situativ variabel
+- Konkrete Anwendung auf einzelne Verhaltensmuster ohne Messdaten [HEURISTISCH] – Unsicherheit: 0.65 – keine Validierung im Einzelfall
 
 ---
 
@@ -135,26 +135,26 @@ zu:
 
 ### B. Schwellen
 
-* **Eintritt Unteraktivierung:** Wenn mehrere (mindestens zwei) Unteraktivierungs-Indikatoren über eine für die Situation relevante Dauer bestehen UND Aufgabenbearbeitung nicht stattfindet – kontextabhängig (Richtwert, keine feste Zeitangabe; kurze Passivphasen können Orientierung sein)
-* **Eintritt Überaktivierung:** Wenn Fehlerrate erkennbar steigt UND mindestens ein Überaktivierungs-Indikator beobachtbar ist (Richtwert, keine feste Schwelle)
-* **Optimale Zone:** Wenn Aufgabenbearbeitung stattfindet UND mehrere (mindestens zwei) Optimalzone-Indikatoren erkennbar sind (Richtwert, keine feste Schwelle)
-* **Kipppunkt:** Wenn Aufgabenabbruch oder Verweigerung eintritt
+- **Eintritt Unteraktivierung:** Wenn mehrere (mindestens zwei) Unteraktivierungs-Indikatoren über eine für die Situation relevante Dauer bestehen UND Aufgabenbearbeitung nicht stattfindet – kontextabhängig (Richtwert, keine feste Zeitangabe; kurze Passivphasen können Orientierung sein)
+- **Eintritt Überaktivierung:** Wenn Fehlerrate erkennbar steigt UND mindestens ein Überaktivierungs-Indikator beobachtbar ist (Richtwert, keine feste Schwelle)
+- **Optimale Zone:** Wenn Aufgabenbearbeitung stattfindet UND mehrere (mindestens zwei) Optimalzone-Indikatoren erkennbar sind (Richtwert, keine feste Schwelle)
+- **Kipppunkt:** Wenn Aufgabenabbruch oder Verweigerung eintritt
 
 ### C. Entscheidungslogik
 
 **Vorbedingung für alle Regeln:** IF Hinweise auf Zustand vorliegen UND keine Gegenindikatoren aktiv UND Person befindet sich im Toleranzfenster (STF prüfen) → THEN Intervention
 
-* IF Unteraktivierung → THEN Aktivierung erhöhen (Aufgabenwechsel, Bedeutsamkeit herstellen, soziale Einbindung, Handlungsorientierung)
-* IF Überaktivierung → THEN Aktivierung senken (Aufgabenkomplexität reduzieren, Teilziele setzen, Pause anbieten, Unterstützung geben)
-* IF optimale Aktivierung → THEN Bedingungen beibehalten, keine Störung
-* IF Kipppunkt → THEN Aufgabe anpassen oder unterbrechen, nicht auf Durchhalten bestehen
+- IF Unteraktivierung → THEN Aktivierung erhöhen (Aufgabenwechsel, Bedeutsamkeit herstellen, soziale Einbindung, Handlungsorientierung)
+- IF Überaktivierung → THEN Aktivierung senken (Aufgabenkomplexität reduzieren, Teilziele setzen, Pause anbieten, Unterstützung geben)
+- IF optimale Aktivierung → THEN Bedingungen beibehalten, keine Störung
+- IF Kipppunkt → THEN Aufgabe anpassen oder unterbrechen, nicht auf Durchhalten bestehen
 
 ### D. Gegenindikatoren (wann gilt Modell NICHT)
 
-* Wenn Leistungsabfall nicht auf Aktivierung, sondern auf fehlende Kompetenz zurückgeht → Modell nicht anwendbar
-* Wenn Dysregulation vorliegt (Stresstoleranzfenster verlassen) → STF hat Vorrang, Y-D beschreibt nur Leistung innerhalb des Toleranzfensters
-* Wenn motivationale Faktoren dominieren (z. B. bewusste Verweigerung) → kein Aktivierungsproblem
-* Wenn Aufgabe nicht leistungsbezogen ist (z. B. freies Spiel) → Modell nicht sinnvoll anwendbar
+- Wenn Leistungsabfall nicht auf Aktivierung, sondern auf fehlende Kompetenz zurückgeht → Modell nicht anwendbar
+- Wenn Dysregulation vorliegt (Stresstoleranzfenster verlassen) → STF hat Vorrang, Y-D beschreibt nur Leistung innerhalb des Toleranzfensters
+- Wenn motivationale Faktoren dominieren (z. B. bewusste Verweigerung) → kein Aktivierungsproblem
+- Wenn Aufgabe nicht leistungsbezogen ist (z. B. freies Spiel) → Modell nicht sinnvoll anwendbar
 
 ---
 
@@ -206,8 +206,8 @@ Leider hat niemand X gesagt, wo genau „dazwischen" liegt.
 
 ## Entscheidungszusammenfassung
 
-* **Zustand:** Aktivierungsniveau nicht im Optimum für aktuelle Aufgabe
-* **Indikatoren:** Passivität/Desinteresse (unter) oder Hektik/Fehler/Abbruch (über)
-* **Schwelle:** Unteraktivierung: mehrere (mindestens zwei) Indikatoren über eine für die Situation relevante Dauer + keine Aufgabenbearbeitung – kontextabhängig; Überaktivierung: Fehleranstieg + mindestens ein Indikator; Kipppunkt: Aufgabenabbruch (Richtwerte, keine festen Zahlen)
-* **Handlung:** Unteraktivierung → Aktivierung erhöhen (Aufgabenwechsel, Bedeutsamkeit); Überaktivierung → Aktivierung senken (Komplexität reduzieren, Teilziele)
-* **Unsicherheit:** 0.25 – Optimum individuell und aufgabenabhängig; ohne Messdaten nur heuristisch bestimmbar
+- **Zustand:** Aktivierungsniveau nicht im Optimum für aktuelle Aufgabe
+- **Indikatoren:** Passivität/Desinteresse (unter) oder Hektik/Fehler/Abbruch (über)
+- **Schwelle:** Unteraktivierung: mehrere (mindestens zwei) Indikatoren über eine für die Situation relevante Dauer + keine Aufgabenbearbeitung – kontextabhängig; Überaktivierung: Fehleranstieg + mindestens ein Indikator; Kipppunkt: Aufgabenabbruch (Richtwerte, keine festen Zahlen)
+- **Handlung:** Unteraktivierung → Aktivierung erhöhen (Aufgabenwechsel, Bedeutsamkeit); Überaktivierung → Aktivierung senken (Komplexität reduzieren, Teilziele)
+- **Unsicherheit:** 0.25 – Optimum individuell und aufgabenabhängig; ohne Messdaten nur heuristisch bestimmbar

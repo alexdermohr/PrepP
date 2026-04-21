@@ -323,6 +323,7 @@ function createSectionBlock(section, contextPath) {
 function createFileCard(entry) {
   const card = document.createElement("article");
   card.className = "card";
+  card.dataset.path = entry.path;
 
   const title = document.createElement("h3");
   title.textContent = entry.title;
@@ -741,6 +742,7 @@ export function renderModels(root, data, params) {
   data.models.forEach((entry) => {
     const card = document.createElement("article");
     card.className = "card model-card";
+    card.dataset.path = entry.path;
     if (entry.path === sourcePath) {
       card.classList.add("highlight");
     }
@@ -753,34 +755,6 @@ export function renderModels(root, data, params) {
     meta.className = "meta";
     meta.textContent = entry.path;
     card.appendChild(meta);
-
-    // Mini-Inhaltsverzeichnis
-    if (entry.sections.length > 1) {
-      const toc = document.createElement("div");
-      toc.className = "model-toc";
-      const tocTitle = document.createElement("h5");
-      tocTitle.textContent = "Inhalt";
-      toc.appendChild(tocTitle);
-
-      const ul = document.createElement("ul");
-      entry.sections.forEach((sec, index) => {
-        if (index === 0 && sec.heading === entry.title) return;
-        if (sec.heading && sec.heading !== 'Inhalt') {
-          const li = document.createElement("li");
-          const a = document.createElement("a");
-          a.textContent = sec.heading;
-          // Format fragment same way markdown does
-          const frag = sec.heading.toLowerCase().replace(/[^a-z0-9]+/g, '-');
-          a.href = `#modelle?src=${encodeURIComponent(entry.path)}&frag=${encodeURIComponent(sec.heading)}`;
-          li.appendChild(a);
-          ul.appendChild(li);
-        }
-      });
-      if (ul.children.length > 0) {
-        toc.appendChild(ul);
-        card.appendChild(toc);
-      }
-    }
 
     // Render sections
     entry.sections.forEach((section, index) => {

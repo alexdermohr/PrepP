@@ -732,6 +732,35 @@ export function renderMeta(root, data, params) {
   renderEntries(root, data.meta, params);
 }
 
+function extractModelSummary(model) {
+  let targetSection = model.sections.find(s => s.heading && s.heading.toLowerCase().includes('modelltyp'));
+
+  if (!targetSection || !targetSection.blocks || targetSection.blocks.length === 0) {
+    targetSection = model.sections.find(s => s.heading !== model.title && s.blocks && s.blocks.length > 0);
+  }
+
+  if (!targetSection || !targetSection.blocks || targetSection.blocks.length === 0) return null;
+
+  const firstBlock = targetSection.blocks.find(b => b.type === 'text');
+  if (!firstBlock || !firstBlock.text) return null;
+
+  let text = firstBlock.text;
+
+  // Strip Markdown bold/italic
+  text = text.replace(/\*\*/g, '').replace(/_/g, '').replace(/\*/g, '');
+
+  // Strip leading acronyms like "STATE (Zustand) - " or "NEED + MOTIVATION – "
+  text = text.replace(/^[A-Z\s+]+(?:\([^)]+\))?\s*[-–]\s*/, '');
+
+  // Extract up to the first dot for a complete sentence
+  const dotIndex = text.indexOf('.');
+  if (dotIndex > 0) {
+    text = text.substring(0, dotIndex + 1);
+  }
+
+  return text.trim();
+}
+
 export function renderModels(root, data, params) {
   if (!data.models || !data.models.length)
     return renderEmptyState(root, "Keine Modelle vorhanden.");
@@ -775,25 +804,12 @@ export function renderModels(root, data, params) {
     a.className = "model-index-link";
     li.appendChild(a);
 
-    // Versuche "Modelltyp" defensiv zu extrahieren
-    const typeSection = model.sections.find(s => s.heading && s.heading.toLowerCase().includes('modelltyp'));
-    if (typeSection && typeSection.blocks && typeSection.blocks.length > 0) {
-      const firstBlock = typeSection.blocks[0];
-      if (firstBlock.type === 'text' && firstBlock.text) {
-        let typeText = firstBlock.text.replace(/\*\*/g, '').trim();
-
-        const dotIndex = typeText.indexOf('.');
-        if (dotIndex > 0 && dotIndex < 100) {
-          typeText = typeText.substring(0, dotIndex + 1);
-        } else if (typeText.length > 100) {
-          typeText = typeText.substring(0, 100) + '...';
-        }
-
-        const desc = document.createElement("span");
-        desc.className = "model-index-meta";
-        desc.textContent = typeText;
-        li.appendChild(desc);
-      }
+    const summaryText = extractModelSummary(model);
+    if (summaryText) {
+      const desc = document.createElement("span");
+      desc.className = "model-index-meta";
+      desc.textContent = summaryText;
+      li.appendChild(desc);
     }
 
     list.appendChild(li);

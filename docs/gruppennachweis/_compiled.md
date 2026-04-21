@@ -1,9 +1,9 @@
-<!-- status: draft -->
+<!-- status: structured -->
 
 # Gruppennachweis: Kompilierte Fassung
 
 > **Dieses Dokument ist die laufende Arbeitsfassung des Gruppennachweises.**
-> Kapitel können abschnittsweise übernommen werden, sobald sie den Status `structured` erreicht haben.
+> Kapitel werden abschnittsweise übernommen, sobald sie den Status `structured` erreicht haben.
 > `[OFFEN]`-Markierungen sind in dieser Fassung ausdrücklich erlaubt und kennzeichnen bekannte Lücken.
 > Es ist die einzige Zieltextebene des Repos — nicht ein fernes Endprodukt, sondern das wachsende Zieldokument.
 
@@ -13,6 +13,19 @@
 - Kapitel mit Status `structured` dürfen als Arbeitsfassung eingefügt werden.
 - Kapitel mit Status `integrated` gelten als inhaltlich abgeschlossen.
 - `[OFFEN]`-Punkte bleiben sichtbar, bis sie explizit aufgelöst sind.
+
+## Statusübersicht
+
+| Kapitel | Datei | Status |
+|---|---|---|
+| 1. Thema | [kapitel/01_thema.md](kapitel/01_thema.md) | `structured` |
+| 2. Kontext und Situation | [kapitel/02_kontext.md](kapitel/02_kontext.md) | `structured` |
+| 3. Menschen und ICF | [kapitel/03_menschen_und_icf.md](kapitel/03_menschen_und_icf.md) | `structured` |
+| 4. Zielsetzung und pädagogisches Handeln | [kapitel/04_zielsetzung_und_paedagogisches_handeln.md](kapitel/04_zielsetzung_und_paedagogisches_handeln.md) | `structured` |
+| 5. Reflexion | [kapitel/05_reflexion.md](kapitel/05_reflexion.md) | `structured` |
+| 6. Formalia und Anhang | [kapitel/06_formalia_und_anhang.md](kapitel/06_formalia_und_anhang.md) | `structured` |
+
+Übergang zu `integrated` erfordert laut [_state.md](_state.md): alle `[OFFEN]`-Punkte aufgelöst, Quellenbezüge geprüft, Mapping aktualisiert. Siehe verbleibende Lücken in [mapping/rohmaterial_zu_kapiteln.md](mapping/rohmaterial_zu_kapiteln.md).
 
 ## Kapitelreihenfolge
 
@@ -27,7 +40,20 @@
 
 - Mapping: [mapping/rohmaterial_zu_kapiteln.md](mapping/rohmaterial_zu_kapiteln.md)
 - Literaturverzeichnis: [apparat/literaturverzeichnis.md](apparat/literaturverzeichnis.md)
+- Contract: [_contract.md](_contract.md)
+- State-Modell: [_state.md](_state.md)
+- Transformation: [../transformation/rohmaterial_to_gruppennachweis.md](../transformation/rohmaterial_to_gruppennachweis.md)
+
+## Verbleibende zentrale Lücken (Überblick)
+
+Die folgenden Punkte sind übergreifend noch offen; Detailauflistung im Mapping:
+
+- [OFFEN] Institutionelles Profil der Schule / des Einrichtungskontexts in Hamburg (Kapitel 2).
+- [OFFEN] Externe Fachliteratur zu Empowerment, Partizipation, ICF-CY; Zitierstil (Kapitel 1, 4, 6).
+- [OFFEN] Systematische Wirkungsanalyse der Entscheidungsdokumente E1, E2, E3, E4 und E6 auf Basis des Beobachtungsrasters (Kapitel 5).
+- [OFFEN] Systematisch erweiterte Feedback-Erhebung (Skalen, Auswahlformate; Kapitel 3, 5).
+- [OFFEN] Formale Anforderungen an den Gruppennachweis (Umfang, Abgabeformat, Zitierstil; Kapitel 6).
 
 ---
 
-*(Kapiteltext wird hier abschnittsweise eingefügt, sobald einzelne Kapitel mindestens Status `structured` erreichen)*
+*(Die Kapitel liegen in Status `structured` vor und können dem Bewertungsbogen folgend in dieser Reihenfolge gelesen werden. Solange nicht alle Kapitel Status `integrated` erreicht haben, wird an dieser Stelle kein zusammenhängender Fließtext hinterlegt; die Kapitel sind einzeln referenzierbar.)*

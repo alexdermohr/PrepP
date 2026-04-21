@@ -1,29 +1,54 @@
-<!-- status: draft -->
+<!-- status: structured -->
 
 # Kapitel 1: Thema
 
-## Projektbezeichnung
+## 1.1 Projektbezeichnung
 
-Schulhof verschönern mit X
+**„Schulhof verschönern mit X"** – ein schulisches Gemeinschaftsprojekt, in dem der zieldifferent beschulte Siebtklässler X die Rolle als Initiator und Koordinator eines realen Gestaltungsvorhabens übernimmt.
+→ Quelle: [docs/projektplan.md](../../projektplan.md) (Titel, Übergeordnetes Ziel)
 
-## Thematische Einordnung
+## 1.2 Kurzbeschreibung
 
-Förderung von Selbstvertrauen, sozialer Kooperation und Selbstständigkeit durch ein gemeinschaftliches Gestaltungsprojekt im schulischen Kontext.
+Im Projektverlauf durchläuft X mit zwei Pädagoginnen/Pädagogen (T. und A.) und zeitweise kooperierenden Mitschüler\*innen – insbesondere Y – die Phasen Planung, Schulhofumfrage, konkrete Umsetzungsplanung, Materialbeschaffung und Reflexion. Kern der Umsetzung ist bislang der Aufbau einer Pfandsammel-Struktur für die Einrichtung (Pfandprojekt als erster sichtbarer Beitrag).
+→ Quelle: [docs/projektplan.md](../../projektplan.md) (Projektphasen), [docs/tagebuch/00_vorlauf.md](../../tagebuch/00_vorlauf.md) bis [docs/tagebuch/07_tag_7.md](../../tagebuch/07_tag_7.md)
 
-## Quellenbezüge
+## 1.3 Sinnvolle Idee
 
-- Projektplan: [docs/projektplan.md](../../projektplan.md) → Ausgangslage, Förderbedarf, Ressourcen, Interessen
-- Dokumentationsziel (Meta-Ebene): [meta/projektziel.md](../../../meta/projektziel.md) → Nachvollziehbarkeit, Reflexion, Explizitmachung
-- Beobachtungen: [docs/beobachtungen/01_verhalten_in_situationen.md](../../beobachtungen/01_verhalten_in_situationen.md) → Verhaltensmuster als Ausgangspunkt
+Das Projekt nutzt die in Beobachtungen dokumentierte **Handlungsstärke** von X als Anschlusspunkt und überträgt ihm eine **verantwortliche Rolle in einem realen Vorhaben**, statt Förderung auf isolierte Übungsformate zu reduzieren.
 
-## Kernaussagen (zu verdichten)
+- X zeigt in handlungsorientierten Situationen (Pfand sammeln, Preise vergleichen, Planen, Rechnen) Initiative, Ausdauer und Selbstständigkeit.
+  → Quelle: [docs/beobachtungen/01_verhalten_in_situationen.md](../../beobachtungen/01_verhalten_in_situationen.md), [docs/hypothesen.md](../../hypothesen.md) (H1, H6)
+- In sozial exponierten oder formellen Situationen (Gespräche mit Hausmeister, stellvertretendem Schulleiter K, Peers) reagiert X mit Rückzug, leisem Sprechen, Abwenden oder verbaler Zuspitzung.
+  → Quelle: [docs/beobachtungen/01_verhalten_in_situationen.md](../../beobachtungen/01_verhalten_in_situationen.md), [docs/tagebuch/01_tag_1.md](../../tagebuch/01_tag_1.md), [docs/tagebuch/04_tag_4.md](../../tagebuch/04_tag_4.md), [docs/hypothesen.md](../../hypothesen.md) (H2, H6)
 
-- X zeigt unterschiedliches Verhalten in handlungsorientierten vs. sozial exponierten Situationen
-  → Quelle: [docs/beobachtungen/01_verhalten_in_situationen.md](../../beobachtungen/01_verhalten_in_situationen.md)
-- Projekt zielt auf Empowerment durch verantwortliche Rolle als Initiator und Koordinator
-  → Quelle: [docs/projektplan.md](../../projektplan.md) (Übergeordnetes Ziel)
+Die Projektrolle verbindet beide Bereiche: Handeln als bekannter Stärkebereich trägt die Exposition in sozial anspruchsvolleren Teilschritten (Peer-Befragung, Abstimmungen mit Erwachsenen).
+
+## 1.4 Plausible Begründung
+
+1. **Anschluss an Gemeinschaft über einen sichtbaren Beitrag.** Die im Projektplan dokumentierte Arbeitshypothese lautet, dass Motivation und soziales Lernen bei X nicht durch sozialen Druck, sondern durch einen eigenen nützlichen Beitrag an einen gemeinsamen Gegenstand entstehen.
+   → Quelle: [docs/projektplan.md](../../projektplan.md) (Ausgangslage, Arbeitshypothesen)
+2. **Passung zu Ressourcen.** Gemeinsinn, Moralverständnis, Ordnungsliebe, soziale Intelligenz und Interesse an „Teilhabe durch Dienst an der Gemeinschaft" sind im Projektplan als Ressourcen und Interessen benannt und finden im Format eines Gestaltungsprojekts ein funktionales Feld.
+   → Quelle: [docs/projektplan.md](../../projektplan.md) (Ressourcen, Interessen)
+3. **Kontrollierte Konfliktwahrscheinlichkeit.** Der Projektplan antizipiert explizit, dass X zu „kommandierendem Verhalten" und Reibungen neigt, und deutet dies als Lernchance für soziales Lernen und Identitätsbildung unter pädagogischer Begleitung.
+   → Quelle: [docs/projektplan.md](../../projektplan.md) (Arbeitshypothese zu Konflikten)
+4. **Fachliche Rahmung.** Die Planungslogik entspricht dem Repo-internen Rahmenmodell „Prep-Planung" (Förderbedarf + Interessen + Ressourcen → Aktivität mit Partizipation und Rückmeldung unter dem Prinzip Empowerment).
+   → Quelle: [models/prep_planung.md](../../../models/prep_planung.md)
+
+## 1.5 Abgrenzung
+
+- Der Gruppennachweis dokumentiert die Arbeit an Selbstvertrauen, gleichwürdiger Peer-Interaktion, sprachlichem Ausdruck, Selbstständigkeit und Gemeinschaftserfahrung als **ein** Projektzusammenhang.
+  → Quelle: [docs/projektplan.md](../../projektplan.md) (Teilziele 1–5)
+- Nicht Gegenstand dieses Nachweises sind eigenständige diagnostische oder therapeutische Zielsetzungen; ebenso keine individuelle Förderplanung außerhalb des Projekts.
+  → Quelle: [meta/projektziel.md](../../../meta/projektziel.md) (Dokumentations-, nicht Vorhabensziel der Visualisierung); [docs/gruppennachweis/_contract.md](../_contract.md)
+
+## 1.6 Quellenbezüge (zusammenfassend)
+
+- [docs/projektplan.md](../../projektplan.md) → Ausgangslage, Förderbedarf, Ressourcen, Interessen, Hypothesen, Projektphasen, Zielformulierung
+- [docs/beobachtungen/01_verhalten_in_situationen.md](../../beobachtungen/01_verhalten_in_situationen.md) → Verhaltensmuster als Ausgangspunkt
+- [docs/hypothesen.md](../../hypothesen.md) → H1, H2, H6 als Rahmungsachse
+- [models/prep_planung.md](../../../models/prep_planung.md) → fachliche Rahmung der Projektlogik
+- [meta/projektziel.md](../../../meta/projektziel.md) → Dokumentationsziel der Visualisierung
 
 ## Offene Punkte
 
-- [OFFEN] Präzisere thematische Eingrenzung für den Gruppennachweis
-- [OFFEN] Abgrenzung zu anderen Förderbereichen
+- [OFFEN] Eigener Fachliteraturbeleg zu Empowerment-/Partizipationsorientierung (Kapitel 4.4, Apparat) → siehe [apparat/literaturverzeichnis.md](../apparat/literaturverzeichnis.md)

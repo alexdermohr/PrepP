@@ -6,67 +6,92 @@ Dieses Dokument stellt sicher, dass jede Aussage im Gruppennachweis auf eine Que
 
 **Regel:** KEINE Aussage ohne Rückverweis.
 
+**Status-Legende:** `strukturiert` = Aussage ist im Kapitel mit belegtem Quellenverweis ausgeführt · `[OFFEN]` = bekannte epistemische Lücke, sichtbar im Kapitel markiert.
+
 ## Kapitel-Mapping
 
 ### Kapitel 1: Thema und Projektbezeichnung
 
 | Aussage / Inhalt | Quelle (Rohmaterial) | Status |
 |---|---|---|
-| Projektbezeichnung und Setting | `docs/projektplan.md` | [OFFEN] |
-| Förderbedarf, Ressourcen, Interessen | `docs/projektplan.md` | [OFFEN] |
-| Verhaltensmuster als Ausgangspunkt | `docs/beobachtungen/01_verhalten_in_situationen.md` | [OFFEN] |
+| Projektbezeichnung und Setting | `docs/projektplan.md` | strukturiert |
+| Förderbedarf, Ressourcen, Interessen | `docs/projektplan.md` | strukturiert |
+| Verhaltensmuster als Ausgangspunkt | `docs/beobachtungen/01_verhalten_in_situationen.md`, `docs/hypothesen.md` (H1, H2, H6) | strukturiert |
+| Rahmenmodell | `models/prep_planung.md` | strukturiert |
+| Externe Fachliteratur zur Begründung | `docs/gruppennachweis/apparat/literaturverzeichnis.md` | [OFFEN] |
 
 ### Kapitel 2: Kontext und Situation
 
 | Aussage / Inhalt | Quelle (Rohmaterial) | Status |
 |---|---|---|
-| Zeitlicher Rahmen und Projektphasen | `docs/projektplan.md`, `docs/tagebuch/*.md` | [OFFEN] |
-| Institutioneller Rahmen | `docs/entscheidungen/03_systemarchitektur_und_regulation.md` | [OFFEN] |
-| Methodischer Rahmen | `meta/arbeitsregeln.md` | [OFFEN] |
+| Einrichtung (Schule in Hamburg) | `docs/tagebuch/05_tag_5.md` (Hamburg-Bezug), `docs/projektplan.md`, `docs/icf-reports/*` | strukturiert |
+| Konkreter Schulname / institutionelles Schulprofil | – nicht im Repo belegt – | [OFFEN] |
+| Zieldifferente Beschulung | `docs/projektplan.md`, ICF d820 | strukturiert |
+| Zeitlicher Rahmen (Vorlauf + Tage 1–7, 04.–08.04.2026) | `docs/tagebuch/*.md`, `docs/icf-reports/`, `docs/feedback/*.md` | strukturiert |
+| Projektphasen | `docs/projektplan.md` | strukturiert |
+| Spannungsfeld Struktur/Selbstbestimmung | `docs/reflexion.md`, `docs/projektplan.md` | strukturiert |
+| Systemische Rahmenbedingungen | `docs/entscheidungen/03_systemarchitektur_und_regulation.md`, H7 | strukturiert |
+| Methodischer Rahmen (Arbeitsregeln) | `meta/arbeitsregeln.md`, `meta/projektziel.md`, `_contract.md` | strukturiert |
 
 ### Kapitel 3: Menschen und ICF
 
 | Aussage / Inhalt | Quelle (Rohmaterial) | Status |
 |---|---|---|
-| Demografische Daten und Charakterisierung | `docs/projektplan.md` | [OFFEN] |
-| Ressourcen und Förderbedarfe | `docs/projektplan.md` | [OFFEN] |
-| Verhaltensmuster X | `docs/beobachtungen/*.md` | [OFFEN] |
-| Feedback der Zielperson | `docs/feedback/*.md` | [OFFEN] |
-| ICF: Körperfunktionen/-strukturen | `docs/icf-reports/`, `docs/hypothesen.md` | [OFFEN] |
-| ICF: Aktivitäten & Partizipation | `docs/icf-reports/`, `docs/beobachtungen/*.md` | [OFFEN] |
-| ICF: Umweltfaktoren | `docs/icf-reports/`, `docs/entscheidungen/*.md` | [OFFEN] |
+| Demografische Daten (Alter, Klasse, Sprachen, Familiensituation, Hörbeeinträchtigung) | `docs/projektplan.md`, `docs/icf-reports/*` | strukturiert |
+| Allgemeine Charakterisierung | `docs/beobachtungen/*.md`, `docs/tagebuch/*.md`, `docs/projektplan.md` | strukturiert |
+| Ressourcen und Förderbedarfe | `docs/projektplan.md`, `docs/beobachtungen/*.md` | strukturiert |
+| ICF b/ – Körperfunktionen | `docs/icf-reports/*`, `docs/beobachtungen/*.md`, `docs/tagebuch/*.md` | strukturiert |
+| ICF d/ – Aktivitäten & Partizipation | `docs/icf-reports/*`, `docs/beobachtungen/*.md`, `docs/tagebuch/*.md`, `docs/hypothesen.md` | strukturiert |
+| ICF e/ – Umweltfaktoren (Ressourcen) | `docs/icf-reports/*` | strukturiert |
+| Hemmende Umweltfaktoren (nicht ICF-codiert) | `docs/entscheidungen/03_systemarchitektur_und_regulation.md`, H7, `docs/tagebuch/07_tag_7.md` | strukturiert |
+| Feedback der Zielperson | `docs/feedback/*.md` | strukturiert |
+| Weitere Beteiligte (T., A., Y, J, K, Hausmeister, Reinigungskräfte) | `docs/projektplan.md`, `docs/tagebuch/*.md`, `docs/reflexion.md` | strukturiert |
+| Formale ICF-Codierung hemmender Umweltfaktoren | `docs/icf-reports/*` | [OFFEN] |
+| Systematische Feedback-Erhebung (Skalen/Auswahl) | `docs/feedback/*.md` | [OFFEN] |
 
 ### Kapitel 4: Zielsetzung und pädagogisches Handeln
 
 | Aussage / Inhalt | Quelle (Rohmaterial) | Status |
 |---|---|---|
-| Zielformulierungen | `docs/projektplan.md` | [OFFEN] |
-| Handlungsschritte / Weg | `docs/projektplan.md`, `docs/entscheidungen/*.md` | [OFFEN] |
-| Partizipation der Zielperson | `docs/feedback/*.md`, `docs/tagebuch/*.md` | [OFFEN] |
-| Fachliche Begründung | `docs/hypothesen.md`, `models/prep_planung.md` | [OFFEN] |
+| Übergeordnetes Ziel und Teilziele T1–T5 | `docs/projektplan.md` | strukturiert |
+| Projektphasen als Weg | `docs/projektplan.md`, `docs/tagebuch/*.md` | strukturiert |
+| Entscheidungsdokumente E1, E2, E3, E4 und E6 als Handlungsanpassungen | `docs/entscheidungen/*.md` | strukturiert |
+| Partizipation – Prinzipien und Ereignisse | `docs/projektplan.md`, `docs/tagebuch/04_tag_4.md`, `docs/tagebuch/05_tag_5.md`, `docs/tagebuch/06_tag_6.md`, `docs/feedback/*.md` | strukturiert |
+| Fachliche Begründung (Hypothesen, Modelle) | `docs/hypothesen.md`, `models/prep_planung.md`, `docs/intervention/pause_protokoll.md` | strukturiert |
+| Hypothesenbezug (H1–H11) | `docs/hypothesen.md` | strukturiert |
+| Externe Fachliteratur | `docs/gruppennachweis/apparat/literaturverzeichnis.md` | [OFFEN] |
+| Systematische Dokumentation des Partizipationsgrads | `docs/beobachtungen/03_pause_und_pfandprojekt_beobachtungsraster.md` | [OFFEN] |
 
 ### Kapitel 5: Reflexion
 
 | Aussage / Inhalt | Quelle (Rohmaterial) | Status |
 |---|---|---|
-| Zielerreichung | `docs/reflexion.md`, `docs/tagebuch/*.md` | [OFFEN] |
-| Nachweis der Wirkungen | `docs/entscheidungen/*.md`, `docs/feedback/*.md` | [OFFEN] |
-| Abweichungen vom Plan | `docs/reflexion.md`, `docs/hypothesen.md` | [OFFEN] |
-| Schlussfolgerungen | `docs/reflexion.md` | [OFFEN] |
+| Zielerreichung je Teilziel T1–T5 (A/B/C-Kategorie) | `docs/tagebuch/*.md`, `docs/beobachtungen/*.md`, `docs/feedback/*.md`, `docs/hypothesen.md` | strukturiert |
+| Nachweis-Indikatoren (H9, H1, H6, Projektergebnis) | `docs/beobachtungen/*.md`, `docs/tagebuch/04_tag_4.md`, `docs/tagebuch/06_tag_6.md`, `docs/tagebuch/07_tag_7.md`, `docs/reflexion.md` | strukturiert |
+| Abweichungen vom Plan (Tag 1, 2, 3, 4, 7 + Rollenabweichung) | `docs/tagebuch/*.md`, `docs/reflexion.md`, `docs/entscheidungen/*.md` | strukturiert |
+| Spannungen Feedback ↔ Beobachtung | `docs/feedback/03_feedback_x.md`, `docs/beobachtungen/01_verhalten_in_situationen.md`, H10 | strukturiert |
+| Hypothesenstatus H1–H11 | `docs/hypothesen.md` | strukturiert |
+| Schlussfolgerungen | `docs/reflexion.md`, `docs/entscheidungen/*.md` | strukturiert |
+| Systematische Wirkungsanalyse der Entscheidungsdokumente E1, E2, E3, E4 und E6 | `docs/beobachtungen/03_pause_und_pfandprojekt_beobachtungsraster.md` | [OFFEN] |
+| Messbare Entwicklung T3 (sprachlicher Ausdruck) | – noch nicht erhoben – | [OFFEN] |
 
 ### Kapitel 6: Formalia und Anhang
 
 | Aussage / Inhalt | Quelle (Rohmaterial) | Status |
 |---|---|---|
-| Einhaltung der Arbeitsregeln | `meta/arbeitsregeln.md` | [OFFEN] |
-| Protokolle und Notizen im Anhang | `docs/intervention/*.md`, `docs/tagebuch/*.md` | [OFFEN] |
+| Einhaltung der Arbeitsregeln 1–8 | `meta/arbeitsregeln.md`, Kapitel 2–5 | strukturiert |
+| Literaturverzeichnis (Stand, Zitierstil) | `docs/gruppennachweis/apparat/literaturverzeichnis.md` | [OFFEN] |
+| Anhang A1–A9 (Referenz auf Rohmaterial) | `docs/projektplan.md`, `docs/tagebuch/*.md`, `docs/beobachtungen/*.md`, `docs/hypothesen.md`, `docs/entscheidungen/*.md`, `docs/feedback/*.md`, `docs/intervention/pause_protokoll.md`, `docs/icf-reports/*`, `docs/reflexion.md` | strukturiert |
+| Formale Anforderungen (Umfang, Abgabeformat, Zitierstil) | – projektseitig nicht festgelegt – | [OFFEN] |
 
 ## Offene epistemische Lücken
 
 | Lücke | Nötig für | Handlungsbedarf |
 |---|---|---|
-| ICF-Systematisierung | Kapitel 3 | ICF-Reports auswerten und 2 Beispiele je Dimension formulieren |
-| Feedback-Formmarkierung | Kapitel 3, 5 | Rückmeldungen als wörtlich/paraphrasiert kennzeichnen |
-| Fachliche Begründung der Handlungsschritte | Kapitel 4 | Literatur oder Modellbezug explizit machen |
-| Zielerreichungsnachweis | Kapitel 5 | Systematische Wirkungsanalyse der Entscheidungen |
-| Abgabeformat und Umfang | Kapitel 6 | Vorgabe klären |
+| Konkreter Schulname / institutionelles Profil der Einrichtung | Kapitel 2 | extern recherchieren und belegen oder als dauerhafte Leerstelle akzeptieren |
+| Formale ICF-Codierung hemmender Umweltfaktoren | Kapitel 3 | neuer ICF-Report mit e-Faktoren < 0 (z. B. e325, e440) |
+| Systematische Feedback-Erhebung (Skalen/Auswahl) | Kapitel 3, 5 | weitere Erhebungen in verschiedenen Modi durchführen |
+| Externe Fachliteratur zu Empowerment/Partizipation/ICF | Kapitel 1, 4, 6 | Apparat befüllen, Zitierstil festlegen |
+| Systematische Wirkungsanalyse der Entscheidungsdokumente E1, E2, E3, E4 und E6 | Kapitel 5 | Beobachtungsraster durchgängig ausfüllen |
+| Messbare Entwicklung in T3 (sprachlicher Ausdruck) | Kapitel 5 | Operationalisierung (z. B. Lautstärke, Redeanteil) |
+| Abgabeformat / Umfang / Zitierstil des Gruppennachweises | Kapitel 6 | Vorgabe klären |

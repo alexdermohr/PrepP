@@ -740,7 +740,16 @@ export function renderModels(root, data, params) {
   const sourcePath = normalizeSourcePath(sourceRef);
 
   // Extract index.md so it doesn't render as a regular model card
-  const otherModels = data.models.filter(e => e.path !== 'models/index.md' && e.path !== 'index.md');
+  let otherModels = data.models.filter(e => e.path !== 'models/index.md' && e.path !== 'index.md');
+
+  // Reorder otherModels so the target model (sourcePath) is rendered first
+  if (sourcePath) {
+    const targetModelIndex = otherModels.findIndex(m => m.path === sourcePath);
+    if (targetModelIndex > -1) {
+      const targetModel = otherModels.splice(targetModelIndex, 1)[0];
+      otherModels.unshift(targetModel);
+    }
+  }
 
   // Render global UI index card
   const indexCard = document.createElement("article");
@@ -753,12 +762,47 @@ export function renderModels(root, data, params) {
   const list = document.createElement("ul");
   list.className = "model-index-list";
 
-  otherModels.forEach(model => {
+  // Wir sortieren alphabetisch für den Index, unabhängig von der Renderreihenfolge.
+  const sortedForIndex = [...otherModels].sort((a, b) => a.title.localeCompare(b.title));
+
+  sortedForIndex.forEach(model => {
     const li = document.createElement("li");
+    li.style.marginBottom = "0.75rem";
+
     const a = document.createElement("a");
     a.href = `#modelle?src=${encodeURIComponent(model.path)}`;
     a.textContent = model.title;
+    a.style.fontWeight = "600";
+    a.style.display = "block";
     li.appendChild(a);
+
+    // Versuche "Modelltyp" zu extrahieren
+    const typeSection = model.sections.find(s => s.heading && s.heading.toLowerCase().includes('modelltyp'));
+    if (typeSection && typeSection.blocks && typeSection.blocks.length > 0) {
+      const firstBlock = typeSection.blocks[0];
+      if (firstBlock.type === 'text' && firstBlock.text) {
+        // Extrahiere den Text bis zum ersten Punkt oder maximal 80 Zeichen
+        let typeText = firstBlock.text;
+        if (typeText.startsWith('**')) {
+           const match = typeText.match(/\*\*(.*?)\*\*\s*[-–]?\s*(.*)/);
+           if (match) typeText = match[1] + " - " + match[2];
+        }
+        typeText = typeText.replace(/\*\*/g, '');
+        const dotIndex = typeText.indexOf('.');
+        if (dotIndex > 0 && dotIndex < 100) {
+          typeText = typeText.substring(0, dotIndex + 1);
+        } else if (typeText.length > 100) {
+          typeText = typeText.substring(0, 100) + '...';
+        }
+        const desc = document.createElement("span");
+        desc.style.display = "block";
+        desc.style.fontSize = "0.85rem";
+        desc.style.color = "#6b7280";
+        desc.textContent = typeText;
+        li.appendChild(desc);
+      }
+    }
+
     list.appendChild(li);
   });
 

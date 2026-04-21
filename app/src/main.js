@@ -201,7 +201,7 @@ function renderFromHash() {
 
               for (const h of headings) {
                 const hText = h.textContent.toLowerCase().replace(/[^a-z0-9]+/g, '');
-                if (hText.includes(normalizedFrag)) {
+                if (hText === normalizedFrag || hText.startsWith(normalizedFrag)) {
                   targetHeading = h;
                   break;
                 }

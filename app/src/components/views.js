@@ -739,7 +739,48 @@ export function renderModels(root, data, params) {
   const sourceRef = params?.get("src");
   const sourcePath = normalizeSourcePath(sourceRef);
 
-  data.models.forEach((entry) => {
+  // Extract index.md
+  const indexModel = data.models.find(e => e.path === 'models/index.md' || e.path === 'index.md');
+  const otherModels = data.models.filter(e => e.path !== 'models/index.md' && e.path !== 'index.md');
+
+  // Render global index first
+  if (indexModel) {
+    const indexCard = document.createElement("article");
+    indexCard.className = "card model-index-card";
+    indexCard.dataset.path = indexModel.path;
+
+    if (indexModel.path === sourcePath) {
+      indexCard.classList.add("highlight");
+    }
+
+    const title = document.createElement("h2");
+    title.textContent = indexModel.title || "Modelle im Überblick";
+    indexCard.appendChild(title);
+
+    // Render sections of the index
+    indexModel.sections.forEach((section, index) => {
+      if (index === 0 && section.heading === indexModel.title) {
+        if (section.blocks && section.blocks.length > 0) {
+          const bulletOnly = createSectionBlock(
+            { heading: "", blocks: section.blocks },
+            indexModel.path
+          );
+          const heading = bulletOnly.querySelector("h4");
+          if (heading) heading.remove();
+          indexCard.appendChild(bulletOnly);
+        }
+        return;
+      }
+
+      const secBlock = createSectionBlock(section, indexModel.path);
+      indexCard.appendChild(secBlock);
+    });
+
+    root.appendChild(indexCard);
+  }
+
+  // Render other models
+  otherModels.forEach((entry) => {
     const card = document.createElement("article");
     card.className = "card model-card";
     card.dataset.path = entry.path;
@@ -779,8 +820,6 @@ export function renderModels(root, data, params) {
     root.appendChild(card);
   });
 }
-
-
 export function renderAktuellerStand(root, data) {
   const container = document.createElement("div");
   container.className = "dashboard-grid";

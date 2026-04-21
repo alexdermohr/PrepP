@@ -182,6 +182,40 @@ function renderFromHash() {
       // Optional focus management for genuine view changes
       const mainContent = document.getElementById("main-content");
       if (mainContent) mainContent.focus();
+
+      // Handle internal navigation scrolling
+      const src = params.get("src");
+      const frag = params.get("frag");
+
+      if (src) {
+        // Find the card. The cards get .highlight if their path matches src.
+        // Wait a tiny bit for DOM to settle if necessary, though it should be synchronous here.
+        setTimeout(() => {
+          const highlightCard = document.querySelector(".highlight") || document.querySelector(`[data-path="${src}"]`);
+          if (highlightCard) {
+            if (frag) {
+              // Try to find a heading in the card that matches the fragment
+              const normalizedFrag = frag.toLowerCase().replace(/[^a-z0-9]+/g, '');
+              const headings = highlightCard.querySelectorAll("h2, h3, h4, h5, h6");
+              let targetHeading = null;
+
+              for (const h of headings) {
+                const hText = h.textContent.toLowerCase().replace(/[^a-z0-9]+/g, '');
+                if (hText.includes(normalizedFrag)) {
+                  targetHeading = h;
+                  break;
+                }
+              }
+
+              if (targetHeading) {
+                targetHeading.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                return;
+              }
+            }
+            highlightCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }, 50);
+      }
     }
   } else {
     // If it's an unknown hash but nothing is rendered yet (initial load), fallback to start

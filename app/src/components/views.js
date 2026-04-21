@@ -69,13 +69,17 @@ function viewIdForDocPath(path) {
 function renderInlineText(container, text, contextPath = null) {
   if (!text) return;
   // Simple regex to split text into tokens
-  const parts = text.split(/(\*\*.*?\*\*|`.*?`|\[.*?\]\(.*?\))/g);
+  const parts = text.split(/(\*\*.*?\*\*|_.*?_|\*.*?\*|`.*?`|\[.*?\]\(.*?\))/g);
 
   parts.forEach((part) => {
     if (part.startsWith("**") && part.endsWith("**")) {
       const strong = document.createElement("strong");
       strong.textContent = part.slice(2, -2);
       container.appendChild(strong);
+    } else if ((part.startsWith("_") && part.endsWith("_")) || (part.startsWith("*") && part.endsWith("*"))) {
+      const em = document.createElement("em");
+      em.textContent = part.slice(1, -1);
+      container.appendChild(em);
     } else if (part.startsWith("`") && part.endsWith("`")) {
       const code = document.createElement("code");
       code.textContent = part.slice(1, -1);
@@ -112,7 +116,7 @@ function renderInlineText(container, text, contextPath = null) {
             : resolvedRef.path;
           a.title = canonicalRef;
           const targetViewId = viewIdForDocPath(resolvedRef.path);
-          a.href = `#${targetViewId}?src=${encodeURIComponent(canonicalRef)}`;
+          a.href = `#${targetViewId}?src=${encodeURIComponent(canonicalRef)}${resolvedRef.fragment ? '&frag=' + encodeURIComponent(resolvedRef.fragment) : ''}`;
           container.appendChild(a);
         } else {
           // Whitelist allowed external protocols
@@ -208,6 +212,47 @@ function createSummarySection(title, contentSnippet) {
 }
 
 const blockRenderers = {
+  hr: (b, container) => {
+    container.appendChild(document.createElement("hr"));
+  },
+  blockquote: (b, container, contextPath) => {
+    const blockquote = document.createElement("blockquote");
+    renderInlineText(blockquote, b.text, contextPath);
+    container.appendChild(blockquote);
+  },
+  table: (b, container, contextPath) => {
+    const wrapper = document.createElement("div");
+    wrapper.className = "table-wrapper";
+
+    const table = document.createElement("table");
+    table.className = "markdown-table";
+
+    const thead = document.createElement("thead");
+    const trHead = document.createElement("tr");
+    b.headers.forEach(headerText => {
+      const th = document.createElement("th");
+      renderInlineText(th, headerText, contextPath);
+      trHead.appendChild(th);
+    });
+    thead.appendChild(trHead);
+    table.appendChild(thead);
+
+    const tbody = document.createElement("tbody");
+    b.rows.forEach(row => {
+      const tr = document.createElement("tr");
+      row.forEach(cellText => {
+        const td = document.createElement("td");
+        renderInlineText(td, cellText, contextPath);
+        tr.appendChild(td);
+      });
+      tbody.appendChild(tr);
+    });
+    table.appendChild(tbody);
+
+    wrapper.appendChild(table);
+    container.appendChild(wrapper);
+  },
+
   text: (b, container, contextPath) => {
     const p = document.createElement("p");
     renderInlineText(p, b.text, contextPath);
@@ -687,10 +732,80 @@ export function renderMeta(root, data, params) {
 }
 
 export function renderModels(root, data, params) {
-  if (!data.models.length)
+  if (!data.models || !data.models.length)
     return renderEmptyState(root, "Keine Modelle vorhanden.");
-  renderEntries(root, data.models, params);
+
+  const sourceRef = params?.get("src");
+  const sourcePath = normalizeSourcePath(sourceRef);
+
+  data.models.forEach((entry) => {
+    const card = document.createElement("article");
+    card.className = "card model-card";
+    if (entry.path === sourcePath) {
+      card.classList.add("highlight");
+    }
+
+    const title = document.createElement("h3");
+    title.textContent = entry.title;
+    card.appendChild(title);
+
+    const meta = document.createElement("p");
+    meta.className = "meta";
+    meta.textContent = entry.path;
+    card.appendChild(meta);
+
+    // Mini-Inhaltsverzeichnis
+    if (entry.sections.length > 1) {
+      const toc = document.createElement("div");
+      toc.className = "model-toc";
+      const tocTitle = document.createElement("h5");
+      tocTitle.textContent = "Inhalt";
+      toc.appendChild(tocTitle);
+
+      const ul = document.createElement("ul");
+      entry.sections.forEach((sec, index) => {
+        if (index === 0 && sec.heading === entry.title) return;
+        if (sec.heading && sec.heading !== 'Inhalt') {
+          const li = document.createElement("li");
+          const a = document.createElement("a");
+          a.textContent = sec.heading;
+          // Format fragment same way markdown does
+          const frag = sec.heading.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+          a.href = `#modelle?src=${encodeURIComponent(entry.path)}&frag=${encodeURIComponent(sec.heading)}`;
+          li.appendChild(a);
+          ul.appendChild(li);
+        }
+      });
+      if (ul.children.length > 0) {
+        toc.appendChild(ul);
+        card.appendChild(toc);
+      }
+    }
+
+    // Render sections
+    entry.sections.forEach((section, index) => {
+      if (index === 0 && section.heading === entry.title) {
+        if (section.blocks && section.blocks.length > 0) {
+          const bulletOnly = createSectionBlock(
+            { heading: "", blocks: section.blocks },
+            entry.path
+          );
+          const heading = bulletOnly.querySelector("h4");
+          if (heading) heading.remove();
+          card.appendChild(bulletOnly);
+        }
+        return;
+      }
+
+      const secBlock = createSectionBlock(section, entry.path);
+      secBlock.classList.add("model-section-block");
+      card.appendChild(secBlock);
+    });
+
+    root.appendChild(card);
+  });
 }
+
 
 export function renderAktuellerStand(root, data) {
   const container = document.createElement("div");

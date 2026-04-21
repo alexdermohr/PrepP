@@ -497,3 +497,87 @@ a:focus-visible {
   border-radius: 8px;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
+
+/* Markdown Parser Elements */
+.table-wrapper {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+  border-radius: 0.4rem;
+  border: 1px solid #e5e7eb;
+}
+
+table.markdown-table {
+  border-collapse: collapse;
+  width: 100%;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+table.markdown-table th,
+table.markdown-table td {
+  border: 1px solid #e5e7eb;
+  padding: 0.75rem 1rem;
+  vertical-align: top;
+}
+
+table.markdown-table th {
+  background: #f9fafb;
+  font-weight: 600;
+  color: #374151;
+}
+
+table.markdown-table tr:nth-child(even) {
+  background: #fdfdfd;
+}
+
+blockquote {
+  border-left: 4px solid #d1d5db;
+  padding-left: 1rem;
+  color: #6b7280;
+  margin-left: 0;
+  margin-right: 0;
+  font-style: italic;
+  background: #f9fafb;
+  padding: 1rem;
+  border-radius: 0 0.4rem 0.4rem 0;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #e5e7eb;
+  margin: 2rem 0;
+}
+
+/* Model Views */
+.model-card {
+  padding: 2rem;
+}
+
+.model-toc {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  padding: 1rem 1.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.model-toc h5 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.model-toc ul {
+  margin-bottom: 0;
+  padding-left: 1.25rem;
+}
+
+.model-section-block {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #f3f4f6;
+}
+
+.model-section-block h4 {
+  color: #1f2937;
+  font-size: 1.1rem;
+}

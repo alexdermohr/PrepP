@@ -12,6 +12,8 @@ export function parseMarkdownSections(markdown) {
 
   let currentTextBlock = null;
   let currentListBlock = null;
+  let currentTableBlock = null;
+  let currentBlockquoteBlock = null;
 
   function flushText() {
     if (currentTextBlock) {
@@ -27,12 +29,32 @@ export function parseMarkdownSections(markdown) {
     }
   }
 
+  function flushTable() {
+    if (currentTableBlock) {
+      current.blocks.push(currentTableBlock);
+      currentTableBlock = null;
+    }
+  }
+
+  function flushBlockquote() {
+    if (currentBlockquoteBlock) {
+      current.blocks.push(currentBlockquoteBlock);
+      currentBlockquoteBlock = null;
+    }
+  }
+
+  function flushAll() {
+    flushText();
+    flushList();
+    flushTable();
+    flushBlockquote();
+  }
+
   for (const rawLine of rawLines) {
     const line = rawLine.trim();
 
     if (line.startsWith('```')) {
-      flushText();
-      flushList();
+      flushAll();
       if (inCodeBlock) {
         current.blocks.push({ type: 'code', text: codeContent.join('\n') });
         inCodeBlock = false;
@@ -50,21 +72,24 @@ export function parseMarkdownSections(markdown) {
 
     const imgMatch = line.match(/^!\[(.*)\]\((.*)\)$/);
     if (imgMatch) {
-      flushText();
-      flushList();
+      flushAll();
       current.blocks.push({ type: 'image', alt: imgMatch[1], url: imgMatch[2] });
       continue;
     }
 
+    if (line === '---' || line === '***') {
+      flushAll();
+      current.blocks.push({ type: 'hr' });
+      continue;
+    }
+
     if (!line) {
-      flushText();
-      flushList();
+      flushAll();
       continue;
     }
 
     if (/^#{1,6}\s+/.test(line)) {
-      flushText();
-      flushList();
+      flushAll();
       if (current.heading || current.blocks.length) {
         sections.push(current);
       }
@@ -75,19 +100,36 @@ export function parseMarkdownSections(markdown) {
       continue;
     }
 
-    if (/^-\s+/.test(line)) {
+    if (/^>\s+/.test(line) || line === '>') {
       flushText();
+      flushList();
+      flushTable();
+      const rawText = line.replace(/^>\s?/, '').trim();
+      if (currentBlockquoteBlock) {
+        currentBlockquoteBlock.text += '\n' + rawText;
+      } else {
+        currentBlockquoteBlock = { type: 'blockquote', text: rawText };
+      }
+      continue;
+    }
+
+    if (/^-\s+/.test(line) || /^\*\s+/.test(line)) {
+      flushText();
+      flushTable();
+      flushBlockquote();
       if (!currentListBlock || currentListBlock.ordered) {
         flushList();
         currentListBlock = { type: 'list', ordered: false, items: [] };
       }
-      const rawText = line.replace(/^-\s+/, '').trim();
+      const rawText = line.replace(/^[-*]\s+/, '').trim();
       currentListBlock.items.push(rawText);
       continue;
     }
 
     if (/^\d+\.\s+/.test(line)) {
       flushText();
+      flushTable();
+      flushBlockquote();
       if (!currentListBlock || !currentListBlock.ordered) {
         flushList();
         currentListBlock = { type: 'list', ordered: true, items: [] };
@@ -97,7 +139,27 @@ export function parseMarkdownSections(markdown) {
       continue;
     }
 
+    if (line.startsWith('|') && line.endsWith('|')) {
+      flushText();
+      flushList();
+      flushBlockquote();
+
+      const cells = line.split('|').slice(1, -1).map(c => c.trim());
+
+      // Is it a separator line?
+      const isSeparator = cells.every(c => /^-+:?$/.test(c));
+
+      if (!currentTableBlock) {
+        currentTableBlock = { type: 'table', headers: cells, rows: [] };
+      } else if (!isSeparator) {
+        currentTableBlock.rows.push(cells);
+      }
+      continue;
+    }
+
     flushList();
+    flushTable();
+    flushBlockquote();
 
     const rawText = line; // Maintain raw text
     if (currentTextBlock) {
@@ -107,8 +169,7 @@ export function parseMarkdownSections(markdown) {
     }
   }
 
-  flushText();
-  flushList();
+  flushAll();
 
   if (inCodeBlock) {
     current.blocks.push({ type: 'code', text: codeContent.join('\n') });
@@ -138,7 +199,7 @@ export function normalizePath(path) {
 }
 
 export function extractLabeledBullet(line) {
-  const match = line.match(/^-\s+\*\*(.+?):\*\*\s*(.+)$/);
+  const match = line.match(/^[-*]\s+\*\*(.+?):\*\*\s*(.+)$/);
   if (!match) return null;
 
   return {
@@ -243,8 +304,8 @@ export function parseDecisionBlocks(markdown) {
     if (activeSection && line) {
       let textToAdd = rawLine;
 
-      if (textToAdd.trim().startsWith('- ')) {
-        textToAdd = textToAdd.trim().substring(2);
+      if (textToAdd.trim().match(/^[-*]\s+/)) {
+        textToAdd = textToAdd.trim().replace(/^[-*]\s+/, "");
       } else if (textToAdd.trim().match(/^\d+\.\s+/)) {
         textToAdd = textToAdd.trim().replace(/^\d+\.\s+/, '');
       } else {

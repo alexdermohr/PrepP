@@ -1,5 +1,6 @@
 import "./styles.css";
 import { loadData } from "./lib/data";
+import { normalizeFragment } from "./lib/markdown";
 import {
   renderHypothesen,
   renderBeobachtungen,
@@ -195,12 +196,12 @@ function renderFromHash() {
           if (highlightCard) {
             if (frag) {
               // Try to find a heading in the card that matches the fragment
-              const normalizedFrag = frag.toLowerCase().replace(/[^a-z0-9]+/g, '');
+              const normalizedFrag = normalizeFragment(frag);
               const headings = highlightCard.querySelectorAll("h2, h3, h4, h5, h6");
               let targetHeading = null;
 
               for (const h of headings) {
-                const hText = h.textContent.toLowerCase().replace(/[^a-z0-9]+/g, '');
+                const hText = normalizeFragment(h.textContent);
                 if (hText === normalizedFrag || hText.startsWith(normalizedFrag)) {
                   targetHeading = h;
                   break;

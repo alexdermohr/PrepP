@@ -1,3 +1,4 @@
+import { normalizeFragment } from "../lib/markdown.js";
 function resolveInternalMarkdownPath(url, contextPath) {
   if (
     !contextPath ||
@@ -732,7 +733,11 @@ export function renderICFReports(root, data, params) {
       summary.textContent = "Formale ICF-Ansicht (HTML) ein-/ausblenden";
       details.appendChild(summary);
 
-      details.appendChild(createHtmlFileCard(report));
+      const htmlCard = createHtmlFileCard(report);
+      if (params?.get("src") === report.html.path) {
+        htmlCard.classList.add("highlight");
+      }
+      details.appendChild(htmlCard);
       group.appendChild(details);
     }
 
@@ -760,16 +765,16 @@ function extractModelSummary(model) {
 
   let text = firstBlock.text;
 
-  // Strip Markdown bold/italic
+  // Cleanly strip leading taxonomic abbreviations like "**TRAIT** (Disposition) – " or "STATE + PROCESS -"
+  text = text.replace(/^(?:\*\*)?[A-Z\s+]+(?:\*\*)?\s*(?:\([^)]+\))?\s*[-–]\s*/, '');
+
+  // Strip remaining Markdown bold/italic
   text = text.replace(/\*\*/g, '').replace(/_/g, '').replace(/\*/g, '');
 
-  // Strip leading acronyms like "STATE (Zustand) - " or "NEED + MOTIVATION – "
-  text = text.replace(/^[A-Z\s+]+(?:\([^)]+\))?\s*[-–]\s*/, '');
-
-  // Extract up to the first dot for a complete sentence
-  const dotIndex = text.indexOf('.');
-  if (dotIndex > 0) {
-    text = text.substring(0, dotIndex + 1);
+  // Truncate cleanly at the first sentence ending (., ?, or !) without ellipses
+  const match = text.match(/.*?[.?!]/);
+  if (match) {
+    text = match[0];
   }
 
   return text.trim();
@@ -785,14 +790,7 @@ export function renderModels(root, data, params) {
   // Extract index.md so it doesn't render as a regular model card
   let otherModels = data.models.filter(e => e.path !== 'models/index.md' && e.path !== 'index.md');
 
-  // Reorder otherModels so the target model (sourcePath) is rendered first
-  if (sourcePath) {
-    const targetModelIndex = otherModels.findIndex(m => m.path === sourcePath);
-    if (targetModelIndex > -1) {
-      const targetModel = otherModels.splice(targetModelIndex, 1)[0];
-      otherModels.unshift(targetModel);
-    }
-  }
+
 
   // Render global UI index card
   const indexCard = document.createElement("article");

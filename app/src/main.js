@@ -191,7 +191,7 @@ function renderFromHash() {
         // Find the card. The cards get .highlight if their path matches src.
         // Wait a tiny bit for DOM to settle if necessary, though it should be synchronous here.
         setTimeout(() => {
-          const highlightCard = document.querySelector(".highlight") || document.querySelector(`[data-path="${src}"]`);
+          const highlightCard = document.querySelector(".highlight") || document.querySelector(`[data-path="${CSS.escape(src)}"]`);
           if (highlightCard) {
             if (frag) {
               // Try to find a heading in the card that matches the fragment

@@ -739,47 +739,33 @@ export function renderModels(root, data, params) {
   const sourceRef = params?.get("src");
   const sourcePath = normalizeSourcePath(sourceRef);
 
-  // Extract index.md
-  const indexModel = data.models.find(e => e.path === 'models/index.md' || e.path === 'index.md');
+  // Extract index.md so it doesn't render as a regular model card
   const otherModels = data.models.filter(e => e.path !== 'models/index.md' && e.path !== 'index.md');
 
-  // Render global index first
-  if (indexModel) {
-    const indexCard = document.createElement("article");
-    indexCard.className = "card model-index-card";
-    indexCard.dataset.path = indexModel.path;
+  // Render global UI index card
+  const indexCard = document.createElement("article");
+  indexCard.className = "card model-index-card";
 
-    if (indexModel.path === sourcePath) {
-      indexCard.classList.add("highlight");
-    }
+  const title = document.createElement("h2");
+  title.textContent = "Modelle im Überblick";
+  indexCard.appendChild(title);
 
-    const title = document.createElement("h2");
-    title.textContent = indexModel.title || "Modelle im Überblick";
-    indexCard.appendChild(title);
+  const list = document.createElement("ul");
+  list.className = "model-index-list";
 
-    // Render sections of the index
-    indexModel.sections.forEach((section, index) => {
-      if (index === 0 && section.heading === indexModel.title) {
-        if (section.blocks && section.blocks.length > 0) {
-          const bulletOnly = createSectionBlock(
-            { heading: "", blocks: section.blocks },
-            indexModel.path
-          );
-          const heading = bulletOnly.querySelector("h4");
-          if (heading) heading.remove();
-          indexCard.appendChild(bulletOnly);
-        }
-        return;
-      }
+  otherModels.forEach(model => {
+    const li = document.createElement("li");
+    const a = document.createElement("a");
+    a.href = `#modelle?src=${encodeURIComponent(model.path)}`;
+    a.textContent = model.title;
+    li.appendChild(a);
+    list.appendChild(li);
+  });
 
-      const secBlock = createSectionBlock(section, indexModel.path);
-      indexCard.appendChild(secBlock);
-    });
+  indexCard.appendChild(list);
+  root.appendChild(indexCard);
 
-    root.appendChild(indexCard);
-  }
-
-  // Render other models
+  // Render actual models
   otherModels.forEach((entry) => {
     const card = document.createElement("article");
     card.className = "card model-card";

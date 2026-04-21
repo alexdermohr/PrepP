@@ -532,7 +532,6 @@ table.markdown-table tr:nth-child(even) {
 
 blockquote {
   border-left: 4px solid #d1d5db;
-  padding-left: 1rem;
   color: #6b7280;
   margin-left: 0;
   margin-right: 0;

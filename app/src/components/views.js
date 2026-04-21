@@ -66,17 +66,26 @@ function viewIdForDocPath(path) {
   return "start";
 }
 
+
+function renderMultilineInlineText(target, text, contextPath) {
+  const lines = String(text || "").split("\n");
+  lines.forEach((line, i) => {
+    renderInlineText(target, line, contextPath);
+    if (i < lines.length - 1) target.appendChild(document.createElement("br"));
+  });
+}
+
 function renderInlineText(container, text, contextPath = null) {
   if (!text) return;
   // Simple regex to split text into tokens
-  const parts = text.split(/(\*\*.*?\*\*|_.*?_|\*.*?\*|`.*?`|\[.*?\]\(.*?\))/g);
+  const parts = text.split(/(\*\*.*?\*\*|\*.*?\*|`.*?`|\[.*?\]\(.*?\))/g);
 
   parts.forEach((part) => {
     if (part.startsWith("**") && part.endsWith("**")) {
       const strong = document.createElement("strong");
       strong.textContent = part.slice(2, -2);
       container.appendChild(strong);
-    } else if ((part.startsWith("_") && part.endsWith("_")) || (part.startsWith("*") && part.endsWith("*"))) {
+    } else if (part.startsWith("*") && part.endsWith("*")) {
       const em = document.createElement("em");
       em.textContent = part.slice(1, -1);
       container.appendChild(em);
@@ -116,7 +125,7 @@ function renderInlineText(container, text, contextPath = null) {
             : resolvedRef.path;
           a.title = canonicalRef;
           const targetViewId = viewIdForDocPath(resolvedRef.path);
-          a.href = `#${targetViewId}?src=${encodeURIComponent(canonicalRef)}${resolvedRef.fragment ? '&frag=' + encodeURIComponent(resolvedRef.fragment) : ''}`;
+          a.href = `#${targetViewId}?src=${encodeURIComponent(resolvedRef.path)}${resolvedRef.fragment ? '&frag=' + encodeURIComponent(resolvedRef.fragment) : ''}`;
           container.appendChild(a);
         } else {
           // Whitelist allowed external protocols
@@ -217,7 +226,7 @@ const blockRenderers = {
   },
   blockquote: (b, container, contextPath) => {
     const blockquote = document.createElement("blockquote");
-    renderInlineText(blockquote, b.text, contextPath);
+    renderMultilineInlineText(blockquote, b.text, contextPath);
     container.appendChild(blockquote);
   },
   table: (b, container, contextPath) => {
@@ -387,6 +396,7 @@ function createHtmlFileCard(report) {
   const entry = report.html;
   const card = document.createElement("article");
   card.className = "card icf-report-card";
+  card.dataset.path = entry.path;
 
   const title = document.createElement("h3");
   title.textContent = report.title;
@@ -690,7 +700,7 @@ export function renderProjektplan(root, data, params) {
   root.appendChild(card);
 }
 
-export function renderICFReports(root, data) {
+export function renderICFReports(root, data, params) {
   if (!data.icfReports.length)
     return renderEmptyState(root, "Keine ICF-Reports vorhanden.");
 
@@ -708,7 +718,11 @@ export function renderICFReports(root, data) {
       label.className = "icf-format-label";
       label.textContent = "Markdown (Arbeitsversion)";
       group.appendChild(label);
-      group.appendChild(createFileCard(report.md));
+      const mdCard = createFileCard(report.md);
+      if (params?.get("src") === report.md.path) {
+        mdCard.classList.add("highlight");
+      }
+      group.appendChild(mdCard);
     }
     if (report.html) {
       const details = document.createElement("details");

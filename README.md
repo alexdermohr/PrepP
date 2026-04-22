@@ -45,6 +45,7 @@ Er verdichtet das Rohmaterial zu einem bewertbaren Dokument.
 ### Stützapparat (innerhalb Gruppennachweis)
 
 - `docs/gruppennachweis/mapping/rohmaterial_zu_kapiteln.md` – Rückverfolgbarkeit: welche Quelle stützt welche Aussage
+- `docs/gruppennachweis/mapping/modelle_zu_kapiteln.md` – Integrationsplan: welche Modelle aus `models/` passen in welche Kapitel
 - `docs/gruppennachweis/apparat/literaturverzeichnis.md` – Literatur und ergänzende Materialien
 
 ### Übergreifend

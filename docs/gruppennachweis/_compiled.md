@@ -148,6 +148,7 @@ findet sich unter:
 ## Stützapparat
 
 - Mapping: [mapping/rohmaterial_zu_kapiteln.md](mapping/rohmaterial_zu_kapiteln.md)
+- Modelle -> Kapitel (Integrationsplan): [mapping/modelle_zu_kapiteln.md](mapping/modelle_zu_kapiteln.md)
 - Argumentationsschicht: [mapping/argumentationsschicht.md](mapping/argumentationsschicht.md)
 - Partizipationsgrad (Operationalisierung): [mapping/partizipationsgrad.md](mapping/partizipationsgrad.md)
 - Literaturverzeichnis: [apparat/literaturverzeichnis.md](apparat/literaturverzeichnis.md)

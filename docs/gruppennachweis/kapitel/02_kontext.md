@@ -42,6 +42,7 @@ Das Projekt ist eingebettet in den laufenden Schul- und Gruppenalltag; der päda
   → Quelle: [docs/projektplan.md](../../projektplan.md) (Phase 1, 3), [docs/reflexion.md](../../reflexion.md) (Risiko der Überstrukturierung)
 - **Systemische Rahmenbedingungen** beeinflussen die Verbindlichkeit: parallele niedrigschwellige Angebote Dritter (z. B. Pfand sammeln mit J) stehen in Konkurrenz zu Projektanforderungen.
   → Quelle: [docs/entscheidungen/03_systemarchitektur_und_regulation.md](../../entscheidungen/03_systemarchitektur_und_regulation.md), [docs/hypothesen.md](../../hypothesen.md) (H7), [docs/tagebuch/03_tag_3.md](../../tagebuch/03_tag_3.md)
+  → Modellanker: [models/oekologische_systemtheorie_bronfenbrenner.md](../../../models/oekologische_systemtheorie_bronfenbrenner.md), [models/systemische_zirkularitaet.md](../../../models/systemische_zirkularitaet.md)
 
 ## 2.3 Zeitlicher Rahmen
 

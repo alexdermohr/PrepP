@@ -140,6 +140,26 @@ X übernimmt im Projekt „Schulhof verschönern" eine **verantwortliche Mitwirk
 >
 > **Wirkungsprüfung dieser Indikatoren:** Die Tabelle oben begründet jede Maßnahme und nennt, woran ihre Wirksamkeit erkannt werden kann. Die systematische Auswertung, ob diese Wirkindikatoren im dokumentierten Projektverlauf tatsächlich erfüllt wurden – einschließlich der beobachteten Kurzzeitwirkung, Alternativerklärungen und des abschließenden Zwischenurteils (A/B/C) – erfolgt in der zentralen [Evidenzlage in Kapitel 5.3](05_reflexion.md#53-evidenzlage-und-gegenhypothesen-je-entscheidung-e1e6). Dort werden die Entscheidungen E1–E6 einer vollständigen Kontrastprüfung unterzogen.
 
+
+## 4.4.2 Modellkopplung (entscheidungsnah)
+
+Die folgenden Modellbezüge ergänzen die Begründung **nur dort**, wo sie für die Entscheidungsauswahl oder Kontrastprüfung einen erkennbaren Mehrwert haben:
+
+- **E1 / E3d (Grenzsetzung und Vorab-Klärung):**
+  Attributionstheorie als Schutz vor vorschnellen Zuschreibungen ("Absicht/Provokation") und Operante Konditionierung zur Prüfung, ob Konsequenzen kurzfristig unterbrechen, aber langfristig unbeabsichtigt stabilisieren.
+  → Modelle: [models/attributionstheorie.md](../../../models/attributionstheorie.md), [models/operante_konditionierung.md](../../../models/operante_konditionierung.md)
+- **E3b / E4 (Kippsignale und Exit-Strategie):**
+  Stresstoleranzfenster + Lazarus + Emotionsregulation (Gross) als gemeinsame Prüflinie: Ist Regulation noch möglich, wie wird die Situation bewertet, und an welcher Prozessstelle ist Intervention realistisch?
+  → Modelle: [models/stresstoleranzfenster.md](../../../models/stresstoleranzfenster.md), [models/transaktionales_stressmodell_lazarus.md](../../../models/transaktionales_stressmodell_lazarus.md), [models/emotionsregulation_gross.md](../../../models/emotionsregulation_gross.md)
+- **E6 (kleinschrittige Umsetzung):**
+  Selbstbestimmungstheorie zur Begründung, warum kleine, anschlussfähige Schritte Autonomie- und Kompetenzerleben eher sichern als direkte Drucksteigerung.
+  → Modell: [models/selbstbestimmungstheorie.md](../../../models/selbstbestimmungstheorie.md)
+- **E3c (Scaffolding in formeller Exposition):**
+  Yerkes-Dodson als Leistungs-/Aktivierungsfolie für die Frage, ob sprachliche Exposition aktuell im passenden Aktivierungsfenster liegt.
+  → Modell: [models/yerkes_dodson.md](../../../models/yerkes_dodson.md)
+
+Diese Kopplungen ersetzen keine Primärbelege; sie strukturieren die Kontrastprüfung in [Kapitel 5.3](05_reflexion.md#53-evidenzlage-und-gegenhypothesen-je-entscheidung-e1e6).
+
 ## 4.5 Hypothesenbezug und Wirkprüfung
 
 Jede der Handlungsentscheidungen E1–E6 in [Kapitel 4.2](#42-weg-handlungsschritte) und jeder Handlungsschritt in [Kapitel 4.4.1](#441-handlungsschritte--begründung-wirkindikator-gegenerklärung) knüpft an eine oder mehrere der elf Hypothesen H1–H11 an.

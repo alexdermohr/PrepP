@@ -63,6 +63,7 @@ Dieses Dokument beschreibt, wie Rohmaterial (Beobachtungen, Tagebuch, Hypothesen
 
 - **Kapitel 4:** Modelle begründen die Auswahl und Passung von Maßnahmen.
 - **Kapitel 5:** Modelle prüfen die Robustheit von Deutungen (Kontrast- und Alternativprüfung), ohne eine zusätzliche Theorieebene um ihrer selbst willen aufzubauen.
+- **Stützapparat-Status:** Detaillierte Zuordnungen (z. B. Modell → Kapitel) in `docs/gruppennachweis/mapping/` sind Arbeits- und Integrationshilfen. Verbindlich bleibt diese Transformationsdatei; Abweichungen müssen hier nachgezogen werden.
 
 ## Qualitätsprüfung
 

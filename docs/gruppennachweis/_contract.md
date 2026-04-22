@@ -36,6 +36,7 @@ Er verdichtet Rohmaterial (Beobachtungen, Hypothesen, Entscheidungen, Feedback, 
 - Zentrale Interpretationen sollen modellgestützt sein oder explizit modellfrei begründet werden.
 - Verhaltenszuschreibungen (z. B. Absicht/Wille/Provokation) werden per Attributionstheorie kontrastgeprüft, um Fehlattributionen zu reduzieren.
 - Modellverweise sind kein Selbstzweck: Jede Modellnennung muss eine prüfbare Alternativdeutung, Verstärkerlogik oder Interaktionsschleife klären.
+- Modellbasierte Interpretation ist zulässig, wenn sie kontrastpflichtig, quellengebunden und entscheidungsnah erfolgt.
 
 ## Notwendige Quellen
 

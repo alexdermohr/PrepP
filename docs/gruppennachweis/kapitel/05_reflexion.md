@@ -58,6 +58,12 @@ Arbeitsgrundlage fuer den Umbau: [komprimierte_zielstruktur.md](../komprimierte_
 - Welche Zuschreibungen wurden getroffen?
 - Welche Alternativen wurden geprüft?
 - Welche Interaktionsschleifen könnten Verhalten stabilisieren?
+- **Modellprüfung (nur entscheidungsnah):**
+  - Attributionstheorie bei Zuschreibungen zu Absicht/Wille/Provokation.
+  - ABC/SORKC + Operante Konditionierung bei der Frage, welche Sequenzen/Konsequenzen Muster stabilisieren.
+  - Stresstoleranzfenster + Lazarus + Emotionsregulation (Gross) bei Kippprozessen (E3b/E4).
+  - Ökologische Systemtheorie + systemische Zirkularität bei Stakeholder-/Kontextabbrüchen (z. B. Tag 7).
+  → Modelle: [models/attributionstheorie.md](../../../models/attributionstheorie.md), [models/abc_sorkc.md](../../../models/abc_sorkc.md), [models/operante_konditionierung.md](../../../models/operante_konditionierung.md), [models/stresstoleranzfenster.md](../../../models/stresstoleranzfenster.md), [models/transaktionales_stressmodell_lazarus.md](../../../models/transaktionales_stressmodell_lazarus.md), [models/emotionsregulation_gross.md](../../../models/emotionsregulation_gross.md), [models/oekologische_systemtheorie_bronfenbrenner.md](../../../models/oekologische_systemtheorie_bronfenbrenner.md), [models/systemische_zirkularitaet.md](../../../models/systemische_zirkularitaet.md)
 - **[OFFEN]** Systematische Attributionsprüfung (Absicht/Wille/Provokation) wird im aktuellen Stand nur punktuell dokumentiert und ist in 5.3 noch nicht durchgängig ausgewiesen.
 
 ## 5.1 Zielerreichung – teilzielweiser Abgleich

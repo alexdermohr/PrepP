@@ -93,13 +93,13 @@ Legende Zwischenurteil (textbasiert, im dokumentierten Zeitraum): **(A)** belast
 | **Was fehlt** | Mindestens zwei vergleichbare Grenzverletzepisoden mit und ohne vorab eingeführter Konsequenzankündigung. Beobachtungsraster, das Eskalationsfrequenz vor und nach E1 systematisch vergleicht. |
 | **Was deshalb nicht behauptet werden darf** | Dass E1 (Aussetzung von Sonderaktionen) zur Reduktion von Grenzüberschreitungen geführt hat. Dass Rückkehr und Entschuldigung kausal auf E1 zurückgehen. Dass E1 als pädagogische Konsequenzstrategie im vorliegenden Zeitraum empirisch wirksam war. |
 
-### E2 – Standort „Insel" (interne Pfandsammelstation)
+### E2 – Standort „Insel" (interner Pfandmülleimer)
 
 | Feld | Inhalt |
 |---|---|
 | **Anlass (belegt)** | Fehlende Aufsicht und Risiko von Fremdeingriffen im Außenbereich. → [docs/entscheidungen/02_standort_schulinsel.md](../../entscheidungen/02_standort_schulinsel.md) |
 | **Hypothese / Intention** | Kontrollierbare Umgebung senkt Komplexität und sichert Projektergebnis. |
-| **Intervention** | Pfandsammelstation intern statt außen platzieren. |
+| **Intervention** | Pfandmülleimer intern statt außen platzieren. |
 | **Beobachtete Kurzzeitwirkung** | Mülleimer mit Pfandschild am Tag 6 sichtbar aufgestellt (sichtbares Produkt). Am Tag 7 durch Reinigungskräfte entsorgt → Systemebene nicht eingebunden. → [docs/tagebuch/06_tag_6.md](../../tagebuch/06_tag_6.md), [docs/tagebuch/07_tag_7.md](../../tagebuch/07_tag_7.md) |
 | **Alternativerklärungen** | (a) Der Umsetzungserfolg bis Tag 6 stammt aus Materialverfügbarkeit, nicht aus dem Standort. (b) Das Scheitern an Tag 7 ist unabhängig vom Standort; es ist ein Kommunikationsversäumnis. |
 | **Adler-Kontrastfolie** | Nicht einschlägig (strukturelle Entscheidung, keine Beziehungsdynamik). |
@@ -285,7 +285,7 @@ Legende Zwischenurteil (textbasiert, im dokumentierten Zeitraum): **(A)** belast
   → Quelle: [docs/tagebuch/04_tag_4.md](../../tagebuch/04_tag_4.md) – [docs/tagebuch/06_tag_6.md](../../tagebuch/06_tag_6.md)
 - **Feedback systematisch ausbauen.** H10 verlangt regelmäßige, möglichst skalierte Rückmeldung sowie deren Abgleich mit Beobachtungen gleicher Tage.
   → Quelle: [docs/reflexion.md](../../reflexion.md), [docs/feedback/01_feedback_zielperson.md](../../feedback/01_feedback_zielperson.md), [meta/arbeitsregeln.md](../../../meta/arbeitsregeln.md) (Regeln 7, 8)
-- **Risiko der Fehlattribuierung im Blick behalten.** Beobachtete Veränderungen können durch externe Faktoren beeinflusst sein; das Repo benennt dieses Risiko ausdrücklich.
+- **Risiko der Fehlattributierung im Blick behalten.** Beobachtete Veränderungen können durch externe Faktoren beeinflusst sein; das Repo benennt dieses Risiko ausdrücklich.
   → Quelle: [docs/reflexion.md](../../reflexion.md)
 - **Formelle Exposition behutsam fortsetzen.** T3 zeigt im dokumentierten Zeitraum keine messbare Annäherung; Scaffolding-Experimente (E3c) sind fortzuführen und auszuwerten.
   → Quelle: [docs/entscheidungen/03_systemarchitektur_und_regulation.md](../../entscheidungen/03_systemarchitektur_und_regulation.md), [docs/beobachtungen/01_verhalten_in_situationen.md](../../beobachtungen/01_verhalten_in_situationen.md)

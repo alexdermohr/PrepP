@@ -27,12 +27,12 @@
 - **Status:** offen
 - **Steuerungsrelevanz:** relevant für die Einführung neuer Themen und die Unterteilung von Herausforderungen
 
-## H4 – Reaktionen auf direkte Grenzsetzungen
-- **Aussage:** Es könnte sein, dass plötzliche lautstarke oder physische Ausfälle nach direkter Grenzsetzung ein Signal für situative Überforderung sind, in der X mit wiederkehrenden, bereits beobachteten Verhaltensweisen reagiert.
+## H4 – Reaktionen bei akut gefährdeter Bedürfnisbefriedigung
+- **Aussage:** Es könnte sein, dass plötzliche lautstarke oder physische Ausfälle vor allem dann auftreten, wenn X die Befriedigung zentraler Bedürfnisse (z. B. unmittelbarer Zugriff, Konsum, Einfluss) als akut gefährdet erlebt.
 - **Kategorie:** Verhaltens- und Regulationshypothese
 - **Gestützt durch:** Tagebuch: Tag 3 (Eskalation)
 - **Alternativerklärung:** Die Ausfälle sind keine reine Überforderung, sondern ein erlerntes, funktionierendes Mittel, um sich aus einer unangenehmen Situation zu entziehen oder Autonomie wiederherzustellen.
-- **Prüfweg:** Vorhersehbare Grenzsetzungen etablieren (z. B. klare Wenn-Dann-Regeln im Voraus besprechen). Reduziert Berechenbarkeit die Häufigkeit der Ausfälle?
+- **Prüfweg:** Frühe Transparenz zu verfügbaren Optionen und Grenzen herstellen (z. B. klare Wenn-Dann-Regeln, alternative Handlungswege im Voraus besprechen). Reduziert das Erleben akuter Bedürfnisbedrohung die Häufigkeit der Ausfälle?
 - **Status:** offen
 - **Steuerungsrelevanz:** relevant für das Konfliktmanagement und die Kommunikation von Grenzen
 

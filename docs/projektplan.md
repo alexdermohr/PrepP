@@ -31,7 +31,7 @@
 
 *Arbeitshypothese:* Wir nehmen an, dass ein großer Teil seiner Motivation das Bedürfnis nach Anschluss an die Gemeinschaft durch eigene Beiträge ist.
 
-Genau hier wollen wir anknüpfen, indem wir X zum Leiter des Projekts „Schulhof verschönern“ machen.
+Genau hier wollen wir anknüpfen: X soll im Projekt „Schulhof verschönern“ sichtbar Verantwortung übernehmen. Die zunächst größer gedachte Leitungsrolle wurde im Verlauf jedoch schrittweise reduziert.
 
 Das Projekt werden wir in mehreren Phasen durchführen, in denen unterschiedliche Kompetenzen von X gefordert und gefördert werden. Dabei sollen – wenn möglich – Mitschüler, die gerade Zeit und Lust dazu haben, sich dem Team anschließen.
 
@@ -78,14 +78,14 @@ Jedes Projekt braucht einen Rückblick, um aus der Distanz weitere Einsichten zu
 ## Zielformulierung
 
 ### Übergeordnetes Ziel
-X übernimmt im Projekt „Schulhof verschönern“ eine verantwortliche Rolle als Initiator und Koordinator.
+X übernimmt im Projekt „Schulhof verschönern“ eine verantwortliche Mitwirkungsrolle; die anfangs angedachte Leitungsfunktion wurde im Verlauf reduziert.
 Durch Planung, Kommunikation und Zusammenarbeit mit Mitschülern und Erwachsenen sammelt er Erfahrungen in Selbstwirksamkeit, sozialer Kooperation und gleichwürdigem Austausch, während gleichzeitig ein sichtbarer Beitrag zur Gestaltung des Schulhofs entsteht.
 
 ### Konkretisierte Teilziele
 
 **1. Selbstvertrauen und Selbstwirksamkeit**
 X erlebt, dass seine Ideen und sein Engagement einen realen Einfluss auf die Schulumgebung haben.
-Er übernimmt Verantwortung für einzelne Projektphasen und reflektiert seine Rolle als Projektleiter.
+Er übernimmt Verantwortung für einzelne Projektphasen und reflektiert seine Rolle im Projekt.
 
 **2. Gleichwürdiger Umgang mit Mitschülern**
 X lernt, Mitschüler für das Projekt zu gewinnen, Aufgaben gemeinsam zu planen und Kompromisse auszuhandeln.

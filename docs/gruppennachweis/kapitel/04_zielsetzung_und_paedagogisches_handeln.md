@@ -9,13 +9,13 @@
 > fachliche Begründung der Handlungsschritte ([4.4](#44-fachliche-begründung-der-handlungsschritte)).
 > Die Adler-Rahmung in [4.4.0](#440-heuristische-rahmung-adler) wird nur
 > heuristisch und mit Alternativerklärungen eingesetzt. Wirkungsprüfung der
-> Wirkungsprüfung der Maßnahmen: [Kapitel 5, Evidenzlage](05_reflexion.md#53-evidenzlage-und-gegenhypothesen-je-entscheidung-e1e6).
+> Maßnahmen: [Kapitel 5, Evidenzlage](05_reflexion.md#53-evidenzlage-und-gegenhypothesen-je-entscheidung-e1e6).
 
 ## 4.1 Ziel
 
 ### Übergeordnetes Ziel
 
-X übernimmt im Projekt „Schulhof verschönern" eine **verantwortliche Rolle als Initiator und Koordinator**. Durch Planung, Kommunikation und Zusammenarbeit mit Mitschülern und Erwachsenen sammelt er Erfahrungen in **Selbstwirksamkeit, sozialer Kooperation und gleichwürdigem Austausch**, während gleichzeitig ein **sichtbarer Beitrag zur Gestaltung des Schulhofs** entsteht.
+X übernimmt im Projekt „Schulhof verschönern" eine **verantwortliche Mitwirkungsrolle**. Die anfangs größer gedachte Leitungsfunktion wurde im Verlauf schrittweise reduziert. Durch Planung, Kommunikation und Zusammenarbeit mit Mitschülern und Erwachsenen sammelt er Erfahrungen in **Selbstwirksamkeit, sozialer Kooperation und gleichwürdigem Austausch**, während gleichzeitig ein **sichtbarer Beitrag zur Gestaltung des Schulhofs** entsteht.
 → Quelle: [docs/projektplan.md](../../projektplan.md) (Übergeordnetes Ziel)
 
 ### Teilziele mit Evidenzkriterium
@@ -38,7 +38,7 @@ X übernimmt im Projekt „Schulhof verschönern" eine **verantwortliche Rolle a
 |---|---|---|
 | 1. Plan erstellen | Roadmap, Genehmigungen (Hausmeister, Werkstatt, Schulleitung) | Vorlauf, Tag 1: Frageliste/Probe-Interview, Gespräch K; Tag 4: Hausmeister ([docs/tagebuch/00_vorlauf.md](../../tagebuch/00_vorlauf.md), [docs/tagebuch/01_tag_1.md](../../tagebuch/01_tag_1.md), [docs/tagebuch/04_tag_4.md](../../tagebuch/04_tag_4.md)) |
 | 2. Schulhofumfrage | Peer-Kontakt, Ideensammlung, evtl. Infostand | Tag 1: Ideenaufnahme durch Mitschüler; Tag 2: Werbung über Kuchen ([docs/tagebuch/01_tag_1.md](../../tagebuch/01_tag_1.md), [docs/tagebuch/02_tag_2.md](../../tagebuch/02_tag_2.md)) |
-| 3. Konkreten Plan erstellen | Umsetzungsplan, Zeitmanagement im PrepP-Rahmen | Tag 3/4: Standortfindung Pfandstation; Tag 5: Gestaltungsideen (rot, Sprüche) ([docs/tagebuch/03_tag_3.md](../../tagebuch/03_tag_3.md), [docs/tagebuch/04_tag_4.md](../../tagebuch/04_tag_4.md), [docs/tagebuch/05_tag_5.md](../../tagebuch/05_tag_5.md)) |
+| 3. Konkreten Plan erstellen | Umsetzungsplan, Zeitmanagement im PrepP-Rahmen | Tag 3/4: Standortfindung Pfandmülleimer; Tag 5: Gestaltungsideen (rot, Sprüche) ([docs/tagebuch/03_tag_3.md](../../tagebuch/03_tag_3.md), [docs/tagebuch/04_tag_4.md](../../tagebuch/04_tag_4.md), [docs/tagebuch/05_tag_5.md](../../tagebuch/05_tag_5.md)) |
 | 4. Materialbeschaffung und Umsetzung | Einkauf, Aufbau, sichtbarer Beitrag | Tag 4: Einkauf mit Pfanderlös; Tag 6: Mülleimer mit Pfandschild aufgestellt ([docs/tagebuch/04_tag_4.md](../../tagebuch/04_tag_4.md), [docs/tagebuch/06_tag_6.md](../../tagebuch/06_tag_6.md)) |
 | 5. Reflexion | Rückblick, Einsichten | Tag 7 + Feedbackrunden ([docs/tagebuch/07_tag_7.md](../../tagebuch/07_tag_7.md), [docs/feedback/03_feedback_x.md](../../feedback/03_feedback_x.md), [docs/reflexion.md](../../reflexion.md)) |
 
@@ -49,7 +49,7 @@ X übernimmt im Projekt „Schulhof verschönern" eine **verantwortliche Rolle a
 | Entscheidungsdokument | Maßnahme | Ziel | Quelle |
 |---|---|---|---|
 | E1 – Konsequenzen setzen | Vorübergehende Aussetzung von Sonderaktionen nach nicht eingehaltenen Absprachen | Verdeutlichung, dass Sonderaktionen an Umgangsregeln gebunden sind | [docs/entscheidungen/01_konsequenzen.md](../../entscheidungen/01_konsequenzen.md) |
-| E2 – Standort „Insel" | Pfandsammelstation intern statt außen | Kontrollierbare Umgebung, Komplexitätsreduktion | [docs/entscheidungen/02_standort_schulinsel.md](../../entscheidungen/02_standort_schulinsel.md) |
+| E2 – Standort „Insel" | Pfandmülleimer intern statt außen | Kontrollierbare Umgebung, Komplexitätsreduktion | [docs/entscheidungen/02_standort_schulinsel.md](../../entscheidungen/02_standort_schulinsel.md) |
 | E3a – Exklusivität | Reduktion von Systemkonkurrenz | Verbindlichkeit erhöhen | [docs/entscheidungen/03_systemarchitektur_und_regulation.md](../../entscheidungen/03_systemarchitektur_und_regulation.md) |
 | E3b – Frühintervention | Umlenkung bei Kippsignalen | Eskalationen vorbeugen | [docs/entscheidungen/03_systemarchitektur_und_regulation.md](../../entscheidungen/03_systemarchitektur_und_regulation.md) |
 | E3c – Scaffolding | Gemeinsame Bewältigung formeller Situationen | Rückzug in sozialer Exposition reduzieren | [docs/entscheidungen/03_systemarchitektur_und_regulation.md](../../entscheidungen/03_systemarchitektur_und_regulation.md) |
@@ -66,7 +66,7 @@ X übernimmt im Projekt „Schulhof verschönern" eine **verantwortliche Rolle a
 > [mapping/partizipationsgrad.md](../mapping/partizipationsgrad.md) vor
 > (Stufen P++ / P+ / P– / P0 für Vorlauf + Tag 1–7).
 
-- **X als Initiator und Koordinator, nicht als Ausführender.** Ziel ist ein ko-konstruktives Gemeinschaftsprojekt, in dem X Entscheidungen trifft.
+- **X als zentrale mitwirkende Person mit realen Teilentscheidungen.** Ziel ist ein ko-konstruktives Gemeinschaftsprojekt; die zunächst größer angelegte Leitungsrolle wurde zugunsten einer realistischeren Verantwortungsverteilung reduziert.
   → Quelle: [docs/projektplan.md](../../projektplan.md), [docs/icf-reports/icf-report-gemeinschaftsprojekt-ko-konstr-2026-04-04-07-49.html](../../icf-reports/icf-report-gemeinschaftsprojekt-ko-konstr-2026-04-04-07-49.html) (Aktivität)
 - **Intrinsische Motivation statt Druck** als Steuerungsprinzip: Wenn X eine Aufgabe nicht übernehmen möchte, wird stärker auf Vorbereitung und Eigenmotivation gesetzt, nicht auf Zwang.
   → Quelle: [docs/projektplan.md](../../projektplan.md) (Phase 1, 2)
@@ -113,7 +113,7 @@ X übernimmt im Projekt „Schulhof verschönern" eine **verantwortliche Rolle a
 | Handlungsschritt | Fachliche Begründung (belegt) | Wirkindikator (woran erkennbar) | Plausible Gegenerklärung | Bezug |
 |---|---|---|---|---|
 | Handlungsorientierte Tätigkeiten als Einstieg (Pfand sammeln, Einkaufen, Planen) | X zeigt in handlungsorientierten Situationen wiederholt mehr Stabilität und Eigeninitiative als in sozial exponierten; Aktivität adressiert Ressourcen (d865, Ordnungsliebe) und Interessen (Wirtschaft, Teilhabe durch Dienst). | Ausdauer über eine Einheit ohne Umlenkung; selbstinitiierte Teilhandlungen. | Stabilität folgt der Struktur der Aufgabe (eindeutige Richtig/Falsch-Rückmeldung), nicht der Handlungsform. | [docs/beobachtungen/01_verhalten_in_situationen.md](../../beobachtungen/01_verhalten_in_situationen.md), [docs/hypothesen.md](../../hypothesen.md) (H1, H6), [docs/projektplan.md](../../projektplan.md) (Interessen) |
-| Verantwortliche Rolle als Projektleiter | Anschluss an Gemeinschaft über einen nützlichen Beitrag ist im Projektplan als motivationaler Kern hypothetisiert; Rahmenmodell „Prep-Planung" verknüpft Aktivität mit Partizipation und Empowerment. | X trifft dokumentierte gestaltende Entscheidungen (Standort, Design, Spruch). | Engagement folgt Beziehungsbindung an T./A., nicht der Rolle. | [docs/projektplan.md](../../projektplan.md) (Arbeitshypothesen), [models/prep_planung.md](../../../models/prep_planung.md) |
+| Verantwortliche Mitwirkungsrolle | Anschluss an Gemeinschaft über einen nützlichen Beitrag ist im Projektplan als motivationaler Kern hypothetisiert; Rahmenmodell „Prep-Planung" verknüpft Aktivität mit Partizipation und Empowerment. | X trifft dokumentierte gestaltende Entscheidungen (Standort, Design, Spruch). | Engagement folgt Beziehungsbindung an T./A., nicht der Rolle. | [docs/projektplan.md](../../projektplan.md) (Arbeitshypothesen), [models/prep_planung.md](../../../models/prep_planung.md) |
 | Schrittweise Exposition in formellen Kontexten mit Scaffolding (E3c) | Rückzugsverhalten in formellen/hierarchischen Situationen dokumentiert; Scaffolding entlastet, ohne die Aufgabe abzunehmen. | Zunahme von Redeanteil/Lautstärke in begleiteten formellen Gesprächen über mindestens zwei Kontakte. | Präsenz beruht auf Beziehung zur Begleitung; Hörgerät (b2309) überlagert sozialen Effekt. | [docs/hypothesen.md](../../hypothesen.md) (H2), [docs/beobachtungen/01_verhalten_in_situationen.md](../../beobachtungen/01_verhalten_in_situationen.md), [docs/entscheidungen/03_systemarchitektur_und_regulation.md](../../entscheidungen/03_systemarchitektur_und_regulation.md) |
 | Grenzsetzungen mit Prüfhinweis (E1, E3d) | Vorab vereinbarte Konsequenzen sollen Verbindlichkeit herstellen, ohne im Konfliktmoment zusätzlichen Druck aufzubauen. | Reduktion von Eskalationsepisoden nach klarer Vorab-Regel; konstruktive Rückkehr in den Kontakt. | Veränderungen erklären sich aus Arousal-Dynamik (Stressfenster), nicht aus Regelklarheit. | [docs/entscheidungen/01_konsequenzen.md](../../entscheidungen/01_konsequenzen.md), [docs/entscheidungen/03_systemarchitektur_und_regulation.md](../../entscheidungen/03_systemarchitektur_und_regulation.md), [docs/hypothesen.md](../../hypothesen.md) (H4) |
 | Exit-Strategie Pause als Konzept (E4) | Handlungsalternative zur Aggression bei Kontrollverlust; kann die Handlungsfähigkeit unter Stress erhöhen. | Nutzung der Pause ≥ einmal vor/statt Eskalation; Verkürzung der Rückkehrzeit in Kooperation. | Reine Reizentzugs-/Arousal-Regulation ohne zielgerichtete Strategie. | [docs/entscheidungen/04_pause_als_exit_strategie.md](../../entscheidungen/04_pause_als_exit_strategie.md), [docs/intervention/pause_protokoll.md](../../intervention/pause_protokoll.md), [docs/hypothesen.md](../../hypothesen.md) (H11) |
@@ -130,7 +130,7 @@ X übernimmt im Projekt „Schulhof verschönern" eine **verantwortliche Rolle a
 | H1 – Handlungssicherheit in praktischen Tätigkeiten | T4, Wahl des Einstiegs | offen |
 | H2 – Formelle/hierarchische Kontexte | T3, Scaffolding-Entscheidung | aktiv geprüft |
 | H3 – Angebotswahl zur Vermeidung | E3a (Systemkonkurrenz) | offen |
-| H4 – Reaktionen auf direkte Grenzsetzungen | E1, E3d | offen |
+| H4 – Reaktionen bei akut gefährdeter Bedürfnisbefriedigung | E1, E3d | offen |
 | H5 – Verhalten bei Anspannung | E3b (Frühintervention) | offen |
 | H6 – Handlungsorientierte vs. soziale Situationen | T1, T2, Grundprinzip des Wegs | vorläufig gestützt |
 | H7 – Systemkonkurrenz | E3a | fraglich |

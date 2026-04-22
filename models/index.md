@@ -17,6 +17,9 @@ Dieser Index ordnet den Modellkorpus als Werkzeugkasten.
 - **[Ökologische Systemtheorie](./oekologische_systemtheorie_bronfenbrenner.md) (SYSTEM):** Welcher Kontext erzeugt Verhalten mit? → Ergänzend bei Kontextvarianz.
 - **[Erikson](./psychosoziale_entwicklung_erikson.md) (DEVELOPMENT):** Welche Entwicklungsfrage ist aktiv? → Ergänzend für Langzeitdeutung.
 - **[Adler](./adler_individualpsychologie.md) (GOAL + STYLE + SOCIAL):** Welches Ziel organisiert das Verhalten und wie ist es sozial eingebettet? → Heuristisch für Sinn- und Fallstruktur, nicht als alleinige Diagnostik.
+- **[Attributionstheorie](./attributionstheorie.md) (COGNITION / INTERPRETATION):** Welche Zuschreibung ist plausibel und welche Alternative muss mitgeprüft werden? → Reduziert Fehlattributionen bei gleicher Beobachtung.
+- **[Operante Konditionierung](./operante_konditionierung.md) (LEARNING / BEHAVIOR):** Welche Konsequenzen verstärken oder löschen Verhalten? → Prüft Verstärkerlogik im Alltagshandeln.
+- **[Systemische Zirkularität](./systemische_zirkularitaet.md) (INTERACTION / SYSTEM):** Welche Rückkopplungsschleife stabilisiert das Muster? → Zeigt Interaktionsdynamik jenseits linearer Schuldlogik.
 - **[Prep-Planung](./prep_planung.md) (PLANNING):** Wie wird aus Bedarf/Interessen/Ressourcen eine Intervention? → Rahmenlogik; setzt psychologische Klärung voraus.
 
 ## 2) Gate-Schema (empfohlene Reihenfolge)
@@ -24,9 +27,12 @@ Dieser Index ordnet den Modellkorpus als Werkzeugkasten.
 1. STF prüfen (Sicherheit/Regulation zuerst)
 2. Maslow prüfen (Basisbedürfnisse)
 3. SDT + Lazarus prüfen (Motivation + Bewertung)
+3.5 Attribution prüfen (Zuschreibung klären)
 4. Yerkes-Dodson prüfen (Aktivierung/Leistung)
 5. ABC/SORKC prüfen (Sequenz/Funktion/Kontingenz)
+5.5 Operante Konditionierung prüfen (Verstärkung erkennen)
 6. Bindung prüfen (personenspezifische Sicherheit)
+6.5 Zirkularität prüfen (Interaktionsschleifen erkennen)
 7. Emotionsregulation / Frustration ergänzen (Prozess + Zielblockade)
 8. System + Entwicklung + Adler + Trait einordnen (Kontext, Langzeit, Ziel-/Sinnlogik, Disposition)
 9. Prep-Planung ableiten (Interventionsarchitektur)

@@ -6,6 +6,11 @@ Dieses Dokument stellt sicher, dass jede Aussage im Gruppennachweis auf eine Que
 
 **Regel:** KEINE Aussage ohne Rückverweis.
 
+**Zusatzregeln (Interpretationslogik):**
+
+- Jede **zentrale** Interpretation soll modellgestützt sein oder explizit modellfrei begründet werden.
+- Zuschreibungen zu Verhalten (z. B. „Absicht", „Wille", „Provokation") **müssen** die Attributionstheorie als Kontrastprüfung berücksichtigen.
+
 **Ergänzung:** Für zentrale Aussagen legt die
 [Argumentationsschicht](argumentationsschicht.md) zusätzlich Beobachtung,
 Interpretation, Gegenhypothese und begründete Entscheidung offen. Die

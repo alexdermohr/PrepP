@@ -57,7 +57,12 @@ Dieses Dokument beschreibt, wie Rohmaterial (Beobachtungen, Tagebuch, Hypothesen
 
 | Quelle | Ziel im Gruppennachweis | Transformation |
 |---|---|---|
-| `models/*.md` | `docs/gruppennachweis/kapitel/04_zielsetzung_und_paedagogisches_handeln.md` | Modelle werden als Rahmen referenziert |
+| `models/*.md` | `docs/gruppennachweis/kapitel/04_zielsetzung_und_paedagogisches_handeln.md`, `docs/gruppennachweis/kapitel/05_reflexion.md` | Modelle werden primär als Begründungsrahmen in Kapitel 4 und sekundär als Prüffolie für Interpretations-/Kontrastprüfung in Kapitel 5 referenziert |
+
+## Kapitelrollen (Modellnutzung)
+
+- **Kapitel 4:** Modelle begründen die Auswahl und Passung von Maßnahmen.
+- **Kapitel 5:** Modelle prüfen die Robustheit von Deutungen (Kontrast- und Alternativprüfung), ohne eine zusätzliche Theorieebene um ihrer selbst willen aufzubauen.
 
 ## Qualitätsprüfung
 

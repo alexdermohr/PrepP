@@ -31,6 +31,12 @@ Er verdichtet Rohmaterial (Beobachtungen, Hypothesen, Entscheidungen, Feedback, 
 - Inhalte, die nicht auf Rohmaterial zurückführbar sind
 - Bewertungen, die nicht durch Beobachtungen gestützt sind
 
+## Interpretationsgovernance (zentral)
+
+- Zentrale Interpretationen sollen modellgestützt sein oder explizit modellfrei begründet werden.
+- Verhaltenszuschreibungen (z. B. Absicht/Wille/Provokation) werden per Attributionstheorie kontrastgeprüft, um Fehlattributionen zu reduzieren.
+- Modellverweise sind kein Selbstzweck: Jede Modellnennung muss eine prüfbare Alternativdeutung, Verstärkerlogik oder Interaktionsschleife klären.
+
 ## Notwendige Quellen
 
 Jede Aussage im Gruppennachweis muss auf mindestens eine der folgenden Quellen verweisen:

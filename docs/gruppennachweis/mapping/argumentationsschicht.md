@@ -33,11 +33,32 @@ Die „Begründete Entscheidung" ist die eigentliche argumentative Leistung:
 Sie verbindet die Ebene der Beobachtung mit der Ebene der Aussage und macht
 den Schluss prüfbar.
 
+## Status der Argumentationsschicht
+
+> **Epistemischer Hinweis (kritisch):**
+> Die Aussagen A1–A10 sind **selektierte Deutungsachsen (heuristisch priorisiert)** –
+> keine neutrale Ableitung aus dem Rohmaterial und kein kanonischer Wahrheitskatalog.
+>
+> Die Auswahl dieser Aussagen ist selbst **Interpretation zweiter Ordnung**: Es hätten
+> andere Aussagen als „argumentativ tragend" gewählt werden können. Die Nummerierung
+> A1–A10 signalisiert Prüfbarkeit, nicht Priorisierung nach Wichtigkeit.
+>
+> Folgende Prämissen müssten für alle A-Aussagen gelten, sind aber im vorliegenden
+> Material **nicht vollständig belegt**:
+> - Kausalität (nicht nur Koinzidenz) zwischen den beschriebenen Faktoren
+> - Interventionsspezifität (d. h. die Wirkung ist dem Projekt zurechenbar, nicht
+>   der Beziehung, dem Thema oder der Tagesform)
+> - Repräsentativität des Beobachtungszeitraums
+>
+> Die Argumentationsschicht macht Deutungsschritte explizit und prüfbar –
+> sie begründet, warum eine Deutung gegenüber ihrer Alternative gewählt wird.
+> Sie behauptet dabei **keine Kausalität** und **keine Vollständigkeit**.
+
 ## Zentrale Aussagen
 
-Ausgewählt sind die Aussagen, die den Gruppennachweis argumentativ tragen.
-Sie sind nach Kapiteln geordnet; die Nummerierung (A1 … A10) dient dem
-Querverweis aus den Kapiteltexten.
+Ausgewählt sind die Aussagen, die den Gruppennachweis argumentativ tragen –
+als heuristisch priorisierte Deutungsachsen, nicht als erschöpfende Ableitung.
+Die Nummerierung (A1 … A10) dient dem Querverweis aus den Kapiteltexten.
 
 ### Kapitel 1 – Thema
 

@@ -25,6 +25,7 @@
 - **Kontrastprüfung:** Jede zentrale Deutung wird gegen mindestens eine Alternativerklärung gestellt (Stress-/Dysregulationsmodell, Frustrationsdynamik, situative Angebotsstruktur, ICF-/Kontextdeutung). Das gilt insbesondere für die Evidenzlage in [5.3](#53-evidenzlage-und-gegenhypothesen-je-entscheidung-e1e6).
 - **Adler als sekundäre Deutungsfolie:** Adlers Individualpsychologie (siehe [models/adler_individualpsychologie.md](../../../models/adler_individualpsychologie.md)) wird hier ausschließlich als Kontrastfolie eingesetzt, nicht als Leitmodell. Sie erscheint – wenn einschlägig – in einer eigenen Spalte der Evidenzlage (5.3) und wird stets mit einer Alternativdeutung gekoppelt. Primärrahmung der Maßnahmen in [Kapitel 4.4](04_zielsetzung_und_paedagogisches_handeln.md#44-fachliche-begründung-der-handlungsschritte).
 - **Rückbindung an die Argumentationsschicht:** Die Schlussfolgerungen in [5.7](#57-schlussfolgerungen) spiegeln explizit die Aussagen A1 (Projektrolle), A8 (Partizipation) und A10 (systemische Vollständigkeit) aus [mapping/argumentationsschicht.md](../mapping/argumentationsschicht.md). Die dort dokumentierten Gegenhypothesen und begründeten Entscheidungen bleiben als Prüflatte erhalten; Kapitel 5 liefert die empirische Oberfläche dieser Abwägungen.
+- **Keine Kausalitätsaussagen möglich.** Alle Zusammenhänge in Kapitel 5 (z. B. Partizipation ↔ Selbstständigkeit, Kleinschrittigkeit ↔ Engagement, Konsequenz ↔ Kontakterhalt) beschreiben **Ko-Occurrence und Korrelation** im vorliegenden Einzel-Setting – keine Kausalbeziehungen. Dafür fehlen Kontrollbedingungen, Baseline-Daten (Verhalten von X außerhalb des Projekts) und Vergleichsgruppen. Der Nachweis macht diese Grenze sichtbar; er übersteigt sie nicht.
 
 ### Quellenbezüge
 
@@ -291,6 +292,7 @@ Legende Zwischenurteil (textbasiert, im dokumentierten Zeitraum): **(A)** belast
 
 ## Offene Punkte
 
+- **[OFFEN – strukturell] Baseline-Leerstelle:** Verhalten von X in Settings **außerhalb des Projekts** (regulärer Unterricht, andere Förderformate, freie Zeiten ohne Projektrolle) ist im vorliegenden Material nicht systematisch dokumentiert. Diese Leerstelle verhindert eine Aussage über **Interventionsspezifität**: Die dokumentierten Verläufe (Eigeninitiative, Partizipation in der Umsetzungsphase, Rückkehr nach Konflikten) könnten dem Projekt zuzuschreiben sein – oder dem normalen Handlungsrepertoire von X, das in attraktiven, strukturierten Situationen unabhängig vom Projekt auftritt. → Nötig für: Aussage „das Projekt hat X's Verhalten verändert" (statt: „X verhält sich in attraktiven Situationen stets so"). → Aktuell: **nicht nachlieferbar** für den dokumentierten Zeitraum; als explizite epistemische Grenze zu führen.
 - [OFFEN] Systematische Prüfung der Hypothese H11:
   - Tritt Aggression nach Kontrollverlust auf?
   - Welche Wirkung hat die Exit-Strategie (E4)?

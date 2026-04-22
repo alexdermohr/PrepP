@@ -164,6 +164,7 @@ Die folgenden Punkte sind übergreifend noch offen; Detailauflistung im Mapping:
 - [OFFEN] Systematische Wirkungsanalyse für die in der [Evidenzlage 5.3](kapitel/05_reflexion.md#53-evidenzlage-und-gegenhypothesen-je-entscheidung-e1e6) als **(C)** klassifizierten Entscheidungen (E1, E3b, E3d, E4).
 - [OFFEN] Feedback-Erhebung erweitern (mehr Zeitpunkte, mehr Kontextvarianz; Kapitel 3, 5).
 - [OFFEN] Prospektive Erhebung des Partizipationsgrads pro Einheit (GE/RM-Stufen) – Retro-Fassung liegt in [mapping/partizipationsgrad.md](mapping/partizipationsgrad.md), Ersterhebung in der laufenden Dokumentation folgt.
+- **[OFFEN – strukturell] Baseline-Leerstelle (Interventionsspezifität):** Verhalten von X außerhalb des Projekts ist nicht dokumentiert. Ohne diesen Vergleich ist keine Aussage möglich, ob die beobachteten Verläufe dem Projekt zuzurechnen sind oder X's normalem Verhalten in attraktiven Situationen entsprechen. → Explizite epistemische Grenze, nicht nachlieferbar für den dokumentierten Zeitraum. Siehe [Kapitel 5 Offene Punkte](kapitel/05_reflexion.md#offene-punkte) und [mapping/partizipationsgrad.md](mapping/partizipationsgrad.md#offene-punkte).
 - [OFFEN] Formale Anforderungen an den Gruppennachweis (Umfang, Abgabeformat; Kapitel 6).
 
 ---

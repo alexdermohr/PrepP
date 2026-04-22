@@ -77,26 +77,39 @@ keine Messskala):
 
 **Lesart:** Partizipation ist in der Umsetzungsphase (Tag 4–6) durchgängig
 voll gegeben; in der Anfangs- und Konfliktphase (Vorlauf, Tag 1–3)
-heterogen, in der Abschlussphase (Tag 7) ausklingend. Die „P++"-Phase fällt
-zusammen mit der Phase, in der T4 (Selbstständigkeit) **(A)** bewertet ist
-(siehe [Kapitel 5.1](../kapitel/05_reflexion.md#51-zielerreichung--teilzielweiser-abgleich)).
+heterogen, in der Abschlussphase (Tag 7) ausklingend. Die „P++"-Phase
+**tritt zusammen mit** der Phase auf, in der T4 (Selbstständigkeit) **(A)**
+bewertet ist (Ko-Occurrence, keine Kausalaussage;
+siehe [Kapitel 5.1](../kapitel/05_reflexion.md#51-zielerreichung--teilzielweiser-abgleich)).
+
+> **Wichtig:** Alle Zusammenhänge in diesem Dokument sind **korrelativ**, nicht kausal.
+> P++-Stufen und Teilzielbewertungen treten gemeinsam auf – ob P++ Ursache,
+> Begleiterscheinung oder Folge der beschriebenen Verläufe ist, lässt sich ohne
+> Kontrollbedingungen und Baseline-Daten nicht entscheiden. Die P-Stufen sind ein
+> **Arbeitsraster**, keine Messskala; ihre Kategorien sind heuristisch, nicht empirisch
+> geeicht.
 
 ## Analytische Kopplung: Partizipationsgrad ↔ Teilziele und Entscheidungen
 
 Dieser Abschnitt geht über die Stufenbeschreibung hinaus und fragt:
-Welche **Teilziele** profitieren von P++-Partizipation, welche **Entscheidungen**
+Welche **Teilziele** ko-occurieren mit P++-Partizipation, welche **Entscheidungen**
 korrelieren mit höherem Partizipationsgrad, und wo bleibt Partizipation
 formal vorhanden, aber sozial noch dünn?
 
-### Welche Teilziele profitieren von P++?
+> **Hinweis zur Lesart:** Die Spalte „Kopplungsbefund" beschreibt beobachtbare
+> Ko-Occurrence oder Korrelation im vorliegenden Material – **keine Kausalbeziehung**.
+> „P++ ko-occurriert mit T4 **(A)**" bedeutet: beide treten gemeinsam auf.
+> Es bedeutet **nicht**: P++ *verursacht* T4-Zielannäherung.
 
-| Teilziel | Befund im P-Material | Bewertung |
+### Welche Teilziele ko-occurieren mit P++?
+
+| Teilziel | Befund im P-Material | Kopplungsbefund |
 |---|---|---|
-| **T4 – Selbstständigkeit und Organisation** | P++-Phasen (Tag 4–6) deckungsgleich mit dokumentierten selbstständigen Teilhandlungen (Einkauf, Beschriftung, Laufwege). T4 wird in 5.1 mit **(A)** bewertet. | **direkte Kopplung** – P++ ist Bedingung und Ausdruck von T4 |
-| **T1 – Selbstvertrauen und Selbstwirksamkeit** | Gestaltende Entscheidungen (Farbe, Spruch, Pfanderlös-Verwendung) gehen als eigene Ideen ins Produkt ein; das ist messbares Kompetenzerleben. T1 ist **(B)**: Pro-Belege in der P++-Phase, Kontra in formellen Momenten. | **partielle Kopplung** – P++ stützt T1 in handlungsorientierten Phasen; formelle Exposition (P– / P0) bleibt Wirkungslücke |
-| **T2 – Gleichwürdiger Umgang mit Mitschülern** | P++-Phasen enthalten kaum direkte Peer-Aushandlung; Mitschüler-Interaktion konzentriert sich auf Tag 1 (P+, Ideensammlung). Kooperation mit Y funktioniert, ist aber nicht primär durch GE/RM-Muster getrieben. | **schwache Kopplung** – T2-Entwicklung hängt stärker an Beziehungsformat als an P-Stufe |
-| **T3 – Sprachlicher Ausdruck / sozialer Auftritt** | In allen formellen Situationen (Hausmeister, K, Holzwerker) ist die P-Stufe P– oder P+; kein P++ in formellen Momenten. T3 ist **(C)**. | **keine belegbare Kopplung** – P++ tritt nicht dort auf, wo T3 adressiert wird; Scaffolding (E3c) stützt Präsenz, hebt aber die P-Stufe nicht |
-| **T5 – Gemeinschaftserfahrung** | Tag 6 (P++) ist das Moment des sichtbaren gemeinsamen Beitrags. Tag 7 (P–, systemischer Fehler) zerstört die Permanenz dieses Ergebnisses. | **abhängig von Systemstabilität** – P++ in T5 ist nur dann nachhaltig, wenn die systemische Rahmenbedingung gesichert ist (A10) |
+| **T4 – Selbstständigkeit und Organisation** | P++-Phasen (Tag 4–6) deckungsgleich mit dokumentierten selbstständigen Teilhandlungen (Einkauf, Beschriftung, Laufwege). T4 wird in 5.1 mit **(A)** bewertet. | **Ko-Occurrence (stark)** – P++ und T4-Handlungen treten gemeinsam auf; Kausalrichtung ungeklärt (P++ als Ausdruck von T4, als Ermöglicher oder als gemeinsames Produkt der Situation) |
+| **T1 – Selbstvertrauen und Selbstwirksamkeit** | Gestaltende Entscheidungen (Farbe, Spruch, Pfanderlös-Verwendung) gehen als eigene Ideen ins Produkt ein; das ist beobachtbares Kompetenzerleben. T1 ist **(B)**: Pro-Belege in der P++-Phase, Kontra in formellen Momenten. | **Ko-Occurrence (partiell)** – P++ tritt mit T1-relevanten Momenten auf; kein Beleg für P++ als Ursache von Selbstwirksamkeit |
+| **T2 – Gleichwürdiger Umgang mit Mitschülern** | P++-Phasen enthalten kaum direkte Peer-Aushandlung; Mitschüler-Interaktion konzentriert sich auf Tag 1 (P+, Ideensammlung). Kooperation mit Y funktioniert, ist aber nicht primär durch GE/RM-Muster getrieben. | **Schwache / keine Ko-Occurrence** – T2-Entwicklung hängt stärker an Beziehungsformat als an P-Stufe |
+| **T3 – Sprachlicher Ausdruck / sozialer Auftritt** | In allen formellen Situationen (Hausmeister, K, Holzwerker) ist die P-Stufe P– oder P+; kein P++ in formellen Momenten. T3 ist **(C)**. | **Keine belegbare Ko-Occurrence** – P++ tritt nicht dort auf, wo T3 adressiert wird; Scaffolding (E3c) stützt Präsenz, hebt aber die P-Stufe nicht |
+| **T5 – Gemeinschaftserfahrung** | Tag 6 (P++) ist der Moment des sichtbaren gemeinsamen Beitrags. Tag 7 (P–, systemischer Fehler) zerstört die Permanenz dieses Ergebnisses. | **Ko-Occurrence (situativ)** – P++ in T5 ist nur dann nachhaltig, wenn die systemische Rahmenbedingung gesichert ist (A10) |
 
 ### Welche Entscheidungen korrelieren mit höherem Partizipationsgrad?
 
@@ -120,8 +133,8 @@ formal vorhanden, aber sozial noch dünn?
 
 - **Zur Hypothese H6** (Handlungsorientierung stützt Stabilität): Die
   Ballung der P++-Einheiten in der Umsetzungsphase ist konsistent mit H6;
-  sie ersetzt H6 nicht, stützt aber die Kopplung „Handlung → Partizipation
-  → Zielannäherung". → [docs/hypothesen.md](../../hypothesen.md).
+  sie ersetzt H6 nicht, stützt aber den Zusammenhang „Handlung, Partizipation
+  und Zielannäherung treten gemeinsam auf" (Ko-Occurrence, keine Kausalaussage). → [docs/hypothesen.md](../../hypothesen.md).
 - **Zur Hypothese H7** (Systemkonkurrenz): Tag 3 ist das einzige Material,
   in dem GE im Projekt **unterbleibt, weil** ein Parallelangebot gewählt
   wird. Das ist der dokumentierte Beleg für H7 auf Mikroebene und
@@ -136,7 +149,21 @@ formal vorhanden, aber sozial noch dünn?
 ## Gegenhypothesen gegen die Verdichtung
 
 Die Stufung ist nicht neutral; folgende Gegenlesarten sind im Material
-nicht auszuschließen:
+nicht auszuschließen. **Die erste Gegenhypothese (G0) ist die methodisch
+stärkste und muss beim Lesen dieses Dokuments dauerhaft mitgeführt werden:**
+
+- **G0 – Partizipation als Epiphänomen (Hauptgegenhypothese):**
+  P++ ist nicht Ursache oder Ermöglicher der beobachteten Zielannäherung,
+  sondern deren **Nebenprodukt**. Attraktive, strukturierte Tätigkeiten
+  mit stabiler Beziehung zur Begleitung reduzieren Stress und aktivieren
+  Handlungsfähigkeit – Partizipation entsteht dabei automatisch, ist aber
+  nicht der wirksame Mechanismus.
+  → Konsequenz für die Praxis: Nicht „Wie steigern wir P++?", sondern
+  **„Welche Situationsdesigns erzeugen automatisch P++"** – das ist
+  eine Systemfrage, keine Partizipationsfrage.
+  → Aktuell: Diese Gegenhypothese ist im vorliegenden Material
+  **nicht entscheidbar**. Beide Lesarten (Partizipation als Wirkfaktor
+  vs. Partizipation als Epiphänomen) sind kompatibel mit den Daten.
 
 - **Alltagspragmatismus:** „Gestaltende Entscheidungen" Tag 4–6 betreffen
   nur niedrigschwellige Form-/Materialwahlen und sind kein Beleg für
@@ -155,6 +182,16 @@ Messaussage.
 
 ## Offene Punkte
 
+- **[OFFEN – strukturell]** Baseline-Verhalten von X außerhalb projektbasierter Settings fehlt vollständig.
+  Ohne Vergleich mit X's Verhalten in anderen, nicht-projektbezogenen Settings
+  (regulärer Schulalltag, andere Förderformate, freie Zeiten ohne Projektrolle)
+  ist keine Aussage über **Interventionsspezifität** möglich:
+  Die beobachteten P++-Phasen könnten das Ergebnis der Projektstruktur sein –
+  oder des normalen Handlungsrepertoires von X, das unabhängig vom Projekt
+  in attraktiven Tätigkeiten immer auftritt.
+  → Nötig für: Aussage „das Projekt hat die Partizipation ermöglicht" (statt:
+  „X partizipiert sowieso in attraktiven Situationen").
+  → Aktuell: **nicht nachlieferbar** für den dokumentierten Zeitraum.
 - [OFFEN] Pro folgender Projekteinheit drei Felder (GE, RM, Stufe)
   vor Ort eintragen, bevor die Tagesdoku geschlossen wird; derzeit erfolgt
   die Eintragung nachgelagert aus dem Tagebuch.

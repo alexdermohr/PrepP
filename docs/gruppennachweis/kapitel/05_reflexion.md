@@ -11,6 +11,22 @@
 
 ## 5.0 Lesehilfe und Quellen
 
+### Priorisierte Leselogik (fuer Verdichtung)
+
+Dieses Kapitel ist die **Bewertungsachse** des Nachweises.
+
+- **Primaeres Zentrum:** [5.3 Evidenzlage je Entscheidung](#53-evidenzlage-und-gegenhypothesen-je-entscheidung-e1e6)
+- **Sekundaer:** [5.1 Zielkurzbilanz](#51-zielerreichung--teilzielweiser-abgleich) als verdichtete Uebersicht
+- **Abschluss:** [5.6 Hypothesenstatus](#56-hypothesenstatus--abschließender-überblick) und [5.7 Schlussfolgerungen](#57-schlussfolgerungen)
+
+Entkopplungsregel zu Kapitel 4:
+
+- Kapitel 4 begruendet Entscheidungen.
+- Kapitel 5 bewertet Entscheidungen.
+- Wirkungsaussagen werden nicht in beiden Kapiteln vollstaendig ausformuliert.
+
+Arbeitsgrundlage fuer den Umbau: [komprimierte_zielstruktur.md](../komprimierte_zielstruktur.md).
+
 ### Methodischer Rahmen
 
 - **Bewertung prüft Wirkung, nicht Absicht.** Grundlage: [meta/arbeitsregeln.md](../../../meta/arbeitsregeln.md) (Regel 4), [_contract.md](../_contract.md).

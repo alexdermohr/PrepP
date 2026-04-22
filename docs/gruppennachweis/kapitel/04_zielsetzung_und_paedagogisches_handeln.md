@@ -11,6 +11,21 @@
 > heuristisch und mit Alternativerklärungen eingesetzt. Wirkungsprüfung der
 > Maßnahmen: [Kapitel 5, Evidenzlage](05_reflexion.md#53-evidenzlage-und-gegenhypothesen-je-entscheidung-e1e6).
 
+## 4.0 Kompaktlogik (Matrix-first)
+
+Kapitel 4 ist die **Begruendungsachse**, nicht die Bewertungsachse.
+
+- Hier steht: **Hypothese -> Entscheidung -> Begruendung -> Wirkindikator**.
+- In [Kapitel 5.3](05_reflexion.md#53-evidenzlage-und-gegenhypothesen-je-entscheidung-e1e6) steht: **Wirkung, Evidenzurteil (A/B/C), Gegenhypothese, Nachweisluecke**.
+
+Damit gilt fuer dieses Kapitel die Entkopplungsregel:
+
+- keine A/B/C-Urteile in Kapitel 4,
+- keine doppelte Wirkungsbewertung,
+- stattdessen konsequenter Verweis auf die zentrale Matrix in Kapitel 5.3.
+
+Arbeitsgrundlage fuer die Verdichtung: [komprimierte_zielstruktur.md](../komprimierte_zielstruktur.md).
+
 ## 4.1 Ziel
 
 ### Übergeordnetes Ziel

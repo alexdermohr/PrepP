@@ -2,6 +2,14 @@
 
 # Kapitel 6: Formalia und Anhang
 
+> **Auf einen Blick:** Kapitel 6 dokumentiert den formalen Rahmen: Contract,
+> State und Transformationsregeln ([6.1](#61-dokumentationsrahmen)), Einhaltung
+> der acht Arbeitsregeln ([6.2](#62-einhaltung-der-arbeitsregeln)), Sprache/Stil
+> ([6.3](#63-sprache-und-stil)), Literaturapparat mit vorgeschlagenem Zitierstil
+> APA 7 ([6.4](#64-literaturverzeichnis)) und die Anhänge A1–A10
+> ([6.5](#65-anhang)). Offene Formalia (Umfang, Abgabeformat) sind
+> ausdrücklich markiert.
+
 ## 6.1 Dokumentationsrahmen
 
 - **Arbeitsregeln:** [meta/arbeitsregeln.md](../../../meta/arbeitsregeln.md)
@@ -35,8 +43,9 @@
 ## 6.4 Literaturverzeichnis
 
 - Der **Apparat** wird in [apparat/literaturverzeichnis.md](../apparat/literaturverzeichnis.md) gepflegt.
-- **Stand:** Im dokumentierten Zeitraum liegen keine externen Fachliteraturquellen vor; Begründungen stützen sich auf das interne Material (Beobachtungen, Hypothesen, Entscheidungen, Reflexion) sowie die repo-internen Modelle (`models/*`). Der Zitierstil ist noch nicht festgelegt.
-- [OFFEN] Eintragen externer Fachliteratur zu Empowerment, Partizipation und ICF-CY; Klärung des Zitierstils.
+- **Stand:** Im dokumentierten Zeitraum liegen keine externen Fachliteraturquellen vor; Begründungen stützen sich auf das interne Material (Beobachtungen, Hypothesen, Entscheidungen, Reflexion) sowie die repo-internen Modelle (`models/*`).
+- **Zitierstil (Arbeitsstand):** **APA 7** wird als Zitierstil gesetzt und gilt, sobald externe Fachliteratur ergänzt wird. Wahl-Begründung: weite Verbreitung im pädagogisch-psychologischen Feld, einfache Inline-Referenz (Autor, Jahr), kompatibel mit der vorhandenen Quellenverweis-Logik im Repo. Änderungen an dieser Festlegung werden im Apparat dokumentiert.
+- [OFFEN] Eintragen externer Fachliteratur zu Empowerment, Partizipation und ICF-CY (Apparat befüllen).
 
 ## 6.5 Anhang
 
@@ -63,5 +72,5 @@
 
 ## Offene Punkte
 
-- [OFFEN] Formale Anforderungen an den Gruppennachweis (Umfang, Abgabeformat, Zitierstil) sind projektseitig noch nicht festgelegt.
+- [OFFEN] Formale Anforderungen an den Gruppennachweis (Umfang, Abgabeformat) sind projektseitig noch nicht festgelegt. Zitierstil: APA 7 (siehe [6.4](#64-literaturverzeichnis)).
 - [OFFEN] Ausbau des Literaturverzeichnisses mit externen Fachquellen (siehe 6.4).

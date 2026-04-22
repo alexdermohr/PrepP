@@ -2,6 +2,15 @@
 
 # Kapitel 3: Menschen und ICF
 
+> **Auf einen Blick:** Kapitel 3 beschreibt die Zielperson funktional und
+> kontextsensibel, nicht psychologisch-deutend. Es verdichtet Beobachtungen in
+> fünf **Funktionsprofile** ([3.2.1](#321-funktionsprofile-verdichtung)),
+> ordnet sie ICF-basiert ([3.5–3.7](#35-icf-cy-körperfunktionen-und--strukturen)) und markiert die
+> Grenzen des Feedbacks als Erkenntnisquelle ([3.8](#38-feedback-der-zielperson-perspektive-x)).
+> Eine psychologische Deutung (auch Adler) erfolgt bewusst **nicht** in diesem
+> Kapitel, sondern – falls einschlägig – in [Kapitel 4.4.0](04_zielsetzung_und_paedagogisches_handeln.md#440-heuristische-rahmung-adler)
+> und in der [Wirkungsmatrix 5.3](05_reflexion.md#53-wirkungsmatrix-der-entscheidungen-e1e6).
+
 ## 3.1 Demografische Daten
 
 | Merkmal | Angabe | Quelle |
@@ -32,6 +41,23 @@ Belegbar sichtbare Merkmale im Projektverlauf:
   → Quelle: [docs/tagebuch/02_tag_2.md](../../tagebuch/02_tag_2.md), [docs/tagebuch/04_tag_4.md](../../tagebuch/04_tag_4.md), [docs/beobachtungen/01_verhalten_in_situationen.md](../../beobachtungen/01_verhalten_in_situationen.md), [docs/reflexion.md](../../reflexion.md)
 - **Beziehungsbedürfnis zur Projektleitung**: Spitznamen („bescheuert", „cool"), freudige Begrüßung, wiederholte Kontaktaufnahme nach Distanzphasen.
   → Quelle: [docs/tagebuch/05_tag_5.md](../../tagebuch/05_tag_5.md), [docs/tagebuch/07_tag_7.md](../../tagebuch/07_tag_7.md)
+
+### 3.2.1 Funktionsprofile (Verdichtung)
+
+> **Zweck:** Die Einzelmerkmale oben werden in fünf **Funktionsprofile**
+> verdichtet. Profile beschreiben, *in welchen Situationstypen welches
+> Verhalten zuverlässig auftritt*. Sie sind deskriptiv, nicht deutend; sie
+> sollen Streuung reduzieren und die Planung in [Kapitel 4](04_zielsetzung_und_paedagogisches_handeln.md) stützen.
+
+| Profil | Situationstyp | Beobachtetes Muster | Stützbelege |
+|---|---|---|---|
+| **P1 – Handlungsstabilität** | strukturierte, handlungsorientierte Aufgaben (Sammeln, Planen, Einkaufen, Beschriften) | Initiative, Ausdauer, Sorgfalt, eigene Teilentscheidungen | [docs/beobachtungen/01_verhalten_in_situationen.md](../../beobachtungen/01_verhalten_in_situationen.md), [docs/tagebuch/04_tag_4.md](../../tagebuch/04_tag_4.md), [docs/tagebuch/06_tag_6.md](../../tagebuch/06_tag_6.md), [docs/hypothesen.md](../../hypothesen.md) (H1, H6) |
+| **P2 – Kippneigung bei direkter Grenzsetzung** | unmittelbare Grenzsetzung durch Erwachsene oder Peers | schneller Wechsel zu lauten Äußerungen, verbaler Zuspitzung, Umstoßen von Objekten | [docs/tagebuch/02_tag_2.md](../../tagebuch/02_tag_2.md), [docs/tagebuch/04_tag_4.md](../../tagebuch/04_tag_4.md), [docs/beobachtungen/02_umgang_mit_grenzen.md](../../beobachtungen/02_umgang_mit_grenzen.md), [docs/hypothesen.md](../../hypothesen.md) (H4, H8, H11) |
+| **P3 – Rückzug in formeller Exposition** | Gespräche mit Hausmeister, K, Holzwerker | leises Sprechen, Körper abwenden, geringer Redeanteil | [docs/beobachtungen/01_verhalten_in_situationen.md](../../beobachtungen/01_verhalten_in_situationen.md), [docs/tagebuch/01_tag_1.md](../../tagebuch/01_tag_1.md), [docs/tagebuch/04_tag_4.md](../../tagebuch/04_tag_4.md), [docs/hypothesen.md](../../hypothesen.md) (H2) |
+| **P4 – Kooperation über Vermittlung** | Peer-Interaktion mit Y als Vermittler; weniger hierarchische Konstellationen | Ideenannahme, gemeinsame Planung, Deeskalation | [docs/tagebuch/01_tag_1.md](../../tagebuch/01_tag_1.md), [docs/tagebuch/02_tag_2.md](../../tagebuch/02_tag_2.md), [docs/reflexion.md](../../reflexion.md) |
+| **P5 – Rückkehr in Kontakt nach Eskalation** | Phase nach Konflikt, zeitlich versetzt | Wiederaufnahme des Kontakts, Entschuldigung, Spitznamen, freudige Begrüßung | [docs/beobachtungen/01_verhalten_in_situationen.md](../../beobachtungen/01_verhalten_in_situationen.md), [docs/tagebuch/01_tag_1.md](../../tagebuch/01_tag_1.md), [docs/tagebuch/07_tag_7.md](../../tagebuch/07_tag_7.md), [docs/hypothesen.md](../../hypothesen.md) (H9) |
+
+> Die Profile P1–P5 werden in [Kapitel 4.2](04_zielsetzung_und_paedagogisches_handeln.md#42-weg-handlungsschritte) mit Maßnahmen verknüpft (P1→E6, P2→E1/E3d, P3→E3c, P4→T2/Partizipation, P5→E4 im Falle der Einführung).
 
 ## 3.3 Ressourcen
 
@@ -101,18 +127,21 @@ Belegbar sichtbare Merkmale im Projektverlauf:
 
 ## 3.8 Feedback der Zielperson (Perspektive X)
 
-Die dokumentierten Rückmeldungen von X sind insgesamt knapp, mechanistisch und ambivalent; sie stützen sich bisher nur auf zwei Erhebungstage.
+Die dokumentierten Rückmeldungen von X sind insgesamt knapp, mechanistisch und ambivalent; sie stützen sich bisher nur auf zwei Erhebungstage. Die **Form der Rückmeldung** ist bei jedem Eintrag markiert (vgl. Regel 8 in [meta/arbeitsregeln.md](../../../meta/arbeitsregeln.md); vollständige Modi in [docs/feedback/01_feedback_zielperson.md](../../feedback/01_feedback_zielperson.md)).
 
-| Datum | Kontext | Inhalt | Form |
-|---|---|---|---|
-| 2026-04-07 | Allgemeine Projektwahrnehmung | „gut" | direkt, wörtlich ([docs/feedback/02_feedback_x.md](../../feedback/02_feedback_x.md)) |
-| 2026-04-08 | Feedbackrunde zum Gesamtprojekt | „gut"; „nichts" gefiel nicht; „sehr lecker" (Fanta-Kuchen); keine Antwort zur Einstiegsphase; „ja" (Beleidigungen angebracht); „sehr gut" (Perspektivwechsel) | direkt, wörtlich ([docs/feedback/03_feedback_x.md](../../feedback/03_feedback_x.md)) |
+| Datum | Kontext | Inhalt | Erhebungsart | Quellentreue | Häufigkeit |
+|---|---|---|---|---|---|
+| 2026-04-07 | Allgemeine Projektwahrnehmung | „gut" | direkt (offene Frage) | wörtlich | einmalig | 
+| 2026-04-08 | Feedbackrunde zum Gesamtprojekt | „gut"; „nichts" gefiel nicht; „sehr lecker" (Fanta-Kuchen); keine Antwort zur Einstiegsphase; „ja" (Beleidigungen angebracht); „sehr gut" (Perspektivwechsel) | direkt (offene Frage) | wörtlich | einmalig |
 
-Interpretatorisch relevant, aber als Lücke markiert:
+Quellen: [docs/feedback/02_feedback_x.md](../../feedback/02_feedback_x.md), [docs/feedback/03_feedback_x.md](../../feedback/03_feedback_x.md).
+
+**Interpretatorisch relevant, aber als Lücke markiert:**
 
 - Die Rückmeldungen sind **kurz und wenig differenzierend**; ihre Belastbarkeit als Steuerungsgröße ist begrenzt (vgl. [docs/hypothesen.md](../../hypothesen.md) H10).
 - Einzelne Antworten (z. B. „Beleidigungen angebracht: ja") stehen in Spannung zum pädagogischen Ziel eines gleichwürdigen Umgangs und zu beobachteten Entschuldigungen.
   → Quelle: [docs/feedback/03_feedback_x.md](../../feedback/03_feedback_x.md) (Block 5), vgl. [docs/beobachtungen/01_verhalten_in_situationen.md](../../beobachtungen/01_verhalten_in_situationen.md)
+- Bisher dokumentiert ist ausschließlich der Modus **„direkt / wörtlich"**; paraphrasierte, skalierte oder Auswahl-Formate liegen nicht vor. Die Vorlage sieht diese Modi aber bereits vor.
 - [OFFEN] Ausbau der Feedback-Praxis (Skala, Auswahlformat, regelmäßige Erhebung) gemäß [docs/feedback/01_feedback_zielperson.md](../../feedback/01_feedback_zielperson.md) (Erhebungsmodi).
 
 ## 3.9 Weitere Beteiligte

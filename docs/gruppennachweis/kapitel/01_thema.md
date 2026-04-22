@@ -2,6 +2,13 @@
 
 # Kapitel 1: Thema
 
+> **Auf einen Blick:** Kapitel 1 benennt Projekt, Idee und Begründung.
+> Es zeigt, warum die Rolle als Initiator/Koordinator zu X passt
+> ([1.3](#13-sinnvolle-idee)), stützt sich auf Projektplan, Beobachtungen und
+> das interne Rahmenmodell „Prep-Planung" ([1.4](#14-plausible-begründung))
+> und grenzt den Gegenstand des Nachweises ab ([1.5](#15-abgrenzung)).
+> Externer Fachliteraturbeleg zu Empowerment/Partizipation bleibt offen.
+
 ## 1.1 Projektbezeichnung
 
 **„Schulhof verschönern mit X"** – ein schulisches Gemeinschaftsprojekt, in dem der zieldifferent beschulte Siebtklässler X die Rolle als Initiator und Koordinator eines realen Gestaltungsvorhabens übernimmt.

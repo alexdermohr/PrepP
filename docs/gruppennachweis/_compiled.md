@@ -48,11 +48,11 @@
 
 Die folgenden Punkte sind übergreifend noch offen; Detailauflistung im Mapping:
 
-- [OFFEN] Institutionelles Profil der Schule / des Einrichtungskontexts in Hamburg (Kapitel 2).
-- [OFFEN] Externe Fachliteratur zu Empowerment, Partizipation, ICF-CY; Zitierstil (Kapitel 1, 4, 6).
-- [OFFEN] Systematische Wirkungsanalyse der Entscheidungsdokumente E1, E2, E3, E4 und E6 auf Basis des Beobachtungsrasters (Kapitel 5).
+- [OFFEN] Institutionelles Profil der Schule / des Einrichtungskontexts in Hamburg (Kapitel 2) — bewusst nicht prospektiv ergänzt.
+- [OFFEN] Externe Fachliteratur zu Empowerment, Partizipation, ICF-CY (Kapitel 1, 4, 6). Zitierstil APA 7 gesetzt.
+- [OFFEN] Systematische Wirkungsanalyse für die in der [Wirkungsmatrix 5.3](kapitel/05_reflexion.md#53-wirkungsmatrix-der-entscheidungen-e1e6) als **(C)** klassifizierten Entscheidungen (E1, E3b, E3d, E4).
 - [OFFEN] Systematisch erweiterte Feedback-Erhebung (Skalen, Auswahlformate; Kapitel 3, 5).
-- [OFFEN] Formale Anforderungen an den Gruppennachweis (Umfang, Abgabeformat, Zitierstil; Kapitel 6).
+- [OFFEN] Formale Anforderungen an den Gruppennachweis (Umfang, Abgabeformat; Kapitel 6).
 
 ---
 

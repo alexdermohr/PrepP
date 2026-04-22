@@ -2,7 +2,17 @@
 
 # Kapitel 2: Kontext und Situation
 
-## 2.1 Einrichtung
+> **Auf einen Blick:** Kapitel 2 beschreibt ausschließlich den
+> **nachweisbaren Kontext** des Projekts — also nur Kontextfaktoren, die im
+> Rohmaterial belegt sind. Schulname und institutionelles Profil werden
+> bewusst **nicht** ergänzt (epistemische Lücke; siehe [Mapping](../mapping/rohmaterial_zu_kapiteln.md)).
+> Das Kapitel bleibt damit strenger als umfassender: Es nimmt Einrichtung
+> ([2.1](#21-einrichtung-nachweisbarer-kontext)), Handlungssituation
+> ([2.2](#22-situation-des-praktischen-handelns)), zeitlichen Rahmen
+> ([2.3](#23-zeitlicher-rahmen)) und PrepP-Rahmen ([2.4](#24-rahmen-des-prepp-vorhabens))
+> nur so weit auf, wie es im Repo belegt ist.
+
+## 2.1 Einrichtung (nachweisbarer Kontext)
 
 Das Projekt findet an einer **Schule in Hamburg** statt. Belegt im vorliegenden Rohmaterial sind folgende Merkmale des Einrichtungskontexts:
 

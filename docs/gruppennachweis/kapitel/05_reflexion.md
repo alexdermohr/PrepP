@@ -254,9 +254,7 @@ Die folgende Tabelle bewertet den empirischen Status jeder Hypothese H1–H11 au
 
 | Hypothese | Status (Repo) | Reflexion |
 |---|---|---|
-| H1 | offen | Eigeninitiative in praktischen Tätigkeiten mehrfach bestätigt; formaler Vergleich zu unstrukturierten Phasen steht aus. | 
-
-→ Kapitel 4.5 zeigt, wie H1 als Begründungsachse in T4 und der Wahl des Einstiegs (Handlungsorientierte Tätigkeiten) fungiert; hier werden die Konsequenzen der fehlenden Vergleichsmöglichkeit reflektiert. |
+| H1 | offen | Eigeninitiative in praktischen Tätigkeiten mehrfach bestätigt; formaler Vergleich zu unstrukturierten Phasen steht aus. |
 | H2 | aktiv geprüft | Rückzug in formellen Kontexten anhaltend; Scaffolding (E3c) testet Entlastung, Wirkung noch nicht quantifiziert. |
 | H3 | offen | Tag 3 stützt punktuell das Ausweichmuster; systematische Prüfung fehlt. |
 | H4 | offen | Tag 2/4 zeigen Ausfälle nach Grenzsetzung; vorab besprochene Regeln (E3d) noch nicht systematisch geprüft. |
@@ -269,6 +267,8 @@ Die folgende Tabelle bewertet den empirischen Status jeder Hypothese H1–H11 au
 | H11 | offen | Exit-Strategie Pause (E4) ist konzeptionell dokumentiert, wurde der Zielperson im dokumentierten Zeitraum jedoch nicht vorgestellt; Nutzung/Wirkung daher nicht systematisch auswertbar. |
 
 → Quelle: [docs/hypothesen.md](../../hypothesen.md)
+
+> **Rückbezug zu Kapitel 4.5:** Am Beispiel H1 wird dort gezeigt, wie Hypothesen als Begründungsachse in Zielsetzung und Handlungsplanung eingehen; Kapitel 5.6 bewertet dagegen ihren empirischen Status und Nachweisstatus im Material.
 
 ### 5.6.1 Prüfung der Hypothese H11 (Aggression und Kontrollverlust)
 

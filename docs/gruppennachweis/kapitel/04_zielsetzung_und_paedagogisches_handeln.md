@@ -144,7 +144,7 @@ X übernimmt im Projekt „Schulhof verschönern" eine **verantwortliche Mitwirk
 
 Jede der Handlungsentscheidungen E1–E6 in [Kapitel 4.2](#42-weg-handlungsschritte) und jeder Handlungsschritt in [Kapitel 4.4.1](#441-handlungsschritte--begründung-wirkindikator-gegenerklärung) knüpft an eine oder mehrere der elf Hypothesen H1–H11 an.
 
-**Hypothesenstatus und Bewertung:** Die Dokumentation des Status, der empirischen Stützung und der Prüflücken jeder Hypothese erfolgt konzentriert und bewertend in [Kapitel 5.6 Hypothesenstatus](#56-hypothesenstatus--abschließender-überblick). Dort wird explizit gemacht, welche Hypothesen offen, aktiv geprüft oder gestützt sind.
+**Hypothesenstatus und Bewertung:** Die Dokumentation des Status, der empirischen Stützung und der Prüflücken jeder Hypothese erfolgt konzentriert und bewertend in [Kapitel 5.6 Hypothesenstatus](05_reflexion.md#56-hypothesenstatus--abschließender-überblick). Dort wird explizit gemacht, welche Hypothesen offen, aktiv geprüft oder gestützt sind.
 
 → Primäre Quelle: [docs/hypothesen.md](../../hypothesen.md)  
 → Bewertungsort: [Kapitel 5.6](05_reflexion.md#56-hypothesenstatus--abschließender-überblick)

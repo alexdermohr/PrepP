@@ -330,7 +330,15 @@ const blockRenderers = {
     img.alt = b.alt || "Projektbild";
     img.className = "content-image";
     img.loading = "lazy";
-    container.appendChild(img);
+
+    const imageLink = document.createElement("a");
+    imageLink.href = safeUrl;
+    imageLink.target = "_blank";
+    imageLink.rel = "noopener noreferrer";
+    imageLink.title = "Bild in voller Größe öffnen";
+    imageLink.appendChild(img);
+
+    container.appendChild(imageLink);
   },
   code: (b, container) => {
     const pre = document.createElement("pre");

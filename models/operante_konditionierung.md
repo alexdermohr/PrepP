@@ -57,4 +57,4 @@ Operante Konditionierung ist besonders stark für Musterstabilisierung und Verha
 
 ## VII. Humor
 
-Kinder lernen schnell, was „funktioniert" – oft leider schneller als Erwachsene merken, was sie gerade verstärken.
+Kinder lernen schnell, was „funktioniert“ – oft leider schneller als Erwachsene merken, was sie gerade verstärken.

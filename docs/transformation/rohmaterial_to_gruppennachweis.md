@@ -69,7 +69,7 @@ Dieses Dokument beschreibt, wie Rohmaterial (Beobachtungen, Tagebuch, Hypothesen
 Vor Abschluss der Transformation muss geprüft werden:
 
 - [ ] Jede Aussage im Gruppennachweis hat einen Quellenverweis
-- [ ] Keine eigenständige Interpretation wurde hinzugefügt
+- [ ] Keine quellenlose oder nicht als solche markierte Zusatzinterpretation wurde hinzugefügt
 - [ ] Offene Lücken sind als `[OFFEN]` markiert
 - [ ] Status in den Kapiteln ist aktualisiert
 - [ ] Mapping (`docs/gruppennachweis/mapping/rohmaterial_zu_kapiteln.md`) ist aktuell

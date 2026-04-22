@@ -58,6 +58,7 @@ Arbeitsgrundlage fuer den Umbau: [komprimierte_zielstruktur.md](../komprimierte_
 - Welche Zuschreibungen wurden getroffen?
 - Welche Alternativen wurden geprüft?
 - Welche Interaktionsschleifen könnten Verhalten stabilisieren?
+- **[OFFEN]** Systematische Attributionsprüfung (Absicht/Wille/Provokation) wird im aktuellen Stand nur punktuell dokumentiert und ist in 5.3 noch nicht durchgängig ausgewiesen.
 
 ## 5.1 Zielerreichung – teilzielweiser Abgleich
 

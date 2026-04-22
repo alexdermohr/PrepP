@@ -35,15 +35,15 @@ Das Modell ist als Prüfraster stark, wenn mehrere Deutungen parallel gehalten u
 
 ## III. Anwendung im Projektkontext (heuristisch)
 
-- **Beispiel 1:** Verhalten von X bei formellen Gesprächen (leise, abgewandt) kann als „fehlender Wille" (intern/stabil) fehlattribuiert werden; alternativ als Überforderung in Exposition (extern/variabel) mit Bedarf an Co-Regulation.
-- **Beispiel 2:** Eskalation nach Grenzsetzung kann als „Absicht zur Provokation" gelesen werden; alternativ als eingeschränkte Kontrollierbarkeit unter Stress mit Bedarf an strukturierter Entlastung.
-- **Beispiel 3:** Rückkehr in Kontakt nach Konflikt spricht gegen globale Zuschreibung „immer oppositionell" und eher für variabel-kontextgebundene Dynamik.
+- **Beispiel 1:** Verhalten von X bei formellen Gesprächen (leise, abgewandt) kann als „fehlender Wille“ (intern/stabil) fehlattribuiert werden; alternativ als Überforderung in Exposition (extern/variabel) mit Bedarf an Co-Regulation.
+- **Beispiel 2:** Eskalation nach Grenzsetzung kann als „Absicht zur Provokation“ gelesen werden; alternativ als eingeschränkte Kontrollierbarkeit unter Stress mit Bedarf an strukturierter Entlastung.
+- **Beispiel 3:** Rückkehr in Kontakt nach Konflikt spricht gegen globale Zuschreibung „immer oppositionell“ und eher für variabel-kontextgebundene Dynamik.
 
 ## IV. Abgrenzung
 
 - Nicht als Diagnostikersatz verwenden.
 - Nicht verwenden, wenn keine belastbaren Beobachtungen vorliegen.
-- Nicht zur moralischen Etikettierung („ist halt so") nutzen.
+- Nicht zur moralischen Etikettierung („ist halt so“) nutzen.
 
 ## V. Essenz / Entscheidungszusammenfassung
 

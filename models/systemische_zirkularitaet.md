@@ -35,8 +35,8 @@ Das Modell ist wirksam, wenn es Schleifen diagnostiziert und gleichzeitig konkre
 
 ## III. Anwendung im Projektkontext (heuristisch)
 
-- **Beispiel 1:** „Eskalation → Zuwendung" kann als Rückkopplung wirken: intensive Aufmerksamkeit nach Eskalation stabilisiert das Muster unbeabsichtigt.
-- **Beispiel 2:** „Grenzsetzung → Gegenwehr → harte Reaktion" kann als Eskalationsschleife laufen, wenn beide Seiten kurzfristig Kontrolle gewinnen wollen.
+- **Beispiel 1:** „Eskalation → Zuwendung“ kann als Rückkopplung wirken: intensive Aufmerksamkeit nach Eskalation stabilisiert das Muster unbeabsichtigt.
+- **Beispiel 2:** „Grenzsetzung → Gegenwehr → harte Reaktion“ kann als Eskalationsschleife laufen, wenn beide Seiten kurzfristig Kontrolle gewinnen wollen.
 - **Beispiel 3:** Ein geplanter Deeskalationsschritt (Pause/Exit) kann die Schleife unterbrechen und spätere Kooperation ermöglichen.
 
 ## IV. Abgrenzung
@@ -57,4 +57,4 @@ Das Modell ist wirksam, wenn es Schleifen diagnostiziert und gleichzeitig konkre
 
 ## VII. Humor
 
-Lineares Denken fragt: „Wer hat angefangen?" Zirkularität fragt: „Wer hört zuerst auf, das Muster zu füttern?"
+Lineares Denken fragt: „Wer hat angefangen?“ Zirkularität fragt: „Wer hört zuerst auf, das Muster zu füttern?“

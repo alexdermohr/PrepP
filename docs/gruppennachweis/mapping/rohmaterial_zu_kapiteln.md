@@ -9,7 +9,7 @@ Dieses Dokument stellt sicher, dass jede Aussage im Gruppennachweis auf eine Que
 **Zusatzregeln (Interpretationslogik):**
 
 - Jede **zentrale** Interpretation soll modellgestützt sein oder explizit modellfrei begründet werden.
-- Zuschreibungen zu Verhalten (z. B. „Absicht", „Wille", „Provokation") **müssen** die Attributionstheorie als Kontrastprüfung berücksichtigen.
+- Zuschreibungen zu Verhalten (z. B. „Absicht“, „Wille“, „Provokation“) **müssen** die Attributionstheorie als Kontrastprüfung berücksichtigen.
 
 **Ergänzung:** Für zentrale Aussagen legt die
 [Argumentationsschicht](argumentationsschicht.md) zusätzlich Beobachtung,
@@ -86,6 +86,7 @@ dokumentiert.
 | Abweichungen vom Plan (Tag 1, 2, 3, 4, 7 + Rollenabweichung) | `docs/tagebuch/*.md`, `docs/reflexion.md`, `docs/entscheidungen/*.md` | strukturiert |
 | Spannungen Feedback ↔ Beobachtung | `docs/feedback/03_feedback_x.md`, `docs/beobachtungen/01_verhalten_in_situationen.md`, H10 | strukturiert |
 | Hypothesenstatus H1–H11 | `docs/hypothesen.md` | strukturiert (H11: offen – Prüfstruktur vorhanden, aber keine systematische Auswertung) |
+| Attributionsprüfung bei Verhaltenszuschreibungen (Absicht/Wille/Provokation) | `docs/gruppennachweis/kapitel/05_reflexion.md`, `models/attributionstheorie.md` | [OFFEN] |
 | Schlussfolgerungen | `docs/reflexion.md`, `docs/entscheidungen/*.md` | strukturiert |
 | Systematische Prüfung der Hypothese H11 (Kontrollverlust ↔ Aggression; Intervention E4 ↔ Wirkung) | `docs/beobachtungen/03_pause_und_pfandprojekt_beobachtungsraster.md`, `docs/entscheidungen/04_pause_als_exit_strategie.md` | [OFFEN] |
 | Systematische Wirkungserhebung der in Matrix als (C) klassifizierten Entscheidungen (E1, E3b, E3d, E4) | `docs/beobachtungen/*.md`, `docs/entscheidungen/*.md` | [OFFEN] |

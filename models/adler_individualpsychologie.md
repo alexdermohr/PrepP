@@ -2,8 +2,22 @@
 
 ## Modelltyp
 
-**MOTIVATION + GOAL + STYLE + SOCIAL (teleologisch-heuristisch)**
+**GOAL + STYLE + SOCIAL (teleologisch-heuristisch)**
 – erklärt Verhalten als zielgerichtete Bewegung zur Kompensation erlebter Minderwertigkeit im sozialen Kontext.
+
+## Begriff & Etymologie
+
+**Individualpsychologie** (lat. *individuum* = das Ungeteilte) bezeichnet bei Adler eine Theorie der **einheitlichen, nicht zerlegbaren Persönlichkeit** im sozialen Kontext.
+
+Der Begriff richtet sich gegen eine isolierte Betrachtung des Menschen und betont:
+
+- die **Einzigartigkeit des Lebensstils**
+- die **Zielgerichtetheit des Handelns**
+- die Einbettung in **soziale Bezüge (Gemeinschaftsgefühl)**
+
+👉 „individuell“ meint hier nicht „allein", sondern „untrennbar organisiert“.
+
+Hinweis: Motivation ist im Modell implizit enthalten und nicht als eigenständige Kategorie getrennt.
 
 ## I. Dialektische Eröffnung
 

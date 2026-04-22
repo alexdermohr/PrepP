@@ -53,6 +53,13 @@ Arbeitsgrundlage fuer den Umbau: [komprimierte_zielstruktur.md](../komprimierte_
 - [docs/beobachtungen/03_pause_und_pfandprojekt_beobachtungsraster.md](../../beobachtungen/03_pause_und_pfandprojekt_beobachtungsraster.md) – Raster für Wirkungsprüfung
 - [models/adler_individualpsychologie.md](../../../models/adler_individualpsychologie.md) – heuristische Kontrastfolie
 
+## Interpretationsprüfung
+
+- Welche Zuschreibungen wurden getroffen?
+- Welche Alternativen wurden geprüft?
+- Welche Interaktionsschleifen könnten Verhalten stabilisieren?
+- **[OFFEN]** Systematische Attributionsprüfung (Absicht/Wille/Provokation) wird im aktuellen Stand nur punktuell dokumentiert und ist in 5.3 noch nicht durchgängig ausgewiesen.
+
 ## 5.1 Zielerreichung – teilzielweiser Abgleich
 
 | Teilziel | Evidenzlage | Belegende Beobachtungen / Einschränkungen |

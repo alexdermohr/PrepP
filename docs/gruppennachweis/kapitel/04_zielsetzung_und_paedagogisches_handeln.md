@@ -95,7 +95,7 @@ X übernimmt im Projekt „Schulhof verschönern" eine **verantwortliche Rolle a
 
 **Sinnvolle Andockstellen im Material:**
 
-- **Warum direkte Grenzsetzung kippen kann:** nicht bloß Regelverletzung, sondern mögliche Bedrohung von Selbstwert/Einfluss (→ E1, E3d).
+- **Warum direkte Grenzsetzung kippen kann:** nicht bloß Regelverletzung, sondern möglicher erlebter Kontroll- oder Einflussverlust (→ E1, E3d).
 - **Warum handlungsorientierte, kleinschrittige Beteiligung funktioniert:** sie erlaubt Kompetenz- und Zugehörigkeitserfahrung ohne Überforderung (→ E6, Projektphasen 3–4).
 - **Warum Y als Vermittler hilfreich ist:** soziale Einbettung und Anerkennung statt bloßer Steuerung (→ Partizipation 4.3).
 - **Warum die Exit-Strategie Pause funktional sein kann:** Schutz vor weiterer Zielblockade, nicht Belohnung des Abbruchs (→ E4).
@@ -145,5 +145,5 @@ X übernimmt im Projekt „Schulhof verschönern" eine **verantwortliche Rolle a
 
 ## Offene Punkte
 
-- [OFFEN] Ergänzung durch externe Fachliteratur zu Empowerment / Partizipation / ICF → [apparat/literaturverzeichnis.md](../apparat/literaturverzeichnis.md) (Zitierstil: APA 7)
+- [OFFEN] Ergänzung durch externe Fachliteratur zu Empowerment / Partizipation / ICF → [apparat/literaturverzeichnis.md](../apparat/literaturverzeichnis.md) (Zitierstil: APA 7 als Arbeitsstandard vorgesehen)
 - [OFFEN] Systematische Dokumentation des Partizipationsgrades (gestaltende Entscheidungen pro Einheit); Auswertung der Wirkindikatoren über die [Wirkungsmatrix 5.3](05_reflexion.md#53-wirkungsmatrix-der-entscheidungen-e1e6)

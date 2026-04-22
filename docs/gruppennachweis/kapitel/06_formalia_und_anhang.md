@@ -44,7 +44,7 @@
 
 - Der **Apparat** wird in [apparat/literaturverzeichnis.md](../apparat/literaturverzeichnis.md) gepflegt.
 - **Stand:** Im dokumentierten Zeitraum liegen keine externen Fachliteraturquellen vor; Begründungen stützen sich auf das interne Material (Beobachtungen, Hypothesen, Entscheidungen, Reflexion) sowie die repo-internen Modelle (`models/*`).
-- **Zitierstil (Arbeitsstand):** **APA 7** wird als Zitierstil gesetzt und gilt, sobald externe Fachliteratur ergänzt wird. Wahl-Begründung: weite Verbreitung im pädagogisch-psychologischen Feld, einfache Inline-Referenz (Autor, Jahr), kompatibel mit der vorhandenen Quellenverweis-Logik im Repo. Änderungen an dieser Festlegung werden im Apparat dokumentiert.
+- **Zitierstil (Arbeitsstandard):** Für die spätere Einbindung externer Fachliteratur wird **APA 7** als Arbeitsstandard vorgesehen, sofern keine abweichende Vorgabe des Bewertungsrahmens besteht. Wahl-Begründung: weite Verbreitung im pädagogisch-psychologischen Feld, einfache Inline-Referenz (Autor, Jahr), kompatibel mit der vorhandenen Quellenverweis-Logik im Repo. Abweichungen werden im Apparat dokumentiert.
 - [OFFEN] Eintragen externer Fachliteratur zu Empowerment, Partizipation und ICF-CY (Apparat befüllen).
 
 ## 6.5 Anhang
@@ -72,5 +72,5 @@
 
 ## Offene Punkte
 
-- [OFFEN] Formale Anforderungen an den Gruppennachweis (Umfang, Abgabeformat) sind projektseitig noch nicht festgelegt. Zitierstil: APA 7 (siehe [6.4](#64-literaturverzeichnis)).
+- [OFFEN] Formale Anforderungen an den Gruppennachweis (Umfang, Abgabeformat) sind projektseitig noch nicht festgelegt. Zitierstil: APA 7 als Arbeitsstandard vorgesehen, sofern kein abweichender Bewertungsrahmen gilt (siehe [6.4](#64-literaturverzeichnis)).
 - [OFFEN] Ausbau des Literaturverzeichnisses mit externen Fachquellen (siehe 6.4).

@@ -4,7 +4,7 @@
 
 > **Auf einen Blick:** Kapitel 5 bewertet Wirkung statt Absicht. Es arbeitet
 > teilzielweise ([5.1](#51-zielerreichung--teilzielweiser-abgleich)),
-> entscheidungsweise ([5.3](#53-wirkungsmatrix-der-entscheidungen-e1e6)) und
+> entscheidungsbezogen als Evidenzlage ([5.3](#53-evidenzlage-und-gegenhypothesen-je-entscheidung-e1e6)) und
 > hypothesenweise ([5.6](#56-hypothesenstatus--abschließender-überblick)).
 > Jede Deutung wird – soweit einschlägig – gegen mindestens eine
 > Alternativerklärung geprüft (Kontrastprüfung).
@@ -60,18 +60,21 @@
 
 **Offen im Nachweis:**
 
-- [OFFEN] Systematische Prüfung der Hypothese H11 (Kontrollverlust ↔ Aggression; Intervention E4 ↔ Wirkung) gemäß Raster aus [docs/beobachtungen/03_pause_und_pfandprojekt_beobachtungsraster.md](../../beobachtungen/03_pause_und_pfandprojekt_beobachtungsraster.md). Die entscheidungsweise Wirkungsprüfung erfolgt in [5.3](#53-wirkungsmatrix-der-entscheidungen-e1e6).
+- [OFFEN] Systematische Prüfung der Hypothese H11 (Kontrollverlust ↔ Aggression; Intervention E4 ↔ Wirkung) gemäß Raster aus [docs/beobachtungen/03_pause_und_pfandprojekt_beobachtungsraster.md](../../beobachtungen/03_pause_und_pfandprojekt_beobachtungsraster.md). Die entscheidungsweise Evidenzlage ist in [5.3](#53-evidenzlage-und-gegenhypothesen-je-entscheidung-e1e6) dokumentiert.
 - [OFFEN] Messbare Veränderung im sprachlichen Ausdruck gegenüber formellen Rollenpersonen (T3).
 
-## 5.3 Wirkungsmatrix der Entscheidungen (E1–E6)
+## 5.3 Evidenzlage und Gegenhypothesen je Entscheidung (E1–E6)
 
-> **Zweck:** Die Matrix macht aus Reflexion ein Auswertungsinstrument. Für jede
-> dokumentierte Entscheidung wird geprüft, was tatsächlich beobachtet wurde,
-> welche Alternativerklärungen bestehen und wie belastbar das Zwischenurteil
-> im dokumentierten Zeitraum ist. Verhältnis zu [Kapitel 4.2](04_zielsetzung_und_paedagogisches_handeln.md#42-weg-handlungsschritte): Dort
-> stehen Anlass und Hypothese; hier steht die Wirkung.
+> **Zweck:** Die Matrix dokumentiert für jede zentrale Entscheidung, welche
+> Evidenz im Rohmaterial zur Wirkung vorliegt, welche Alternativerklärungen
+> bestehen und wie das Zwischenurteil im dokumentierten Zeitraum ausfällt.
+> Sie ist ein **Instrument der Verdichtung**, keine Messlogik: Die Urteile
+> beruhen auf textbasierter Auswertung der vorliegenden Quellen, nicht auf
+> quantifizierten Wirkungsnachweisen. Verhältnis zu [Kapitel 4.2](04_zielsetzung_und_paedagogisches_handeln.md#42-weg-handlungsschritte): Dort
+> stehen Anlass und Hypothese; hier steht die dokumentierte Evidenzlage zur
+> Wirkung.
 
-Legende Zwischenurteil: **(A)** belastbare Hinweise · **(B)** gemischte Evidenz · **(C)** nicht ausreichend belegt.
+Legende Zwischenurteil (textbasiert, im dokumentierten Zeitraum): **(A)** belastbare Hinweise · **(B)** gemischte Evidenz · **(C)** nicht ausreichend belegt.
 
 ### E1 – Konsequenzen setzen (Aussetzung von Sonderaktionen)
 
@@ -134,7 +137,7 @@ Legende Zwischenurteil: **(A)** belastbare Hinweise · **(B)** gemischte Evidenz
 | **Intervention** | Stellvertretende bzw. gemeinsame Gesprächsführung mit Beteiligung von X. |
 | **Beobachtete Kurzzeitwirkung** | X bleibt in einzelnen Situationen physisch präsent, aber leise/abgewandt; kein messbarer Zuwachs an eigenem Redeanteil im Zeitraum. |
 | **Alternativerklärungen** | (a) Präsenz ist an Beziehung zu T./A. gebunden, nicht an Scaffolding-Form. (b) Sprachlich-akustische Hürden (Hörgerät, b2309) überlagern den sozialen Effekt. |
-| **Adler-Kontrastfolie** | Scaffolding als Entlastung des Minderwertigkeitsdrucks und Angebot zum Kompetenzerleben; Gegenfolie: Hör- bzw. Aktivierungs­hürden. |
+| **Adler-Kontrastfolie** | Scaffolding kann als Entlastung des erlebten Kontrollverlustes in exponierten Situationen gelesen werden und als Angebot zum Kompetenzerleben — ohne daraus auf innere Ursache schließen zu können. Gegenfolie: Hör- bzw. Aktivierungshürden. |
 | **Zwischenurteil** | **(B)** – H2 „aktiv geprüft", Wirkung noch nicht quantifiziert. |
 | **Nachweislücke** | Keine Operationalisierung (Lautstärke, Redeanteil, Blickkontakt). |
 
@@ -173,7 +176,7 @@ Legende Zwischenurteil: **(A)** belastbare Hinweise · **(B)** gemischte Evidenz
 | **Intervention** | Standardisiertes Pause-Protokoll dokumentiert, **nicht** mit X eingeführt. → [docs/intervention/pause_protokoll.md](../../intervention/pause_protokoll.md) |
 | **Beobachtete Kurzzeitwirkung** | Keine, da nicht eingeführt. |
 | **Alternativerklärungen** | Bei späterer Einführung zu prüfen: Arousal-Regulation (Stressfenster), Gruppendynamik, Reizentzug. |
-| **Adler-Kontrastfolie** | Pause als Schutz vor erneuter Minderwertigkeits- bzw. Gesichtsverlustlage – funktional nur, wenn sie nicht als Ausschluss erlebt wird. |
+| **Adler-Kontrastfolie** | Pause kann als Schutz vor weiterer Einschränkung von Handlungsoptionen und erlebtem Kontrollverlust gelesen werden – funktional nur, wenn sie nicht als Ausschluss erlebt wird. |
 | **Zwischenurteil** | **(C)** – Wirkung nicht prüfbar im dokumentierten Zeitraum. |
 | **Nachweislücke** | Vorstellung bei X, Beobachtungsraster ausfüllen. |
 
@@ -190,12 +193,12 @@ Legende Zwischenurteil: **(A)** belastbare Hinweise · **(B)** gemischte Evidenz
 | **Zwischenurteil** | **(A)** – mehrfach belegte Zielannäherung in T4 („Selbstständigkeit und Organisation"), mit offener Trennung gegenüber Themen- und Beziehungsfaktoren. |
 | **Nachweislücke** | Vergleich mit „größerem Schritt" fehlt systematisch. |
 
-### 5.3.1 Quer-Lektüre der Matrix
+### 5.3.1 Quer-Lektüre der Evidenzlage
 
 - **Belegt wirksam (A):** nur E6 im dokumentierten Zeitraum, gestützt durch T4-Evidenz.
-- **Gemischt (B):** E2, E3a, E3c, E3e – jeweils Wirkung sichtbar, Kausalität unsicher.
+- **Gemischt (B):** E2, E3a, E3c, E3e – jeweils Hinweise auf Wirkung sichtbar, Kausalität nicht trennbar.
 - **Nicht ausreichend belegt (C):** E1, E3b, E3d, E4 – entweder nicht systematisch geprüft oder nicht eingeführt.
-- **Muster:** Entscheidungen mit struktureller Umsetzung (Standort, Kleinschrittigkeit, Feedback-Praxis) zeigen eher belegte Spuren als Entscheidungen mit interaktionaler Umsetzung (Grenzsetzung, Frühintervention). Das stützt die Schlussfolgerung in [5.7](#57-schlussfolgerungen), Kleinschrittigkeit und Eigenmotivation als Prinzipien beizubehalten.
+- **Muster:** Entscheidungen mit struktureller Umsetzung (Standort, Kleinschrittigkeit, Feedback-Praxis) zeigen eher dokumentierte Spuren als Entscheidungen mit interaktionaler Umsetzung (Grenzsetzung, Frühintervention). Das stützt die Schlussfolgerung in [5.7](#57-schlussfolgerungen), Kleinschrittigkeit und Eigenmotivation als Prinzipien beizubehalten.
 
 ## 5.4 Abweichungen vom Plan
 
@@ -241,7 +244,7 @@ Legende Zwischenurteil: **(A)** belastbare Hinweise · **(B)** gemischte Evidenz
 
 **Kurzfassung H11:** Aggression wird als mögliche Strategie bei erlebtem Kontrollverlust angenommen.
 
-**Status im vorliegenden Material:** Der Zusammenhang ist im vorliegenden Material bislang nicht systematisch geprüft (vgl. E3b und E4 in der [Wirkungsmatrix 5.3](#53-wirkungsmatrix-der-entscheidungen-e1e6)).
+**Status im vorliegenden Material:** Der Zusammenhang ist im vorliegenden Material bislang nicht systematisch geprüft (vgl. E3b und E4 in der [Evidenzlage 5.3](#53-evidenzlage-und-gegenhypothesen-je-entscheidung-e1e6)).
 
 **Ableitung aus bestehenden Artefakten:**
 
@@ -276,6 +279,6 @@ Legende Zwischenurteil: **(A)** belastbare Hinweise · **(B)** gemischte Evidenz
   - Tritt Aggression nach Kontrollverlust auf?
   - Welche Wirkung hat die Exit-Strategie (E4)?
   - Welche Alternativerklärungen (Arousal, Gruppendynamik) sind plausibel?
-- [OFFEN] Die in der [Wirkungsmatrix 5.3](#53-wirkungsmatrix-der-entscheidungen-e1e6) als **(C)** klassifizierten Entscheidungen (E1, E3b, E3d, E4) im Folgezeitraum systematisch erheben.
+- [OFFEN] Die in der [Evidenzlage 5.3](#53-evidenzlage-und-gegenhypothesen-je-entscheidung-e1e6) als **(C)** klassifizierten Entscheidungen (E1, E3b, E3d, E4) im Folgezeitraum systematisch erheben.
 - [OFFEN] Feedback-Daten in abschließende Nachweise und Schlussfolgerungen einbinden, sobald ausreichend viele Erhebungszeitpunkte vorliegen.
 - [OFFEN] Quantitative/qualitative Bewertung der Teilziele T1, T2, T5 nach Projektende erneut vornehmen, um zwischen situationsgebundener und überdauernder Veränderung zu unterscheiden.

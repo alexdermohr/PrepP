@@ -70,7 +70,7 @@ Dieses Dokument stellt sicher, dass jede Aussage im Gruppennachweis auf eine Que
 |---|---|---|
 | Zielerreichung je Teilziel T1–T5 (A/B/C-Kategorie) | `docs/tagebuch/*.md`, `docs/beobachtungen/*.md`, `docs/feedback/*.md`, `docs/hypothesen.md` | strukturiert |
 | Nachweis-Indikatoren (H9, H1, H6, Projektergebnis) | `docs/beobachtungen/*.md`, `docs/tagebuch/04_tag_4.md`, `docs/tagebuch/06_tag_6.md`, `docs/tagebuch/07_tag_7.md`, `docs/reflexion.md` | strukturiert |
-| Wirkungsmatrix E1–E6 (Anlass/Hypothese/Intervention/beobachtete Wirkung/Alternativerklärung/Adler-Kontrast/Zwischenurteil) | `docs/entscheidungen/*.md`, `docs/tagebuch/*.md`, `docs/beobachtungen/*.md`, `docs/feedback/*.md`, `models/adler_individualpsychologie.md` | strukturiert (Zwischenurteile A/B/C explizit) |
+| Wirkungsmatrix E1–E6 (Anlass/Hypothese/Intervention/beobachtete Wirkung/Alternativerklärung/Adler-Kontrast/Zwischenurteil) | `docs/entscheidungen/*.md`, `docs/tagebuch/*.md`, `docs/beobachtungen/*.md`, `docs/feedback/*.md`, `models/adler_individualpsychologie.md` | strukturiert (Zwischenurteile textbasiert, A/B/C, im dokumentierten Zeitraum) |
 | Abweichungen vom Plan (Tag 1, 2, 3, 4, 7 + Rollenabweichung) | `docs/tagebuch/*.md`, `docs/reflexion.md`, `docs/entscheidungen/*.md` | strukturiert |
 | Spannungen Feedback ↔ Beobachtung | `docs/feedback/03_feedback_x.md`, `docs/beobachtungen/01_verhalten_in_situationen.md`, H10 | strukturiert |
 | Hypothesenstatus H1–H11 | `docs/hypothesen.md` | strukturiert (H11: offen – Prüfstruktur vorhanden, aber keine systematische Auswertung) |

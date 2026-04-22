@@ -11,7 +11,7 @@ Im dokumentierten Bearbeitungszeitraum liegen **keine externen Fachliteraturquel
 - den repo-internen ICF-Report sowie
 - die repo-internen Modelle in `models/` (insbesondere [`prep_planung.md`](../../../models/prep_planung.md) und heuristisch [`adler_individualpsychologie.md`](../../../models/adler_individualpsychologie.md)).
 
-Die Einträge unten bleiben solange als `[OFFEN]` markiert, bis externe Fachliteratur ergänzt wird. **Zitierstil:** APA 7 (Arbeitsstand, siehe [Kapitel 6.4](../kapitel/06_formalia_und_anhang.md#64-literaturverzeichnis)).
+Die Einträge unten bleiben solange als `[OFFEN]` markiert, bis externe Fachliteratur ergänzt wird. **Zitierstil:** APA 7 als Arbeitsstandard vorgesehen, sofern kein abweichender Bewertungsrahmen gilt (vgl. [Kapitel 6.4](../kapitel/06_formalia_und_anhang.md#64-literaturverzeichnis)).
 
 ## Fachliteratur
 
@@ -37,5 +37,5 @@ Die Einträge unten bleiben solange als `[OFFEN]` markiert, bis externe Fachlite
 
 ## Hinweise
 
-- **Zitierstil:** **APA 7** (Arbeitsstand, gilt sobald externe Literatur ergänzt wird; vgl. [Kapitel 6.4](../kapitel/06_formalia_und_anhang.md#64-literaturverzeichnis)).
+- **Zitierstil:** APA 7 als Arbeitsstandard vorgesehen, sofern kein abweichender Bewertungsrahmen gilt (vgl. [Kapitel 6.4](../kapitel/06_formalia_und_anhang.md#64-literaturverzeichnis)).
 - Alle externen Quellen müssen vor dem Status `integrated` (siehe [../_state.md](../_state.md)) eingetragen sein.

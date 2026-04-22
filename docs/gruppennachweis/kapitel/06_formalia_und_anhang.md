@@ -2,6 +2,14 @@
 
 # Kapitel 6: Formalia und Anhang
 
+> **Auf einen Blick:** Kapitel 6 dokumentiert den formalen Rahmen: Contract,
+> State und Transformationsregeln ([6.1](#61-dokumentationsrahmen)), Einhaltung
+> der Arbeitsregeln ([6.2](#62-einhaltung-der-arbeitsregeln)), Sprache/Stil
+> ([6.3](#63-sprache-und-stil)), Literaturapparat mit vorgeschlagenem Zitierstil
+> APA 7 ([6.4](#64-literaturverzeichnis)) und die Anhänge A1–A10
+> ([6.5](#65-anhang)). Offene Formalia (Umfang, Abgabeformat) sind
+> ausdrücklich markiert.
+
 ## 6.1 Dokumentationsrahmen
 
 - **Arbeitsregeln:** [meta/arbeitsregeln.md](../../../meta/arbeitsregeln.md)
@@ -20,10 +28,6 @@
 | 4 | Reflexion prüft Wirkung, nicht Absicht | Kapitel 5 bewertet teilzielweise nach Evidenzstärke (A/B/C) und benennt Abweichungen | [docs/reflexion.md](../../reflexion.md), Kapitel 5 |
 | 5 | Dokumentation erfolgt kurz und regelmäßig | Vorlauf + 7 Tageseinträge, Beobachtungsraster, Feedback-Einträge | [docs/tagebuch/*.md](../../tagebuch/00_vorlauf.md), [docs/beobachtungen/03_pause_und_pfandprojekt_beobachtungsraster.md](../../beobachtungen/03_pause_und_pfandprojekt_beobachtungsraster.md) |
 | 6 | Keine identifizierenden Angaben | Zielperson als X, Mitschüler als Y, Fachkräfte als T., A., J, stellvertretender Schulleiter als K | Alle Kapitel und Rohdokumente |
-| 7 | Feedback als eigene Quelle | Eigener Ordner `docs/feedback/` mit Eintragsregeln, Format und Erhebungsmodi | [docs/feedback/01_feedback_zielperson.md](../../feedback/01_feedback_zielperson.md), Kapitel 3.8 |
-| 8 | Form der Rückmeldung wird markiert | Einträge dokumentieren Erhebungsart und Quellentreue („direkt / wörtlich"); Platzhalter nennen alle Modi (wörtlich / paraphrasiert / Auswahl / Skala / nicht erhoben) | [docs/feedback/02_feedback_x.md](../../feedback/02_feedback_x.md), [docs/feedback/03_feedback_x.md](../../feedback/03_feedback_x.md) – Vorlage: [docs/feedback/01_feedback_zielperson.md](../../feedback/01_feedback_zielperson.md) |
-
-> Regel 8 ist in den Feedback-Dateien durch die Felder `Erhebungsart` und `Quellentreue` bereits operationalisiert. Bisher dokumentiert ist ausschließlich der Modus „direkt / wörtlich"; andere Modi (paraphrasiert, Auswahl, Skala) stehen als zulässige Alternativen bereit, wurden im dokumentierten Zeitraum aber nicht angewendet.
 
 ## 6.3 Sprache und Stil
 
@@ -35,8 +39,9 @@
 ## 6.4 Literaturverzeichnis
 
 - Der **Apparat** wird in [apparat/literaturverzeichnis.md](../apparat/literaturverzeichnis.md) gepflegt.
-- **Stand:** Im dokumentierten Zeitraum liegen keine externen Fachliteraturquellen vor; Begründungen stützen sich auf das interne Material (Beobachtungen, Hypothesen, Entscheidungen, Reflexion) sowie die repo-internen Modelle (`models/*`). Der Zitierstil ist noch nicht festgelegt.
-- [OFFEN] Eintragen externer Fachliteratur zu Empowerment, Partizipation und ICF-CY; Klärung des Zitierstils.
+- **Stand:** Im dokumentierten Zeitraum liegen keine externen Fachliteraturquellen vor; Begründungen stützen sich auf das interne Material (Beobachtungen, Hypothesen, Entscheidungen, Reflexion) sowie die repo-internen Modelle (`models/*`).
+- **Zitierstil (Arbeitsstandard):** Für die spätere Einbindung externer Fachliteratur wird **APA 7** als Arbeitsstandard vorgesehen, sofern keine abweichende Vorgabe des Bewertungsrahmens besteht. Wahl-Begründung: weite Verbreitung im pädagogisch-psychologischen Feld, einfache Inline-Referenz (Autor, Jahr), kompatibel mit der vorhandenen Quellenverweis-Logik im Repo. Abweichungen werden im Apparat dokumentiert.
+- [OFFEN] Eintragen externer Fachliteratur zu Empowerment, Partizipation und ICF-CY (Apparat befüllen).
 
 ## 6.5 Anhang
 
@@ -63,5 +68,5 @@
 
 ## Offene Punkte
 
-- [OFFEN] Formale Anforderungen an den Gruppennachweis (Umfang, Abgabeformat, Zitierstil) sind projektseitig noch nicht festgelegt.
+- [OFFEN] Formale Anforderungen an den Gruppennachweis (Umfang, Abgabeformat) sind projektseitig noch nicht festgelegt. Zitierstil: APA 7 als Arbeitsstandard vorgesehen, sofern kein abweichender Bewertungsrahmen gilt (siehe [6.4](#64-literaturverzeichnis)).
 - [OFFEN] Ausbau des Literaturverzeichnisses mit externen Fachquellen (siehe 6.4).

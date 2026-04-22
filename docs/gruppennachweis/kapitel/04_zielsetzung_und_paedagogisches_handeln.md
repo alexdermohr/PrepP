@@ -2,6 +2,15 @@
 
 # Kapitel 4: Zielsetzung und pädagogisches Handeln
 
+> **Auf einen Blick:** Kapitel 4 verbindet Ziel und Handlung. Es ordnet fünf
+> Teilziele mit Evidenzkriterium ([4.1](#41-ziel)), den Weg über
+> Projektphasen und begleitende Entscheidungen ([4.2](#42-weg-handlungsschritte)),
+> das Partizipationsprinzip ([4.3](#43-partizipation-der-zielperson)) und die
+> fachliche Begründung der Handlungsschritte ([4.4](#44-fachliche-begründung-der-handlungsschritte)).
+> Die Adler-Rahmung in [4.4.0](#440-heuristische-rahmung-adler) wird nur
+> heuristisch und mit Alternativerklärungen eingesetzt. Wirkungsprüfung der
+> Wirkungsprüfung der Maßnahmen: [Kapitel 5, Evidenzlage](05_reflexion.md#53-evidenzlage-und-gegenhypothesen-je-entscheidung-e1e6).
+
 ## 4.1 Ziel
 
 ### Übergeordnetes Ziel
@@ -9,15 +18,17 @@
 X übernimmt im Projekt „Schulhof verschönern" eine **verantwortliche Rolle als Initiator und Koordinator**. Durch Planung, Kommunikation und Zusammenarbeit mit Mitschülern und Erwachsenen sammelt er Erfahrungen in **Selbstwirksamkeit, sozialer Kooperation und gleichwürdigem Austausch**, während gleichzeitig ein **sichtbarer Beitrag zur Gestaltung des Schulhofs** entsteht.
 → Quelle: [docs/projektplan.md](../../projektplan.md) (Übergeordnetes Ziel)
 
-### Teilziele
+### Teilziele mit Evidenzkriterium
 
-| Nr. | Teilziel | Operationalisierung (aus Projektplan) | Quelle |
-|---|---|---|---|
-| T1 | Selbstvertrauen und Selbstwirksamkeit | X erlebt, dass seine Ideen und sein Engagement einen realen Einfluss haben; übernimmt Verantwortung für Projektphasen | [docs/projektplan.md](../../projektplan.md) |
-| T2 | Gleichwürdiger Umgang mit Mitschülern | Mitschüler für das Projekt gewinnen, Aufgaben gemeinsam planen, Kompromisse aushandeln | [docs/projektplan.md](../../projektplan.md) |
-| T3 | Sprachlicher Ausdruck und sozialer Auftritt | Anliegen verständlich formulieren gegenüber Peers, Hausmeister und Schulleitung; Feedback annehmen | [docs/projektplan.md](../../projektplan.md) |
-| T4 | Selbstständigkeit und Organisation | Beteiligung an Planung, Ideensammlung, Materialorganisation und Umsetzung; Projekt- und Organisationskompetenzen | [docs/projektplan.md](../../projektplan.md) |
-| T5 | Gemeinschaftserfahrung | Erleben als Teil einer verantwortlichen Gruppe, positive soziale Anerkennung | [docs/projektplan.md](../../projektplan.md) |
+| Nr. | Teilziel | Operationalisierung (aus Projektplan) | Evidenzkriterium (woran erkennbar) | Quelle |
+|---|---|---|---|---|
+| T1 | Selbstvertrauen und Selbstwirksamkeit | X erlebt, dass seine Ideen und sein Engagement einen realen Einfluss haben; übernimmt Verantwortung für Projektphasen | Eigeninitiierte Vorschläge werden umgesetzt; X verbleibt in Kontakt auch in exponierten Situationen (Redeanteil, Blickkontakt, Lautstärke b3302). | [docs/projektplan.md](../../projektplan.md) |
+| T2 | Gleichwürdiger Umgang mit Mitschülern | Mitschüler für das Projekt gewinnen, Aufgaben gemeinsam planen, Kompromisse aushandeln | Peer-Kontakt ohne Abwertung über eine Phase; dokumentierter Kompromiss; Rückkehr nach Konflikt mit sichtbarer Wiedergutmachung. | [docs/projektplan.md](../../projektplan.md) |
+| T3 | Sprachlicher Ausdruck und sozialer Auftritt | Anliegen verständlich formulieren gegenüber Peers, Hausmeister und Schulleitung; Feedback annehmen | Messbare Veränderung in Redeanteil/Lautstärke in formellen Situationen über mindestens zwei Erhebungszeitpunkte. | [docs/projektplan.md](../../projektplan.md) |
+| T4 | Selbstständigkeit und Organisation | Beteiligung an Planung, Ideensammlung, Materialorganisation und Umsetzung | Selbstständig durchgeführte Teilschritte (Verschriftlichung, Preisvergleich, Einkauf, Beschriftung) ohne direktive Steuerung. | [docs/projektplan.md](../../projektplan.md) |
+| T5 | Gemeinschaftserfahrung | Erleben als Teil einer verantwortlichen Gruppe, positive soziale Anerkennung | Sichtbarer gemeinsamer Beitrag; Rückmeldung aus Peer-/Erwachsenenkreis; systemische Einbindung relevanter Akteure gesichert. | [docs/projektplan.md](../../projektplan.md) |
+
+> Die Evidenzkriterien übersetzen die Teilziele in prüfbare Beobachtungen. Bewertung pro Kriterium: siehe [Kapitel 5.1](05_reflexion.md#51-zielerreichung--teilzielweiser-abgleich) (A/B/C-Logik).
 
 ## 4.2 Weg (Handlungsschritte)
 
@@ -69,16 +80,42 @@ X übernimmt im Projekt „Schulhof verschönern" eine **verantwortliche Rolle a
 
 ## 4.4 Fachliche Begründung der Handlungsschritte
 
-| Handlungsschritt | Fachliche Begründung (belegt) | Bezug |
-|---|---|---|
-| Handlungsorientierte Tätigkeiten als Einstieg (Pfand sammeln, Einkaufen, Planen) | X zeigt in handlungsorientierten Situationen wiederholt mehr Stabilität und Eigeninitiative als in sozial exponierten; Aktivität adressiert Ressourcen (d865, Ordnungsliebe) und Interessen (Wirtschaft, Teilhabe durch Dienst) | [docs/beobachtungen/01_verhalten_in_situationen.md](../../beobachtungen/01_verhalten_in_situationen.md), [docs/hypothesen.md](../../hypothesen.md) (H1, H6), [docs/projektplan.md](../../projektplan.md) (Interessen) |
-| Verantwortliche Rolle als Projektleiter | Anschluss an Gemeinschaft über einen nützlichen Beitrag ist im Projektplan als motivationaler Kern hypothetisiert; Rahmenmodell „Prep-Planung" verknüpft Aktivität mit Partizipation und Empowerment | [docs/projektplan.md](../../projektplan.md) (Arbeitshypothesen), [models/prep_planung.md](../../../models/prep_planung.md) |
-| Schrittweise Exposition in formellen Kontexten mit Scaffolding | Rückzugsverhalten in formellen/hierarchischen Situationen dokumentiert; Scaffolding entlastet, ohne die Aufgabe abzunehmen | [docs/hypothesen.md](../../hypothesen.md) (H2), [docs/beobachtungen/01_verhalten_in_situationen.md](../../beobachtungen/01_verhalten_in_situationen.md), [docs/entscheidungen/03_systemarchitektur_und_regulation.md](../../entscheidungen/03_systemarchitektur_und_regulation.md) |
-| Grenzsetzungen mit Prüfhinweis | Vorab vereinbarte Konsequenzen sollen Verbindlichkeit herstellen, ohne im Konfliktmoment zusätzlichen Druck aufzubauen | [docs/entscheidungen/01_konsequenzen.md](../../entscheidungen/01_konsequenzen.md), [docs/entscheidungen/03_systemarchitektur_und_regulation.md](../../entscheidungen/03_systemarchitektur_und_regulation.md) (Eigentumsregeln vorab), [docs/hypothesen.md](../../hypothesen.md) (H4) |
-| Exit-Strategie Pause als Konzept | Handlungsalternative zur Aggression bei Kontrollverlust; kann die Handlungsfähigkeit unter Stress erhöhen | [docs/entscheidungen/04_pause_als_exit_strategie.md](../../entscheidungen/04_pause_als_exit_strategie.md), [docs/intervention/pause_protokoll.md](../../intervention/pause_protokoll.md), [docs/hypothesen.md](../../hypothesen.md) (H11) |
-| Reduktion von Systemkonkurrenz | X wählt Angebote des geringsten Widerstands; temporäre Einschränkung paralleler Angebote prüft Wirkung auf Verbindlichkeit | [docs/entscheidungen/03_systemarchitektur_und_regulation.md](../../entscheidungen/03_systemarchitektur_und_regulation.md), [docs/hypothesen.md](../../hypothesen.md) (H7), [docs/beobachtungen/02_umgang_mit_grenzen.md](../../beobachtungen/02_umgang_mit_grenzen.md) |
-| Kleinschrittige Umsetzung (EINE Entscheidung, EINE Handlung, EIN weiterer Teilnehmer) | Große Schritte erhöhen das Risiko von Kontrollverlust und Eskalation | [docs/entscheidungen/06_pfandprojekt_naechste_schritte.md](../../entscheidungen/06_pfandprojekt_naechste_schritte.md) |
-| [OFFEN] Eigenständiger Fachliteraturbeleg | Empowerment-, Partizipations- und ICF-Rahmung sollen zusätzlich durch externe Literatur belegt werden | [apparat/literaturverzeichnis.md](../apparat/literaturverzeichnis.md) |
+### 4.4.0 Heuristische Rahmung (Adler)
+
+> **Rolle des Modells:** Adlers Individualpsychologie (siehe
+> [models/adler_individualpsychologie.md](../../../models/adler_individualpsychologie.md))
+> wird hier ausschließlich **heuristisch** verwendet, nicht als
+> diagnostische Festlegung. Sie hilft, Verhalten nicht primär defizitlogisch,
+> sondern als zielgerichtete Bewegung im sozialen Kontext zu lesen (Sicherung
+> von Zugehörigkeit, Kompetenzerleben, Einfluss). Primärrahmung bleiben
+> Projektplan, Beobachtung, ICF und Hypothesen. Jede Adler-Lesart wird in
+> [Kapitel 5.3](05_reflexion.md#53-evidenzlage-und-gegenhypothesen-je-entscheidung-e1e6)
+> gegen mindestens eine Alternativerklärung geprüft (Stress-/Dysregulations­modell,
+> Frustrationsdynamik, situative Angebotsstruktur, ICF-/Kontextdeutung).
+
+**Sinnvolle Andockstellen im Material:**
+
+- **Warum direkte Grenzsetzung kippen kann:** nicht bloß Regelverletzung, sondern mögliche Bedrohung von Selbstwert/Einfluss (→ E1, E3d).
+- **Warum handlungsorientierte, kleinschrittige Beteiligung funktioniert:** sie erlaubt Kompetenz- und Zugehörigkeitserfahrung ohne Überforderung (→ E6, Projektphasen 3–4).
+- **Warum Y als Vermittler hilfreich ist:** soziale Einbettung und Anerkennung statt bloßer Steuerung (→ Partizipation 4.3).
+- **Warum die Exit-Strategie Pause funktional sein kann:** Schutz vor weiterer Zielblockade, nicht Belohnung des Abbruchs (→ E4).
+
+**Was Adler hier nicht leistet:** keine Ursachenaussagen, keine singuläre Diagnose, keine Ersetzung der ICF-basierten Einordnung in [Kapitel 3](03_menschen_und_icf.md). Siehe auch [models/index.md](../../../models/index.md) (Gate-Schema: Adler nachgeordnet gegenüber STF, Maslow, SDT, Lazarus).
+
+### 4.4.1 Handlungsschritte – Begründung, Wirkindikator, Gegenerklärung
+
+| Handlungsschritt | Fachliche Begründung (belegt) | Wirkindikator (woran erkennbar) | Plausible Gegenerklärung | Bezug |
+|---|---|---|---|---|
+| Handlungsorientierte Tätigkeiten als Einstieg (Pfand sammeln, Einkaufen, Planen) | X zeigt in handlungsorientierten Situationen wiederholt mehr Stabilität und Eigeninitiative als in sozial exponierten; Aktivität adressiert Ressourcen (d865, Ordnungsliebe) und Interessen (Wirtschaft, Teilhabe durch Dienst). | Ausdauer über eine Einheit ohne Umlenkung; selbstinitiierte Teilhandlungen. | Stabilität folgt der Struktur der Aufgabe (eindeutige Richtig/Falsch-Rückmeldung), nicht der Handlungsform. | [docs/beobachtungen/01_verhalten_in_situationen.md](../../beobachtungen/01_verhalten_in_situationen.md), [docs/hypothesen.md](../../hypothesen.md) (H1, H6), [docs/projektplan.md](../../projektplan.md) (Interessen) |
+| Verantwortliche Rolle als Projektleiter | Anschluss an Gemeinschaft über einen nützlichen Beitrag ist im Projektplan als motivationaler Kern hypothetisiert; Rahmenmodell „Prep-Planung" verknüpft Aktivität mit Partizipation und Empowerment. | X trifft dokumentierte gestaltende Entscheidungen (Standort, Design, Spruch). | Engagement folgt Beziehungsbindung an T./A., nicht der Rolle. | [docs/projektplan.md](../../projektplan.md) (Arbeitshypothesen), [models/prep_planung.md](../../../models/prep_planung.md) |
+| Schrittweise Exposition in formellen Kontexten mit Scaffolding (E3c) | Rückzugsverhalten in formellen/hierarchischen Situationen dokumentiert; Scaffolding entlastet, ohne die Aufgabe abzunehmen. | Zunahme von Redeanteil/Lautstärke in begleiteten formellen Gesprächen über mindestens zwei Kontakte. | Präsenz beruht auf Beziehung zur Begleitung; Hörgerät (b2309) überlagert sozialen Effekt. | [docs/hypothesen.md](../../hypothesen.md) (H2), [docs/beobachtungen/01_verhalten_in_situationen.md](../../beobachtungen/01_verhalten_in_situationen.md), [docs/entscheidungen/03_systemarchitektur_und_regulation.md](../../entscheidungen/03_systemarchitektur_und_regulation.md) |
+| Grenzsetzungen mit Prüfhinweis (E1, E3d) | Vorab vereinbarte Konsequenzen sollen Verbindlichkeit herstellen, ohne im Konfliktmoment zusätzlichen Druck aufzubauen. | Reduktion von Eskalationsepisoden nach klarer Vorab-Regel; konstruktive Rückkehr in den Kontakt. | Veränderungen erklären sich aus Arousal-Dynamik (Stressfenster), nicht aus Regelklarheit. | [docs/entscheidungen/01_konsequenzen.md](../../entscheidungen/01_konsequenzen.md), [docs/entscheidungen/03_systemarchitektur_und_regulation.md](../../entscheidungen/03_systemarchitektur_und_regulation.md), [docs/hypothesen.md](../../hypothesen.md) (H4) |
+| Exit-Strategie Pause als Konzept (E4) | Handlungsalternative zur Aggression bei Kontrollverlust; kann die Handlungsfähigkeit unter Stress erhöhen. | Nutzung der Pause ≥ einmal vor/statt Eskalation; Verkürzung der Rückkehrzeit in Kooperation. | Reine Reizentzugs-/Arousal-Regulation ohne zielgerichtete Strategie. | [docs/entscheidungen/04_pause_als_exit_strategie.md](../../entscheidungen/04_pause_als_exit_strategie.md), [docs/intervention/pause_protokoll.md](../../intervention/pause_protokoll.md), [docs/hypothesen.md](../../hypothesen.md) (H11) |
+| Reduktion von Systemkonkurrenz (E3a) | X wählt Angebote des geringsten Widerstands; temporäre Einschränkung paralleler Angebote prüft Wirkung auf Verbindlichkeit. | Teilnahme an der Projektlogik ohne Ausweichen in Parallelangebote über eine Einheit. | Themenattraktivität oder Tagesform tragen die Verbindlichkeit. | [docs/entscheidungen/03_systemarchitektur_und_regulation.md](../../entscheidungen/03_systemarchitektur_und_regulation.md), [docs/hypothesen.md](../../hypothesen.md) (H7), [docs/beobachtungen/02_umgang_mit_grenzen.md](../../beobachtungen/02_umgang_mit_grenzen.md) |
+| Kleinschrittige Umsetzung (E6) | Große Schritte erhöhen das Risiko von Kontrollverlust und Eskalation. | Abschluss genau einer Teilhandlung pro Einheit ohne Eskalation; Einladung einer weiteren Person erfolgt. | Erfolge stammen aus Themenattraktivität oder Begleitungsintensität, nicht aus Taktung. | [docs/entscheidungen/06_pfandprojekt_naechste_schritte.md](../../entscheidungen/06_pfandprojekt_naechste_schritte.md) |
+| [OFFEN] Eigenständiger Fachliteraturbeleg | Empowerment-, Partizipations- und ICF-Rahmung sollen zusätzlich durch externe Literatur belegt werden. | — | — | [apparat/literaturverzeichnis.md](../apparat/literaturverzeichnis.md) |
+
+> Die Spalte „Wirkindikator" bindet Maßnahmen an prüfbare Beobachtungen; die Spalte „Plausible Gegenerklärung" erzwingt eine Kontrastlesart. Die Auswertung dieser Indikatoren erfolgt in der [Evidenzlage 5.3](05_reflexion.md#53-evidenzlage-und-gegenhypothesen-je-entscheidung-e1e6).
 
 ## 4.5 Hypothesenbezug
 
@@ -108,5 +145,5 @@ X übernimmt im Projekt „Schulhof verschönern" eine **verantwortliche Rolle a
 
 ## Offene Punkte
 
-- [OFFEN] Ergänzung durch externe Fachliteratur zu Empowerment / Partizipation / ICF → [apparat/literaturverzeichnis.md](../apparat/literaturverzeichnis.md)
-- [OFFEN] Systematische Dokumentation des Partizipationsgrades (gestaltende Entscheidungen pro Einheit)
+- [OFFEN] Ergänzung durch externe Fachliteratur zu Empowerment / Partizipation / ICF → [apparat/literaturverzeichnis.md](../apparat/literaturverzeichnis.md) (Zitierstil: APA 7 als Arbeitsstandard vorgesehen)
+- [OFFEN] Systematische Dokumentation des Partizipationsgrades (gestaltende Entscheidungen pro Einheit); Auswertung der Wirkindikatoren über die [Evidenzlage 5.3](05_reflexion.md#53-evidenzlage-und-gegenhypothesen-je-entscheidung-e1e6)

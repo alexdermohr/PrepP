@@ -2,17 +2,38 @@
 
 # Kapitel 5: Reflexion
 
-## 5.0 Quellenbezüge
+> **Auf einen Blick:** Kapitel 5 bewertet Wirkung statt Absicht. Es arbeitet
+> teilzielweise ([5.1](#51-zielerreichung--teilzielweiser-abgleich)),
+> entscheidungsbezogen als Evidenzlage ([5.3](#53-evidenzlage-und-gegenhypothesen-je-entscheidung-e1e6)) und
+> hypothesenweise ([5.6](#56-hypothesenstatus--abschließender-überblick)).
+> Jede Deutung wird – soweit einschlägig – gegen mindestens eine
+> Alternativerklärung geprüft (Kontrastprüfung).
+
+## 5.0 Lesehilfe und Quellen
+
+### Methodischer Rahmen
+
+- **Bewertung prüft Wirkung, nicht Absicht.** Grundlage: [meta/arbeitsregeln.md](../../../meta/arbeitsregeln.md) (Regel 4), [_contract.md](../_contract.md).
+- **Evidenzstärke** wird dreistufig kategorisiert:
+
+  | Kategorie | Bedeutung |
+  |---|---|
+  | **A** | belastbare Hinweise auf Zielannäherung (mehrfach belegt, konsistent) |
+  | **B** | gemischte Evidenz (Pro- und Kontra-Beobachtungen) |
+  | **C** | kein ausreichender Nachweis im dokumentierten Zeitraum |
+
+- **Kontrastprüfung:** Jede zentrale Deutung wird gegen mindestens eine Alternativerklärung gestellt (Stress-/Dysregulationsmodell, Frustrationsdynamik, situative Angebotsstruktur, ICF-/Kontextdeutung). Das gilt insbesondere für die Evidenzlage in [5.3](#53-evidenzlage-und-gegenhypothesen-je-entscheidung-e1e6).
+- **Adler als sekundäre Deutungsfolie:** Adlers Individualpsychologie (siehe [models/adler_individualpsychologie.md](../../../models/adler_individualpsychologie.md)) wird hier ausschließlich als Kontrastfolie eingesetzt, nicht als Leitmodell. Sie erscheint – wenn einschlägig – in einer eigenen Spalte der Evidenzlage (5.3) und wird stets mit einer Alternativdeutung gekoppelt. Primärrahmung der Maßnahmen in [Kapitel 4.4](04_zielsetzung_und_paedagogisches_handeln.md#44-fachliche-begründung-der-handlungsschritte).
+
+### Quellenbezüge
 
 - [docs/reflexion.md](../../reflexion.md) – Gesamtreflexion
 - [docs/entscheidungen/*.md](../../entscheidungen/01_konsequenzen.md) – Entscheidungen und deren Wirkungen
 - [docs/hypothesen.md](../../hypothesen.md) – Hypothesenstatus
 - [docs/feedback/*.md](../../feedback/01_feedback_zielperson.md) – Perspektive der Zielperson
 - [docs/tagebuch/*.md](../../tagebuch/00_vorlauf.md) – chronologische Evidenz
-
-> **Methodischer Hinweis:** Zielerreichung wird nicht pauschal, sondern teilzielweise bewertet. Die Kategorien lauten
-> **(A) belastbare Hinweise auf Zielannäherung**, **(B) gemischte Evidenz**, **(C) kein ausreichender Nachweis**.
-> Dies folgt der Arbeitsregel „Reflexion prüft Wirkung, nicht Absicht" ([meta/arbeitsregeln.md](../../../meta/arbeitsregeln.md), Regel 4) und der Contract-Vorgabe, Bewertungen an Beobachtungen zu binden ([_contract.md](../_contract.md)).
+- [docs/beobachtungen/03_pause_und_pfandprojekt_beobachtungsraster.md](../../beobachtungen/03_pause_und_pfandprojekt_beobachtungsraster.md) – Raster für Wirkungsprüfung
+- [models/adler_individualpsychologie.md](../../../models/adler_individualpsychologie.md) – heuristische Kontrastfolie
 
 ## 5.1 Zielerreichung – teilzielweiser Abgleich
 
@@ -39,10 +60,147 @@
 
 **Offen im Nachweis:**
 
-- [OFFEN] Systematische Prüfung der Hypothese H11 (Kontrollverlust ↔ Aggression; Intervention E4 ↔ Wirkung) gemäß Raster aus [docs/beobachtungen/03_pause_und_pfandprojekt_beobachtungsraster.md](../../beobachtungen/03_pause_und_pfandprojekt_beobachtungsraster.md).
+- [OFFEN] Systematische Prüfung der Hypothese H11 (Kontrollverlust ↔ Aggression; Intervention E4 ↔ Wirkung) gemäß Raster aus [docs/beobachtungen/03_pause_und_pfandprojekt_beobachtungsraster.md](../../beobachtungen/03_pause_und_pfandprojekt_beobachtungsraster.md). Die entscheidungsweise Evidenzlage ist in [5.3](#53-evidenzlage-und-gegenhypothesen-je-entscheidung-e1e6) dokumentiert.
 - [OFFEN] Messbare Veränderung im sprachlichen Ausdruck gegenüber formellen Rollenpersonen (T3).
 
-## 5.3 Abweichungen vom Plan
+## 5.3 Evidenzlage und Gegenhypothesen je Entscheidung (E1–E6)
+
+> **Zweck:** Die Matrix dokumentiert für jede zentrale Entscheidung, welche
+> Evidenz im Rohmaterial zur Wirkung vorliegt, welche Alternativerklärungen
+> bestehen und wie das Zwischenurteil im dokumentierten Zeitraum ausfällt.
+> Sie ist ein **Instrument der Verdichtung**, keine Messlogik: Die Urteile
+> beruhen auf textbasierter Auswertung der vorliegenden Quellen, nicht auf
+> quantifizierten Wirkungsnachweisen. Verhältnis zu [Kapitel 4.2](04_zielsetzung_und_paedagogisches_handeln.md#42-weg-handlungsschritte): Dort
+> stehen Anlass und Hypothese; hier steht die dokumentierte Evidenzlage zur
+> Wirkung.
+
+Legende Zwischenurteil (textbasiert, im dokumentierten Zeitraum): **(A)** belastbare Hinweise · **(B)** gemischte Evidenz · **(C)** nicht ausreichend belegt.
+
+### E1 – Konsequenzen setzen (Aussetzung von Sonderaktionen)
+
+| Feld | Inhalt |
+|---|---|
+| **Anlass (belegt)** | Nicht eingehaltene Absprache (Tag 2), lautstarke Abwertung anderer Kinder. → [docs/tagebuch/02_tag_2.md](../../tagebuch/02_tag_2.md) |
+| **Hypothese / Intention** | Verbindlichkeit von Umgangsregeln soll über temporäre Aussetzung von Sonderaktionen sichtbar werden (H4). → [docs/entscheidungen/01_konsequenzen.md](../../entscheidungen/01_konsequenzen.md), [docs/hypothesen.md](../../hypothesen.md) (H4) |
+| **Intervention** | Vorübergehende Aussetzung von Sonderaktionen nach Regelverstoß. |
+| **Beobachtete Kurzzeitwirkung** | Rückkehr in den Kontakt und Entschuldigungen im weiteren Verlauf (Tag 1, 7). Keine messbare Reduktion erneuter lautstarker Ausfälle im Zeitraum (Eskalation Tag 4). → [docs/tagebuch/07_tag_7.md](../../tagebuch/07_tag_7.md), [docs/tagebuch/04_tag_4.md](../../tagebuch/04_tag_4.md) |
+| **Alternativerklärungen** | (a) Rückkehr erfolgt aus Beziehungsbedürfnis/Bindung, nicht aus Konsequenzlogik. (b) Aussetzung wirkt eher als Stressor denn als Regulationssignal. (c) Die kurze Beobachtungsdauer erlaubt kein kausales Urteil. |
+| **Adler-Kontrastfolie (heuristisch)** | Lesbar als Sicherungstendenz: Aussetzung kann als Bedrohung des Einflusses erlebt werden; Wirkung hängt davon ab, ob Kooperation als Rückweg zur Zugehörigkeit offenbleibt. Gegenfolie: reine Stressreaktion ohne Zielbezug. |
+| **Zwischenurteil** | **(C)** – Verbindlichkeit im Kontakt bleibt; kein systematischer Wirkungsnachweis im dokumentierten Zeitraum. |
+| **Nachweislücke** | Kein Vorher-Nachher-Vergleich über mehr als eine Episode. |
+
+### E2 – Standort „Insel" (interne Pfandsammelstation)
+
+| Feld | Inhalt |
+|---|---|
+| **Anlass (belegt)** | Fehlende Aufsicht und Risiko von Fremdeingriffen im Außenbereich. → [docs/entscheidungen/02_standort_schulinsel.md](../../entscheidungen/02_standort_schulinsel.md) |
+| **Hypothese / Intention** | Kontrollierbare Umgebung senkt Komplexität und sichert Projektergebnis. |
+| **Intervention** | Pfandsammelstation intern statt außen platzieren. |
+| **Beobachtete Kurzzeitwirkung** | Mülleimer mit Pfandschild am Tag 6 sichtbar aufgestellt (sichtbares Produkt). Am Tag 7 durch Reinigungskräfte entsorgt → Systemebene nicht eingebunden. → [docs/tagebuch/06_tag_6.md](../../tagebuch/06_tag_6.md), [docs/tagebuch/07_tag_7.md](../../tagebuch/07_tag_7.md) |
+| **Alternativerklärungen** | (a) Der Umsetzungserfolg bis Tag 6 stammt aus Materialverfügbarkeit, nicht aus dem Standort. (b) Das Scheitern an Tag 7 ist unabhängig vom Standort; es ist ein Kommunikationsversäumnis. |
+| **Adler-Kontrastfolie** | Nicht einschlägig (strukturelle Entscheidung, keine Beziehungsdynamik). |
+| **Zwischenurteil** | **(B)** – Standort erlaubte Umsetzung bis zum sichtbaren Produkt; Systemfehler am Tag 7 liegt außerhalb der Standortentscheidung. |
+| **Nachweislücke** | Keine belastbare Aussage zur Motivationswirkung auf X (Prüfkriterium aus E2 nicht ausgewertet). |
+
+### E3a – Reduktion von Systemkonkurrenz
+
+| Feld | Inhalt |
+|---|---|
+| **Anlass (belegt)** | Tag 3: X wählt paralleles Angebot (Pfand mit J), nimmt nicht am Projekt teil. → [docs/tagebuch/03_tag_3.md](../../tagebuch/03_tag_3.md) |
+| **Hypothese / Intention** | H7: X wählt Weg des geringsten Widerstands; Reduktion paralleler Angebote erhöht Projektverbindlichkeit. |
+| **Intervention** | Temporäre Einschränkung konkurrierender Parallelangebote. |
+| **Beobachtete Kurzzeitwirkung** | Ab Tag 4 kehrt X in die Projektlogik zurück (Einkauf, Gestaltung). Ob ursächlich Exklusivität oder Themenattraktivität, ist nicht trennbar. |
+| **Alternativerklärungen** | (a) Die Rückkehr folgt dem Einstieg in eine konkret attraktive Teilhandlung (Einkauf mit Pfanderlös). (b) Stimmungslage / Tagesform erklärt die Verbindlichkeit. |
+| **Adler-Kontrastfolie** | Wegfall konkurrierender Angebote kann als Schutz der Zielbindung gelesen werden; ebenso aber als Einschränkung von Handlungsspielräumen. Gegenfolie: reine Verfügbarkeits-/Opportunitätsdynamik. |
+| **Zwischenurteil** | **(B)** – punktuelle Stützung des Musters, keine systematische Prüfung. H7 bleibt „fraglich". |
+| **Nachweislücke** | Kein dokumentiertes Vergleichsintervall mit/ohne Exklusivität. |
+
+### E3b – Frühintervention bei Kippsignalen
+
+| Feld | Inhalt |
+|---|---|
+| **Anlass (belegt)** | Eskalationen mit Vorläufersignalen (Tag 2, Tag 4). |
+| **Hypothese / Intention** | H8: Frühzeitige Umlenkung reguliert wirksamer als nachträgliche Konsequenz. |
+| **Intervention** | Bei ersten verbalen Kippsignalen sofortige Umlenkung (Aufgabe, Bewegung). |
+| **Beobachtete Kurzzeitwirkung** | Nicht systematisch getestet; Eskalation Tag 4 trat trotz Vorläufern auf. |
+| **Alternativerklärungen** | (a) Frühsignale waren nicht eindeutig genug erkennbar. (b) Arousal-Dynamik war bereits jenseits der Regulierbarkeit. |
+| **Adler-Kontrastfolie** | Umlenkung als Angebot, Kompetenz zu zeigen, statt Unterlegenheit zu erleben; Gegenfolie: Dysregulation im transaktionalen Stressmodell. |
+| **Zwischenurteil** | **(C)** – Wirkungsnachweis offen; Prüfstruktur existiert im Beobachtungsraster, ist aber nicht ausgefüllt. |
+| **Nachweislücke** | Keine Kopplung Signal → Reaktion → Ergebnis im Verlauf. |
+
+### E3c – Scaffolding in formellen Situationen
+
+| Feld | Inhalt |
+|---|---|
+| **Anlass (belegt)** | Rückzug in Gesprächen mit Hausmeister, K, Holzwerker. → [docs/beobachtungen/01_verhalten_in_situationen.md](../../beobachtungen/01_verhalten_in_situationen.md) |
+| **Hypothese / Intention** | H2: Soziale Exposition senken, ohne die Aufgabe abzunehmen („Wir sagen das zusammen"). |
+| **Intervention** | Stellvertretende bzw. gemeinsame Gesprächsführung mit Beteiligung von X. |
+| **Beobachtete Kurzzeitwirkung** | X bleibt in einzelnen Situationen physisch präsent, aber leise/abgewandt; kein messbarer Zuwachs an eigenem Redeanteil im Zeitraum. |
+| **Alternativerklärungen** | (a) Präsenz ist an Beziehung zu T./A. gebunden, nicht an Scaffolding-Form. (b) Sprachlich-akustische Hürden (Hörgerät, b2309) überlagern den sozialen Effekt. |
+| **Adler-Kontrastfolie** | Scaffolding als Entlastung des Minderwertigkeitsdrucks und Angebot zum Kompetenzerleben; Gegenfolie: Hör- bzw. Aktivierungs­hürden. |
+| **Zwischenurteil** | **(B)** – H2 „aktiv geprüft", Wirkung noch nicht quantifiziert. |
+| **Nachweislücke** | Keine Operationalisierung (Lautstärke, Redeanteil, Blickkontakt). |
+
+### E3d – Vorab-Klärung von Eigentumsregeln
+
+| Feld | Inhalt |
+|---|---|
+| **Anlass (belegt)** | Eigentumsgrenze (Essen) wird in Konfliktsituation überschritten (Tag 4). |
+| **Hypothese / Intention** | Prävention statt Konfrontation; Klärung in ruhiger Situation reduziert Konfliktdruck im Moment (H4). |
+| **Intervention** | Regeln explizit vorab in ruhiger Phase besprechen. |
+| **Beobachtete Kurzzeitwirkung** | Nicht systematisch getestet im dokumentierten Zeitraum. |
+| **Alternativerklärungen** | (a) Die Grenzüberschreitung Tag 4 folgt einer spezifischen Konstellation (Verbalabwertung), nicht einem Regelwissensdefizit. |
+| **Adler-Kontrastfolie** | Vorab-Klärung reduziert Gesichtsverlustrisiko im Konflikt; Gegenfolie: reine Stress-/Arousal-Entscheidung. |
+| **Zwischenurteil** | **(C)** – Wirkungsnachweis offen. |
+| **Nachweislücke** | Keine Prä-/Post-Vergleichssituation. |
+
+### E3e – Feedback als Gegenprüfung
+
+| Feld | Inhalt |
+|---|---|
+| **Anlass (belegt)** | Gefahr erwachsenenzentrierter Planung; Feedback bisher knapp (Tag 7/8). → [docs/feedback/02_feedback_x.md](../../feedback/02_feedback_x.md), [docs/feedback/03_feedback_x.md](../../feedback/03_feedback_x.md) |
+| **Hypothese / Intention** | H10: Rückmeldung kann erwünscht schwanken; systematisches Einholen gleicht dies aus. |
+| **Intervention** | Feedback als eigene Quelle erheben, Form markieren. |
+| **Beobachtete Kurzzeitwirkung** | Zwei Erhebungen liegen vor; Antworten kurz, z. T. widersprüchlich zu Verhalten (z. B. „Beleidigungen angebracht: ja" vs. Entschuldigungsverhalten). |
+| **Alternativerklärungen** | (a) Antwortverhalten spiegelt Befragungsformat (offene Einzelfragen) statt echter Einstellung. (b) Tagesform dominiert die Antwort. |
+| **Adler-Kontrastfolie** | Nicht einschlägig (Methodik). |
+| **Zwischenurteil** | **(B)** – Feedback ist vorhanden, aber in Form und Frequenz nicht steuerungsreif. |
+| **Nachweislücke** | Skalen-/Auswahlformate, mehr Erhebungstage. |
+
+### E4 – Exit-Strategie Pause (konzeptionell)
+
+| Feld | Inhalt |
+|---|---|
+| **Anlass (belegt)** | Eskalationen Tag 2/4 mit Kontrollverlustmuster. |
+| **Hypothese / Intention** | H11: Exit-Option erhöht Handlungsfähigkeit unter Stress und schafft Alternative zu Aggression. |
+| **Intervention** | Standardisiertes Pause-Protokoll dokumentiert, **nicht** mit X eingeführt. → [docs/intervention/pause_protokoll.md](../../intervention/pause_protokoll.md) |
+| **Beobachtete Kurzzeitwirkung** | Keine, da nicht eingeführt. |
+| **Alternativerklärungen** | Bei späterer Einführung zu prüfen: Arousal-Regulation (Stressfenster), Gruppendynamik, Reizentzug. |
+| **Adler-Kontrastfolie** | Pause als Schutz vor erneuter Minderwertigkeits- bzw. Gesichtsverlustlage – funktional nur, wenn sie nicht als Ausschluss erlebt wird. |
+| **Zwischenurteil** | **(C)** – Wirkung nicht prüfbar im dokumentierten Zeitraum. |
+| **Nachweislücke** | Vorstellung bei X, Beobachtungsraster ausfüllen. |
+
+### E6 – Kleinschrittige Umsetzung
+
+| Feld | Inhalt |
+|---|---|
+| **Anlass (belegt)** | Eskalationsrisiko bei großen Schritten; Zeitdruck PrepP. → [docs/entscheidungen/06_pfandprojekt_naechste_schritte.md](../../entscheidungen/06_pfandprojekt_naechste_schritte.md) |
+| **Hypothese / Intention** | Eine Entscheidung, eine Handlung, eine weitere Person pro Einheit stabilisiert Handlungsfähigkeit. |
+| **Intervention** | Kleinschrittige Takte in den Phasen 3–4. |
+| **Beobachtete Kurzzeitwirkung** | Umsetzung bis Tag 6 sichtbar gelungen (Standort, Einkauf, Beschriftung). Vermittlung durch Y wiederkehrend wirksam. |
+| **Alternativerklärungen** | (a) Erfolge stammen aus Themenattraktivität (Handlung/Wirtschaft), nicht aus Taktung. (b) Die Begleitung durch T./A. trägt den Takt. |
+| **Adler-Kontrastfolie** | Kleinschrittigkeit ermöglicht Kompetenz- und Zugehörigkeitserfahrung ohne Überforderung; Gegenfolie: schlicht angepasste Aufgabendosierung aus dem Stressfenster-Modell. |
+| **Zwischenurteil** | **(A)** – mehrfach belegte Zielannäherung in T4 („Selbstständigkeit und Organisation"), mit offener Trennung gegenüber Themen- und Beziehungsfaktoren. |
+| **Nachweislücke** | Vergleich mit „größerem Schritt" fehlt systematisch. |
+
+### 5.3.1 Quer-Lektüre der Evidenzlage
+
+- **Belegt wirksam (A):** nur E6 im dokumentierten Zeitraum, gestützt durch T4-Evidenz.
+- **Gemischt (B):** E2, E3a, E3c, E3e – jeweils Hinweise auf Wirkung sichtbar, Kausalität nicht trennbar.
+- **Nicht ausreichend belegt (C):** E1, E3b, E3d, E4 – entweder nicht systematisch geprüft oder nicht eingeführt.
+- **Muster:** Entscheidungen mit struktureller Umsetzung (Standort, Kleinschrittigkeit, Feedback-Praxis) zeigen eher dokumentierte Spuren als Entscheidungen mit interaktionaler Umsetzung (Grenzsetzung, Frühintervention). Das stützt die Schlussfolgerung in [5.7](#57-schlussfolgerungen), Kleinschrittigkeit und Eigenmotivation als Prinzipien beizubehalten.
+
+## 5.4 Abweichungen vom Plan
 
 | Abweichung | Beschreibung | Quelle |
 |---|---|---|
@@ -55,7 +213,7 @@
 | **Selbstbestimmung vs. Steuerung** | Der im Plan explizit benannte Balanceakt („angemessenes Maß an Selbstbestimmung") war durchgängig spürbar: mehr Steuerung bei Absprachenbrüchen, mehr Freiraum in Umsetzungsphasen. | [docs/projektplan.md](../../projektplan.md) (Beobachtungskriterium/Herausforderung), [docs/reflexion.md](../../reflexion.md) (Risiko der Überstrukturierung) |
 | **Feedbackspur** | Eine belastbare, regelmäßige Feedback-Erhebung kam erst spät und knapp zustande; die Reflexion selbst benennt diese Lücke. | [docs/reflexion.md](../../reflexion.md) (Perspektive der Zielperson), [docs/feedback/*.md](../../feedback/01_feedback_zielperson.md) |
 
-## 5.4 Spannungen zwischen Feedback und Beobachtung
+## 5.5 Spannungen zwischen Feedback und Beobachtung
 
 - X antwortet in Feedbackrunden global positiv („gut", „sehr lecker", „sehr gut"), auch wenn unmittelbar vorangegangene Situationen konflikthaft waren.
   → Quelle: [docs/feedback/02_feedback_x.md](../../feedback/02_feedback_x.md), [docs/feedback/03_feedback_x.md](../../feedback/03_feedback_x.md)
@@ -64,7 +222,7 @@
 - Diese Diskrepanz stützt H10 (Rückmeldungen können situations-/sozial erwünscht schwanken) und markiert Entwicklungsbedarf der Feedback-Praxis.
   → Quelle: [docs/hypothesen.md](../../hypothesen.md) (H10), [docs/feedback/01_feedback_zielperson.md](../../feedback/01_feedback_zielperson.md)
 
-## 5.5 Hypothesenstatus – abschließender Überblick
+## 5.6 Hypothesenstatus – abschließender Überblick
 
 | Hypothese | Status (Repo) | Reflexion |
 |---|---|---|
@@ -82,11 +240,11 @@
 
 → Quelle: [docs/hypothesen.md](../../hypothesen.md)
 
-## 5.6 Prüfung der Hypothese H11 (Aggression und Kontrollverlust)
+### 5.6.1 Prüfung der Hypothese H11 (Aggression und Kontrollverlust)
 
 **Kurzfassung H11:** Aggression wird als mögliche Strategie bei erlebtem Kontrollverlust angenommen.
 
-**Status im vorliegenden Material:** Der Zusammenhang ist im vorliegenden Material bislang nicht systematisch geprüft.
+**Status im vorliegenden Material:** Der Zusammenhang ist im vorliegenden Material bislang nicht systematisch geprüft (vgl. E3b und E4 in der [Evidenzlage 5.3](#53-evidenzlage-und-gegenhypothesen-je-entscheidung-e1e6)).
 
 **Ableitung aus bestehenden Artefakten:**
 
@@ -121,5 +279,6 @@
   - Tritt Aggression nach Kontrollverlust auf?
   - Welche Wirkung hat die Exit-Strategie (E4)?
   - Welche Alternativerklärungen (Arousal, Gruppendynamik) sind plausibel?
+- [OFFEN] Die in der [Evidenzlage 5.3](#53-evidenzlage-und-gegenhypothesen-je-entscheidung-e1e6) als **(C)** klassifizierten Entscheidungen (E1, E3b, E3d, E4) im Folgezeitraum systematisch erheben.
 - [OFFEN] Feedback-Daten in abschließende Nachweise und Schlussfolgerungen einbinden, sobald ausreichend viele Erhebungszeitpunkte vorliegen.
 - [OFFEN] Quantitative/qualitative Bewertung der Teilziele T1, T2, T5 nach Projektende erneut vornehmen, um zwischen situationsgebundener und überdauernder Veränderung zu unterscheiden.

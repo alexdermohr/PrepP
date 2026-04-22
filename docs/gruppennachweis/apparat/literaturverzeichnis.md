@@ -9,9 +9,9 @@ Im dokumentierten Bearbeitungszeitraum liegen **keine externen Fachliteraturquel
 
 - repo-internes Rohmaterial (Projektplan, Tagebuch, Beobachtungen, Hypothesen, Entscheidungen, Feedback, Reflexion),
 - den repo-internen ICF-Report sowie
-- die repo-internen Modelle in `models/` (insbesondere [`prep_planung.md`](../../../models/prep_planung.md)).
+- die repo-internen Modelle in `models/` (insbesondere [`prep_planung.md`](../../../models/prep_planung.md) und heuristisch [`adler_individualpsychologie.md`](../../../models/adler_individualpsychologie.md)).
 
-Die Einträge unten bleiben solange als `[OFFEN]` markiert, bis externe Fachliteratur ergänzt wird.
+Die Einträge unten bleiben solange als `[OFFEN]` markiert, bis externe Fachliteratur ergänzt wird. **Zitierstil:** APA 7 als Arbeitsstandard vorgesehen, sofern kein abweichender Bewertungsrahmen gilt (vgl. [Kapitel 6.4](../kapitel/06_formalia_und_anhang.md#64-literaturverzeichnis)).
 
 ## Fachliteratur
 
@@ -29,12 +29,13 @@ Die Einträge unten bleiben solange als `[OFFEN]` markiert, bis externe Fachlite
 
 ## Repo-interne Modellreferenzen (keine Literatur i. e. S., aber im Text verwendet)
 
-| Nr. | Modell | Ort |
-|---|---|---|
-| M1 | Prep-Planung (Rahmenmodell) | [models/prep_planung.md](../../../models/prep_planung.md) |
-| M2 | Modellübersicht | [models/index.md](../../../models/index.md) |
+| Nr. | Modell | Ort | Einsatz |
+|---|---|---|---|
+| M1 | Prep-Planung (Rahmenmodell) | [models/prep_planung.md](../../../models/prep_planung.md) | Primärrahmung Kapitel 1, 4 |
+| M2 | Modellübersicht | [models/index.md](../../../models/index.md) | Gate-Schema |
+| M3 | Adler – Individualpsychologie | [models/adler_individualpsychologie.md](../../../models/adler_individualpsychologie.md) | heuristische Kontrastfolie in Kapitel 4.4.0 und 5.3 |
 
 ## Hinweise
 
-- Zitierstil: **[OFFEN]** – noch zu klären (Vorschlag: APA 7, sobald externe Fachliteratur ergänzt wird).
+- **Zitierstil:** APA 7 als Arbeitsstandard vorgesehen, sofern kein abweichender Bewertungsrahmen gilt (vgl. [Kapitel 6.4](../kapitel/06_formalia_und_anhang.md#64-literaturverzeichnis)).
 - Alle externen Quellen müssen vor dem Status `integrated` (siehe [../_state.md](../_state.md)) eingetragen sein.

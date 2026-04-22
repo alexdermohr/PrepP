@@ -54,6 +54,23 @@ export function parseMarkdownSections(markdown) {
   for (const rawLine of rawLines) {
     const line = rawLine.trim();
 
+    if (line.startsWith('```')) {
+      flushAll();
+      if (inCodeBlock) {
+        current.blocks.push({ type: 'code', text: codeContent.join('\n') });
+        inCodeBlock = false;
+        codeContent = [];
+      } else {
+        inCodeBlock = true;
+      }
+      continue;
+    }
+
+    if (inCodeBlock) {
+      codeContent.push(rawLine);
+      continue;
+    }
+
     const htmlLinkedImageMatch = line.match(
       /^<a\s+[^>]*href="([^"]+)"[^>]*>\s*<img\s+[^>]*src="([^"]+)"[^>]*>\s*<\/a>$/i,
     );
@@ -100,23 +117,6 @@ export function parseMarkdownSections(markdown) {
         href: pendingHtmlImageHref || htmlImageMatch[1],
         rotate90: hasNinetyDegreeRotation,
       });
-      continue;
-    }
-
-    if (line.startsWith('```')) {
-      flushAll();
-      if (inCodeBlock) {
-        current.blocks.push({ type: 'code', text: codeContent.join('\n') });
-        inCodeBlock = false;
-        codeContent = [];
-      } else {
-        inCodeBlock = true;
-      }
-      continue;
-    }
-
-    if (inCodeBlock) {
-      codeContent.push(rawLine);
       continue;
     }
 

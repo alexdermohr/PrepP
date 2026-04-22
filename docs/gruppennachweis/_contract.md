@@ -10,6 +10,8 @@ Er verdichtet Rohmaterial (Beobachtungen, Hypothesen, Entscheidungen, Feedback, 
 - **Eingang:** Rohmaterial aus `docs/beobachtungen/`, `docs/tagebuch/`, `docs/entscheidungen/`, `docs/feedback/`, `docs/hypothesen.md`, `docs/reflexion.md`, `docs/intervention/`, `docs/icf-reports/`, `models/`
 - **Transformation:** beschrieben in `docs/transformation/rohmaterial_to_gruppennachweis.md`
 - **Rückverfolgbarkeit:** `mapping/rohmaterial_zu_kapiteln.md`
+- **Argumentation:** `mapping/argumentationsschicht.md` (Beobachtung → Interpretation → Gegenhypothese → begründete Entscheidung für zentrale Aussagen)
+- **Operationalisierung Partizipation:** `mapping/partizipationsgrad.md` (einheitsweise Erhebung nach Prep-Planung-Schwelle)
 - **Stützapparat:** `apparat/literaturverzeichnis.md`
 
 ## Erlaubte Inhalte

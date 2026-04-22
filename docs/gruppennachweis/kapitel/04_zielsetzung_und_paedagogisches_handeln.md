@@ -60,6 +60,12 @@ X übernimmt im Projekt „Schulhof verschönern" eine **verantwortliche Rolle a
 
 ## 4.3 Partizipation der Zielperson
 
+> **Operationalisierung pro Einheit:** Tagesweise Erhebung nach der Schwelle
+> aus [models/prep_planung.md](../../../models/prep_planung.md) (gestaltende
+> Entscheidung + Rückmeldung) liegt systematisch in
+> [mapping/partizipationsgrad.md](../mapping/partizipationsgrad.md) vor
+> (Stufen P++ / P+ / P– / P0 für Vorlauf + Tag 1–7).
+
 - **X als Initiator und Koordinator, nicht als Ausführender.** Ziel ist ein ko-konstruktives Gemeinschaftsprojekt, in dem X Entscheidungen trifft.
   → Quelle: [docs/projektplan.md](../../projektplan.md), [docs/icf-reports/icf-report-gemeinschaftsprojekt-ko-konstr-2026-04-04-07-49.html](../../icf-reports/icf-report-gemeinschaftsprojekt-ko-konstr-2026-04-04-07-49.html) (Aktivität)
 - **Intrinsische Motivation statt Druck** als Steuerungsprinzip: Wenn X eine Aufgabe nicht übernehmen möchte, wird stärker auf Vorbereitung und Eigenmotivation gesetzt, nicht auf Zwang.
@@ -146,4 +152,4 @@ X übernimmt im Projekt „Schulhof verschönern" eine **verantwortliche Rolle a
 ## Offene Punkte
 
 - [OFFEN] Ergänzung durch externe Fachliteratur zu Empowerment / Partizipation / ICF → [apparat/literaturverzeichnis.md](../apparat/literaturverzeichnis.md) (Zitierstil: APA 7 als Arbeitsstandard vorgesehen)
-- [OFFEN] Systematische Dokumentation des Partizipationsgrades (gestaltende Entscheidungen pro Einheit); Auswertung der Wirkindikatoren über die [Evidenzlage 5.3](05_reflexion.md#53-evidenzlage-und-gegenhypothesen-je-entscheidung-e1e6)
+- [OFFEN] Systematische Dokumentation des Partizipationsgrads (gestaltende Entscheidungen pro Einheit) – Retro-Erhebung liegt in [mapping/partizipationsgrad.md](../mapping/partizipationsgrad.md); prospektive Erhebung pro Einheit ausstehend. Auswertung der Wirkindikatoren über die [Evidenzlage 5.3](05_reflexion.md#53-evidenzlage-und-gegenhypothesen-je-entscheidung-e1e6)

@@ -6,6 +6,13 @@ Dieses Dokument stellt sicher, dass jede Aussage im Gruppennachweis auf eine Que
 
 **Regel:** KEINE Aussage ohne Rückverweis.
 
+**Ergänzung:** Für zentrale Aussagen legt die
+[Argumentationsschicht](argumentationsschicht.md) zusätzlich Beobachtung,
+Interpretation, Gegenhypothese und begründete Entscheidung offen. Die
+Operationalisierung des Partizipationsgrads (tragender Begriff in Kapitel 4.3)
+ist in [partizipationsgrad.md](partizipationsgrad.md) einheitsweise
+dokumentiert.
+
 **Status-Legende:** `strukturiert` = Aussage ist im Kapitel mit belegtem Quellenverweis ausgeführt · `[OFFEN]` = bekannte epistemische Lücke, sichtbar im Kapitel markiert.
 
 ## Kapitel-Mapping
@@ -62,7 +69,7 @@ Dieses Dokument stellt sicher, dass jede Aussage im Gruppennachweis auf eine Que
 | Heuristische Rahmung Adler (4.4.0) | `models/adler_individualpsychologie.md`, `models/index.md` | strukturiert (heuristisch) |
 | Hypothesenbezug (H1–H11) | `docs/hypothesen.md` | strukturiert |
 | Externe Fachliteratur | `docs/gruppennachweis/apparat/literaturverzeichnis.md` | [OFFEN] |
-| Systematische Dokumentation des Partizipationsgrads | `docs/beobachtungen/03_pause_und_pfandprojekt_beobachtungsraster.md` | [OFFEN] |
+| Systematische Dokumentation des Partizipationsgrads | `docs/gruppennachweis/mapping/partizipationsgrad.md`, `docs/beobachtungen/03_pause_und_pfandprojekt_beobachtungsraster.md` | strukturiert (Retro-Erhebung; prospektive Erhebung pro Einheit offen) |
 
 ### Kapitel 5: Reflexion
 
@@ -98,4 +105,5 @@ Dieses Dokument stellt sicher, dass jede Aussage im Gruppennachweis auf eine Que
 | Externe Fachliteratur zu Empowerment/Partizipation/ICF | Kapitel 1, 4, 6 | Apparat befüllen, Zitierstil festlegen |
 | Systematische Prüfung der Hypothese H11 (Kontrollverlust ↔ Aggression; Intervention E4 ↔ Wirkung) | Kapitel 5 | Beobachtungsraster durchgängig ausfüllen |
 | Messbare Entwicklung in T3 (sprachlicher Ausdruck) | Kapitel 5 | Operationalisierung (z. B. Lautstärke, Redeanteil) |
+| Prospektive Erhebung des Partizipationsgrads pro Einheit (GE/RM) | Kapitel 4, 5 | Stufe P++/P+/P–/P0 gemäß [partizipationsgrad.md](partizipationsgrad.md) unmittelbar in der Tagesdoku eintragen |
 | Abgabeformat / Umfang / Zitierstil des Gruppennachweises | Kapitel 6 | Vorgabe klären |

@@ -340,6 +340,9 @@ const blockRenderers = {
     imageLink.target = "_blank";
     imageLink.rel = "noopener noreferrer";
     imageLink.title = "Bild in voller Größe öffnen";
+    imageLink.className = "content-image-link";
+    imageLink.style.textDecoration = "none";
+    imageLink.style.display = "inline-block";
     imageLink.appendChild(img);
 
     container.appendChild(imageLink);

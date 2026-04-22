@@ -211,11 +211,34 @@ function renderEmptyState(root, text) {
 function sanitizeImageUrl(url, contextPath = null) {
   if (!url) return null;
   if (url.startsWith("/images/")) return url;
+
   const internalAssetUrl = resolveInternalAssetUrl(url, contextPath);
   if (internalAssetUrl) return internalAssetUrl;
+
+  const trimmedUrl = String(url).trim();
+  const hasExplicitScheme = /^[a-zA-Z][a-zA-Z0-9+.-]*:/.test(trimmedUrl);
+  if (!hasExplicitScheme) {
+    // Keep relative paths renderable so images stay visible at their document position,
+    // even if the file is not part of the bundled internal-asset map.
+    return trimmedUrl;
+  }
+
+  try {
+    const parsed = new URL(trimmedUrl);
+    if (parsed.protocol === "http:" || parsed.protocol === "https:") {
+      return trimmedUrl;
+    }
+  } catch (e) {}
+  return null;
+}
+
+function sanitizeLinkUrl(url, contextPath = null) {
+  if (!url) return null;
+  const safeImageUrl = sanitizeImageUrl(url, contextPath);
+  if (safeImageUrl) return safeImageUrl;
   try {
     const parsed = new URL(url);
-    if (parsed.protocol === "http:" || parsed.protocol === "https:") {
+    if (parsed.protocol === "mailto:" || parsed.protocol === "tel:") {
       return url;
     }
   } catch (e) {}
@@ -321,10 +344,11 @@ const blockRenderers = {
     if (!safeUrl) {
       const fallback = document.createElement("p");
       fallback.className = "meta";
-      fallback.textContent = "[Bild konnte nicht geladen werden]";
+      fallback.textContent = "[Bildquelle ungültig]";
       container.appendChild(fallback);
       return;
     }
+
     const img = document.createElement("img");
     img.src = safeUrl;
     img.alt = b.alt || "Projektbild";
@@ -334,13 +358,13 @@ const blockRenderers = {
       img.classList.add("content-image--rotate-90");
     }
 
+    const safeHref = sanitizeLinkUrl(b.href || b.url, contextPath) || safeUrl;
     const imageLink = document.createElement("a");
     imageLink.className = "content-image-link";
-    imageLink.href = safeUrl;
+    imageLink.href = safeHref;
     imageLink.target = "_blank";
     imageLink.rel = "noopener noreferrer";
     imageLink.title = "Bild in voller Größe öffnen";
-    imageLink.className = "content-image-link";
     imageLink.style.textDecoration = "none";
     imageLink.style.display = "inline-block";
     imageLink.appendChild(img);

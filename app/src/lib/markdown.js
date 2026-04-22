@@ -54,6 +54,43 @@ export function parseMarkdownSections(markdown) {
   for (const rawLine of rawLines) {
     const line = rawLine.trim();
 
+    if (line.startsWith('```')) {
+      flushAll();
+      if (inCodeBlock) {
+        current.blocks.push({ type: 'code', text: codeContent.join('\n') });
+        inCodeBlock = false;
+        codeContent = [];
+      } else {
+        inCodeBlock = true;
+      }
+      continue;
+    }
+
+    if (inCodeBlock) {
+      codeContent.push(rawLine);
+      continue;
+    }
+
+    const htmlLinkedImageMatch = line.match(
+      /^<a\s+[^>]*href="([^"]+)"[^>]*>\s*<img\s+[^>]*src="([^"]+)"[^>]*>\s*<\/a>$/i,
+    );
+    if (htmlLinkedImageMatch) {
+      const altMatch = line.match(/\balt="([^"]*)"/i);
+      const styleMatch = line.match(/\bstyle="([^"]*)"/i);
+      const styleValue = styleMatch?.[1] || "";
+      const hasNinetyDegreeRotation = /rotate\(\s*90deg\s*\)/i.test(styleValue);
+
+      flushAll();
+      current.blocks.push({
+        type: 'image',
+        alt: altMatch?.[1] || '',
+        url: htmlLinkedImageMatch[2],
+        href: htmlLinkedImageMatch[1],
+        rotate90: hasNinetyDegreeRotation,
+      });
+      continue;
+    }
+
     const htmlAnchorOpenMatch = line.match(/^<a\s+[^>]*href="([^"]+)"[^>]*>/i);
     if (htmlAnchorOpenMatch) {
       pendingHtmlImageHref = htmlAnchorOpenMatch[1];
@@ -76,33 +113,17 @@ export function parseMarkdownSections(markdown) {
       current.blocks.push({
         type: 'image',
         alt: altMatch?.[1] || '',
-        url: pendingHtmlImageHref || htmlImageMatch[1],
-        rotate90: hasNinetyDegreeRotation
+        url: htmlImageMatch[1],
+        href: pendingHtmlImageHref || htmlImageMatch[1],
+        rotate90: hasNinetyDegreeRotation,
       });
-      continue;
-    }
-
-    if (line.startsWith('```')) {
-      flushAll();
-      if (inCodeBlock) {
-        current.blocks.push({ type: 'code', text: codeContent.join('\n') });
-        inCodeBlock = false;
-        codeContent = [];
-      } else {
-        inCodeBlock = true;
-      }
-      continue;
-    }
-
-    if (inCodeBlock) {
-      codeContent.push(rawLine);
       continue;
     }
 
     const imgMatch = line.match(/^!\[(.*)\]\((.*)\)$/);
     if (imgMatch) {
       flushAll();
-      current.blocks.push({ type: 'image', alt: imgMatch[1], url: imgMatch[2] });
+      current.blocks.push({ type: 'image', alt: imgMatch[1], url: imgMatch[2], href: imgMatch[2] });
       continue;
     }
 

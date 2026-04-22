@@ -53,6 +53,7 @@
 | A7 | Interventionsprotokoll (Pause-Protokoll) | 1 Dokument | [docs/intervention/pause_protokoll.md](../../intervention/pause_protokoll.md) |
 | A8 | ICF-Report (Klassifikationsbericht vom 04.04.2026) | 1 HTML-Report | [docs/icf-reports/icf-report-gemeinschaftsprojekt-ko-konstr-2026-04-04-07-49.html](../../icf-reports/icf-report-gemeinschaftsprojekt-ko-konstr-2026-04-04-07-49.html) |
 | A9 | Reflexionsnotizen (Wirkungen, offene Fragen) | 1 Dokument | [docs/reflexion.md](../../reflexion.md) |
+| A10 | Bilddokumentation Pfandprojekt (2 Fotos, Lesefassung um 90° gedreht) | 1 Dokument + 2 Bilddateien | [docs/gruppennachweis/anhang/bilddokumentation_pfandprojekt.md](../anhang/bilddokumentation_pfandprojekt.md), [docs/foto_pfandprojekt_sammelbehaelter_01.jpeg](../../foto_pfandprojekt_sammelbehaelter_01.jpeg), [docs/foto_pfandprojekt_sammelbehaelter_02.jpeg](../../foto_pfandprojekt_sammelbehaelter_02.jpeg) |
 
 ## 6.6 Mapping und Rückverfolgbarkeit
 

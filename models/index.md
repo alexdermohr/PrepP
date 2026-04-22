@@ -16,6 +16,7 @@ Dieser Index ordnet den Modellkorpus als Werkzeugkasten.
 - **[Frustration-Aggression](./frustration_aggression.md) (DRIVE/STATE):** Welches Ziel wurde blockiert? → Ergänzend bei Zielunterbrechung.
 - **[Ökologische Systemtheorie](./oekologische_systemtheorie_bronfenbrenner.md) (SYSTEM):** Welcher Kontext erzeugt Verhalten mit? → Ergänzend bei Kontextvarianz.
 - **[Erikson](./psychosoziale_entwicklung_erikson.md) (DEVELOPMENT):** Welche Entwicklungsfrage ist aktiv? → Ergänzend für Langzeitdeutung.
+- **[Adler](./adler_individualpsychologie.md) (GOAL + STYLE + SOCIAL):** Welches Ziel organisiert das Verhalten und wie ist es sozial eingebettet? → Heuristisch für Sinn- und Fallstruktur, nicht als alleinige Diagnostik.
 - **[Prep-Planung](./prep_planung.md) (PLANNING):** Wie wird aus Bedarf/Interessen/Ressourcen eine Intervention? → Rahmenlogik; setzt psychologische Klärung voraus.
 
 ## 2) Gate-Schema (empfohlene Reihenfolge)
@@ -27,7 +28,7 @@ Dieser Index ordnet den Modellkorpus als Werkzeugkasten.
 5. ABC/SORKC prüfen (Sequenz/Funktion/Kontingenz)
 6. Bindung prüfen (personenspezifische Sicherheit)
 7. Emotionsregulation / Frustration ergänzen (Prozess + Zielblockade)
-8. System + Entwicklung + Trait einordnen (Kontext, Langzeit, Disposition)
+8. System + Entwicklung + Adler + Trait einordnen (Kontext, Langzeit, Ziel-/Sinnlogik, Disposition)
 9. Prep-Planung ableiten (Interventionsarchitektur)
 
 ## 3) Nutzungsprinzipien

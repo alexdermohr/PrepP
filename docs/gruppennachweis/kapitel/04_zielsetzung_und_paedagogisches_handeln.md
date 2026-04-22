@@ -6,7 +6,7 @@
 
 ### Übergeordnetes Ziel
 
-X übernimmt im Projekt „Schulhof verschönern" eine **verantwortliche Rolle als Initiator und Koordinator**. Durch Planung, Kommunikation und Zusammenarbeit mit Mitschüler\*innen und Erwachsenen sammelt er Erfahrungen in **Selbstwirksamkeit, sozialer Kooperation und gleichwürdigem Austausch**, während gleichzeitig ein **sichtbarer Beitrag zur Gestaltung des Schulhofs** entsteht.
+X übernimmt im Projekt „Schulhof verschönern" eine **verantwortliche Rolle als Initiator und Koordinator**. Durch Planung, Kommunikation und Zusammenarbeit mit Mitschülern und Erwachsenen sammelt er Erfahrungen in **Selbstwirksamkeit, sozialer Kooperation und gleichwürdigem Austausch**, während gleichzeitig ein **sichtbarer Beitrag zur Gestaltung des Schulhofs** entsteht.
 → Quelle: [docs/projektplan.md](../../projektplan.md) (Übergeordnetes Ziel)
 
 ### Teilziele
@@ -14,7 +14,7 @@ X übernimmt im Projekt „Schulhof verschönern" eine **verantwortliche Rolle a
 | Nr. | Teilziel | Operationalisierung (aus Projektplan) | Quelle |
 |---|---|---|---|
 | T1 | Selbstvertrauen und Selbstwirksamkeit | X erlebt, dass seine Ideen und sein Engagement einen realen Einfluss haben; übernimmt Verantwortung für Projektphasen | [docs/projektplan.md](../../projektplan.md) |
-| T2 | Gleichwürdiger Umgang mit Mitschüler\*innen | Mitschüler\*innen für das Projekt gewinnen, Aufgaben gemeinsam planen, Kompromisse aushandeln | [docs/projektplan.md](../../projektplan.md) |
+| T2 | Gleichwürdiger Umgang mit Mitschülern | Mitschüler für das Projekt gewinnen, Aufgaben gemeinsam planen, Kompromisse aushandeln | [docs/projektplan.md](../../projektplan.md) |
 | T3 | Sprachlicher Ausdruck und sozialer Auftritt | Anliegen verständlich formulieren gegenüber Peers, Hausmeister und Schulleitung; Feedback annehmen | [docs/projektplan.md](../../projektplan.md) |
 | T4 | Selbstständigkeit und Organisation | Beteiligung an Planung, Ideensammlung, Materialorganisation und Umsetzung; Projekt- und Organisationskompetenzen | [docs/projektplan.md](../../projektplan.md) |
 | T5 | Gemeinschaftserfahrung | Erleben als Teil einer verantwortlichen Gruppe, positive soziale Anerkennung | [docs/projektplan.md](../../projektplan.md) |
@@ -26,7 +26,7 @@ X übernimmt im Projekt „Schulhof verschönern" eine **verantwortliche Rolle a
 | Phase | Inhalt | Belegte Ereignisse |
 |---|---|---|
 | 1. Plan erstellen | Roadmap, Genehmigungen (Hausmeister, Werkstatt, Schulleitung) | Vorlauf, Tag 1: Frageliste/Probe-Interview, Gespräch K; Tag 4: Hausmeister ([docs/tagebuch/00_vorlauf.md](../../tagebuch/00_vorlauf.md), [docs/tagebuch/01_tag_1.md](../../tagebuch/01_tag_1.md), [docs/tagebuch/04_tag_4.md](../../tagebuch/04_tag_4.md)) |
-| 2. Schulhofumfrage | Peer-Kontakt, Ideensammlung, evtl. Infostand | Tag 1: Ideenaufnahme durch Mitschülerinnen; Tag 2: Werbung über Kuchen ([docs/tagebuch/01_tag_1.md](../../tagebuch/01_tag_1.md), [docs/tagebuch/02_tag_2.md](../../tagebuch/02_tag_2.md)) |
+| 2. Schulhofumfrage | Peer-Kontakt, Ideensammlung, evtl. Infostand | Tag 1: Ideenaufnahme durch Mitschüler; Tag 2: Werbung über Kuchen ([docs/tagebuch/01_tag_1.md](../../tagebuch/01_tag_1.md), [docs/tagebuch/02_tag_2.md](../../tagebuch/02_tag_2.md)) |
 | 3. Konkreten Plan erstellen | Umsetzungsplan, Zeitmanagement im PrepP-Rahmen | Tag 3/4: Standortfindung Pfandstation; Tag 5: Gestaltungsideen (rot, Sprüche) ([docs/tagebuch/03_tag_3.md](../../tagebuch/03_tag_3.md), [docs/tagebuch/04_tag_4.md](../../tagebuch/04_tag_4.md), [docs/tagebuch/05_tag_5.md](../../tagebuch/05_tag_5.md)) |
 | 4. Materialbeschaffung und Umsetzung | Einkauf, Aufbau, sichtbarer Beitrag | Tag 4: Einkauf mit Pfanderlös; Tag 6: Mülleimer mit Pfandschild aufgestellt ([docs/tagebuch/04_tag_4.md](../../tagebuch/04_tag_4.md), [docs/tagebuch/06_tag_6.md](../../tagebuch/06_tag_6.md)) |
 | 5. Reflexion | Rückblick, Einsichten | Tag 7 + Feedbackrunden ([docs/tagebuch/07_tag_7.md](../../tagebuch/07_tag_7.md), [docs/feedback/03_feedback_x.md](../../feedback/03_feedback_x.md), [docs/reflexion.md](../../reflexion.md)) |
@@ -44,7 +44,7 @@ X übernimmt im Projekt „Schulhof verschönern" eine **verantwortliche Rolle a
 | E3c – Scaffolding | Gemeinsame Bewältigung formeller Situationen | Rückzug in sozialer Exposition reduzieren | [docs/entscheidungen/03_systemarchitektur_und_regulation.md](../../entscheidungen/03_systemarchitektur_und_regulation.md) |
 | E3d – Eigentumsregeln vorab | Klärung in ruhigen Situationen | Prävention statt Konfrontation | [docs/entscheidungen/03_systemarchitektur_und_regulation.md](../../entscheidungen/03_systemarchitektur_und_regulation.md) |
 | E3e – Feedback als Gegenprüfung | Maßnahmen gegen subjektives Feedback spiegeln | Erwachsenenzentrierung korrigieren | [docs/entscheidungen/03_systemarchitektur_und_regulation.md](../../entscheidungen/03_systemarchitektur_und_regulation.md) |
-| E4 – Pause-Protokoll | Standardisierte Exit-Strategie | Reduktion von Eskalationen, alternative Handlungsstrategie | [docs/entscheidungen/04_pause_als_exit_strategie.md](../../entscheidungen/04_pause_als_exit_strategie.md), [docs/intervention/pause_protokoll.md](../../intervention/pause_protokoll.md) |
+| E4 – Exit-Strategie Pause | Konzeption einer standardisierten Exit-Strategie | Handlungsalternative bei drohendem Kontrollverlust; dokumentiert, aber nicht mit der Zielperson eingeführt | [docs/entscheidungen/04_pause_als_exit_strategie.md](../../entscheidungen/04_pause_als_exit_strategie.md), [docs/intervention/pause_protokoll.md](../../intervention/pause_protokoll.md) |
 | E6 – Kleinschrittige Umsetzung | Jeweils eine Entscheidung (Standort ODER Design ODER nächster Schritt), eine Handlung, mind. eine weitere eingeladene Person | Handlungsfähigkeit stabilisieren, soziale Interaktion ermöglichen | [docs/entscheidungen/06_pfandprojekt_naechste_schritte.md](../../entscheidungen/06_pfandprojekt_naechste_schritte.md) |
 
 ## 4.3 Partizipation der Zielperson
@@ -94,7 +94,7 @@ X übernimmt im Projekt „Schulhof verschönern" eine **verantwortliche Rolle a
 | H8 – Frühe Eskalationssignale | E3b | aktiv geprüft |
 | H9 – Kooperationsbereitschaft als Ressource | T2, T5 | vorläufig gestützt |
 | H10 – Subjektive Rückmeldung | Partizipation, E3e | offen |
-| H11 – Aggression als Strategie bei Kontrollverlust | E4 (Pause-Protokoll) | offen |
+| H11 – Aggression als Strategie bei Kontrollverlust | E4 (Exit-Strategie Pause) | offen; hohe Steuerungsrelevanz, da direkt mit Eskalationsverhalten und Intervention E4 verknüpft |
 
 → Quelle: [docs/hypothesen.md](../../hypothesen.md)
 

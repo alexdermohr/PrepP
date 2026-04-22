@@ -94,7 +94,7 @@ Belegbar sichtbare Merkmale im Projektverlauf:
   → Quelle: [docs/entscheidungen/03_systemarchitektur_und_regulation.md](../../entscheidungen/03_systemarchitektur_und_regulation.md), [docs/hypothesen.md](../../hypothesen.md) (H7), [docs/tagebuch/03_tag_3.md](../../tagebuch/03_tag_3.md)
 - **Fehlende Einbindung relevanter Akteure** (Reinigungskräfte werden nicht vorab informiert; Schild wird am Tag 7 entsorgt) wirkt als struktureller Störfaktor.
   → Quelle: [docs/tagebuch/07_tag_7.md](../../tagebuch/07_tag_7.md)
-- **Vermittelnde Peer-Rolle (Y)** als unterstützender Umweltfaktor mit eigener Nebenfolge (mögliche Belastung von Y).
+- **Vermittelnde Peer-Rolle (Y)** als unterstützender Umweltfaktor.
   → Quelle: [docs/tagebuch/01_tag_1.md](../../tagebuch/01_tag_1.md), [docs/tagebuch/02_tag_2.md](../../tagebuch/02_tag_2.md), [docs/reflexion.md](../../reflexion.md)
 
 > [OFFEN] Eine formale ICF-Codierung dieser hemmenden Umweltfaktoren ist im vorhandenen ICF-Report nicht enthalten.

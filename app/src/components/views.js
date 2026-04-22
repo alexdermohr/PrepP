@@ -1,3 +1,24 @@
+const internalAssetFiles = import.meta.glob("../../../docs/**/*.{jpeg,jpg,png,webp,gif,pdf}", {
+  eager: true,
+  import: "default",
+});
+
+function normalizeAssetPath(path) {
+  const normalized = String(path || "").replace(/\\/g, "/");
+  const docsIndex = normalized.indexOf("/docs/");
+  if (docsIndex >= 0) {
+    return normalized.slice(docsIndex + 1);
+  }
+  return normalized.replace(/^(\.\.\/)+/, "");
+}
+
+const internalAssetUrlByPath = Object.fromEntries(
+  Object.entries(internalAssetFiles).map(([path, url]) => [
+    normalizeAssetPath(path),
+    url,
+  ]),
+);
+
 function resolveInternalMarkdownPath(url, contextPath) {
   if (
     !contextPath ||
@@ -39,6 +60,13 @@ function resolveInternalRef(url, contextPath) {
     path: resolvedPath,
     fragment,
   };
+}
+
+function resolveInternalAssetUrl(url, contextPath) {
+  const resolvedRef = resolveInternalRef(url, contextPath);
+  const normalizedPath = normalizeAssetPath(resolvedRef?.path || "");
+  if (!normalizedPath) return null;
+  return internalAssetUrlByPath[normalizedPath] || null;
 }
 
 function viewIdForDocPath(path) {
@@ -109,6 +137,9 @@ function renderInlineText(container, text, contextPath = null) {
         const isInternalMarkdownRef = !isExternalLike && /\.md($|#)/.test(url);
         const isInternalIcfHtmlRef =
           !isExternalLike && /\/icf-reports\/.+\.html$/.test(resolvedPath);
+        const internalAssetUrl = !isExternalLike
+          ? resolveInternalAssetUrl(url, contextPath)
+          : null;
 
         if (isInternalMarkdownRef || isInternalIcfHtmlRef) {
           const a = document.createElement("a");
@@ -126,6 +157,13 @@ function renderInlineText(container, text, contextPath = null) {
           a.title = canonicalRef;
           const targetViewId = viewIdForDocPath(resolvedRef.path);
           a.href = `#${targetViewId}?src=${encodeURIComponent(resolvedRef.path)}${resolvedRef.fragment ? '&frag=' + encodeURIComponent(resolvedRef.fragment) : ''}`;
+          container.appendChild(a);
+        } else if (internalAssetUrl) {
+          const a = document.createElement("a");
+          a.textContent = match[1];
+          a.href = internalAssetUrl;
+          a.target = "_blank";
+          a.rel = "noopener noreferrer";
           container.appendChild(a);
         } else {
           // Whitelist allowed external protocols
@@ -170,9 +208,11 @@ function renderEmptyState(root, text) {
   root.appendChild(p);
 }
 
-function sanitizeImageUrl(url) {
+function sanitizeImageUrl(url, contextPath = null) {
   if (!url) return null;
   if (url.startsWith("/images/")) return url;
+  const internalAssetUrl = resolveInternalAssetUrl(url, contextPath);
+  if (internalAssetUrl) return internalAssetUrl;
   try {
     const parsed = new URL(url);
     if (parsed.protocol === "http:" || parsed.protocol === "https:") {
@@ -276,8 +316,8 @@ const blockRenderers = {
     });
     container.appendChild(listEl);
   },
-  image: (b, container) => {
-    const safeUrl = sanitizeImageUrl(b.url);
+  image: (b, container, contextPath) => {
+    const safeUrl = sanitizeImageUrl(b.url, contextPath);
     if (!safeUrl) {
       const fallback = document.createElement("p");
       fallback.className = "meta";

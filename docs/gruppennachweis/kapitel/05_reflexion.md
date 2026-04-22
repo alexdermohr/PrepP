@@ -39,7 +39,7 @@ Arbeitsgrundlage für den Umbau: [komprimierte_zielstruktur.md](../komprimierte_
   | **C** | kein ausreichender Nachweis im dokumentierten Zeitraum |
 
 - **Kontrastprüfung:** Jede zentrale Deutung wird gegen mindestens eine Alternativerklärung gestellt (Stress-/Dysregulationsmodell, Frustrationsdynamik, situative Angebotsstruktur, ICF-/Kontextdeutung). Das gilt insbesondere für die Evidenzlage in [5.3](#53-evidenzlage-und-gegenhypothesen-je-entscheidung-e1e6).
-- **Adler als sekundäre Deutungsfolie:** Adlers Individualpsychologie (siehe [models/adler_individualpsychologie.md](../../../models/adler_individualpsychologie.md)) wird hier ausschließlich als Kontrastfolie eingesetzt, nicht als Leitmodell. Sie erscheint – wenn einschlägig – in einer eigenen Spalte der Evidenzlage (5.3) und wird stets mit einer Alternativdeutung gekoppelt. Primärrahmung der Maßnahmen in [Kapitel 4.4](04_zielsetzung_und_paedagogisches_handeln.md#44-fachliche-begründung-der-handlungsschritte).
+- **Kontrastfolie als Modellpool:** In 5.3 wird statt einer Einzelfolie ein rotierender Modellpool aus `models/` genutzt. Pro Entscheidung werden bewusst nur wenige, fokussierte Modelle benannt. Primärrahmung der Maßnahmen in [Kapitel 4.4](04_zielsetzung_und_paedagogisches_handeln.md#44-fachliche-begründung-der-handlungsschritte).
 - **Rückbindung an die Argumentationsschicht:** Die Schlussfolgerungen in [5.7](#57-schlussfolgerungen) spiegeln explizit die Aussagen A1 (Projektrolle), A8 (Partizipation) und A10 (systemische Vollständigkeit) aus [mapping/argumentationsschicht.md](../mapping/argumentationsschicht.md). Die dort dokumentierten Gegenhypothesen und begründeten Entscheidungen bleiben als Prüflatte erhalten; Kapitel 5 liefert die empirische Oberfläche dieser Abwägungen.
 - **Keine Kausalitätsaussagen möglich.** Alle Zusammenhänge in Kapitel 5 (z. B. Partizipation ↔ Selbstständigkeit, Kleinschrittigkeit ↔ Engagement, Konsequenz ↔ Kontakterhalt) beschreiben **Ko-Occurrence und Korrelation** im vorliegenden Einzel-Setting – keine Kausalbeziehungen. Dafür fehlen Kontrollbedingungen, Baseline-Daten (Verhalten von X außerhalb des Projekts) und Vergleichsgruppen. Der Nachweis macht diese Grenze sichtbar; er übersteigt sie nicht.
 
@@ -51,7 +51,7 @@ Arbeitsgrundlage für den Umbau: [komprimierte_zielstruktur.md](../komprimierte_
 - [docs/feedback/*.md](../../feedback/01_feedback_zielperson.md) – Perspektive der Zielperson
 - [docs/tagebuch/*.md](../../tagebuch/00_vorlauf.md) – chronologische Evidenz
 - [docs/beobachtungen/03_pause_und_pfandprojekt_beobachtungsraster.md](../../beobachtungen/03_pause_und_pfandprojekt_beobachtungsraster.md) – Raster für Wirkungsprüfung
-- [models/adler_individualpsychologie.md](../../../models/adler_individualpsychologie.md) – heuristische Kontrastfolie
+- [models/index.md](../../../models/index.md) – Modellpool für die Kontrastfolie in 5.3
 
 ## Interpretationsprüfung
 
@@ -107,6 +107,8 @@ Arbeitsgrundlage für den Umbau: [komprimierte_zielstruktur.md](../komprimierte_
 
 Legende Zwischenurteil (textbasiert, im dokumentierten Zeitraum): **(A)** belastbare Hinweise · **(B)** gemischte Evidenz · **(C)** nicht ausreichend belegt.
 
+**Modellpool (gesamt):** siehe [models/index.md](../../../models/index.md) als zentrale Übersicht des Modellbestands und der Leitfragen. In 5.3 werden daraus je Entscheidung nur einschlägige Kontrastmodelle ausgewählt.
+
 ### E1 – Konsequenzen setzen (Aussetzung von Sonderaktionen)
 
 | Feld | Inhalt |
@@ -116,7 +118,7 @@ Legende Zwischenurteil (textbasiert, im dokumentierten Zeitraum): **(A)** belast
 | **Intervention** | Vorübergehende Aussetzung von Sonderaktionen nach Regelverstoß. |
 | **Beobachtete Kurzzeitwirkung** | Rückkehr in den Kontakt und Entschuldigungen im weiteren Verlauf (Tag 1, 7). Keine messbare Reduktion erneuter lautstarker Ausfälle im Zeitraum (Eskalation Tag 4). → [docs/tagebuch/07_tag_7.md](../../tagebuch/07_tag_7.md), [docs/tagebuch/04_tag_4.md](../../tagebuch/04_tag_4.md) |
 | **Alternativerklärungen** | (a) Rückkehr erfolgt aus Beziehungsbedürfnis/Bindung, nicht aus Konsequenzlogik. (b) Aussetzung wirkt eher als Stressor denn als Regulationssignal. (c) Die kurze Beobachtungsdauer erlaubt kein kausales Urteil. |
-| **Adler-Kontrastfolie (heuristisch)** | Lesbar als Sicherungstendenz: Aussetzung kann als Bedrohung des Einflusses erlebt werden; Wirkung hängt davon ab, ob Kooperation als Rückweg zur Zugehörigkeit offenbleibt. Gegenfolie: reine Stressreaktion ohne Zielbezug. |
+| **Kontrastfolie (Modelle)** | **Operante Konditionierung**: kurzfristige Unterbrechung ≠ langfristige Verhaltensänderung. **Frustrations-Aggressions-Modell**: Blockierte Ziele können Ausbrüche verstärken statt dämpfen. |
 | **Zwischenurteil** | **(C)** – Verbindlichkeit im Kontakt bleibt; kein systematischer Wirkungsnachweis im dokumentierten Zeitraum. |
 | **Nachweislücke** | Kein Vorher-Nachher-Vergleich über mehr als eine Episode. |
 | **Was fehlt** | Mindestens zwei vergleichbare Grenzverletzepisoden mit und ohne vorab eingeführter Konsequenzankündigung. Beobachtungsraster, das Eskalationsfrequenz vor und nach E1 systematisch vergleicht. |
@@ -131,7 +133,7 @@ Legende Zwischenurteil (textbasiert, im dokumentierten Zeitraum): **(A)** belast
 | **Intervention** | Pfandmülleimer intern statt außen platzieren. |
 | **Beobachtete Kurzzeitwirkung** | Mülleimer mit Pfandschild am Tag 6 sichtbar aufgestellt (sichtbares Produkt). Am Tag 7 durch Reinigungskräfte entsorgt → Systemebene nicht eingebunden. → [docs/tagebuch/06_tag_6.md](../../tagebuch/06_tag_6.md), [docs/tagebuch/07_tag_7.md](../../tagebuch/07_tag_7.md) |
 | **Alternativerklärungen** | (a) Der Umsetzungserfolg bis Tag 6 stammt aus Materialverfügbarkeit, nicht aus dem Standort. (b) Das Scheitern an Tag 7 ist unabhängig vom Standort; es ist ein Kommunikationsversäumnis. |
-| **Adler-Kontrastfolie** | Nicht einschlägig (strukturelle Entscheidung, keine Beziehungsdynamik). |
+| **Kontrastfolie (Modelle)** | **Ökologische Systemtheorie (Bronfenbrenner)**: Erfolg hängt von der Kopplung mehrerer Systemebenen ab. **Systemische Zirkularität**: Tag 7 zeigt Rückkopplungsschleifen zwischen Team, Reinigung und Setting. |
 | **Zwischenurteil** | **(B)** – Standort erlaubte Umsetzung bis zum sichtbaren Produkt; Systemfehler am Tag 7 liegt außerhalb der Standortentscheidung. |
 | **Nachweislücke** | Keine belastbare Aussage zur Motivationswirkung auf X (Prüfkriterium aus E2 nicht ausgewertet). |
 
@@ -144,7 +146,7 @@ Legende Zwischenurteil (textbasiert, im dokumentierten Zeitraum): **(A)** belast
 | **Intervention** | Temporäre Einschränkung konkurrierender Parallelangebote. |
 | **Beobachtete Kurzzeitwirkung** | Ab Tag 4 kehrt X in die Projektlogik zurück (Einkauf, Gestaltung). Ob ursächlich Exklusivität oder Themenattraktivität, ist nicht trennbar. |
 | **Alternativerklärungen** | (a) Die Rückkehr folgt dem Einstieg in eine konkret attraktive Teilhandlung (Einkauf mit Pfanderlös). (b) Stimmungslage / Tagesform erklärt die Verbindlichkeit. |
-| **Adler-Kontrastfolie** | Wegfall konkurrierender Angebote kann als Schutz der Zielbindung gelesen werden; ebenso aber als Einschränkung von Handlungsspielräumen. Gegenfolie: reine Verfügbarkeits-/Opportunitätsdynamik. |
+| **Kontrastfolie (Modelle)** | **Selbstbestimmungstheorie**: weniger Alternativen kann Verbindlichkeit erhöhen, aber Autonomie drücken. **Prep-Planung**: tragfähig ist der Schritt nur, wenn X weiterhin gestaltende Entscheidungen trifft. |
 | **Zwischenurteil** | **(B)** – punktuelle Stützung des Musters, keine systematische Prüfung. H7 bleibt „fraglich". |
 | **Nachweislücke** | Kein dokumentiertes Vergleichsintervall mit/ohne Exklusivität. |
 
@@ -157,7 +159,7 @@ Legende Zwischenurteil (textbasiert, im dokumentierten Zeitraum): **(A)** belast
 | **Intervention** | Bei ersten verbalen Kippsignalen sofortige Umlenkung (Aufgabe, Bewegung). |
 | **Beobachtete Kurzzeitwirkung** | Nicht systematisch getestet; Eskalation Tag 4 trat trotz Vorläufern auf. |
 | **Alternativerklärungen** | (a) Frühsignale waren nicht eindeutig genug erkennbar. (b) Arousal-Dynamik war bereits jenseits der Regulierbarkeit. |
-| **Adler-Kontrastfolie** | Umlenkung als Angebot, Kompetenz zu zeigen, statt Unterlegenheit zu erleben; Gegenfolie: Dysregulation im transaktionalen Stressmodell. |
+| **Kontrastfolie (Modelle)** | **Stresstoleranzfenster**: bei Übererregung greift Gesprächslogik oft nicht mehr. **Lazarus (transaktionales Stressmodell)** + **Emotionsregulation (Gross)**: Re-Appraisal und frühe Prozessunterbrechung müssen vor dem Kipppunkt ansetzen. |
 | **Zwischenurteil** | **(C)** – Wirkungsnachweis offen; Prüfstruktur existiert im Beobachtungsraster, ist aber nicht ausgefüllt. |
 | **Nachweislücke** | Keine Kopplung Signal → Reaktion → Ergebnis im Verlauf. |
 | **Was fehlt** | Systematische Kopplung von Vorläufersignal (Wort, Ton, Körpersprache) und beobachteter Reaktion der Fachkraft sowie Verlauf der nächsten 5–10 Minuten. Mindestens drei Vergleichsepisoden (Umlenkung durchgeführt / nicht durchgeführt / zu spät). |
@@ -172,7 +174,7 @@ Legende Zwischenurteil (textbasiert, im dokumentierten Zeitraum): **(A)** belast
 | **Intervention** | Stellvertretende bzw. gemeinsame Gesprächsführung mit Beteiligung von X. |
 | **Beobachtete Kurzzeitwirkung** | X bleibt in einzelnen Situationen physisch präsent, aber leise/abgewandt; kein messbarer Zuwachs an eigenem Redeanteil im Zeitraum. |
 | **Alternativerklärungen** | (a) Präsenz ist an Beziehung zu T./A. gebunden, nicht an Scaffolding-Form. (b) Sprachlich-akustische Hürden (Hörgerät, b2309) überlagern den sozialen Effekt. |
-| **Adler-Kontrastfolie** | Scaffolding als Entlastung des Minderwertigkeitsdrucks und Angebot zum Kompetenzerleben; Gegenfolie: Hör- bzw. Aktivierungs­hürden. |
+| **Kontrastfolie (Modelle)** | **Bindungstheorie**: Ko-Regulation über verlässliche Bezugspersonen erleichtert Präsenz. **Erikson (psychosoziale Entwicklung)**: soziale Rolle und Kompetenzgefühl in formellen Situationen bleiben entwicklungsrelevant. |
 | **Zwischenurteil** | **(B)** – H2 „aktiv geprüft", Wirkung noch nicht quantifiziert. |
 | **Nachweislücke** | Keine Operationalisierung (Lautstärke, Redeanteil, Blickkontakt). |
 
@@ -185,7 +187,7 @@ Legende Zwischenurteil (textbasiert, im dokumentierten Zeitraum): **(A)** belast
 | **Intervention** | Regeln explizit vorab in ruhiger Phase besprechen. |
 | **Beobachtete Kurzzeitwirkung** | Nicht systematisch getestet im dokumentierten Zeitraum. |
 | **Alternativerklärungen** | (a) Die Grenzüberschreitung Tag 4 folgt einer spezifischen Konstellation (Verbalabwertung), nicht einem Regelwissensdefizit. |
-| **Adler-Kontrastfolie** | Vorab-Klärung reduziert Gesichtsverlustrisiko im Konflikt; Gegenfolie: reine Stress-/Arousal-Entscheidung. |
+| **Kontrastfolie (Modelle)** | **Attributionstheorie**: schützt vor vorschneller Absichtszuschreibung („will provozieren“). **ABC/SORKC**: macht sichtbar, welche Auslöser und Konsequenzen Eigentumskonflikte stabilisieren. |
 | **Zwischenurteil** | **(C)** – Wirkungsnachweis offen. |
 | **Nachweislücke** | Keine Prä-/Post-Vergleichssituation. |
 | **Was fehlt** | Mindestens eine dokumentierte Situation, in der Eigentumsregeln vorab besprochen wurden, gefolgt von einer vergleichbaren Konfliktkonstellation. Protokollnotiz über Zeitpunkt und Inhalt des Vorab-Gesprächs. |
@@ -200,7 +202,7 @@ Legende Zwischenurteil (textbasiert, im dokumentierten Zeitraum): **(A)** belast
 | **Intervention** | Feedback als eigene Quelle erheben, Form markieren. |
 | **Beobachtete Kurzzeitwirkung** | Zwei Erhebungen liegen vor; Antworten kurz, z. T. widersprüchlich zu Verhalten (z. B. „Beleidigungen angebracht: ja" vs. Entschuldigungsverhalten). |
 | **Alternativerklärungen** | (a) Antwortverhalten spiegelt Befragungsformat (offene Einzelfragen) statt echter Einstellung. (b) Tagesform dominiert die Antwort. |
-| **Adler-Kontrastfolie** | Nicht einschlägig (Methodik). |
+| **Kontrastfolie (Modelle)** | **Big Five**: Antwortstil kann durch soziale Erwünschtheit/Verträglichkeit verzerrt sein. **Attributionstheorie**: Selbstdeutungen von X müssen gegen beobachtetes Verhalten gegengeprüft werden. |
 | **Zwischenurteil** | **(B)** – Feedback ist vorhanden, aber in Form und Frequenz nicht steuerungsreif. |
 | **Nachweislücke** | Skalen-/Auswahlformate, mehr Erhebungstage. |
 
@@ -213,10 +215,10 @@ Legende Zwischenurteil (textbasiert, im dokumentierten Zeitraum): **(A)** belast
 | **Intervention** | Standardisiertes Pause-Protokoll dokumentiert, **nicht** mit X eingeführt. → [docs/intervention/pause_protokoll.md](../../intervention/pause_protokoll.md) |
 | **Beobachtete Kurzzeitwirkung** | Keine, da nicht eingeführt. |
 | **Alternativerklärungen** | Bei späterer Einführung zu prüfen: Arousal-Regulation (Stressfenster), Gruppendynamik, Reizentzug. |
-| **Adler-Kontrastfolie** | Pause als Schutz vor erneuter Minderwertigkeits- bzw. Gesichtsverlustlage – funktional nur, wenn sie nicht als Ausschluss erlebt wird. |
+| **Kontrastfolie (Modelle)** | **Yerkes-Dodson**: Ziel ist Leistungs-/Regulationsrückkehr aus Überaktivierung. **Adler (Individualpsychologie)**: Pause wirkt nur, wenn sie als Selbststeuerung statt Ausschluss erlebt wird. |
 | **Zwischenurteil** | **(C)** – Wirkung nicht prüfbar im dokumentierten Zeitraum. |
 | **Nachweislücke** | Vorstellung bei X, Beobachtungsraster ausfüllen. |
-| **Was fehlt** | Einführung der Exit-Strategie bei X mit dokumentiertem Gespräch über Zweck und Nutzung. Mindestens eine belegte Nutzungsepisode mit Verlaufsnotiz (Eskalation verhindert / aufgehalten / ohne Effekt). Unterscheidung: Hat X die Pause als Handlungsoption verstanden oder als Ausschluss wahrgenommen (Adler-Kontrastfolie)? |
+| **Was fehlt** | Einführung der Exit-Strategie bei X mit dokumentiertem Gespräch über Zweck und Nutzung. Mindestens eine belegte Nutzungsepisode mit Verlaufsnotiz (Eskalation verhindert / aufgehalten / ohne Effekt). Unterscheidung: Hat X die Pause als Selbststeuerungsoption verstanden oder als Ausschluss wahrgenommen (Yerkes-Dodson + Adler)? |
 | **Was deshalb nicht behauptet werden darf** | Dass E4 im vorliegenden Zeitraum als Handlungsalternative zur Aggression wirksam war – das Protokoll existiert, die Praxis nicht. Dass H11 (Aggression bei Kontrollverlust ↔ Pausenstrategie als Gegenmittel) gestützt ist. Dass das Fehlen einer Eskalation bei späterem Einsatz kausal auf E4 zurückgeht, solange keine Kontrollbedingung vorliegt. |
 
 ### E6 – Kleinschrittige Umsetzung
@@ -228,7 +230,7 @@ Legende Zwischenurteil (textbasiert, im dokumentierten Zeitraum): **(A)** belast
 | **Intervention** | Kleinschrittige Takte in den Phasen 3–4. |
 | **Beobachtete Kurzzeitwirkung** | Umsetzung bis Tag 6 sichtbar gelungen (Standort, Einkauf, Beschriftung). Vermittlung durch Y wiederkehrend wirksam. |
 | **Alternativerklärungen** | (a) Erfolge stammen aus Themenattraktivität (Handlung/Wirtschaft), nicht aus Taktung. (b) Die Begleitung durch T./A. trägt den Takt. |
-| **Adler-Kontrastfolie** | Kleinschrittigkeit ermöglicht Kompetenz- und Zugehörigkeitserfahrung ohne Überforderung; Gegenfolie: schlicht angepasste Aufgabendosierung aus dem Stressfenster-Modell. |
+| **Kontrastfolie (Modelle)** | **Maslow**: Kleinschrittigkeit stabilisiert Sicherheits- und Kompetenzerleben als Basis für Mitarbeit. **Prep-Planung**: ein klarer Mikro-Schritt mit echter Mitentscheidung erhöht Umsetzungswahrscheinlichkeit. |
 | **Zwischenurteil** | **(A)** – mehrfach belegte Zielannäherung in T4 („Selbstständigkeit und Organisation"), mit offener Trennung gegenüber Themen- und Beziehungsfaktoren. |
 | **Nachweislücke** | Vergleich mit „größerem Schritt" fehlt systematisch. |
 

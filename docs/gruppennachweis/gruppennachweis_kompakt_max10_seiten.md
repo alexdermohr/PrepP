@@ -1,17 +1,24 @@
 # Gruppennachweis (komprimierte Fassung, max. 10 Seiten)
 
 ## 1) Thema und Leitidee
-Das Projekt **„Schulhof verschönern mit X“** nutzt ein reales Gestaltungsvorhaben, damit X über **verantwortliche Mitwirkung** Selbstwirksamkeit und soziale Kooperation praktisch erprobt. Die ursprünglich größere Leitungsrolle wurde auf eine tragfähige Mitwirkungsrolle reduziert.
+Das Projekt **„Schulhof verschönern mit X“** ist ein schulisches Gemeinschaftsvorhaben, in dem X durch eine verantwortliche Mitwirkungsrolle Selbstwirksamkeit, soziale Kooperation und Selbstständigkeit praktisch erprobt. Ausgangspunkt ist die Beobachtung, dass X in handlungsnahen Situationen mehr Initiative, Ausdauer und Stabilität zeigt als in formell oder sozial exponierten Situationen.
 
-Leitannahme: X ist in handlungsnahen Aufgaben deutlich stabiler als in formeller sozialer Exposition; daher erfolgt Förderung über **konkrete Handlung, Beteiligung und Rückmeldung**.
+Im Verlauf wurde die zunächst größer gedachte Leitungsrolle auf eine tragfähige Mitwirkungsrolle reduziert. Dadurch blieb der Anspruch erhalten, X sichtbar zu beteiligen, ohne ihn durch zu hohe soziale oder organisatorische Anforderungen zu überfordern.
+
+Kern der Umsetzung ist ein konkreter, sichtbarer Schulbeitrag: ein Pfandmülleimer in der Insel. Das Projekt verbindet damit praktische Handlung, Beteiligung und Rückmeldung. Es ist kein isoliertes Training, sondern ein realer Anlass, an dem X Verantwortung übernehmen, Entscheidungen mitgestalten und soziale Rückmeldung erfahren kann.
+
+Leitannahme: Förderung gelingt hier vor allem über **Handlung → Beteiligung → Rückmeldung**.
 
 ## 2) Funktionaler Kontext und Zeitraum
-Für die Wirkungsdeutung sind drei Rahmenbedingungen entscheidend:
-- **multiprofessionelles Setting** mit mehreren, teils parallel wirkenden Akteuren,
-- **Insel als kontrollierter Handlungsraum** für Umsetzungsschritte,
-- **kurzer Beobachtungszeitraum** (Vorlauf + 7 Tage; ICF 04.04.2026; Feedback 07./08.04.2026).
+Das Projekt fand im schulischen Alltag im Bereich der Insel statt und war in reguläre Abläufe eingebettet (Pausenzeiten, Übergänge, punktuelle Begleitung durch pädagogische Fachkräfte). Die Umsetzung erfolgte nicht isoliert, sondern im sozialen Feld mit Mitschülern sowie situativ variierender Aufmerksamkeit und Beteiligung anderer.
 
-Diese Bedingungen begrenzen Kausalität, erklären aber, warum kleinschrittige Steuerung zentral wurde.
+Die Aufgabenstruktur war konkret und handlungsorientiert (Planung, Mitentscheidung und Umsetzung eines Pfandmülleimers). Anforderungen ergaben sich sowohl aus der Tätigkeit selbst (Organisation, Umgang mit Ressourcen, Durchhalten von Handlungsschritten) als auch aus der sozialen Einbettung (Abstimmung, Sichtbarkeit, situative Erwartungen).
+
+X war als verantwortlicher Mitwirkender eingebunden. Der Grad an Selbststeuerung variierte je nach Situation und Unterstützungsangebot.
+
+Der dokumentierte Zeitraum umfasst die Projektplanung, mehrere Umsetzungsphasen sowie begleitende Beobachtungen im Alltag. Die Datengrundlage besteht aus fortlaufenden Beobachtungen und tagebuchartigen Einträgen, die zeitnah zum Geschehen erstellt wurden.
+
+Nicht durchgängig kontrolliert sind situative Einflussfaktoren wie Tagesform, Gruppendynamik oder spontane Ereignisse im Schulalltag. Diese Variabilität ist Teil des Kontextes und wird in der späteren Auswertung berücksichtigt.
 
 ## 3) Zielperson X: Profil, Ressourcen, Entwicklungsbedarfe
 ### Verdichtetes Funktionsprofil (P1–P5)

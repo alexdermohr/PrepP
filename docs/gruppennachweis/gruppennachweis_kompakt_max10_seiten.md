@@ -255,6 +255,37 @@ Kapitel 6 dient als:
 Im Unterschied zu Kapitel 5 leistet Kapitel 6 keine abschließende Wirkungsbewertung, sondern macht die offene Evidenzstruktur transparent.
 
 ## 7) Komprimiertes Fazit
-Klar gestützt im dokumentierten Zeitraum ist vor allem **handlungsnahe Selbstständigkeit** (T4/E6). Für Selbstwirksamkeit, sozialen Umgang und Gemeinschaft liegen **partielle** Fortschritte vor (T1/T2/T5). Für formellen sprachlichen Auftritt (T3) fehlt noch ein belastbarer Nachweis.
+### 7.1 Ergebnis in einem Satz
+Das Projekt zeigt im dokumentierten Zeitraum eine **klar belegbare Wirkung in der handlungsnahen Selbstständigkeit** von X; soziale und selbstbezogene Entwicklungsziele sind **teilweise erreicht**, während der formelle sprachliche Auftritt **noch nicht belastbar nachgewiesen** ist.
 
-Nächster sinnvoller Schritt: **kleinschrittig und partizipativ weiterarbeiten**, gleichzeitig systemische Abstimmung und Nachweisqualität erhöhen.
+### 7.2 Verdichtete Ergebnisbilanz (A/B/C)
+- **Belastbar gestützt (A):**
+  - **T4 Selbstständigkeit/Organisation** durch mehrfach dokumentierte eigenständige Teilschritte (Planung, Preisvergleich, Einkauf, Beschriftung, Umsetzung).
+  - Entscheidungsseitig vor allem **E6 Kleinschrittigkeit** als wiederkehrend stabilisierender Faktor.
+  - **Epistemische Einordnung:** Die A-Einstufung bezieht sich auf wiederholt beobachtbare **Performanz unter strukturierten Bedingungen**; ein kontextunabhängiger Kompetenz-, Transfer- oder Persistenznachweis liegt derzeit nicht vor.
+- **Teilweise gestützt (B):**
+  - **T1 Selbstwirksamkeit**, **T2 Peer-Interaktion**, **T5 Gemeinschaftserfahrung** zeigen Fortschritte, bleiben aber stark situations- und systemabhängig.
+  - Entscheidungsseitig **E2 Standort „Insel“** und Teile von **E3 Systemregulation** mit plausibler, aber nicht trennscharf isolierbarer Wirkung.
+- **Nicht ausreichend gestützt (C):**
+  - **T3 Sprachlicher Ausdruck in formeller Exposition**.
+  - **E1 Konsequenzsetzung** und **E4 Exit-Strategie Pause** ohne hinreichend belastbaren Wirknachweis im dokumentierten Zeitraum.
+
+### 7.3 Was dieses Ergebnis bedeutet
+Die Daten sprechen dafür, dass X vor allem dann **situativ stabil performt**, wenn Förderung in **konkrete Handlung**, **reale Mitentscheidung** und **sichtbare Rückmeldung** übersetzt wird. Genau dort werden Initiative, Ausdauer und Sorgfalt wiederholt beobachtbar.
+
+Gleichzeitig zeigen die Quellen eine klare Grenze: Sobald Anforderungen stärker formell, hierarchisch oder konflikthaft werden, nimmt die Stabilität ab. Damit ist nicht widerlegt, dass Entwicklung in diesen Bereichen möglich ist – es ist nur noch nicht ausreichend gezeigt.
+
+### 7.4 Grenzen der Aussagekraft (explizit)
+- Keine belastbare Kausalzuordnung zu Einzelmaßnahmen (fehlende Baseline, keine Vergleichsbedingungen mit/ohne Maßnahme).
+- Hohe Kontextabhängigkeit (Tagesform, Beziehung, Parallelangebote, Systementscheidungen).
+- Feedback der Zielperson ist wichtig, aber in der vorliegenden Form zu knapp für eine alleinige Wirkbewertung.
+
+### 7.5 Prioritäten für den nächsten Nachweiszyklus
+1. **T3 gezielt messbar machen:** pro Woche mindestens zwei formelle Gesprächssituationen mit standardisiertem Kurzrating (Lautstärke, Redeanteil, Verständlichkeit, Kontaktaufnahme).
+2. **E1/E4 prüfbar vergleichen:** vergleichbare Situationen mit und ohne definierte Grenz- bzw. Pausenstrategie dokumentieren.
+3. **Systemabstimmung absichern:** relevante Akteure (z. B. Reinigungskräfte, Parallelangebote) verbindlich einbinden, um Kontextabbrüche wie Tag 7 zu reduzieren.
+4. **Partizipation seriell erfassen:** je Einheit weiterhin „gestaltende Entscheidung + sichtbare Rückmeldung“ protokollieren.
+5. **Beobachtung vs. Interpretation strikt trennen:** jede Wirkungsbehauptung im Format „Situation → Verhalten → Maßnahme → Gegenhypothese → Evidenzurteil (A/B/C)“ festhalten.
+
+### 7.6 Schlussformel
+Der Nachweis ist **inhaltlich tragfähig**, weil er Wirkung als Muster im Verlauf zeigt und seine Grenzen offenlegt. Der nächste Entwicklungsgewinn liegt nicht primär in neuen Maßnahmen, sondern in **konsequenter Fortführung der wirksamen Struktur (kleinschrittig + partizipativ)** und in einer **methodisch schärferen Prüfung** der bislang offenen Wirkfelder.

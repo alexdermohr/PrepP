@@ -57,31 +57,57 @@ X bewertet das Projekt insgesamt positiv („gut“), Rückmeldungen bleiben jed
 
 ## 4) Zielsetzung und pädagogisches Handeln
 ### Übergeordnetes Ziel
-X soll über reale Projektmitwirkung Selbstwirksamkeit, Kooperation und Verantwortung aufbauen; parallel entsteht ein sichtbarer Schulbeitrag.
+X soll im Projekt „Schulhof verschönern“ eine **verantwortliche Mitwirkungsrolle** übernehmen. Die ursprünglich größer gedachte Leitungsrolle wurde im Verlauf reduziert, damit die Beteiligung realistisch, stabil und anschlussfähig bleibt. Pädagogischer Kern ist: **sichtbare Handlung + reale Mitentscheidung + soziale Rückmeldung**.
 
-### Teilziele T1–T5
-- **T1:** Selbstwirksamkeit/Selbstvertrauen im eigenen Handlungsanteil
-- **T2:** gleichwürdige Peer-Interaktion
-- **T3:** sprachlicher Ausdruck in Exposition
-- **T4:** Selbstständigkeit/Organisation
-- **T5:** Gemeinschaftserfahrung über soziale Rückmeldung und Systemeinbindung
+### Teilziele und prüfbare Indikatoren
+- **T1 Selbstwirksamkeit/Selbstvertrauen:** X bringt eigene Vorschläge ein, die im Projekt sichtbar werden; in exponierten Situationen bleibt er im Kontakt.
+- **T2 Gleichwürdige Peer-Interaktion:** X hält Kooperation mit Mitschülern über Handlungsschritte aufrecht und findet nach Konflikten in den Kontakt zurück.
+- **T3 Sprachlicher Ausdruck in Exposition:** X formuliert Anliegen gegenüber Erwachsenen verständlich; Redeanteil/Lautstärke sind in mehreren formellen Situationen beobachtbar.
+- **T4 Selbstständigkeit/Organisation:** X übernimmt Teilschritte (Planung, Preisvergleich, Einkauf, Beschriftung) ohne direkte Steuerung.
+- **T5 Gemeinschaftserfahrung:** X reagiert auf Rückmeldungen zum gemeinsamen Ergebnis (z. B. Kommentare, Nutzung, Anerkennung) und bleibt in die soziale Umsetzung eingebunden.
 
-### Vorgehen in Phasen
-1. Planung/Genehmigung
-2. Umfrage/Peer-Ideen
-3. Konkretisierung
-4. Material & Umsetzung
-5. Reflexion
+### Vorgehen in fünf Phasen
+1. **Planung/Genehmigung:** Frageliste, Vorabklärung mit Erwachsenen, erste Projektstruktur.
+2. **Umfrage/Peer-Ideen:** Mitschüler einbeziehen, Projektidee sozial anschlussfähig machen.
+3. **Konkretisierung:** Standort- und Designentscheidungen, Priorisierung der nächsten Schritte.
+4. **Material/Umsetzung:** Pfand sammeln, Einkauf, Beschriftung, Aufstellung.
+5. **Reflexion:** Rückblick, Feedback, Ableitung von Folgeaufgaben.
 
-### Zentrale Entscheidungen
-- **E1:** Konsequenzsetzung bei Regelbruch
-- **E2:** Standort „Insel“ statt Außenbereich
-- **E3 Systemregulation:** Exklusivität, Frühintervention, Scaffolding, Vorab-Regeln, Feedbackspiegelung
-- **E4:** Exit-Strategie Pause (konzeptionell vorbereitet)
-- **E6:** Kleinschrittigkeit (eine Teilentscheidung + eine Handlung pro Einheit)
+### Entscheidungslogik (E1–E6)
+- **E1 Konsequenzsetzung:** Sonderaktionen werden bei Regelbruch temporär ausgesetzt, um Verbindlichkeit sichtbar zu machen.
+- **E2 Standort „Insel“:** Kontrollierbarer Ort statt Außenbereich, um Komplexität zu reduzieren.
+- **E3a Exklusivität:** Parallelangebote zeitweise begrenzen, um Projektbindung zu stabilisieren.
+- **E3b Frühintervention:** Kippsignale früh bearbeiten, bevor Eskalation entsteht.
+- **E3c Scaffolding:** Formelle Situationen mit dosierter Unterstützung begleiten.
+- **E3d Vorab-Regeln:** Eigentums-/Nutzungsregeln in ruhigen Situationen vorab klären.
+- **E3e Feedbackspiegelung:** subjektive Rückmeldungen gegenprüfen, um Einseitigkeit zu reduzieren.
+- **E4 Exit-Strategie Pause:** Als Handlungsalternative bei drohendem Kontrollverlust konzipiert und dokumentiert; im Zeitraum nur begrenzt praktisch erprobt.
+- **E6 Kleinschrittigkeit:** Pro Einheit eine gestaltende Entscheidung + eine konkrete Handlung + soziale Einladung.
 
-### Partizipation als Prinzip
-Partizipation wurde über reale Mitentscheidungen und Rückmeldung operationalisiert; in den Umsetzungsphasen traf X zentrale Gestaltungsentscheidungen (Standort, Design, Beschriftung).
+### Partizipation als Umsetzungsprinzip
+Partizipation wurde nicht nur behauptet, sondern operationalisiert: Eine Einheit gilt als partizipativ, wenn X **eine gestaltende, nicht vollständig vorstrukturierte Entscheidung** trifft und seine **Rückmeldung** im Verlauf sichtbar berücksichtigt wird. Im Projektverlauf zeigen besonders Tag 4–6 hohe partizipative Dichte (Standort, Farbe, Spruch, Beschriftung, Verwendung des Pfanderlöses).
+
+### Fachliche Begründung der Maßnahmen (kompakt)
+- Handlungsnahe Aufgaben wurden gewählt, weil sie im Beobachtungszeitraum wiederholt mit stabilerem Verhalten und Eigeninitiative einhergehen.
+- Formelle Exposition wurde nicht vermieden, sondern über Scaffolding dosiert, um Rückzug zu reduzieren.
+- Grenzsetzungen wurden vorab strukturiert, damit Konfliktmomente nicht erst in der Eskalation geregelt werden.
+- Kleinschrittigkeit wurde als Schutz gegen Überforderung und als Ermöglicher für tatsächliche Beteiligung eingesetzt.
+- Die Deutungen bleiben kontrastpflichtig: Tagesform, Beziehungswirkung, Themenattraktivität und Systembedingungen bleiben plausible Alternativerklärungen.
+
+### Messlogik und Datenspur (für die Prüfbarkeit)
+Die Indikatoren gelten nur dann als „beobachtet“, wenn sie an **konkrete Situationen** und **konkrete Quellenstellen** gebunden sind:
+- **Datenquellen:** Tagebuch (Vorlauf/Tag 1–7), Beobachtungen, Entscheidungen, Feedback.
+- **Minimalregel pro Indikator:** mind. 2 belegte Situationen im Material ODER 1 Situation + 1 Gegenbeleg/Spannungsfall.
+- **Nachweisform:** „Situation → beobachtbares Verhalten → Zuordnung zu Teilziel (T1–T5)“.
+
+Exemplarische Datenspur:
+- **T1:** Tag 4/5/6 – eigene Projektentscheidungen (Pfanderlös, Farbwahl, Spruch) werden umgesetzt.
+- **T2:** Tag 1 – Peer-Ideenaufnahme/Kompromiss; Tag 4/7 – Konflikt und Rückkehr/Entschuldigung als Spannungsfall.
+- **T3:** formelle Situationen (K, Hausmeister, Holzwerker) mit beobachtbarer Lautstärke/Initiative; aktuell mit begrenzter Evidenz.
+- **T4:** Tag 4 und 6 – Preisvergleich, Einkauf, Beschriftung als selbstständig ausgeführte Teilschritte.
+- **T5:** Tag 6/7 – sichtbares Gemeinschaftsergebnis und Reaktionen im Umfeld (inkl. Systembruch als Gegenbeleg).
+
+**Abgrenzung dieses Kapitels:** Kapitel 4 begründet Ziele und Maßnahmen (Hypothese → Entscheidung → Wirkindikator). Die eigentliche Wirkungsbewertung (A/B/C) erfolgt zentral in Kapitel 5.
 
 ## 5) Reflexion: Zielerreichung und Evidenz
 ### Teilziel-Bilanz

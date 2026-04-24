@@ -188,19 +188,71 @@ Begrenzt bzw. unklar bleibt die Wirkung dort, wo Maßnahmen nicht stabil umgeset
 Nachweisbar ist Wirkung als **Muster im Verlauf** (insb. bei E6), nicht als eindeutige Ursache einzelner Maßnahmen.
 
 ## 6) Abweichungen und offene Nachweise
-### Wichtige Prozessabweichungen
-- Tag 3: Ausweichen in Parallelangebot.
-- Tag 4: Eskalation trotz positiver Vorphase.
-- Tag 7: Entsorgung des Pfandschilds (Systemebene nicht eingebunden).
+### 6.1 Prozessabweichungen im Verlauf
+**Tag 3 – Wechsel in Parallelangebot (Systemkonkurrenz)**
+- **Beobachtung:** X beendet die begonnene Projekteinheit und wechselt in ein bekanntes Parallelangebot mit einer anderen Fachkraft.
+- **Einordnung:** Das passt zum dokumentierten Muster, dass bei Konkurrenz zwischen neuem Projekt und vertrautem Angebot eher das vertraute Setting gewählt wird.
+- **Kontrast:**
+  - **Deutung A:** Systemkonkurrenz (H7) beeinflusst die Entscheidung.
+  - **Deutung B:** Die Entscheidung ist situationsbedingt (z. B. Beziehung, Tagesform).
+- **Status:** illustriert H7, aber im Zeitraum nicht systematisch geprüft.
 
-### Feedback vs. Beobachtung
-X bewertet das Projekt überwiegend positiv; einzelne Aussagen stehen in Spannung zu beobachteten Konfliktmustern. Feedback ist vorhanden, aber noch nicht ausreichend differenziert.
+**Tag 4 – Phasenwechsel innerhalb derselben Einheit**
+- **Beobachtung:**
+  - Frühphase: hohe Beteiligung, Mitentscheidung und Umsetzung (u. a. Pfanderlös, Einkauf).
+  - Spätphase: Eskalation nach Regelkontakt bzw. Grenzsetzung.
+- **Einordnung:** Die Wirkung ist nicht einheitlich, sondern phasenabhängig innerhalb derselben Einheit.
+- **Kontrast:**
+  - **Deutung A:** steigende Anforderungen/Regelkontakt begünstigen Eskalation.
+  - **Deutung B:** unabhängige situative Trigger außerhalb des Projekthandelns.
+- **Status:** deutlicher Hinweis auf Eskalationsdynamik, aber ohne durchgehende Verlaufsdaten.
 
-### Offene Nachweise
-1. Wirkprüfung der C-Entscheidungen (E1, E4 und offene E3-Teile).
-2. Systematischer Vorher-Nachher-Vergleich zu Eskalationsdynamik.
-3. Mehrzeitige, strukturierte Feedbackerhebung.
-4. Baseline außerhalb des Projekts zur Interventionsspezifität.
+**Tag 7 – Systembruch auf Umweltebene**
+- **Beobachtung:** Pfandschild entfernt bzw. entsorgt, Projektstruktur im Alltag nicht stabil erhalten.
+- **Einordnung:** Die Maßnahme war sozial sichtbar, aber systemisch nicht ausreichend abgesichert.
+- **Kontrast:**
+  - **Deutung A:** fehlende Einbindung externer Akteure (z. B. Reinigungskräfte).
+  - **Deutung B:** Einzelfall ohne strukturelle Relevanz.
+- **Status:** Hinweis auf Kontextabhängigkeit der Wirkung; Datenlage zu Tag 7 bleibt begrenzt.
+
+### 6.2 Abweichung zwischen Feedback und Beobachtung
+- **Beobachtung:** Feedback ist überwiegend global positiv („gut“, „sehr gut“) trotz dokumentierter Konflikt- und Eskalationssituationen; einzelne Aussagen widersprechen beobachtetem Verhalten (z. B. Bewertung von Beleidigungen).
+- **Einordnung:** Feedback bildet eine eigenständige Perspektive, ist aber durch kurze Antwortformate und geringe Erhebungsfrequenz methodisch begrenzt.
+- **Kontrast:**
+  - **Deutung A:** sozial erwünschte bzw. situationsabhängige Antworten (H10).
+  - **Deutung B:** tatsächliche positive Gesamtbewertung trotz Konflikten.
+- **Status:** valide Quelle, aber nicht hinreichend für Wirkvalidierung allein.
+
+### 6.3 Struktur der beobachteten Abweichungen (Musterverdichtung)
+Aus den Einzelabweichungen lassen sich drei wiederkehrende Muster ableiten:
+1. **Wahlverhalten bei Konkurrenzsituationen:** Präferenz für bekannte, weniger fordernde Angebote.
+2. **Eskalation bei erlebtem Kontrollverlust:** Reaktionen bei eingeschränktem Zugriff auf Ressourcen oder Einfluss.
+3. **Instabilität bei rein verbaler Grenzsetzung:** keine nachhaltige Verhaltensänderung ohne zusätzliche Struktur.
+
+→ Diese Muster sind im Material plausibel, aber nicht quantitativ bzw. seriell geprüft.
+
+### 6.4 Offene Nachweise (priorisiert)
+1. **Systematische Prüfung von H7 (Systemkonkurrenz):** Vergleich von Situationen mit vs. ohne alternatives Angebot; aktuell fehlt die kontrollierte Gegenüberstellung.
+2. **Eskalationsdynamik im Verlauf:** standardisierte Erfassung von Vorbedingungen, Auslösern, Verlauf und Dauer bis Deeskalation; aktuell nur punktuelle Beobachtungen.
+3. **Wirksamkeit von Grenz- und Pausenstrategien (E1/E4):** Vergleich vergleichbarer Situationen mit/ohne Maßnahme; aktuell fehlen wiederholte, vergleichbare Fälle.
+4. **Qualität und Funktion von Feedback:** strukturierte, situative Erhebungen mit höherer Frequenz; aktuell geringe Differenzierung.
+5. **Kontextunabhängige Baseline:** Vergleichsdaten außerhalb des Projekts zur Interventionsspezifität fehlen vollständig.
+
+→ **Explizite Lücke:** Es fehlen serielle Daten; damit bleibt jede Kausalitätsnähe begrenzt.
+
+### 6.5 Mindeststandard für den nächsten Nachweiszyklus
+Jede strittige Wirkungsaussage wird künftig nur akzeptiert, wenn sie in folgender Struktur vorliegt:
+**Situation → beobachtbares Verhalten → Maßnahme → Gegenhypothese → Evidenzurteil (A/B/C).**
+
+Ziel ist die klare Trennung von Beobachtung und Interpretation, die Vergleichbarkeit über Situationen hinweg und die Replizierbarkeit der Auswertung.
+
+### 6.6 Funktion von Kapitel 6 im Gesamtnachweis
+Kapitel 6 dient als:
+- explizite Sammlung von Abweichungen,
+- Markierung nicht geklärter Wirkzusammenhänge,
+- operative Übergabe in den nächsten Erhebungszyklus.
+
+Im Unterschied zu Kapitel 5 leistet Kapitel 6 keine abschließende Wirkungsbewertung, sondern macht die offene Evidenzstruktur transparent.
 
 ## 7) Komprimiertes Fazit
 Klar gestützt im dokumentierten Zeitraum ist vor allem **handlungsnahe Selbstständigkeit** (T4/E6). Für Selbstwirksamkeit, sozialen Umgang und Gemeinschaft liegen **partielle** Fortschritte vor (T1/T2/T5). Für formellen sprachlichen Auftritt (T3) fehlt noch ein belastbarer Nachweis.

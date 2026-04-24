@@ -21,23 +21,39 @@ Der dokumentierte Zeitraum umfasst die Projektplanung, mehrere Umsetzungsphasen 
 Nicht durchgängig kontrolliert sind situative Einflussfaktoren wie Tagesform, Gruppendynamik oder spontane Ereignisse im Schulalltag. Diese Variabilität ist Teil des Kontextes und wird in der späteren Auswertung berücksichtigt.
 
 ## 3) Zielperson X: Profil, Ressourcen, Entwicklungsbedarfe
+### Kurzprofil der Zielperson
+X (Schüler, 7. Klasse) wird zieldifferent beschult und arbeitet im Projektkontext besonders stabil, wenn Aufgaben praktisch, klar strukturiert und sichtbar sinnvoll sind. In formellen Gesprächssituationen oder bei wahrgenommener Einschränkung von Handlungsmöglichkeiten kippt das Verhalten dagegen schneller (Rückzug, verbale Zuspitzung, situativ aggressive Handlungen).
+
 ### Verdichtetes Funktionsprofil (P1–P5)
-- **P1 Handlungsstabilität:** Initiative, Sorgfalt, Ausdauer in praktischen Aufgaben.
-- **P2 Stress-Kippmuster:** unter Frust/Grenzdruck verbale bis aggressive Zuspitzungen.
-- **P3 Formelle Exposition:** Rückzug, leiser Sprachanteil, geringe Selbstrepräsentation.
-- **P4 Kooperationsfenster über Peers:** Vermittlung (v. a. Y) fördert Kooperation.
-- **P5 Rückkehrfähigkeit:** nach Konflikten erneute Kontaktaufnahme/Entschuldigung möglich.
+- **P1 Handlungsstabilität:** In praktischen Aufgaben (Planen, Einkaufen, Beschriften) zeigt X Initiative, Ausdauer und Sorgfalt.
+- **P2 Kippneigung bei wahrgenommener Einschränkung von Zugriff, Kontrolle oder Handlungsspielraum:** Bei starkem Grenzdruck oder Verlusterleben treten schnelle Eskalationen auf.
+- **P3 Rückzug in formeller Exposition:** Gegenüber Autoritätspersonen/ungewohnten Settings spricht X leise, reduziert Blickkontakt und beteiligt sich weniger.
+- **P4 Kooperationsfenster in Peer-Konstellationen:** In bestimmten Peer-Konstellationen (insb. mit Y) steigt die Kooperationsfähigkeit.
+- **P5 Rückkehrfähigkeit:** Nach Konflikten sind Wiederannäherung, Entschuldigung und erneute Kontaktaufnahme beobachtbar.
 
 ### Ressourcen
-Handlungsorientierung, Ordnung/Sorgfalt, Merkfähigkeit bei Interesse, praktische Selbstständigkeit, Bindungsfähigkeit.
+- Hohe **Handlungsorientierung** und **praktische Selbstständigkeit**.
+- Deutliche **Sorgfalt im beobachteten Aufgabenkontext** (z. B. bei Dokumentation und Beschriftung).
+- Gute **Merkfähigkeit in Interessensfeldern**.
+- Vorhandene **Bindungs- und Rückkehrfähigkeit** nach Konflikten.
+- **Beteiligung an gemeinschaftlichen Aufgaben** bei klarer Struktur.
 
 ### Entwicklungsbedarfe
-Selbstvertrauen in formellen Situationen, gleichwürdiger Peer-Umgang, sprachlicher Auftritt, Stressregulation.
+- **Selbstvertrauen** und **sprachlicher Auftritt** in formellen Situationen.
+- **Stressregulation** bei Frust, Grenzsetzung und Kontrollverlust.
+- **Gleichwürdiger Peer-Umgang** und stabilere soziale Interaktion unter Anspannung.
+- **Systemübergreifende Stabilität** (weniger Abhängigkeit von einzelnen Bezugspersonen/Situationen).
 
-### ICF-Kernpunkte (verdichtet)
-- **Bedarfe:** Selbstvertrauen, Stabilität unter Stress, sprachlicher Ausdruck, formeller Rollen-/Stressumgang.
-- **Ressourcen:** Gewissenhaftigkeit, Offenheit, praktische Kompetenz.
-- **Umwelt:** tragfähige Pädagogen-/Familienbezüge; hemmend wirken Parallelangebote und lückenhafte Systemabstimmung.
+### ICF-Kernpunkte (verdichtet nach Domänen)
+*Die ICF-Zuordnung dient hier als heuristische Strukturierung der Beobachtungen, nicht als eigenständige Diagnostik.*
+- **Körperfunktionen:** b1266 (Selbstvertrauen, Bedarf), b1263 (psychische Stabilität, Bedarf), b1262 (Sorgfalt im Aufgabenkontext, heuristische Ressourcenzuordnung), b3302 (sprachlicher Ausdruck, Bedarf).
+- **Aktivitäten/Partizipation:** d2401 (Umgang mit Stress, deutlicher Bedarf), d7400 (Umgang mit Autoritätspersonen, Bedarf), d7504 (informelle Peer-Beziehungen, Bedarf), d865 (wirtschaftlich-praktische Handlungsfähigkeit, Ressource).
+- **Umweltfaktoren:** förderlich sind tragfähige Beziehungen zu Pädagog:innen/Familie; hemmend wirken Parallelangebote, unklare Zuständigkeiten und Lücken in der Systemabstimmung.
+
+### Feedback der Zielperson (kurz)
+X bewertet das Projekt insgesamt positiv („gut“), Rückmeldungen bleiben jedoch knapp und wenig differenziert. Einzelne Aussagen stehen in Spannung zu beobachteten Konfliktmustern; daher ist Feedback als Perspektive wichtig, aber allein nicht hinreichend belastbar.
+
+**Hinweis zur Lesart der Profile:** Die Profile P1–P5 sind als situationsgebundene Verdichtung im dokumentierten Zeitraum zu lesen, nicht als stabile Persönlichkeitseigenschaften.
 
 ## 4) Zielsetzung und pädagogisches Handeln
 ### Übergeordnetes Ziel

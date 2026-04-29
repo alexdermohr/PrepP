@@ -10,6 +10,9 @@
 - Ableitung aus der ökologischen Systemtheorie: Verhalten als Person-Umwelt-Interaktion verstehen.
 - Lernerfahrung zur Steuerung: Selbstbestimmung braucht klare, kleinschrittige und transparente Struktur.
 - Praktische Konsequenz: Entscheidungsspielräume erhalten, aber Anforderungen dosieren und Verbindlichkeit absichern.
+- Spanne zwischen Plan und Realität: zu hohe Ansprüche können Zielpersonen überfordern.
+- Störungen haben Vorrang: Unpassungen früh bearbeiten, ohne das Weiterkommen im Projekt aus dem Blick zu verlieren.
+- Spanne zwischen Plan und Spontanität bewusst einplanen und aktiv steuern.
 
 ## 2. Veränderung meiner Haltung zur heilpädagogisch-inklusiven Arbeit
 
@@ -21,11 +24,16 @@
 - Qualitätskriterium: Rückmeldungen der Zielperson müssen den Verlauf tatsächlich beeinflussen.
 - Selbstkritische Einsicht: Feedbackpraxis war zu knapp/zu wenig differenziert.
 - Konsequenz: Rückmeldeformate personnah, konkret, wiederholt und situationsbezogen gestalten.
+- Frühzeitig mit Feedback arbeiten und dafür verbindlich Zeit und Raum einplanen.
+- Schutzraum und Schutzzeit für das Projekt aktiv einfordern, transparent kommunizieren und im Alltag verteidigen.
+- Aufmerksamkeit auf Motivationsschutz: Alternativangebote können Projektbindung schwächen und Beteiligung entziehen.
+- Neue Forschungsfrage aus dem Prozess: stärkere theoretische Auseinandersetzung mit Bedürfnissen und Determinanten ihrer Dringlichkeit.
 
 ## 3. Beitrag der PrepP zum gesellschaftlichen Ziel der Inklusion
 
 - Beitrag der PrepP: begrenzt, aber real und fachlich bedeutsam.
 - X wurde nicht nur begleitet, sondern in eine verantwortliche Rolle im realen Projekt eingebunden.
+- Spanne zwischen Anspruch und Wirklichkeit der Rolle: anfangs als Projektleiter gedacht, im Verlauf auf mitentscheidenden Mitarbeiter angepasst.
 - Sichtbare Teilhabe: eigene Ideen, konkrete Entscheidungen, Mitgestaltung eines sichtbaren Ergebnisses.
 - Deutlichste Wirkung: Selbstständigkeit und Organisation.
 - Gemischte Wirkung: Selbstwirksamkeit in belastenden sozialen Situationen und stabile Peer-Anerkennung.

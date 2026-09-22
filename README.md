@@ -28,7 +28,7 @@ Unverarbeitete Quellen – Ereignisse, Muster, Entscheidungen, Feedback.
 
 ### Zieltextebene: Gruppennachweis
 
-Der Gruppennachweis ist das **einzige Zielartefakt** des Repos.
+Der Gruppennachweis ist das **einzige Zielartefakt des ursprünglichen PrepP-Nachweises**.
 Er verdichtet das Rohmaterial zu einem bewertbaren Dokument.
 
 - `docs/gruppennachweis/_contract.md` – erlaubte/verbotene Inhalte, Quellenpflicht
@@ -47,6 +47,12 @@ Er verdichtet das Rohmaterial zu einem bewertbaren Dokument.
 - `docs/gruppennachweis/mapping/rohmaterial_zu_kapiteln.md` – Rückverfolgbarkeit: welche Quelle stützt welche Aussage
 - `docs/gruppennachweis/mapping/modelle_zu_kapiteln.md` – Integrationsplan: welche Modelle aus `models/` passen in welche Kapitel
 - `docs/gruppennachweis/apparat/literaturverzeichnis.md` – Literatur und ergänzende Materialien
+
+### Eigene Facharbeit
+
+Unter [`facharbeit/eigene_facharbeit/`](facharbeit/eigene_facharbeit/README.md) liegt ein **separater, aus PrepP abgeleiteter Arbeitsbereich** für die eigene Facharbeit.
+
+Dort werden die gewählte Fanta-Kuchen-Ausgangslage, die Analyse der eigenen Verstrickung, Hypothesen zu Sicherung/„Loslassen“ und Reziprozität, offene Fragen sowie direkte Links zurück zu den PrepP-Primärtexten dokumentiert. Dieser Bereich verändert nicht den Contract oder das Zustandsmodell des ursprünglichen Gruppennachweises.
 
 ### Übergreifend
 
